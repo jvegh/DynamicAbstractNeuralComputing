@@ -1,0 +1,179 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>3.4.5 Electrolytes‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics</title>
+<!--Generated on Thu Nov  7 19:31:44 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on November 7, 2024.-->
+
+<link rel="shortcut icon" href="../../../../favicon.ico" type="image/png">
+<link rel="stylesheet" href="../../../../LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="../../../../ltx-book.css" type="text/css">
+<link rel="stylesheet" href="../../../../ltx-listings.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../../../../latexmldoc.css" type="text/css">
+<script src="../../../../LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="up" href="../index.html" title="§ 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics">
+<link rel="up up" href="../../index.html" title="Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics">
+<link rel="up up up" href="../../../index.html" title="Abstract Neuron Dynamics">
+<link rel="start" href="../../../index.html" title="Abstract Neuron Dynamics">
+<link rel="prev" href="../sec_MEASURING_OSCILLATOR/index.html" title="§ 3.4.4 Oscillator ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics">
+<link rel="next" href="../SS6/index.html" title="§ 3.4.6 Time delay ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics">
+<link rel="subsection" href="../sec_Physics-Current/index.html" title="§ 3.4.1 Current ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics">
+<link rel="subsection" href="../sec_Calculating-ion's-speed/index.html" title="§ 3.4.2 Current’s speed ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics">
+<link rel="subsection" href="../sec_MEASURING_CONDUCTANCE/index.html" title="§ 3.4.3 Conductance ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics">
+<link rel="subsection" href="../sec_MEASURING_OSCILLATOR/index.html" title="§ 3.4.4 Oscillator ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics">
+<link rel="subsection" href="../SS6/index.html" title="§ 3.4.6 Time delay ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics">
+<link rel="subsection" href="../subsec_Imitating-slow-current/index.html" title="§ 3.4.7 Connecting “fast” and “slow” currents ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics">
+<link rel="subsection" href="../sec_PHYSICS-DerivingAP/index.html" title="§ 3.4.8 Action potential ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics">
+<link rel="section" href="../../sec_Physics-Introduction/index.html" title="§ 3.1 Introduction ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics">
+<link rel="section" href="../../sec_Physics-Abstraction/index.html" title="§ 3.2 Abstractions and approximations ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics">
+<link rel="section" href="../../sec_Physics-Speeds/index.html" title="§ 3.3 Interaction speeds in nature ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics">
+<link rel="section" href="../index.html" title="§ 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics">
+<link rel="section" href="../../sec_Physiology-Electrodiffusion/index.html" title="§ 3.5 Electrodiffusion ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics">
+<link rel="chapter" href="../../../ch_Single/index.html" title="Chapter 1 Abstract single neurons ‣ Abstract Neuron Dynamics">
+<link rel="chapter" href="../../../ch_Physiology/index.html" title="Chapter 2 Abstract neurophysiology ‣ Abstract Neuron Dynamics">
+<link rel="chapter" href="../../index.html" title="Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics">
+<link rel="chapter" href="../../../ch_Computing/index.html" title="Chapter 4 Neural computing ‣ Abstract Neuron Dynamics">
+<link rel="chapter" href="../../../ch_Information/index.html" title="Chapter 5 Neural information ‣ Abstract Neuron Dynamics">
+<link rel="bibliography" href="../../../bib.html" title="Bibliography ‣ Abstract Neuron Dynamics">
+<link rel="index" href="../../../idx.html" title="Index ‣ Abstract Neuron Dynamics">
+</head>
+<body>
+<nav class="ltx_page_navbar">
+<div class="ltx_para">
+<img src="../graphics/BrainElectronics.png" class="ltx_graphics" width="227" height="128" alt="">
+<p class="ltx_p">Abstract Neural Dynamics
+<br class="ltx_break">Version <em class="ltx_emph ltx_font_italic">0.0.8</em>
+<br class="ltx_break">@November 7, 2024</p>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../../ch_Single/index.html" title="Chapter 1 Abstract single neurons ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Abstract single neurons</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../../ch_Physiology/index.html" title="Chapter 2 Abstract neurophysiology ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Abstract neurophysiology</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="../../index.html" title="Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Physics for biology</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../../sec_Physics-Introduction/index.html" title="§ 3.1 Introduction ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>Introduction</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../../sec_Physics-Abstraction/index.html" title="§ 3.2 Abstractions and approximations ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2 </span>Abstractions and approximations</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../../sec_Physics-Speeds/index.html" title="§ 3.3 Interaction speeds in nature ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3 </span>Interaction speeds in nature</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a href="../index.html" title="§ 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4 </span>Electricity in biology</span></a>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="../sec_Physics-Current/index.html" title="§ 3.4.1 Current ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4.1 </span>Current</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="../sec_Calculating-ion's-speed/index.html" title="§ 3.4.2 Current’s speed ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4.2 </span>Current’s speed</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="../sec_MEASURING_CONDUCTANCE/index.html" title="§ 3.4.3 Conductance ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4.3 </span>Conductance</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="../sec_MEASURING_OSCILLATOR/index.html" title="§ 3.4.4 Oscillator ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4.4 </span>Oscillator</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection ltx_ref_self"><span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4.5 </span>Electrolytes</span></span></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="../SS6/index.html" title="§ 3.4.6 Time delay ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4.6 </span>Time delay</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="../subsec_Imitating-slow-current/index.html" title="§ 3.4.7 Connecting “fast” and “slow” currents ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4.7 </span>Connecting “fast” and “slow” currents</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="../sec_PHYSICS-DerivingAP/index.html" title="§ 3.4.8 Action potential ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4.8 </span>Action potential</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../../sec_Physiology-Electrodiffusion/index.html" title="§ 3.5 Electrodiffusion ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5 </span>Electrodiffusion</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../../ch_Computing/index.html" title="Chapter 4 Neural computing ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Neural computing</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../../ch_Information/index.html" title="Chapter 5 Neural information ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Neural information</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_bibliography"><a href="../../../bib.html" title="Bibliography ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title">Bibliography</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_index"><a href="../../../idx.html" title="Index ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_title">Index</span></a></li>
+</ul>
+</div>
+<div class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p"><a href="../../manual.pdf" title="" class="ltx_ref ltx_href">Manual in .PDF form</a>
+<a href="../../docs/index.html" title="" class="ltx_ref ltx_href">Simulator</a>
+
+<br class="ltx_break"><img src="../graphics/NeuronAndBrain.jpg" class="ltx_graphics" width="227" height="227" alt="">
+</p>
+</div></nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="../index.html" title="§ 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4 </span>Electricity in biology</span></a><a href="../sec_MEASURING_OSCILLATOR/index.html" title="§ 3.4.4 Oscillator ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4.4 </span>Oscillator</span></a><a href="../SS6/index.html" title="§ 3.4.6 Time delay ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4.6 </span>Time delay</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_subsection ltx_authors_1line">
+<h1 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§ 3.4.5 </span>Electrolytes</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">In biology, the electrolyte solutions do not surely satisfy our conditions.
+The number of charged objects (the ion concentration) may change in
+time, and a chemical driving force may also move the objects independently
+from the electric field. When measuring only the macroscopic electric
+parameters voltage and current (measuring current believing we measure
+directly conductance; in addition, measuring it in a wrong way), <em class="ltx_emph ltx_font_italic">we
+attribute the injected charge carriers’ low propagation speed to the
+medium</em> when describing the phenomenon that ”the conductance changes”
+in the function of the voltage <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib30" title="" class="ltx_ref">30</a>]</cite>.
+(BTW: conductance is a “steady-state”
+notion; see its definition above and that in section A.3.12 in <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib6" title="" class="ltx_ref">6</a>]</cite>:
+“the input impedance measured <em class="ltx_emph ltx_font_italic">after the voltage has reached
+a steady state</em> following a step change in injected current is defined
+as input resistance”, or “the input resistance …obtained
+by dividing the <em class="ltx_emph ltx_font_italic">steady-state</em> voltage change by the current
+using it” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib11" title="" class="ltx_ref">11</a>]</cite>. <span class="ltx_text ltx_font_italic">Using quickly changing currents, either sinusoidal or random for measuring conductance, measures some ill-defined current.</span>) The measurement must be
+fixed: the tacit assumptions above must be fulfilled.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Biologists are “resetting the time”, instead of admitting that the current speed is finite. The conductance (per definitionem) does not change; only the (maybe:
+foreign) charge carriers may need time to deliver the current: <em class="ltx_emph ltx_font_italic">we
+calculate the conductance from non-matching value pairs</em> (or not-steady
+state). Wording that biological systems show “non-ohmic behavior”
+means that they are not metals: we abstracted the notion of conductance
+for metals. Physics describes biological operations perfectly. Electric
+operations are also ohmic in biology, but one has to use the correct
+(time-aware, i.e., considering the speed of the charged carrier) interaction
+speed. <em class="ltx_emph ltx_font_italic">Using Newtonian instant interaction as the drift speed
+of charged ions or the macroscopic speed of their current is a catastrophic
+hypothesis and contradicts all our phenomena</em>.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">The ohmic behavior means that voltage and current relate to each other,
+as we learned in college, only when the electrostatic interaction
+speed is very high (in the mathematical/physical description, the
+interaction is instant). In biological systems, it is not necessarily
+the case: the drift speed of ions or the macroscopic speed of ionic
+current conveying electrostatic interaction is very low, and so they
+may follow the electric field propagation apparently with a time shift
+(if they are improperly distributed, as was explicitly noticed <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib3" title="" class="ltx_ref">3</a>]</cite>).
+However, as Fig. <a href="../../../ch_Physiology/sec_Physiology-Experimental/sec_Axonal-charge-delivery/index.html#fig:The-time-course_Clamping" title="Figure 2.11 ‣ § 2.4.2 Axon ‣ § 2.4 Experimental evidence ‣ Chapter 2 Abstract neurophysiology ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.11</span></a> displays, when
+measuring the secondary entities (instead of a ternary one), everything
+comes to the right: the voltage and current change using the same
+time course. One should <em class="ltx_emph ltx_font_italic">measure</em> the voltage instead of <em class="ltx_emph ltx_font_italic">assuming</em>
+the potential appears immediately, even without charge carriers.
+Furthermore, one should not introduce a foreign voltage into a system
+(by measuring its conductance) when studying the electric features
+of that system.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Another major problem to solve when measuring chemical electrolytes
+using electronic devices is their interfacing. At some point, the
+ionic charge must be converted to electrons (there and back), which
+usually happens in electrolyte electrodes. Interfacing the analyzed
+electrolytic wire and metallic wire in the measurement circuit introduces
+problems, not only the contact potentials but also the time delay
+due to the use of electrolyte electrodes. These electrodes need to
+carry the ions to some distance, and that process is outside of the
+time scale of the primary measured process. The effect is noticed
+but not explained <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib3" title="" class="ltx_ref">3</a>]</cite>: “the steady state
+relation between sodium current and voltage could be calculated for
+this system and was found to agree reasonably with the observed curve
+at 0.2 msec after the onset of a sudden depolarization.” Moreover,
+given that <span class="ltx_text ltx_font_italic">the speed of ions depends on the depolarizing voltage (see
+Eq. (<a href="../sec_Calculating-ion's-speed/index.html#eq:StokesCurrent" title="(3.6) ‣ § 3.4.2 Current’s speed ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6</span></a>)), this time gap depends on the depolarizing
+voltage</span>: the higher the voltage, the shorter the time gap, demonstrated
+in their Fig. 3. As we demonstrated in Figure <a href="../../../ch_Physiology/sec_Physiology-Experimental/sec_Physiology-StokesLaw/index.html#fig:SpeedDependence" title="Figure 2.8 ‣ § 2.4.1 Stokes’ Law ‣ § 2.4 Experimental evidence ‣ Chapter 2 Abstract neurophysiology ‣ Abstract Neuron Dynamics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.8</span></a>,
+this effect may lead to conclusions opposite to the real ones.</p>
+</div>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="../sec_MEASURING_OSCILLATOR/index.html" title="§ 3.4.4 Oscillator ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4.4 </span>Oscillator</span></a><a href="../../../bib.html" title="Bibliography ‣ Abstract Neuron Dynamics" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="../../../idx.html" title="Index ‣ Abstract Neuron Dynamics" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="../SS6/index.html" title="§ 3.4.6 Time delay ‣ § 3.4 Electricity in biology ‣ Chapter 3 Physics for biology ‣ Abstract Neuron Dynamics" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4.6 </span>Time delay</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Thu Nov  7 19:31:44 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
