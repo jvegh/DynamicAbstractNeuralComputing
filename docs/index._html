@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="5;url=../www/manual/index.html">
+        <title>Page Redirection to ../www/manual</title>
+    </head>
+    <body>
+        If you are not redirected automatically from '/docs',
+        follow the <a href="../www/manual/index.html">link to the documentation</a>
+    </body>
+</html>
