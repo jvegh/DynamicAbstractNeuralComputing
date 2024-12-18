@@ -1,0 +1,189 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>3 Physiology‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)</title>
+<!--Generated on Wed Dec 18 07:09:24 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 18, 2024.-->
+
+<link rel="shortcut icon" href="../../favicon.ico" type="image/png">
+<link rel="stylesheet" href="../../LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="../../ltx-book.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../../latexmldoc.css" type="text/css">
+<script src="../../LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="up" href="../index.html" title="Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="start" href="../index.html" title="Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="prev" href="../ch_Physics/sec_Physics-ElectrodiffusionDynamics/sec_Physics-MembraneCurrent/index.html" title="§ 2.11.4 Layer speed ‣ § 2.11 Ions’ dynamics ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="next" href="sec_Physiology-Physical/index.html" title="§ 3.1 The physical model ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="chapter" href="../ch_Foreword/index.html" title="Foreword ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="chapter" href="../ch_Single/index.html" title="Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="chapter" href="../ch_Physics/index.html" title="Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="chapter" href="../ch_Computing/index.html" title="Chapter 4 Neural computing ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="chapter" href="../ch_Information/index.html" title="Chapter 5 Neural information ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="chapter" href="../ch_Intelligence/index.html" title="Chapter 6 Intelligence ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="chapter" href="../ch_Simulation/index.html" title="Chapter 7 Neural simulator ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="bibliography" href="../bib.html" title="Bibliography ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="index" href="../idx.html" title="Index ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="section" href="sec_Physiology-Physical/index.html" title="§ 3.1 The physical model ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="section" href="sec_Physiology-Electrodiffusion/index.html" title="§ 3.2 Electrodiffusion ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="section" href="sec_Physiology-DerivingActionPotential/index.html" title="§ 3.3 Action potential ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="section" href="sec_Physiology-HodgkinHuxley/index.html" title="§ 3.4 Hodgkin&amp;Huxley’s empirical description ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="section" href="sec_Physiology-Experimental/index.html" title="§ 3.5 Experimental evidence ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="section" href="sec_Physiology-Fallacies/index.html" title="§ 3.6 Fallacies ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+</head>
+<body>
+<nav class="ltx_page_navbar">
+<div class="ltx_para">
+<img src="../graphics/BrainElectronics.png" class="ltx_graphics" width="227" height="128" alt="">
+<p class="ltx_p">Dynamic Abstract Neural Computing
+<br class="ltx_break">with Electronic Simulation
+<br class="ltx_break">DANCES Version <em class="ltx_emph ltx_font_italic">0.0.8</em>
+<br class="ltx_break">@December 18, 2024</p>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../ch_Foreword/index.html" title="Foreword ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title">Foreword</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../ch_Single/index.html" title="Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Abstract single neurons</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../ch_Physics/index.html" title="Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Physics</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter ltx_ref_self">
+<span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Physiology</span></span>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="sec_Physiology-Physical/index.html" title="§ 3.1 The physical model ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>The physical model</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="sec_Physiology-Electrodiffusion/index.html" title="§ 3.2 Electrodiffusion ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2 </span>Electrodiffusion</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="sec_Physiology-DerivingActionPotential/index.html" title="§ 3.3 Action potential ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3 </span>Action potential</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="sec_Physiology-HodgkinHuxley/index.html" title="§ 3.4 Hodgkin&amp;Huxley’s empirical description ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4 </span>Hodgkin&amp;Huxley’s empirical description</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="sec_Physiology-Experimental/index.html" title="§ 3.5 Experimental evidence ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5 </span>Experimental evidence</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="sec_Physiology-Fallacies/index.html" title="§ 3.6 Fallacies ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.6 </span>Fallacies</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../ch_Computing/index.html" title="Chapter 4 Neural computing ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Computing</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../ch_Information/index.html" title="Chapter 5 Neural information ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Information</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../ch_Intelligence/index.html" title="Chapter 6 Intelligence ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>Intelligence</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../ch_Simulation/index.html" title="Chapter 7 Neural simulator ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Simulation</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_bibliography"><a href="../bib.html" title="Bibliography ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title">Bibliography</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_index"><a href="../idx.html" title="Index ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title">Index</span></a></li>
+</ul>
+</div>
+<div class="ltx_para">
+<p class="ltx_p"><a href="../manual.pdf" title="" class="ltx_ref ltx_href">Manual in .PDF form</a>
+<a href="../docs/index.html" title="" class="ltx_ref ltx_href">Simulator</a>
+<img src="../graphics/NeuronAndBrain.jpg" class="ltx_graphics" width="227" height="227" alt="">
+</p>
+</div></nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="../index.html" title="Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Dynamic Abstract Neural Computing<span class="ltx_text"> </span>with Electronic Simulation<span class="ltx_text"> </span>(DANCES)</span></a><a href="../ch_Physics/sec_Physics-ElectrodiffusionDynamics/sec_Physics-MembraneCurrent/index.html" title="§ 2.11.4 Layer speed ‣ § 2.11 Ions’ dynamics ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.11.4 </span>Layer speed</span></a><a href="sec_Physiology-Physical/index.html" title="§ 3.1 The physical model ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>The physical model</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_chapter ltx_authors_1line">
+<h1 class="ltx_title ltx_title_chapter">
+<span class="ltx_tag ltx_tag_chapter">Chapter 3 </span>Abstract neurophysiology</h1>
+
+<section class="ltx_paragraph ltx_advanced">
+<div id="p1" class="ltx_para">
+<p class="ltx_p">In honor and spirit of the Nobel-laureates:
+<br class="ltx_break">“For the sake of illustration we
+shall try to provide a physical basis for the equations, but must emphasize
+that the interpretation given is unlikely to provide a correct picture of the
+membrane.”
+<br class="ltx_break">”the success of the equations is no evidence in
+favour of the mechanism of permeability change that we tentatively had in
+mind when formulating them.”
+<br class="ltx_break">— Hodgkin and Huxley, 1952 <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib7" title="" class="ltx_ref">7</a>]</cite>
+<br class="ltx_break">They were brave enough to admit that at some point they must stop and to publish their excellent observations ”as is”; despite their feeling that they could not grasp adequately the processes. Their intention was to help their fellow researchers in
+using their observations in the practical research.
+They did their best with attempting to provide a correct picture of the membrane.
+We interpret their much inspiring model in light of the later interpretation, theoretical and experimental results, critics and speculations.
+We attempt to put those constituents together into a consistent model,
+with a science background, with calculable details,
+including physical and mathematical handling of electrodiffusion,
+handling mixing interaction speeds and slow ion currents.
+</p>
+</div>
+</section>
+<div id="p2" class="ltx_para">
+<p class="ltx_p"><a name="AbstractPhysiology" id="AbstractPhysiology" class="ltx_anchor">Biological objects</a>, with their semipermeable membranes, separating
+ionic solutions into sections with concentrations differing by orders
+of magnitude, furthermore containing voltage-controlled ion channels
+that react actively to electric fields, are more complex cases for
+understanding their detailed operation. Classic theory cannot explain
+some details of neurophysiological phenomena, including neurons’ charge
+processing, especially their temporal behavior, that implements its
+information processing capability because physiology incorrectly interprets
+the fundamental electric terms. Extrapolating notions derived from
+metals to electrolytes, especially to biological neurons with electrically
+active internal structures, may be misleading.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">That biological ’equivalent circuit’ models assume that the circuits comprise point-like
+ideal <span class="ltx_text ltx_font_italic">discrete elements</span>
+such as condensers and resistors, and some mystic power changes their parameters according to some
+mathematical formulas,
+furthermore ideal batteries with voltage that may again be changed by that power.
+All they are connected by conducting (metallic) ideal wires
+and their interaction speed is infinitely high (the Newtonian ’instant interaction’).
+Using that abstract model enables them to use the well-known classic equations, named after
+Ohm, Kirchoff, Coulomb, Maxwell and others. However, those abstractions have severe limitations. Biology applies Ohm’s Law to its objects while claims that its objects are non-ohmic; understands that neural currents comprise ions while claims that the ions do not feel the Coulomb repulsion; measures ions’ propagation speed but in its equations it claims that their effects are instant; hypotesizes non-existing physical mechanisms to make their nature. In in general, biophysics abstracts from the world of the physics-inspired mathematical formulas a fictitious nature where biology lives and hypothesises complementary mechanisms to achieve some resemblance with the true biological word. The examples include that ions in the ions channels do not repulse each other; that charge, potential and current are independent of each other; that ion currents do not repulse each other neither when they travel from the presynaptic terminal to the
+AIS;
+that some mystic power opens the ion channels to let ions in into the intracellular space, that ions with the same charge move in opposite directions when ions rush-in into the intracellular segment of the neuron; that the ions pass ion channels without being accelerated by the potential difference accross the membrane; the telegraph equations are applied to the case of axons although neither external potential nor current loss exists; and so on.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">It is hazardous to introduce technically (and incorrectly) derived
+and misinterpreted macroscopic features and interpret them as fundamental
+electric notions. The idea of
+conductance
+has been introduced
+to neurophysiology almost a century ago. It was taken from physics, where the
+notion was derived for metals. Since then, its original interpretation
+has been forgotten, and today (in contrast with physics), it has become
+a primary entity for describing electric characteristics of biological
+cells. We explain how the right physics background enables us to
+discover wrong physical models and
+misinterpreted notions of physics in neurophysiology;
+furthermore, how the right interpretation opens the way to the correct interpretation
+of neuronal information. We set up an abstract electric model of neuronal
+operation.
+</p>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry"><a href="sec_Physiology-Physical/index.html" title="§ 3.1 The physical model ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>The physical model</span></a></li>
+</ul>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry"><a href="sec_Physiology-Electrodiffusion/index.html" title="§ 3.2 Electrodiffusion ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2 </span>Electrodiffusion</span></a></li>
+</ul>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry"><a href="sec_Physiology-DerivingActionPotential/index.html" title="§ 3.3 Action potential ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3 </span>Action potential</span></a></li>
+</ul>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry"><a href="sec_Physiology-HodgkinHuxley/index.html" title="§ 3.4 Hodgkin&amp;Huxley’s empirical description ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4 </span>Hodgkin&amp;Huxley’s empirical description</span></a></li>
+</ul>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry"><a href="sec_Physiology-Experimental/index.html" title="§ 3.5 Experimental evidence ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5 </span>Experimental evidence</span></a></li>
+</ul>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry"><a href="sec_Physiology-Fallacies/index.html" title="§ 3.6 Fallacies ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.6 </span>Fallacies</span></a></li>
+</ul>
+</div>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="../ch_Physics/sec_Physics-ElectrodiffusionDynamics/sec_Physics-MembraneCurrent/index.html" title="§ 2.11.4 Layer speed ‣ § 2.11 Ions’ dynamics ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.11.4 </span>Layer speed</span></a><a href="../bib.html" title="Bibliography ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="../idx.html" title="Index ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="sec_Physiology-Physical/index.html" title="§ 3.1 The physical model ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>The physical model</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Wed Dec 18 07:09:24 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
