@@ -1,0 +1,204 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>1.3 Components‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)</title>
+<!--Generated on Thu Dec 19 20:39:44 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 19, 2024.-->
+
+<link rel="shortcut icon" href="../../../favicon.ico" type="image/png">
+<link rel="stylesheet" href="../../../LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="../../../ltx-book.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../../../latexmldoc.css" type="text/css">
+<script src="../../../LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="up" href="../index.html" title="Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="up up" href="../../index.html" title="Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="start" href="../../index.html" title="Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="prev" href="../sec_SINGLE_ABSTRACT_NEURON/sec_Single-ClassicVsModern/index.html" title="§ 1.2.5 Classic vs modern approach ‣ § 1.2 Abstract modeling ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="next" href="sec_Ion-channels/index.html" title="§ 1.3.1 Ion channels ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="section" href="../sec_Single-Introduction/index.html" title="§ 1.1 Introduction ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="section" href="../sec_SINGLE_ABSTRACT_NEURON/index.html" title="§ 1.2 Abstract modeling ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="section" href="../sec_Single-Operations/index.html" title="§ 1.4 Operations ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="chapter" href="../../ch_Foreword/index.html" title="Foreword ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="chapter" href="../index.html" title="Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="chapter" href="../../ch_Physics/index.html" title="Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="chapter" href="../../ch_Physiology/index.html" title="Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="chapter" href="../../ch_Computing/index.html" title="Chapter 4 Neural computing ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="chapter" href="../../ch_Information/index.html" title="Chapter 5 Neural information ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="chapter" href="../../ch_Intelligence/index.html" title="Chapter 6 Intelligence ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="chapter" href="../../ch_Simulation/index.html" title="Chapter 7 Neural simulator ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="bibliography" href="../../bib.html" title="Bibliography ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="index" href="../../idx.html" title="Index ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="subsection" href="sec_Ion-channels/index.html" title="§ 1.3.1 Ion channels ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="subsection" href="IonLayers/index.html" title="§ 1.3.2 Ion layers ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="subsection" href="subsec_Axonal-charge-delivery/index.html" title="§ 1.3.3 Axons ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="subsection" href="sec_Single-NeuronalMembrane/index.html" title="§ 1.3.4 Neuronal membrane ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="subsection" href="subsec_Axonal-Initial-Segment/index.html" title="§ 1.3.5 Axon Initial Segment ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="subsection" href="subsec_Single-NeuronalOscillator/index.html" title="§ 1.3.6 Neuronal oscillator ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+</head>
+<body>
+<nav class="ltx_page_navbar">
+<div class="ltx_para">
+<img src="../graphics/BrainElectronics.png" class="ltx_graphics" width="227" height="128" alt="">
+<p class="ltx_p">Dynamic Abstract Neural Computing
+<br class="ltx_break">with Electronic Simulation
+<br class="ltx_break">DANCES Version <em class="ltx_emph ltx_font_italic">0.0.8</em>
+<br class="ltx_break">@December 19, 2024</p>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../ch_Foreword/index.html" title="Foreword ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title">Foreword</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="../index.html" title="Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Abstract single neurons</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_Single-Introduction/index.html" title="§ 1.1 Introduction ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.1 </span>Introduction</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_SINGLE_ABSTRACT_NEURON/index.html" title="§ 1.2 Abstract modeling ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2 </span>Abstract modeling</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section ltx_ref_self">
+<span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3 </span>Components</span></span>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="sec_Ion-channels/index.html" title="§ 1.3.1 Ion channels ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.1 </span>Ion channels</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="IonLayers/index.html" title="§ 1.3.2 Ion layers ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.2 </span>Ion layers</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="subsec_Axonal-charge-delivery/index.html" title="§ 1.3.3 Axons ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.3 </span>Axons</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="sec_Single-NeuronalMembrane/index.html" title="§ 1.3.4 Neuronal membrane ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.4 </span>Neuronal membrane</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="subsec_Axonal-Initial-Segment/index.html" title="§ 1.3.5 Axon Initial Segment ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.5 </span>Axon Initial Segment</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="subsec_Single-NeuronalOscillator/index.html" title="§ 1.3.6 Neuronal oscillator ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.6 </span>Neuronal oscillator</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_Single-Operations/index.html" title="§ 1.4 Operations ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4 </span>Operations</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../ch_Physics/index.html" title="Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Physics</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../ch_Physiology/index.html" title="Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Physiology</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../ch_Computing/index.html" title="Chapter 4 Neural computing ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Computing</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../ch_Information/index.html" title="Chapter 5 Neural information ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Information</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../ch_Intelligence/index.html" title="Chapter 6 Intelligence ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>Intelligence</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../ch_Simulation/index.html" title="Chapter 7 Neural simulator ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Simulation</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_bibliography"><a href="../../bib.html" title="Bibliography ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title">Bibliography</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_index"><a href="../../idx.html" title="Index ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title">Index</span></a></li>
+</ul>
+</div>
+<div class="ltx_para">
+<p class="ltx_p"><a href="../manual.pdf" title="" class="ltx_ref ltx_href">Manual in .PDF form</a>
+<a href="../docs/index.html" title="" class="ltx_ref ltx_href">Simulator</a>
+<img src="../graphics/NeuronAndBrain.jpg" class="ltx_graphics" width="227" height="227" alt="">
+</p>
+</div></nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="../index.html" title="Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Abstract single neurons</span></a><a href="../sec_SINGLE_ABSTRACT_NEURON/sec_Single-ClassicVsModern/index.html" title="§ 1.2.5 Classic vs modern approach ‣ § 1.2 Abstract modeling ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2.5 </span>Classic vs modern approach</span></a><a href="sec_Ion-channels/index.html" title="§ 1.3.1 Ion channels ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.1 </span>Ion channels</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_1line">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§ 1.3 </span>Components</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">As <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib3" title="" class="ltx_ref">3</a>]</cite>
+summarizes: ”Electrical signals travel from the cell body of a neuron to its axon terminal
+in the form of action potentials. Action potentials trigger the secretion of neurotransmitters
+from synaptic terminals. Neurotransmitters bind to postsynaptic receptors
+and cause electric signals (synaptic potential) in the postsynaptic neuron.
+<span class="ltx_text ltx_font_italic">Synaptic potentials trigger action potentials, which propagate to the axon terminal</span>
+and trigger secretion of neurotransmitters to the next neuron.” We must admit that
+<span class="ltx_text ltx_font_italic">those signals are transmitted by electrodiffusion processes instead of
+net electric phenomena</span>. We move a towards a more abstract and more detailed view of considering neuronal opearation:
+”neurons are sites where <span class="ltx_text ltx_font_italic">information is handled in analog rather than digital form</span>.
+There may be hundreds of excitatory nerve endings on the surface of one
+postsynaptic cell. Each terminal is capable of secreting the excitatory (or
+inhibitory) chemical. The rate of secretion is governed by the rate of arrival of
+presynaptic impulses. True, each impulse in one terminal liberates a definite
+amount of transmitter, but there may be many impulses in
+many such terminals. The postsynaptic depolarization that ensues is essentially a
+continuously gradeable process. The membrane potential of a neuron waxes and
+wanes with the ceaseless variations of excitatory and inhibitory input, and with
+it varies the stream of impulses issued in its axon. <span class="ltx_text ltx_font_italic">The digital pulse code of
+presynaptic fibers is thus converted into an analog process at the junction, only
+to be reconverted into a digital pulse code again in the axon of the postsynaptic
+cell. The logical operations are all performed in the analog mode at the synapses.</span>” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib31" title="" class="ltx_ref">31</a>]</cite> Note that those ”ceaseless variations” can be correctly handled by our dynamic methods.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Also we must add the invention from about three decades later: ”Neurons ensure the directional propagation of signals throughout the nervous system.
+The functional asymmetry of neurons is supported by cellular compartmentation: the cell body and dendrites (somatodendritic compartment) receive synaptic inputs,
+and the axon propagates the action potentials that trigger synaptic release toward target cells.
+<span class="ltx_text ltx_font_italic">Between the cell body and the axon sits a unique compartment called the axon initial segment</span> (AIS).
+The AIS was first described 50 years ago [i.e., nearly two decades after HH published their study], and its molecular composition and organization have been progressively elucidated during the following decades. …. Recent years have also brought crucial insights into the functions of the AIS: how ion channels at its surface generate and shape the action potential.” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib32" title="" class="ltx_ref">32</a>]</cite> We provide the physics and mathematics of how AIS shapes
+the action potential (or more precisely, we show what an important role it plays in
+forming AP).</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Nature is overly complex: science fields must use
+different approximations and abstractions.
+To set up a holistic model, we attempt to <span class="ltx_text ltx_font_italic">see the forest for the trees</span>.
+Nature uses an infinite variety of implementing neurons. However, ’despite the extraordinary diversity and complexity of neuronal morphology and synaptic connectivity,
+<span class="ltx_text ltx_font_italic">the nervous systems adopt <span class="ltx_text ltx_font_bold">a number of basic principles</span> for all neurons and synapses</span>’ <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib3" title="" class="ltx_ref">3</a>]</cite> so they can cooperate.
+We base our discussion on those basic principles
+and create an ’abstract physical neuron’ model,
+skipping the ’implementation details’ nature uses.
+Notice that at that time,
+it was not yet recognized that the electric signals propagate
+with a finite speed also in the dendrites (or, more precisely,
+its handling in mathematics and physics was not solved).We use physiological notions and terms only in a general sense, going into details
+only at the necessary depth. However, we do cover the details in chapter <a href="../../ch_Physiology/index.html" title="Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a> and cite the corresponding research papers.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">We agree that ’The basic structural units of the nervous system are individual neurons’ <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib3" title="" class="ltx_ref">3</a>]</cite>. However,
+we also know that neurons ”are linked together
+by dynamically changing constellations of synaptic weights” and
+”cell assemblies are best understood in light of their output product” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib15" title="" class="ltx_ref">15</a>]</cite>. We agree that ’<span class="ltx_text ltx_font_italic">the fundamental task of the nervous system is to <span class="ltx_text ltx_font_bold">communicate and process information</span></span>’.
+Furthermore, the ’<span class="ltx_text ltx_font_bold ltx_font_italic">neurons convey
+neural information<span class="ltx_text ltx_font_medium"> by virtue of electrical and chemical signals</span></span>’
+<cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib3" title="" class="ltx_ref">3</a>]</cite>.
+The goal was set decades ago:
+’<span class="ltx_text ltx_font_italic">The ultimate aim of computational neuroscience is
+to explain <span class="ltx_text ltx_font_bold">how</span> electrical and chemical signals are used in the brain
+<span class="ltx_text ltx_font_bold">to represent and process information</span></span>’
+<cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib12" title="" class="ltx_ref">12</a>]</cite>.
+We generalized the notions of computing <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib21" title="" class="ltx_ref">21</a>]</cite>
+and information<cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib14" title="" class="ltx_ref">14</a>]</cite> for biology and use the notions introduced there throughout the paper.
+To understand, among others, the role of synaptic weights,
+the formation of
+APs, and neuronal information processing, we must understand, on that abstract level,
+which general rules govern the neuronal electrical (more precisely: electrodiffusional) processes.</p>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="sec_Ion-channels/index.html" title="§ 1.3.1 Ion channels ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.1 </span>Ion channels</span></a></li>
+</ul>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="IonLayers/index.html" title="§ 1.3.2 Ion layers ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.2 </span>Ion layers</span></a></li>
+</ul>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="subsec_Axonal-charge-delivery/index.html" title="§ 1.3.3 Axons ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.3 </span>Axons</span></a></li>
+</ul>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="sec_Single-NeuronalMembrane/index.html" title="§ 1.3.4 Neuronal membrane ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.4 </span>Neuronal membrane</span></a></li>
+</ul>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="subsec_Axonal-Initial-Segment/index.html" title="§ 1.3.5 Axon Initial Segment ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.5 </span>Axon Initial Segment</span></a></li>
+</ul>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="subsec_Single-NeuronalOscillator/index.html" title="§ 1.3.6 Neuronal oscillator ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.6 </span>Neuronal oscillator</span></a></li>
+</ul>
+</div>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="../sec_SINGLE_ABSTRACT_NEURON/sec_Single-ClassicVsModern/index.html" title="§ 1.2.5 Classic vs modern approach ‣ § 1.2 Abstract modeling ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2.5 </span>Classic vs modern approach</span></a><a href="../../bib.html" title="Bibliography ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="../../idx.html" title="Index ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="sec_Ion-channels/index.html" title="§ 1.3.1 Ion channels ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.1 </span>Ion channels</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Thu Dec 19 20:39:44 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
