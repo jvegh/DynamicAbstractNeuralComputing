@@ -2,8 +2,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Foreword‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)</title>
-<!--Generated on Thu Dec 19 22:09:38 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
-<!--Document created on December 19, 2024.-->
+<!--Generated on Fri Dec 20 23:12:35 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 20, 2024.-->
 
 <link rel="shortcut icon" href="../../favicon.ico" type="image/png">
 <link rel="stylesheet" href="../../LaTeXML.css" type="text/css">
@@ -24,6 +24,7 @@
 <link rel="chapter" href="../ch_Simulation/index.html" title="Chapter 7 Neural simulator ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="bibliography" href="../bib.html" title="Bibliography ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="index" href="../idx.html" title="Index ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<meta name="keywords" lang="en" content="von Neumann, ’zigzag’ way">
 </head>
 <body>
 <nav class="ltx_page_navbar">
@@ -31,8 +32,8 @@
 <img src="../graphics/BrainElectronics.png" class="ltx_graphics" width="227" height="128" alt="">
 <p class="ltx_p">Dynamic Abstract Neural Computing
 <br class="ltx_break">with Electronic Simulation
-<br class="ltx_break">DANCES Version <em class="ltx_emph ltx_font_italic">0.0.8</em>
-<br class="ltx_break">@December 19, 2024</p>
+<br class="ltx_break">DANCES Version <em class="ltx_emph ltx_font_italic">0.0.9</em>
+<br class="ltx_break">@December 20, 2024</p>
 </div>
 <div class="ltx_TOC">
 <ul class="ltx_toclist">
@@ -134,7 +135,8 @@ the decisions based on them, emerge only after a somewhat <a name="zigzagdiscuss
 necessary to take up one part first, pass after an incomplete discussion to a second part, return after
 an equally incomplete discussion of the latter with the combined results to the first part, extend
 the discussion of the first part without yet concluding it, then possibly go on to a third part, etc.
-Furthermore, these discussions of specific parts will be mixed with discussions of general principles, of the elements to be used, etc.”</p>
+Furthermore, these discussions of specific parts will be mixed with discussions of general principles, of the elements to be used, etc.”
+</p>
 </div>
 <div id="S0.SS0.SSS0.Px2.p2" class="ltx_para">
 <p class="ltx_p">We must also defy existing ideas and notions, shortly discuss why they show some initial successes and why they lead to wrong conclusions; furthermore, introduce new ideas (why we must combine electricity and thermodynamics instead of using them side by side in physiology; why we need to revisit physical principles to handle interactions with different speeds; which rules are valid when combining phenomena of the boundary of microscopic and macroscopic worlds; what is the true abstract operating principle of neurons; why information has a different meaning and needs different handling in technical and biological implementations). In our case, this zigzag way of reading
@@ -171,22 +173,19 @@ We want to rely on general principles and avoid implementing obsolete details fo
 <h2 class="ltx_title ltx_title_paragraph">Physiology</h2>
 
 <div id="S0.SS0.SSS0.Px4.p1" class="ltx_para">
-<p class="ltx_p"><a href="../ch_Physics/sec_Physics-Electrodiffusion/index.html#ElectrodiffusionProcesses" title="electrodiffusion processes ‣ § 2.4 Electrodiffusion ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref ltx_font_italic">The mentioned signals are electrochemical ones</a><span class="ltx_text ltx_font_italic"> with temporal behavior</span> instead of purely electrical and purely chemical ones
+<p class="ltx_p"><a href="../ch_Physics/sec_Physics-Electrodiffusion/sec_Physics-Thermodynamics/index.html#ElectrodiffusionProcesses" title="electrodiffusion processes ‣ § 2.6.1 Thermodynamics ‣ § 2.6 Electrodiffusion ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref ltx_font_italic">The mentioned signals are electrochemical ones</a><span class="ltx_text ltx_font_italic"> with temporal behavior</span> instead of purely electrical and purely chemical ones
 happening in a timeless world, with numerous significant consequences.
 Our point of view is new and unusual; it conflicts, on many points, with the commonly accepted opinions of the respective science.
 Physiology, which serves as the ”implementation base” for neural computing, needs a revolution and replacing the ”classic physiology” with ”modern physiology” by introducing a new paradigm, as the partial failure (concerning discovering secrets of neural computing) of the grandiose projects cited above has shown.
-Biology stayed at a static description level, typically appropriate for describing static states.
+Biology stayed at a static description level, typically appropriate for describing static states; using biology’s <span class="ltx_text ltx_font_italic">static entities</span> is insufficient.
 However, <span class="ltx_text ltx_font_italic">neural processes</span> happen at well-observable speeds which <span class="ltx_text ltx_font_italic">need a dynamic description instead of an ad-hoc description of state jumps</span>.
-For describing the observed phenomena –lacking the general laws of motion– case-by-case explanations are provided (in some cases lacking scientific reality), and ad hoc laws and understanding are provided.
-<span class="ltx_text ltx_font_italic">For the life sciences, the laws of motion (in the sense of Newton, Hamilton, and Schrödinger) are missing</span>. Even though it is stated
-”the emergence of life cannot be predicted by the laws of physics” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib13" title="" class="ltx_ref">13</a>]</cite>, furthermore, that the existence of life is against the laws of thermodynamics.</p>
-</div>
-<div id="S0.SS0.SSS0.Px4.p2" class="ltx_para">
-<p class="ltx_p">Describing physiological processes and understanding neural information processing need a revolution. Similarly to physics, we must introduce that for describing its <span class="ltx_text ltx_font_italic">processes</span>, using biology’s <span class="ltx_text ltx_font_italic">static entities</span> is insufficient.
-To study their <span class="ltx_text ltx_font_italic">dynamic</span> behavior, <span class="ltx_text ltx_font_italic">the laws of motion (based on <a href="../ch_Physics/sec_Physics-LawsOfMotion/sec_Nernst-time-derivatives/index.html#NP-TimeDerivatives" title="time derivative ‣ § 2.5.2 Calculating time derivatives ‣ § 2.5 Electrolyte’s laws of motion ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref">time derivatives</a> of the static entities) must be introduced</span>.
-We also <span class="ltx_text ltx_font_italic">need a <a href="../ch_Physics/sec_Physics-segmented/sec_Physics-Membranes/index.html#DynamicLayer" title="this layer’s ‣ § 2.6.3 Membranes &amp; layers ‣ § 2.6 Segmented electrolytes ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref">dynamically created component</a> which can implement
+For describing the observed phenomena case-by-case explanations are provided (in some cases lacking scientific reality), and ad hoc laws and understanding are provided.
+<span class="ltx_text ltx_font_italic">We introduce for life sciences the laws of motion (in the sense of Newton, Hamilton, and Schrödinger), (based on <a href="../ch_Physics/sec_Physics-LawsOfMotion/sec_Nernst-time-derivatives/index.html#NP-TimeDerivatives" title="time derivative ‣ § 2.7.2 Calculating time derivatives ‣ § 2.7 Electrolyte’s laws of motion ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref">time derivatives</a> of the static entities)</span>, furthermore, <span class="ltx_text ltx_font_italic">the needed <a href="../ch_Physics/sec_Physics-segmented/sec_Physics-Membranes/index.html#DynamicLayer" title="this layer’s ‣ § 2.8.3 Membranes &amp; layers ‣ § 2.8 Segmented electrolytes ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref">dynamically created component</a> which can implement
 the needed dynamic processes</span>.
-Considering them solves the mystery of how a biological neural network can react at a speed about two orders of magnitude higher than it could be expected based on its static behavior (the time difference between adjacent spikes) and, in general, <a href="../ch_Physiology/sec_Physiology-Electrodiffusion/sec_Physiology-Life/index.html#CellToLife" title="why a cell comes into life ‣ § 3.2.2 Connecting science to life ‣ § 3.2 Electrodiffusion ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref">how life science builds on top of science</a>.</p>
+Considering them solves the mystery of how a biological neural network can react at a speed about two orders of magnitude higher than it could be expected based on its static behavior (the time difference between adjacent spikes) and, in general, <a href="../ch_Physiology/sec_Physiology-Electrodiffusion/sec_Physiology-Life/index.html#CellToLife" title="why a cell comes into life ‣ § 3.2.2 Connecting science to life ‣ § 3.2 Electrodiffusion ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref">how life science builds on top of science</a>.
+Even though it is stated
+”the emergence of life cannot be predicted by the laws of physics” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib13" title="" class="ltx_ref">13</a>]</cite>, furthermore, that the existence of life is against the laws of thermodynamics.
+Describing physiological processes and understanding neural information processing need a revolution.</p>
 </div>
 </section>
 <section id="S0.SS0.SSS0.Px5" class="ltx_paragraph">
@@ -194,7 +193,8 @@ Considering them solves the mystery of how a biological neural network can react
 
 <div id="S0.SS0.SSS0.Px5.p1" class="ltx_para">
 <p class="ltx_p">Their slowness and complexity require explicitly considering the <span class="ltx_text ltx_font_italic">time-aware handling</span> of processes, including the ones of biological and technical computing.
-Essentially, we make the first steps towards answering E. Schrödinger’s question: ”How can the events in space and time which take place within the spatial boundary of a living organism be accounted for by physics and chemistry?” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib14" title="" class="ltx_ref">14</a>]</cite>
+Essentially, we make the first steps in section <a href="../ch_Physics/sec_Physics-Electrodiffusion/index.html" title="§ 2.6 Electrodiffusion ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.6</span></a> towards answering E. Schrödinger’s question: ”How can <span class="ltx_text ltx_font_italic">the events in space and time</span> which take place within the spatial boundary of a living organism be accounted for by physics and chemistry?” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib14" title="" class="ltx_ref">14</a>]</cite> (notice the need <span class="ltx_text ltx_font_italic">using events and describing the spatiotemporal behavior (in other words: implementing them by slow currents)</span> implied in the question; two items which
+our system targets)
 <span class="ltx_text ltx_font_italic">No presently available theoretical description and simulator can perform that task</span>.</p>
 </div>
 <div id="S0.SS0.SSS0.Px5.p2" class="ltx_para">
@@ -214,7 +214,7 @@ by dynamically changing constellations of synaptic weights’ and
 so we also
 model multiple neurons.
 To start with, we introduce <span class="ltx_text ltx_font_italic">science-based abstract dynamics</span>
-(by introducing the needed <a href="../ch_Physics/sec_Physics-LawsOfMotion/sec_Fick-Electrodiffusion/index.html#ElectrodiffusionLawOfMotion" title="Fick’s Second Law of Diffusion ‣ § 2.5.3 Fick’s Law for electrodiffusion ‣ § 2.5 Electrolyte’s laws of motion ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref">laws of motion</a>),
+(by introducing the needed <a href="../ch_Physics/sec_Physics-LawsOfMotion/sec_Fick-Electrodiffusion/index.html#ElectrodiffusionLawOfMotion" title="Fick’s Second Law of Diffusion ‣ § 2.7.3 Fick’s Law for electrodiffusion ‣ § 2.7 Electrolyte’s laws of motion ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref">laws of motion</a>),
 as opposed to the <span class="ltx_text ltx_font_italic">empirical cell-biology’s static</span> description of neuronal operation.</p>
 </div>
 </section>
@@ -232,7 +232,7 @@ without correct physical processes in the background (actually creating an alter
 instead of understanding the basics of the underlying processes.
 We show that when considering the correct physics, the finite size of neuronal membranes and the finite speed of
 ion currents solve the mystery that the combination of non-living materials shows
-<a href="../ch_Physics/sec_Physics-segmented/sec_Physics-Membranes/index.html#SignsOfLife" title="signs of life ‣ § 2.6.3 Membranes &amp; layers ‣ § 2.6 Segmented electrolytes ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref">signs of life</a> at an appropriate combination of their values.</p>
+<a href="../ch_Physics/sec_Physics-segmented/sec_Physics-Membranes/index.html#SignsOfLife" title="signs of life ‣ § 2.8.3 Membranes &amp; layers ‣ § 2.8 Segmented electrolytes ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref">signs of life</a> at an appropriate combination of their values.</p>
 </div>
 </section>
 <section id="S0.SS0.SSS0.Px7" class="ltx_paragraph">
@@ -366,7 +366,7 @@ but need time to be consistently put together. Please come back later and see if
 <div>
 <a href="../index.html" title="Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title">Dynamic Abstract Neural Computing<span class="ltx_text"> </span>with Electronic Simulation<span class="ltx_text"> </span>(DANCES)</span></a><a href="../bib.html" title="Bibliography ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="../idx.html" title="Index ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="../ch_Single/index.html" title="Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Abstract single neurons</span></a>
 </div>
-<div class="ltx_page_logo">Generated  on Thu Dec 19 22:09:38 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+<div class="ltx_page_logo">Generated  on Fri Dec 20 23:12:35 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
 </div></footer>
 </div>
 </body>
