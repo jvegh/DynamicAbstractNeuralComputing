@@ -1,0 +1,1734 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>C.12 Module LaTeXML-bib‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual</title>
+<!--Generated on Tue Dec 17 10:04:54 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 17, 2024.-->
+
+<link rel="shortcut icon" href="../../../favicon.ico" type="image/png">
+<link rel="stylesheet" href="../../../LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="../../../ltx-book.css" type="text/css">
+<link rel="stylesheet" href="../../../ltx-listings.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../../../latexmldoc.css" type="text/css">
+<script src="../../../LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="up" href="../" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="up up" href="../../" title="LaTeXML The Manual">
+<link rel="start" href="../../" title="LaTeXML The Manual">
+<link rel="prev" href="../LaTeXML-structure/" title="C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="next" href="../../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML/" title="C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-common/" title="C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-inline/" title="C.3 Module LaTeXML-inline ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-block/" title="C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-misc/" title="C.5 Module LaTeXML-misc ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-meta/" title="C.6 Module LaTeXML-meta ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-para/" title="C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-math/" title="C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-tabular/" title="C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-picture/" title="C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-structure/" title="C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../intro/" title="Chapter 1 Introduction ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../usage/" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../customization/" title="Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../localization/" title="Chapter 6 Localization ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../alignments/" title="Chapter 7 Alignments ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../metadata/" title="Chapter 8 Metadata ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../todo/" title="Chapter 9 ToDo ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../acknowledgements/" title="Acknowledgements ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../commands/" title="Appendix A Command Documentation ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual">
+<link rel="appendix" href="../" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../cssclasses/" title="Appendix E CSS Classes ‣ LaTeXML The Manual">
+<link rel="index" href="../../idx.html" title="Index ‣ LaTeXML The Manual">
+<meta name="keywords" lang="en" content=", , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , attribute, element, schema pattern">
+</head>
+<body>
+<nav class="ltx_page_navbar">
+<div class="ltx_para">
+<p class="ltx_p"><a href="../../" title="LaTeXML The Manual" class="ltx_ref"><img src="x1.png" class="ltx_graphics" width="215" height="50" alt=""></a>
+<br class="ltx_break"><img src="x2.png" class="ltx_graphics" width="130" height="168" alt="">
+<br class="ltx_break"></p>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../intro/" title="Chapter 1 Introduction ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Introduction</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../usage/" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Using <span class="ltx_ref ltx_font_typewriter">LaTeXML</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Architecture</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../customization/" title="Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Customization</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Mathematics</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../localization/" title="Chapter 6 Localization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>Localization</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../alignments/" title="Chapter 7 Alignments ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Alignments</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../metadata/" title="Chapter 8 Metadata ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>Metadata</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../todo/" title="Chapter 9 ToDo ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>ToDo</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../acknowledgements/" title="Acknowledgements ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Acknowledgements</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../commands/" title="Appendix A Command Documentation ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>Commands</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B </span>Bindings</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix">
+<a href="../" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C </span>Schema</span></a>
+<ul class="ltx_toclist ltx_toclist_appendix">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML/" title="C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.1 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-common/" title="C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.2 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-common</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-inline/" title="C.3 Module LaTeXML-inline ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.3 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-inline</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-block/" title="C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.4 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-block</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-misc/" title="C.5 Module LaTeXML-misc ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.5 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-misc</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-meta/" title="C.6 Module LaTeXML-meta ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.6 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-meta</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-para/" title="C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.7 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-para</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-math/" title="C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.8 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-math</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-tabular/" title="C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.9 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-tabular</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-picture/" title="C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.10 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-picture</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-structure/" title="C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.11 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-structure</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section ltx_ref_self"><span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.12 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-bib</span></span></span></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D </span>Error Codes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../cssclasses/" title="Appendix E CSS Classes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">E </span>CSS Classes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_index"><a href="../../idx.html" title="Index ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Index</span></a></li>
+</ul>
+</div></nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="../" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C </span>Schema</span></a><a href="../LaTeXML-structure/" title="C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.11 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-structure</span></span></a><a href="../../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D </span>Error Codes</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_1line">
+<h1 class="ltx_title ltx_align_left ltx_title_section">
+<span class="ltx_tag ltx_tag_section"> C.12 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-bib</span>
+</h1>
+
+<div id="p1" class="ltx_para ltx_align_left">
+<dl id="I1" class="ltx_description ltx_moduledescription">
+<dt id="I1.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">biblist</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.biblist" id="schema.biblist" class="ltx_anchor">A list of bibliographic <a href="#schema.bibentry" title="Semantic representation of a bibliography entry, typically resulting from parsing BibTeX ‣ item Element bibentry ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bibentry</a> or <a href="#schema.bibitem" title="A formatted bibliographic item, typically as written explicit in a LaTeX article. This has generally lost most of the semantics present in the BibTeX data. ‣ item Element bibitem ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bibitem</a>.
+</a></p>
+<dl id="I1.ix1.I1" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix1.I1.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix1.I1.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-structure/#schema.bibliography.body.class" title="The content allowable as the main body of a chapter. ‣ item Pattern bibliography.body.class ‣ C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bibliography.body.class</a>, <a href="../LaTeXML-structure/#schema.bibliography.body.class" title="The content allowable as the main body of a chapter. ‣ item Pattern bibliography.body.class ‣ C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bibliography.body.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">biblist_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix2.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.biblist_attributes" id="schema.biblist_attributes" class="ltx_anchor">Attributes for <a href="#schema.biblist" title="A list of bibliographic bibentry or bibitem. ‣ item Element biblist ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">biblist</a>.</a></p>
+<dl id="I1.ix2.I2" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix2.I2.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix2.I2.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">biblist_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.biblist_model" id="schema.biblist_model" class="ltx_anchor">Content model for <a href="#schema.biblist" title="A list of bibliographic bibentry or bibitem. ‣ item Element biblist ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">biblist</a>.</a></p>
+<dl id="I1.ix3.I3" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix3.I3.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix1.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.bibentry" title="Semantic representation of a bibliography entry, typically resulting from parsing BibTeX ‣ item Element bibentry ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bibentry</a>  |  <a href="#schema.bibitem" title="A formatted bibliographic item, typically as written explicit in a LaTeX article. This has generally lost most of the semantics present in the BibTeX data. ‣ item Element bibitem ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bibitem</a>)*</p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix2.p1" class="ltx_para">
+<p class="ltx_p">((<a href="#schema.bibentry" title="Semantic representation of a bibliography entry, typically resulting from parsing BibTeX ‣ item Element bibentry ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bibentry</a>  |  <a href="#schema.bibitem" title="A formatted bibliographic item, typically as written explicit in a LaTeX article. This has generally lost most of the semantics present in the BibTeX data. ‣ item Element bibitem ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bibitem</a>)*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bibitem</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix4.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bibitem" id="schema.bibitem" class="ltx_anchor">A formatted bibliographic item, typically as written explicit
+in a LaTeX article. This has generally lost most of the semantics
+present in the BibTeX data.
+</a></p>
+<dl id="I1.ix4.I4" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix4.I4.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix4.I4.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.biblist_model" title="Content model for biblist. ‣ item Pattern biblist_model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">biblist_model</a>, <a href="#schema.biblist_model" title="Content model for biblist. ‣ item Pattern biblist_model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">biblist_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix5" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bibitem_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix5.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bibitem_attributes" id="schema.bibitem_attributes" class="ltx_anchor">Attributes for <a href="#schema.bibitem" title="A formatted bibliographic item, typically as written explicit in a LaTeX article. This has generally lost most of the semantics present in the BibTeX data. ‣ item Element bibitem ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bibitem</a>.</a></p>
+<dl id="I1.ix5.I5" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix5.I5.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix5.I5.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix5.I5.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">key</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix5.I5.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix5.I5.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">The unique key for this object; this key is referenced by the
+<span class="ltx_text ltx_font_sansserif">bibrefs</span> attribute of <a href="../LaTeXML-inline/#schema.bibref" title="A bibliographic citation refering to a specific bibliographic item. Postprocessing will turn this into an ref for the actual link. ‣ item Element bibref ‣ C.3 Module LaTeXML-inline ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bibref</a>.</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix6" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bibitem_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bibitem_model" id="schema.bibitem_model" class="ltx_anchor">Content model for <a href="#schema.bibitem" title="A formatted bibliographic item, typically as written explicit in a LaTeX article. This has generally lost most of the semantics present in the BibTeX data. ‣ item Element bibitem ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bibitem</a>.</a></p>
+<dl id="I1.ix6.I6" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix6.I6.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.I6.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-block/#schema.tags" title="A container for one or more tags. At most one will have no role, which would be the default display. Other tag will have the role attribute for use in special forms of referencing. ‣ item Element tags ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tags</a>?, <a href="#schema.bibblock" title="A block of data appearing within a bibitem. ‣ item Element bibblock ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bibblock</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix6.I6.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.I6.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML-block/#schema.tags" title="A container for one or more tags. At most one will have no role, which would be the default display. Other tag will have the role attribute for use in special forms of referencing. ‣ item Element tags ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tags</a>?, <a href="#schema.bibblock" title="A block of data appearing within a bibitem. ‣ item Element bibblock ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bibblock</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix7" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bibblock</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bibblock" id="schema.bibblock" class="ltx_anchor">A block of data appearing within a <a href="#schema.bibitem" title="A formatted bibliographic item, typically as written explicit in a LaTeX article. This has generally lost most of the semantics present in the BibTeX data. ‣ item Element bibitem ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bibitem</a>.
+</a></p>
+<dl id="I1.ix7.I7" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix7.I7.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.I7.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.bibitem_model" title="Content model for bibitem. ‣ item Pattern bibitem_model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bibitem_model</a>, <a href="#schema.bibitem_model" title="Content model for bibitem. ‣ item Pattern bibitem_model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bibitem_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix8" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bibblock_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix8.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bibblock_attributes" id="schema.bibblock_attributes" class="ltx_anchor">Attributes for <a href="#schema.bibblock" title="A block of data appearing within a bibitem. ‣ item Element bibblock ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bibblock</a>.</a></p>
+<dl id="I1.ix8.I8" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix8.I8.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes:</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix8.I8.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix9" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bibblock_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix9.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bibblock_model" id="schema.bibblock_model" class="ltx_anchor">Content model for <a href="#schema.bibblock" title="A block of data appearing within a bibitem. ‣ item Element bibblock ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bibblock</a>.</a></p>
+<dl id="I1.ix9.I9" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix9.I9.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix9.I9.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Flow.model" title="Combined model for general flow containing both inline and block level content. ‣ item Pattern Flow.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Flow.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix9.I9.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix9.I9.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Flow.model" title="Combined model for general flow containing both inline and block level content. ‣ item Pattern Flow.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Flow.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix10" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bibentry</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix10.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bibentry" id="schema.bibentry" class="ltx_anchor">Semantic representation of a bibliography entry,
+typically resulting from parsing BibTeX
+</a></p>
+<dl id="I1.ix10.I10" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix10.I10.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix10.I10.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.biblist_model" title="Content model for biblist. ‣ item Pattern biblist_model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">biblist_model</a>, <a href="#schema.biblist_model" title="Content model for biblist. ‣ item Pattern biblist_model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">biblist_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix11" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bibentry.type</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix11.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bibentry.type" id="schema.bibentry.type" class="ltx_anchor"></a></p>
+<dl id="I1.ix11.I11" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix11.I11.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix11.I11.ix1.p1" class="ltx_para">
+<p class="ltx_p">(<span class="ltx_text ltx_font_typewriter">article</span>  |  <span class="ltx_text ltx_font_typewriter">book</span>  |  <span class="ltx_text ltx_font_typewriter">booklet</span>  |  <span class="ltx_text ltx_font_typewriter">conference</span>  |  <span class="ltx_text ltx_font_typewriter">inbook</span>  |  <span class="ltx_text ltx_font_typewriter">incollection</span>  |  <span class="ltx_text ltx_font_typewriter">inproceedings</span>  |  <span class="ltx_text ltx_font_typewriter">manual</span>  |  <span class="ltx_text ltx_font_typewriter">mastersthesis</span>  |  <span class="ltx_text ltx_font_typewriter">misc</span>  |  <span class="ltx_text ltx_font_typewriter">phdthesis</span>  |  <span class="ltx_text ltx_font_typewriter">proceedings</span>  |  <span class="ltx_text ltx_font_typewriter">techreport</span>  |  <span class="ltx_text ltx_font_typewriter">unpublished</span>  |  <span class="ltx_text ltx_font_typewriter">report</span>  |  <span class="ltx_text ltx_font_typewriter">thesis</span>  |  <span class="ltx_text ltx_font_typewriter">website</span>  |  <span class="ltx_text ltx_font_typewriter">software</span>  |  <span class="ltx_text ltx_font_typewriter">periodical</span>  |  <span class="ltx_text ltx_font_typewriter">collection</span>  |  <span class="ltx_text ltx_font_typewriter">collection.article</span>  |  <span class="ltx_text ltx_font_typewriter">proceedings.article</span>  |  <span class="ltx_text ltx_font_italic">text</span>)</p>
+</div>
+</dd>
+<dt id="I1.ix11.I11.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix11.I11.ix2.p1" class="ltx_para">
+<p class="ltx_p">((<span class="ltx_text ltx_font_typewriter">article</span>  |  <span class="ltx_text ltx_font_typewriter">book</span>  |  <span class="ltx_text ltx_font_typewriter">booklet</span>  |  <span class="ltx_text ltx_font_typewriter">conference</span>  |  <span class="ltx_text ltx_font_typewriter">inbook</span>  |  <span class="ltx_text ltx_font_typewriter">incollection</span>  |  <span class="ltx_text ltx_font_typewriter">inproceedings</span>  |  <span class="ltx_text ltx_font_typewriter">manual</span>  |  <span class="ltx_text ltx_font_typewriter">mastersthesis</span>  |  <span class="ltx_text ltx_font_typewriter">misc</span>  |  <span class="ltx_text ltx_font_typewriter">phdthesis</span>  |  <span class="ltx_text ltx_font_typewriter">proceedings</span>  |  <span class="ltx_text ltx_font_typewriter">techreport</span>  |  <span class="ltx_text ltx_font_typewriter">unpublished</span>  |  <span class="ltx_text ltx_font_typewriter">report</span>  |  <span class="ltx_text ltx_font_typewriter">thesis</span>  |  <span class="ltx_text ltx_font_typewriter">website</span>  |  <span class="ltx_text ltx_font_typewriter">software</span>  |  <span class="ltx_text ltx_font_typewriter">periodical</span>  |  <span class="ltx_text ltx_font_typewriter">collection</span>  |  <span class="ltx_text ltx_font_typewriter">collection.article</span>  |  <span class="ltx_text ltx_font_typewriter">proceedings.article</span>  |  <span class="ltx_text ltx_font_italic">text</span>))</p>
+</div>
+</dd>
+<dt id="I1.ix11.I11.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix11.I11.ix3.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.bib-related_attributes" title="Attributes for bib-related. ‣ item Pattern bib-related_attributes ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bib-related_attributes</a>, <a href="#schema.bibentry_attributes" title="Attributes for bibentry. ‣ item Pattern bibentry_attributes ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bibentry_attributes</a>, <a href="#schema.bib-related_attributes" title="Attributes for bib-related. ‣ item Pattern bib-related_attributes ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bib-related_attributes</a>, <a href="#schema.bibentry_attributes" title="Attributes for bibentry. ‣ item Pattern bibentry_attributes ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bibentry_attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix12" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bibentry_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix12.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bibentry_attributes" id="schema.bibentry_attributes" class="ltx_anchor">Attributes for <a href="#schema.bibentry" title="Semantic representation of a bibliography entry, typically resulting from parsing BibTeX ‣ item Element bibentry ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bibentry</a>.</a></p>
+<dl id="I1.ix12.I12" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix12.I12.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix12.I12.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix12.I12.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">key</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix12.I12.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix12.I12.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">The unique key for this object; this key is referenced by the
+<span class="ltx_text ltx_font_sansserif">bibrefs</span> attribute of <a href="../LaTeXML-inline/#schema.bibref" title="A bibliographic citation refering to a specific bibliographic item. Postprocessing will turn this into an ref for the actual link. ‣ item Element bibref ‣ C.3 Module LaTeXML-inline ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bibref</a>.</p>
+</div>
+</dd>
+<dt id="I1.ix12.I12.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">type</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix12.I12.ix3.p1" class="ltx_para">
+<p class="ltx_p">= <a href="#schema.bibentry.type" title="item Pattern bibentry.type ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bibentry.type</a></p>
+</div>
+<div id="I1.ix12.I12.ix3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">The type of the referenced object. The values are a superset of
+those types recognized by BibTeX, but is also open-ended for extensibility.</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix13" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bibentry_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix13.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bibentry_model" id="schema.bibentry_model" class="ltx_anchor">Content model for <a href="#schema.bibentry" title="Semantic representation of a bibliography entry, typically resulting from parsing BibTeX ‣ item Element bibentry ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bibentry</a>.</a></p>
+<dl id="I1.ix13.I13" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix13.I13.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix13.I13.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix13.I13.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix13.I13.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix14" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-name</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix14.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-name" id="schema.bib-name" class="ltx_anchor">Name of some participant in creating a bibliographic entry.
+</a></p>
+<dl id="I1.ix14.I14" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix14.I14.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix14.I14.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix15" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-name_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix15.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-name_attributes" id="schema.bib-name_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-name" title="Name of some participant in creating a bibliographic entry. ‣ item Element bib-name ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-name</a>.</a></p>
+<dl id="I1.ix15.I15" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix15.I15.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix15.I15.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix15.I15.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">role</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix15.I15.ix2.p1" class="ltx_para">
+<p class="ltx_p">= (<span class="ltx_text ltx_font_typewriter">author</span>  |  <span class="ltx_text ltx_font_typewriter">editor</span>  |  <span class="ltx_text ltx_font_typewriter">translator</span>  |  <span class="ltx_text ltx_font_italic">text</span>)</p>
+</div>
+<div id="I1.ix15.I15.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">The role that this participant played in creating the entry.</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix16" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-name_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix16.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-name_model" id="schema.bib-name_model" class="ltx_anchor">Content model for <a href="#schema.bib-name" title="Name of some participant in creating a bibliographic entry. ‣ item Element bib-name ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-name</a>.</a></p>
+<dl id="I1.ix16.I16" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix16.I16.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix16.I16.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibname.model" title="The content model of the bibliographic name fields (bib-name) ‣ item Pattern Bibname.model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibname.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix16.I16.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix16.I16.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.Bibname.model" title="The content model of the bibliographic name fields (bib-name) ‣ item Pattern Bibname.model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibname.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix17" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">Bibname.model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix17.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.Bibname.model" id="schema.Bibname.model" class="ltx_anchor">The content model of the bibliographic name fields (<a href="#schema.bib-name" title="Name of some participant in creating a bibliographic entry. ‣ item Element bib-name ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-name</a>)
+</a></p>
+<dl id="I1.ix17.I17" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix17.I17.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix17.I17.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.surname" title="Surname of a participant (bib-name). ‣ item Element surname ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">surname</a>, <a href="#schema.givenname" title="Given name of a participant (bib-name). ‣ item Element givenname ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">givenname</a>?, <a href="#schema.lineage" title="Lineage of a participant (bib-name), eg. Jr. or similar. ‣ item Element lineage ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">lineage</a>?</p>
+</div>
+</dd>
+<dt id="I1.ix17.I17.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix17.I17.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.surname" title="Surname of a participant (bib-name). ‣ item Element surname ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">surname</a>, <a href="#schema.givenname" title="Given name of a participant (bib-name). ‣ item Element givenname ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">givenname</a>?, <a href="#schema.lineage" title="Lineage of a participant (bib-name), eg. Jr. or similar. ‣ item Element lineage ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">lineage</a>?)</p>
+</div>
+</dd>
+<dt id="I1.ix17.I17.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix17.I17.ix3.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.bib-name_model" title="Content model for bib-name. ‣ item Pattern bib-name_model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bib-name_model</a>, <a href="#schema.bib-name_model" title="Content model for bib-name. ‣ item Pattern bib-name_model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bib-name_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix18" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">surname</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix18.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.surname" id="schema.surname" class="ltx_anchor">Surname of a participant (<a href="#schema.bib-name" title="Name of some participant in creating a bibliographic entry. ‣ item Element bib-name ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-name</a>).
+</a></p>
+<dl id="I1.ix18.I18" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix18.I18.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix18.I18.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibname.model" title="The content model of the bibliographic name fields (bib-name) ‣ item Pattern Bibname.model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibname.model</a>, <a href="#schema.Bibname.model" title="The content model of the bibliographic name fields (bib-name) ‣ item Pattern Bibname.model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibname.model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix19" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">surname_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix19.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.surname_attributes" id="schema.surname_attributes" class="ltx_anchor">Attributes for <a href="#schema.surname" title="Surname of a participant (bib-name). ‣ item Element surname ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">surname</a>.</a></p>
+<dl id="I1.ix19.I19" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix19.I19.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes:</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix19.I19.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix20" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">surname_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix20.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.surname_model" id="schema.surname_model" class="ltx_anchor">Content model for <a href="#schema.surname" title="Surname of a participant (bib-name). ‣ item Element surname ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">surname</a>.</a></p>
+<dl id="I1.ix20.I20" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix20.I20.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix20.I20.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix20.I20.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix20.I20.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix21" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">givenname</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix21.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.givenname" id="schema.givenname" class="ltx_anchor">Given name of a participant (<a href="#schema.bib-name" title="Name of some participant in creating a bibliographic entry. ‣ item Element bib-name ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-name</a>).
+</a></p>
+<dl id="I1.ix21.I21" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix21.I21.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix21.I21.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibname.model" title="The content model of the bibliographic name fields (bib-name) ‣ item Pattern Bibname.model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibname.model</a>, <a href="#schema.Bibname.model" title="The content model of the bibliographic name fields (bib-name) ‣ item Pattern Bibname.model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibname.model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix22" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">givenname_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix22.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.givenname_attributes" id="schema.givenname_attributes" class="ltx_anchor">Attributes for <a href="#schema.givenname" title="Given name of a participant (bib-name). ‣ item Element givenname ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">givenname</a>.</a></p>
+<dl id="I1.ix22.I22" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix22.I22.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes:</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix22.I22.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix23" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">givenname_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix23.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.givenname_model" id="schema.givenname_model" class="ltx_anchor">Content model for <a href="#schema.givenname" title="Given name of a participant (bib-name). ‣ item Element givenname ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">givenname</a>.</a></p>
+<dl id="I1.ix23.I23" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix23.I23.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix23.I23.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix23.I23.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix23.I23.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix24" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">lineage</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix24.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.lineage" id="schema.lineage" class="ltx_anchor">Lineage of a participant (<a href="#schema.bib-name" title="Name of some participant in creating a bibliographic entry. ‣ item Element bib-name ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-name</a>), eg. Jr. or similar.
+</a></p>
+<dl id="I1.ix24.I24" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix24.I24.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix24.I24.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibname.model" title="The content model of the bibliographic name fields (bib-name) ‣ item Pattern Bibname.model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibname.model</a>, <a href="#schema.Bibname.model" title="The content model of the bibliographic name fields (bib-name) ‣ item Pattern Bibname.model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibname.model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix25" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">lineage_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix25.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.lineage_attributes" id="schema.lineage_attributes" class="ltx_anchor">Attributes for <a href="#schema.lineage" title="Lineage of a participant (bib-name), eg. Jr. or similar. ‣ item Element lineage ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">lineage</a>.</a></p>
+<dl id="I1.ix25.I25" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix25.I25.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes:</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix25.I25.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix26" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">lineage_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix26.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.lineage_model" id="schema.lineage_model" class="ltx_anchor">Content model for <a href="#schema.lineage" title="Lineage of a participant (bib-name), eg. Jr. or similar. ‣ item Element lineage ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">lineage</a>.</a></p>
+<dl id="I1.ix26.I26" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix26.I26.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix26.I26.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix26.I26.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix26.I26.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix27" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-title</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix27.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-title" id="schema.bib-title" class="ltx_anchor">Title of a bibliographic entry.
+</a></p>
+<dl id="I1.ix27.I27" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix27.I27.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix27.I27.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix28" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-title_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix28.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-title_attributes" id="schema.bib-title_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-title" title="Title of a bibliographic entry. ‣ item Element bib-title ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-title</a>.</a></p>
+<dl id="I1.ix28.I28" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix28.I28.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix28.I28.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix29" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-title_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix29.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-title_model" id="schema.bib-title_model" class="ltx_anchor">Content model for <a href="#schema.bib-title" title="Title of a bibliographic entry. ‣ item Element bib-title ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-title</a>.</a></p>
+<dl id="I1.ix29.I29" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix29.I29.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix29.I29.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix29.I29.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix29.I29.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix30" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-subtitle</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix30.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-subtitle" id="schema.bib-subtitle" class="ltx_anchor">Subtitle of a bibliographic entry.
+</a></p>
+<dl id="I1.ix30.I30" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix30.I30.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix30.I30.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix31" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-subtitle_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix31.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-subtitle_attributes" id="schema.bib-subtitle_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-subtitle" title="Subtitle of a bibliographic entry. ‣ item Element bib-subtitle ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-subtitle</a>.</a></p>
+<dl id="I1.ix31.I31" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix31.I31.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix31.I31.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix32" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-subtitle_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix32.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-subtitle_model" id="schema.bib-subtitle_model" class="ltx_anchor">Content model for <a href="#schema.bib-subtitle" title="Subtitle of a bibliographic entry. ‣ item Element bib-subtitle ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-subtitle</a>.</a></p>
+<dl id="I1.ix32.I32" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix32.I32.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix32.I32.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix32.I32.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix32.I32.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix33" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-key</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix33.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-key" id="schema.bib-key" class="ltx_anchor">Unique key of a bibliographic entry.
+</a></p>
+<dl id="I1.ix33.I33" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix33.I33.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix33.I33.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix34" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-key_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix34.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-key_attributes" id="schema.bib-key_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-key" title="Unique key of a bibliographic entry. ‣ item Element bib-key ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-key</a>.</a></p>
+<dl id="I1.ix34.I34" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix34.I34.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix34.I34.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix35" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-key_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix35.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-key_model" id="schema.bib-key_model" class="ltx_anchor">Content model for <a href="#schema.bib-key" title="Unique key of a bibliographic entry. ‣ item Element bib-key ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-key</a>.</a></p>
+<dl id="I1.ix35.I35" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix35.I35.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix35.I35.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix35.I35.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix35.I35.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix36" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-type</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix36.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-type" id="schema.bib-type" class="ltx_anchor">Type of a bibliographic entry.
+</a></p>
+<dl id="I1.ix36.I36" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix36.I36.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix36.I36.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix37" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-type_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix37.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-type_attributes" id="schema.bib-type_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-type" title="Type of a bibliographic entry. ‣ item Element bib-type ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-type</a>.</a></p>
+<dl id="I1.ix37.I37" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix37.I37.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix37.I37.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix38" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-type_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix38.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-type_model" id="schema.bib-type_model" class="ltx_anchor">Content model for <a href="#schema.bib-type" title="Type of a bibliographic entry. ‣ item Element bib-type ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-type</a>.</a></p>
+<dl id="I1.ix38.I38" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix38.I38.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix38.I38.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix38.I38.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix38.I38.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix39" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-date</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix39.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-date" id="schema.bib-date" class="ltx_anchor">Date of a bibliographic entry.
+</a></p>
+<dl id="I1.ix39.I39" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix39.I39.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix39.I39.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix40" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-date_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix40.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-date_attributes" id="schema.bib-date_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-date" title="Date of a bibliographic entry. ‣ item Element bib-date ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-date</a>.</a></p>
+<dl id="I1.ix40.I40" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix40.I40.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix40.I40.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix40.I40.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">role</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix40.I40.ix2.p1" class="ltx_para">
+<p class="ltx_p">= (<span class="ltx_text ltx_font_typewriter">publication</span>  |  <span class="ltx_text ltx_font_typewriter">copyright</span>  |  <span class="ltx_text ltx_font_italic">text</span>)</p>
+</div>
+<div id="I1.ix40.I40.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">characterizes what happened on the given date</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix41" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-date_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix41.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-date_model" id="schema.bib-date_model" class="ltx_anchor">Content model for <a href="#schema.bib-date" title="Date of a bibliographic entry. ‣ item Element bib-date ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-date</a>.</a></p>
+<dl id="I1.ix41.I41" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix41.I41.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix41.I41.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix41.I41.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix41.I41.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix42" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-publisher</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix42.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-publisher" id="schema.bib-publisher" class="ltx_anchor">Publisher of a bibliographic entry.
+</a></p>
+<dl id="I1.ix42.I42" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix42.I42.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix42.I42.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix43" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-publisher_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix43.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-publisher_attributes" id="schema.bib-publisher_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-publisher" title="Publisher of a bibliographic entry. ‣ item Element bib-publisher ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-publisher</a>.</a></p>
+<dl id="I1.ix43.I43" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix43.I43.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix43.I43.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix44" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-publisher_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix44.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-publisher_model" id="schema.bib-publisher_model" class="ltx_anchor">Content model for <a href="#schema.bib-publisher" title="Publisher of a bibliographic entry. ‣ item Element bib-publisher ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-publisher</a>.</a></p>
+<dl id="I1.ix44.I44" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix44.I44.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix44.I44.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix44.I44.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix44.I44.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix45" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-organization</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix45.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-organization" id="schema.bib-organization" class="ltx_anchor">Organization responsible for a bibliographic entry.
+</a></p>
+<dl id="I1.ix45.I45" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix45.I45.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix45.I45.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix46" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-organization_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix46.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-organization_attributes" id="schema.bib-organization_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-organization" title="Organization responsible for a bibliographic entry. ‣ item Element bib-organization ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-organization</a>.</a></p>
+<dl id="I1.ix46.I46" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix46.I46.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix46.I46.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix47" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-organization_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix47.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-organization_model" id="schema.bib-organization_model" class="ltx_anchor">Content model for <a href="#schema.bib-organization" title="Organization responsible for a bibliographic entry. ‣ item Element bib-organization ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-organization</a>.</a></p>
+<dl id="I1.ix47.I47" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix47.I47.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix47.I47.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix47.I47.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix47.I47.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix48" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-place</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix48.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-place" id="schema.bib-place" class="ltx_anchor">Location of publisher or event
+</a></p>
+<dl id="I1.ix48.I48" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix48.I48.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix48.I48.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix49" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-place_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix49.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-place_attributes" id="schema.bib-place_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-place" title="Location of publisher or event ‣ item Element bib-place ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-place</a>.</a></p>
+<dl id="I1.ix49.I49" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix49.I49.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix49.I49.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix50" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-place_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix50.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-place_model" id="schema.bib-place_model" class="ltx_anchor">Content model for <a href="#schema.bib-place" title="Location of publisher or event ‣ item Element bib-place ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-place</a>.</a></p>
+<dl id="I1.ix50.I50" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix50.I50.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix50.I50.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix50.I50.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix50.I50.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix51" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-related</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix51.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-related" id="schema.bib-related" class="ltx_anchor">A Related bibliographic object, such as the book or journal
+that the current item is related to.
+</a></p>
+<dl id="I1.ix51.I51" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix51.I51.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix51.I51.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix52" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-related_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix52.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-related_attributes" id="schema.bib-related_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-related" title="A Related bibliographic object, such as the book or journal that the current item is related to. ‣ item Element bib-related ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-related</a>.</a></p>
+<dl id="I1.ix52.I52" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix52.I52.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix52.I52.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix52.I52.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">type</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix52.I52.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <a href="#schema.bibentry.type" title="item Pattern bibentry.type ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bibentry.type</a></p>
+</div>
+<div id="I1.ix52.I52.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">The type of this related entry.</p>
+</div>
+</dd>
+<dt id="I1.ix52.I52.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">role</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix52.I52.ix3.p1" class="ltx_para">
+<p class="ltx_p">= (<span class="ltx_text ltx_font_typewriter">host</span>  |  <span class="ltx_text ltx_font_typewriter">event</span>  |  <span class="ltx_text ltx_font_typewriter">original</span>  |  <span class="ltx_text ltx_font_italic">text</span>)</p>
+</div>
+<div id="I1.ix52.I52.ix3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">How this object relates to the containing object.
+Particularly important is <span class="ltx_text ltx_font_typewriter">host</span> which indicates that
+the outer object is a part of this object.</p>
+</div>
+</dd>
+<dt id="I1.ix52.I52.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bibrefs</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix52.I52.ix4.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix52.I52.ix4.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">If the bibrefs attribute is given, it is the key of another object in the bibliography,
+and this element should be empty; otherwise the object should be described by
+the content of the element.</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix53" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-related_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix53.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-related_model" id="schema.bib-related_model" class="ltx_anchor">Content model for <a href="#schema.bib-related" title="A Related bibliographic object, such as the book or journal that the current item is related to. ‣ item Element bib-related ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-related</a>.</a></p>
+<dl id="I1.ix53.I53" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix53.I53.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix53.I53.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix53.I53.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix53.I53.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix54" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-part</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix54.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-part" id="schema.bib-part" class="ltx_anchor">Describes how the current object is related to a related (<a href="#schema.bib-related" title="A Related bibliographic object, such as the book or journal that the current item is related to. ‣ item Element bib-related ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-related</a>)
+object, in particular page, part, volume numbers and similar.
+</a></p>
+<dl id="I1.ix54.I54" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix54.I54.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix54.I54.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix55" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-part_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix55.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-part_attributes" id="schema.bib-part_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-part" title="Describes how the current object is related to a related (bib-related) object, in particular page, part, volume numbers and similar. ‣ item Element bib-part ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-part</a>.</a></p>
+<dl id="I1.ix55.I55" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix55.I55.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix55.I55.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix55.I55.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">role</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix55.I55.ix2.p1" class="ltx_para">
+<p class="ltx_p">= (<span class="ltx_text ltx_font_typewriter">pages</span>  |  <span class="ltx_text ltx_font_typewriter">part</span>  |  <span class="ltx_text ltx_font_typewriter">volume</span>  |  <span class="ltx_text ltx_font_typewriter">issue</span>  |  <span class="ltx_text ltx_font_typewriter">number</span>  |  <span class="ltx_text ltx_font_typewriter">chapter</span>  |  <span class="ltx_text ltx_font_typewriter">section</span>  |  <span class="ltx_text ltx_font_typewriter">paragraph</span>  |  <span class="ltx_text ltx_font_italic">text</span>)</p>
+</div>
+<div id="I1.ix55.I55.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">indicates how the value partitions the containing object.</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix56" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-part_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix56.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-part_model" id="schema.bib-part_model" class="ltx_anchor">Content model for <a href="#schema.bib-part" title="Describes how the current object is related to a related (bib-related) object, in particular page, part, volume numbers and similar. ‣ item Element bib-part ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-part</a>.</a></p>
+<dl id="I1.ix56.I56" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix56.I56.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix56.I56.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix56.I56.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix56.I56.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix57" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-edition</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix57.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-edition" id="schema.bib-edition" class="ltx_anchor">Edition of a bibliographic entry.
+</a></p>
+<dl id="I1.ix57.I57" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix57.I57.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix57.I57.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix58" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-edition_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix58.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-edition_attributes" id="schema.bib-edition_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-edition" title="Edition of a bibliographic entry. ‣ item Element bib-edition ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-edition</a>.</a></p>
+<dl id="I1.ix58.I58" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix58.I58.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix58.I58.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix59" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-edition_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix59.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-edition_model" id="schema.bib-edition_model" class="ltx_anchor">Content model for <a href="#schema.bib-edition" title="Edition of a bibliographic entry. ‣ item Element bib-edition ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-edition</a>.</a></p>
+<dl id="I1.ix59.I59" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix59.I59.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix59.I59.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix59.I59.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix59.I59.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix60" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-status</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix60.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-status" id="schema.bib-status" class="ltx_anchor">Status of a bibliographic entry.
+</a></p>
+<dl id="I1.ix60.I60" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix60.I60.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix60.I60.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix61" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-status_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix61.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-status_attributes" id="schema.bib-status_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-status" title="Status of a bibliographic entry. ‣ item Element bib-status ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-status</a>.</a></p>
+<dl id="I1.ix61.I61" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix61.I61.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix61.I61.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix62" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-status_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix62.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-status_model" id="schema.bib-status_model" class="ltx_anchor">Content model for <a href="#schema.bib-status" title="Status of a bibliographic entry. ‣ item Element bib-status ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-status</a>.</a></p>
+<dl id="I1.ix62.I62" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix62.I62.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix62.I62.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix62.I62.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix62.I62.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix63" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-identifier</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix63.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-identifier" id="schema.bib-identifier" class="ltx_anchor">Some form of document identfier. The content is descriptive.
+</a></p>
+<dl id="I1.ix63.I63" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix63.I63.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix63.I63.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix64" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-identifier_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix64.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-identifier_attributes" id="schema.bib-identifier_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-identifier" title="Some form of document identfier. The content is descriptive. ‣ item Element bib-identifier ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-identifier</a>.</a></p>
+<dl id="I1.ix64.I64" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix64.I64.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix64.I64.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.Refable.attributes" title="Attributes for elements that can be referred to from within LaTeX. Such elements may serve as the starting point of a hypertext link. The reference can be made using label, xml:id or href; these attributes will be converted, as needed, from the former to the latter. ‣ item Pattern Refable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Refable.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix64.I64.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">scheme</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix64.I64.ix2.p1" class="ltx_para">
+<p class="ltx_p">= (<span class="ltx_text ltx_font_typewriter">doi</span>  |  <span class="ltx_text ltx_font_typewriter">issn</span>  |  <span class="ltx_text ltx_font_typewriter">isbn</span>  |  <span class="ltx_text ltx_font_typewriter">mr</span>  |  <span class="ltx_text ltx_font_italic">text</span>)</p>
+</div>
+<div id="I1.ix64.I64.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">indicates what sort of identifier it is; it is open-ended for extensibility.</p>
+</div>
+</dd>
+<dt id="I1.ix64.I64.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">id</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix64.I64.ix3.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix64.I64.ix3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">the identifier.</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix65" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-identifier_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix65.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-identifier_model" id="schema.bib-identifier_model" class="ltx_anchor">Content model for <a href="#schema.bib-identifier" title="Some form of document identfier. The content is descriptive. ‣ item Element bib-identifier ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-identifier</a>.</a></p>
+<dl id="I1.ix65.I65" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix65.I65.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix65.I65.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix65.I65.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix65.I65.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix66" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-review</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix66.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-review" id="schema.bib-review" class="ltx_anchor">Review of a bibliographic entry. The content is descriptive.
+</a></p>
+<dl id="I1.ix66.I66" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix66.I66.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix66.I66.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix67" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-review_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix67.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-review_attributes" id="schema.bib-review_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-review" title="Review of a bibliographic entry. The content is descriptive. ‣ item Element bib-review ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-review</a>.</a></p>
+<dl id="I1.ix67.I67" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix67.I67.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix67.I67.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.Refable.attributes" title="Attributes for elements that can be referred to from within LaTeX. Such elements may serve as the starting point of a hypertext link. The reference can be made using label, xml:id or href; these attributes will be converted, as needed, from the former to the latter. ‣ item Pattern Refable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Refable.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix67.I67.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">scheme</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix67.I67.ix2.p1" class="ltx_para">
+<p class="ltx_p">= (<span class="ltx_text ltx_font_typewriter">doi</span>  |  <span class="ltx_text ltx_font_typewriter">issn</span>  |  <span class="ltx_text ltx_font_typewriter">isbn</span>  |  <span class="ltx_text ltx_font_typewriter">mr</span>  |  <span class="ltx_text ltx_font_italic">text</span>)</p>
+</div>
+<div id="I1.ix67.I67.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">indicates what sort of identifier it is; it is open-ended for extensibility.</p>
+</div>
+</dd>
+<dt id="I1.ix67.I67.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">id</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix67.I67.ix3.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix67.I67.ix3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">the identifier.</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix68" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-review_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix68.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-review_model" id="schema.bib-review_model" class="ltx_anchor">Content model for <a href="#schema.bib-review" title="Review of a bibliographic entry. The content is descriptive. ‣ item Element bib-review ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-review</a>.</a></p>
+<dl id="I1.ix68.I68" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix68.I68.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix68.I68.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix68.I68.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix68.I68.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix69" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-links</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix69.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-links" id="schema.bib-links" class="ltx_anchor">Links to other things like preprints, source code, etc.
+</a></p>
+<dl id="I1.ix69.I69" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix69.I69.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix69.I69.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix70" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-links_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix70.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-links_attributes" id="schema.bib-links_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-links" title="Links to other things like preprints, source code, etc. ‣ item Element bib-links ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-links</a>.</a></p>
+<dl id="I1.ix70.I70" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix70.I70.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix70.I70.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix71" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-links_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix71.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-links_model" id="schema.bib-links_model" class="ltx_anchor">Content model for <a href="#schema.bib-links" title="Links to other things like preprints, source code, etc. ‣ item Element bib-links ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-links</a>.</a></p>
+<dl id="I1.ix71.I71" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix71.I71.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix71.I71.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix71.I71.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix71.I71.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix72" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-language</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix72.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-language" id="schema.bib-language" class="ltx_anchor">Language of a bibliographic entry.
+</a></p>
+<dl id="I1.ix72.I72" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix72.I72.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix72.I72.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix73" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-language_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix73.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-language_attributes" id="schema.bib-language_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-language" title="Language of a bibliographic entry. ‣ item Element bib-language ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-language</a>.</a></p>
+<dl id="I1.ix73.I73" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix73.I73.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix73.I73.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix74" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-language_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix74.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-language_model" id="schema.bib-language_model" class="ltx_anchor">Content model for <a href="#schema.bib-language" title="Language of a bibliographic entry. ‣ item Element bib-language ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-language</a>.</a></p>
+<dl id="I1.ix74.I74" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix74.I74.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix74.I74.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix74.I74.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix74.I74.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix75" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-url</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix75.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-url" id="schema.bib-url" class="ltx_anchor">A URL for a bibliographic entry. The content is descriptive
+</a></p>
+<dl id="I1.ix75.I75" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix75.I75.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix75.I75.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix76" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-url_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix76.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-url_attributes" id="schema.bib-url_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-url" title="A URL for a bibliographic entry. The content is descriptive ‣ item Element bib-url ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-url</a>.</a></p>
+<dl id="I1.ix76.I76" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix76.I76.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix76.I76.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.Refable.attributes" title="Attributes for elements that can be referred to from within LaTeX. Such elements may serve as the starting point of a hypertext link. The reference can be made using label, xml:id or href; these attributes will be converted, as needed, from the former to the latter. ‣ item Pattern Refable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Refable.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix77" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-url_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix77.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-url_model" id="schema.bib-url_model" class="ltx_anchor">Content model for <a href="#schema.bib-url" title="A URL for a bibliographic entry. The content is descriptive ‣ item Element bib-url ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-url</a>.</a></p>
+<dl id="I1.ix77.I77" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix77.I77.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix77.I77.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix77.I77.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix77.I77.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix78" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-extract</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix78.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-extract" id="schema.bib-extract" class="ltx_anchor">An extract from the referenced object.
+</a></p>
+<dl id="I1.ix78.I78" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix78.I78.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix78.I78.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix79" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-extract_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix79.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-extract_attributes" id="schema.bib-extract_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-extract" title="An extract from the referenced object. ‣ item Element bib-extract ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-extract</a>.</a></p>
+<dl id="I1.ix79.I79" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix79.I79.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix79.I79.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix79.I79.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">role</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix79.I79.ix2.p1" class="ltx_para">
+<p class="ltx_p">= (<span class="ltx_text ltx_font_typewriter">keywords</span>  |  <span class="ltx_text ltx_font_typewriter">abstract</span>  |  <span class="ltx_text ltx_font_typewriter">contents</span>  |  <span class="ltx_text ltx_font_italic">text</span>)</p>
+</div>
+<div id="I1.ix79.I79.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Classify what kind of extract</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix80" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-extract_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix80.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-extract_model" id="schema.bib-extract_model" class="ltx_anchor">Content model for <a href="#schema.bib-extract" title="An extract from the referenced object. ‣ item Element bib-extract ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-extract</a>.</a></p>
+<dl id="I1.ix80.I80" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix80.I80.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix80.I80.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix80.I80.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix80.I80.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix81" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-note</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix81.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-note" id="schema.bib-note" class="ltx_anchor">Notes about a bibliographic entry.
+</a></p>
+<dl id="I1.ix81.I81" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix81.I81.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix81.I81.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix82" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-note_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix82.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-note_attributes" id="schema.bib-note_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-note" title="Notes about a bibliographic entry. ‣ item Element bib-note ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-note</a>.</a></p>
+<dl id="I1.ix82.I82" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix82.I82.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix82.I82.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix82.I82.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">role</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix82.I82.ix2.p1" class="ltx_para">
+<p class="ltx_p">= (<span class="ltx_text ltx_font_typewriter">annotation</span>  |  <span class="ltx_text ltx_font_typewriter">publication</span>  |  <span class="ltx_text ltx_font_italic">text</span>)</p>
+</div>
+<div id="I1.ix82.I82.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Classify the kind of note</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix83" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-note_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix83.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-note_model" id="schema.bib-note_model" class="ltx_anchor">Content model for <a href="#schema.bib-note" title="Notes about a bibliographic entry. ‣ item Element bib-note ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-note</a>.</a></p>
+<dl id="I1.ix83.I83" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix83.I83.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix83.I83.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix83.I83.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix83.I83.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix84" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bib-data</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix84.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-data" id="schema.bib-data" class="ltx_anchor">Random data, not necessarily even text.
+(future questions: should model be text or ANY? maybe should have encoding attribute?).
+</a></p>
+<dl id="I1.ix84.I84" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix84.I84.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix84.I84.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a>, <a href="#schema.Bibentry.class" title="item Pattern Bibentry.class ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Bibentry.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix85" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-data_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix85.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-data_attributes" id="schema.bib-data_attributes" class="ltx_anchor">Attributes for <a href="#schema.bib-data" title="Random data, not necessarily even text. (future questions: should model be text or ANY? maybe should have encoding attribute?). ‣ item Element bib-data ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-data</a>.</a></p>
+<dl id="I1.ix85.I85" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix85.I85.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix85.I85.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix85.I85.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">role</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix85.I85.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix85.I85.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Classify the relationship of the data to the entry.</p>
+</div>
+</dd>
+<dt id="I1.ix85.I85.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">type</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix85.I85.ix3.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix85.I85.ix3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Classify the type of the data.</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix86" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bib-data_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix86.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bib-data_model" id="schema.bib-data_model" class="ltx_anchor">Content model for <a href="#schema.bib-data" title="Random data, not necessarily even text. (future questions: should model be text or ANY? maybe should have encoding attribute?). ‣ item Element bib-data ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-data</a>.</a></p>
+<dl id="I1.ix86.I86" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix86.I86.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix86.I86.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix86.I86.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix86.I86.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix87" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">Bibentry.class</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix87.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.Bibentry.class" id="schema.Bibentry.class" class="ltx_anchor"></a></p>
+<dl id="I1.ix87.I87" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix87.I87.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix87.I87.ix1.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.bib-name" title="Name of some participant in creating a bibliographic entry. ‣ item Element bib-name ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-name</a>  |  <a href="#schema.bib-title" title="Title of a bibliographic entry. ‣ item Element bib-title ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-title</a>  |  <a href="#schema.bib-subtitle" title="Subtitle of a bibliographic entry. ‣ item Element bib-subtitle ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-subtitle</a>  |  <a href="#schema.bib-key" title="Unique key of a bibliographic entry. ‣ item Element bib-key ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-key</a>  |  <a href="#schema.bib-type" title="Type of a bibliographic entry. ‣ item Element bib-type ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-type</a>  |  <a href="#schema.bib-date" title="Date of a bibliographic entry. ‣ item Element bib-date ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-date</a>  |  <a href="#schema.bib-publisher" title="Publisher of a bibliographic entry. ‣ item Element bib-publisher ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-publisher</a>  |  <a href="#schema.bib-organization" title="Organization responsible for a bibliographic entry. ‣ item Element bib-organization ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-organization</a>  |  <a href="#schema.bib-place" title="Location of publisher or event ‣ item Element bib-place ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-place</a>  |  <a href="#schema.bib-part" title="Describes how the current object is related to a related (bib-related) object, in particular page, part, volume numbers and similar. ‣ item Element bib-part ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-part</a>  |  <a href="#schema.bib-related" title="A Related bibliographic object, such as the book or journal that the current item is related to. ‣ item Element bib-related ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-related</a>  |  <a href="#schema.bib-edition" title="Edition of a bibliographic entry. ‣ item Element bib-edition ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-edition</a>  |  <a href="#schema.bib-status" title="Status of a bibliographic entry. ‣ item Element bib-status ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-status</a>  |  <a href="#schema.bib-language" title="Language of a bibliographic entry. ‣ item Element bib-language ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-language</a>  |  <a href="#schema.bib-url" title="A URL for a bibliographic entry. The content is descriptive ‣ item Element bib-url ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-url</a>  |  <a href="#schema.bib-note" title="Notes about a bibliographic entry. ‣ item Element bib-note ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-note</a>  |  <a href="#schema.bib-extract" title="An extract from the referenced object. ‣ item Element bib-extract ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-extract</a>  |  <a href="#schema.bib-identifier" title="Some form of document identfier. The content is descriptive. ‣ item Element bib-identifier ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-identifier</a>  |  <a href="#schema.bib-review" title="Review of a bibliographic entry. The content is descriptive. ‣ item Element bib-review ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-review</a>  |  <a href="#schema.bib-links" title="Links to other things like preprints, source code, etc. ‣ item Element bib-links ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-links</a>  |  <a href="#schema.bib-data" title="Random data, not necessarily even text. (future questions: should model be text or ANY? maybe should have encoding attribute?). ‣ item Element bib-data ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-data</a>)</p>
+</div>
+</dd>
+<dt id="I1.ix87.I87.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix87.I87.ix2.p1" class="ltx_para">
+<p class="ltx_p">((<a href="#schema.bib-name" title="Name of some participant in creating a bibliographic entry. ‣ item Element bib-name ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-name</a>  |  <a href="#schema.bib-title" title="Title of a bibliographic entry. ‣ item Element bib-title ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-title</a>  |  <a href="#schema.bib-subtitle" title="Subtitle of a bibliographic entry. ‣ item Element bib-subtitle ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-subtitle</a>  |  <a href="#schema.bib-key" title="Unique key of a bibliographic entry. ‣ item Element bib-key ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-key</a>  |  <a href="#schema.bib-type" title="Type of a bibliographic entry. ‣ item Element bib-type ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-type</a>  |  <a href="#schema.bib-date" title="Date of a bibliographic entry. ‣ item Element bib-date ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-date</a>  |  <a href="#schema.bib-publisher" title="Publisher of a bibliographic entry. ‣ item Element bib-publisher ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-publisher</a>  |  <a href="#schema.bib-organization" title="Organization responsible for a bibliographic entry. ‣ item Element bib-organization ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-organization</a>  |  <a href="#schema.bib-place" title="Location of publisher or event ‣ item Element bib-place ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-place</a>  |  <a href="#schema.bib-part" title="Describes how the current object is related to a related (bib-related) object, in particular page, part, volume numbers and similar. ‣ item Element bib-part ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-part</a>  |  <a href="#schema.bib-related" title="A Related bibliographic object, such as the book or journal that the current item is related to. ‣ item Element bib-related ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-related</a>  |  <a href="#schema.bib-edition" title="Edition of a bibliographic entry. ‣ item Element bib-edition ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-edition</a>  |  <a href="#schema.bib-status" title="Status of a bibliographic entry. ‣ item Element bib-status ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-status</a>  |  <a href="#schema.bib-language" title="Language of a bibliographic entry. ‣ item Element bib-language ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-language</a>  |  <a href="#schema.bib-url" title="A URL for a bibliographic entry. The content is descriptive ‣ item Element bib-url ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-url</a>  |  <a href="#schema.bib-note" title="Notes about a bibliographic entry. ‣ item Element bib-note ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-note</a>  |  <a href="#schema.bib-extract" title="An extract from the referenced object. ‣ item Element bib-extract ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-extract</a>  |  <a href="#schema.bib-identifier" title="Some form of document identfier. The content is descriptive. ‣ item Element bib-identifier ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-identifier</a>  |  <a href="#schema.bib-review" title="Review of a bibliographic entry. The content is descriptive. ‣ item Element bib-review ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-review</a>  |  <a href="#schema.bib-links" title="Links to other things like preprints, source code, etc. ‣ item Element bib-links ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-links</a>  |  <a href="#schema.bib-data" title="Random data, not necessarily even text. (future questions: should model be text or ANY? maybe should have encoding attribute?). ‣ item Element bib-data ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bib-data</a>))</p>
+</div>
+</dd>
+<dt id="I1.ix87.I87.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix87.I87.ix3.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.bib-related_model" title="Content model for bib-related. ‣ item Pattern bib-related_model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bib-related_model</a>, <a href="#schema.bibentry_model" title="Content model for bibentry. ‣ item Pattern bibentry_model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bibentry_model</a>, <a href="#schema.bib-related_model" title="Content model for bib-related. ‣ item Pattern bib-related_model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bib-related_model</a>, <a href="#schema.bibentry_model" title="Content model for bibentry. ‣ item Pattern bibentry_model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bibentry_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+</div>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="../LaTeXML-structure/" title="C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.11 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-structure</span></span></a><a href="../../idx.html" title="Index ‣ LaTeXML The Manual" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="../../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D </span>Error Codes</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Tue Dec 17 10:04:54 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

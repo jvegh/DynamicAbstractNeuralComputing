@@ -1,0 +1,1144 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>C.8 Module LaTeXML-math‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual</title>
+<!--Generated on Tue Dec 17 10:04:54 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 17, 2024.-->
+
+<link rel="shortcut icon" href="../../../favicon.ico" type="image/png">
+<link rel="stylesheet" href="../../../LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="../../../ltx-book.css" type="text/css">
+<link rel="stylesheet" href="../../../ltx-listings.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../../../latexmldoc.css" type="text/css">
+<script src="../../../LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="up" href="../" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="up up" href="../../" title="LaTeXML The Manual">
+<link rel="start" href="../../" title="LaTeXML The Manual">
+<link rel="prev" href="../LaTeXML-para/" title="C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="next" href="../LaTeXML-tabular/" title="C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML/" title="C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-common/" title="C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-inline/" title="C.3 Module LaTeXML-inline ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-block/" title="C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-misc/" title="C.5 Module LaTeXML-misc ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-meta/" title="C.6 Module LaTeXML-meta ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-para/" title="C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-tabular/" title="C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-picture/" title="C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-structure/" title="C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-bib/" title="C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../intro/" title="Chapter 1 Introduction ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../usage/" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../customization/" title="Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../localization/" title="Chapter 6 Localization ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../alignments/" title="Chapter 7 Alignments ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../metadata/" title="Chapter 8 Metadata ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../todo/" title="Chapter 9 ToDo ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../acknowledgements/" title="Acknowledgements ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../commands/" title="Appendix A Command Documentation ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual">
+<link rel="appendix" href="../" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../cssclasses/" title="Appendix E CSS Classes ‣ LaTeXML The Manual">
+<link rel="index" href="../../idx.html" title="Index ‣ LaTeXML The Manual">
+<meta name="keywords" lang="en" content=", , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , attribute, element, schema pattern">
+</head>
+<body>
+<nav class="ltx_page_navbar">
+<div class="ltx_para">
+<p class="ltx_p"><a href="../../" title="LaTeXML The Manual" class="ltx_ref"><img src="x1.png" class="ltx_graphics" width="215" height="50" alt=""></a>
+<br class="ltx_break"><img src="x2.png" class="ltx_graphics" width="130" height="168" alt="">
+<br class="ltx_break"></p>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../intro/" title="Chapter 1 Introduction ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Introduction</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../usage/" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Using <span class="ltx_ref ltx_font_typewriter">LaTeXML</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Architecture</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../customization/" title="Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Customization</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Mathematics</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../localization/" title="Chapter 6 Localization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>Localization</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../alignments/" title="Chapter 7 Alignments ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Alignments</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../metadata/" title="Chapter 8 Metadata ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>Metadata</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../todo/" title="Chapter 9 ToDo ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>ToDo</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../acknowledgements/" title="Acknowledgements ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Acknowledgements</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../commands/" title="Appendix A Command Documentation ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>Commands</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B </span>Bindings</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix">
+<a href="../" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C </span>Schema</span></a>
+<ul class="ltx_toclist ltx_toclist_appendix">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML/" title="C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.1 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-common/" title="C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.2 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-common</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-inline/" title="C.3 Module LaTeXML-inline ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.3 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-inline</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-block/" title="C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.4 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-block</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-misc/" title="C.5 Module LaTeXML-misc ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.5 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-misc</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-meta/" title="C.6 Module LaTeXML-meta ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.6 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-meta</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-para/" title="C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.7 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-para</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section ltx_ref_self"><span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.8 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-math</span></span></span></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-tabular/" title="C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.9 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-tabular</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-picture/" title="C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.10 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-picture</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-structure/" title="C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.11 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-structure</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-bib/" title="C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.12 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-bib</span></span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D </span>Error Codes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../cssclasses/" title="Appendix E CSS Classes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">E </span>CSS Classes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_index"><a href="../../idx.html" title="Index ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Index</span></a></li>
+</ul>
+</div></nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="../" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C </span>Schema</span></a><a href="../LaTeXML-para/" title="C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.7 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-para</span></span></a><a href="../LaTeXML-tabular/" title="C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.9 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-tabular</span></span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_1line">
+<h1 class="ltx_title ltx_align_left ltx_title_section">
+<span class="ltx_tag ltx_tag_section"> C.8 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-math</span>
+</h1>
+
+<div id="p1" class="ltx_para ltx_align_left">
+<dl id="I1" class="ltx_description ltx_moduledescription">
+<dt id="I1.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Add to <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">Inline.class</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix1.p1" class="ltx_para">
+<p class="ltx_p">The math module defines LaTeXML’s internal representation of mathematical
+content, including the basic math container <a href="#schema.Math" title="Outer container for all math. This holds the internal XMath representation, as well as image data and other representations. ‣ item Element Math ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">Math</a>. This element is
+considered inline, as it will be contained within some other block-level
+element, eg. <a href="../LaTeXML-block/#schema.equation" title="An Equation. The model is just Inline which includes Math, the main expected ingredient. However, other things can end up in display math, too, so we use Inline. Note that tabular is here only because it’s a common, if misguided, idiom; the processor will lift such elements out of math, when possible ‣ item Element equation ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">equation</a> for display-math.</p>
+<dl id="I1.ix1.I1" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix1.I1.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item">|=</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix1.I1.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Math" title="Outer container for all math. This holds the internal XMath representation, as well as image data and other representations. ‣ item Element Math ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">Math</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">Math.class</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix2.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.Math.class" id="schema.Math.class" class="ltx_anchor">This class defines the content of the <a href="#schema.Math" title="Outer container for all math. This holds the internal XMath representation, as well as image data and other representations. ‣ item Element Math ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">Math</a> element.
+Additionally, it could contain MathML or OpenMath, after postprocessing.
+</a></p>
+<dl id="I1.ix2.I2" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix2.I2.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix2.I2.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMath" title="Internal representation of mathematics. ‣ item Element XMath ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMath</a></p>
+</div>
+</dd>
+<dt id="I1.ix2.I2.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix2.I2.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.XMath" title="Internal representation of mathematics. ‣ item Element XMath ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMath</a>)</p>
+</div>
+</dd>
+<dt id="I1.ix2.I2.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix2.I2.ix3.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Math_model" title="Content model for Math. ‣ item Pattern Math_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Math_model</a>, <a href="#schema.Math_model" title="Content model for Math. ‣ item Pattern Math_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Math_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMath.class</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMath.class" id="schema.XMath.class" class="ltx_anchor">These elements comprise the internal math representation, being
+the content of the <a href="#schema.XMath" title="Internal representation of mathematics. ‣ item Element XMath ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMath</a> element.
+</a></p>
+<dl id="I1.ix3.I3" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix3.I3.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix1.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.XMApp" title="Generalized application of a function, operator, whatever (the first child) to arguments (the remaining children). The attributes are a subset of those for XMTok. ‣ item Element XMApp ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMApp</a>  |  <a href="#schema.XMTok" title="General mathematical token. ‣ item Element XMTok ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMTok</a>  |  <a href="#schema.XMRef" title="Structure sharing element typically used in the presentation branch of an XMDual to refer to the arguments present in the content branch. ‣ item Element XMRef ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMRef</a>  |  <a href="#schema.XMHint" title="Various layout hints, usually spacing, generally ignored in parsing. The attributes are a subset of those for XMTok. ‣ item Element XMHint ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMHint</a>  |  <a href="#schema.XMArg" title="Wrapper for an argument to a structured macro. It implies that its content can be parsed independently of its parent, and thus generally disappears after parsing. ‣ item Element XMArg ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMArg</a>  |  <a href="#schema.XMWrap" title="Wrapper for a sequence of tokens used to assert the role of the contents in its parent. This element generally disappears after parsing. The attributes are a subset of those for XMTok. ‣ item Element XMWrap ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMWrap</a>  |  <a href="#schema.XMDual" title="Parallel markup of content (first child) and presentation (second child) of a mathematical object. Typically, the arguments are shared between the two branches: they appear in the content branch, with id’s, and XMRef is used in the presentation branch ‣ item Element XMDual ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMDual</a>  |  <a href="#schema.XMText" title="Text appearing within math. ‣ item Element XMText ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMText</a>  |  <a href="#schema.XMArray" title="Math Array/Alignment structure. ‣ item Element XMArray ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMArray</a>  |  <a href="../LaTeXML-meta/#schema.ERROR" title="error object for undefined control sequences, or whatever ‣ item Element ERROR ‣ C.6 Module LaTeXML-meta ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">ERROR</a>)</p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix2.p1" class="ltx_para">
+<p class="ltx_p">((<a href="#schema.XMApp" title="Generalized application of a function, operator, whatever (the first child) to arguments (the remaining children). The attributes are a subset of those for XMTok. ‣ item Element XMApp ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMApp</a>  |  <a href="#schema.XMTok" title="General mathematical token. ‣ item Element XMTok ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMTok</a>  |  <a href="#schema.XMRef" title="Structure sharing element typically used in the presentation branch of an XMDual to refer to the arguments present in the content branch. ‣ item Element XMRef ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMRef</a>  |  <a href="#schema.XMHint" title="Various layout hints, usually spacing, generally ignored in parsing. The attributes are a subset of those for XMTok. ‣ item Element XMHint ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMHint</a>  |  <a href="#schema.XMArg" title="Wrapper for an argument to a structured macro. It implies that its content can be parsed independently of its parent, and thus generally disappears after parsing. ‣ item Element XMArg ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMArg</a>  |  <a href="#schema.XMWrap" title="Wrapper for a sequence of tokens used to assert the role of the contents in its parent. This element generally disappears after parsing. The attributes are a subset of those for XMTok. ‣ item Element XMWrap ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMWrap</a>  |  <a href="#schema.XMDual" title="Parallel markup of content (first child) and presentation (second child) of a mathematical object. Typically, the arguments are shared between the two branches: they appear in the content branch, with id’s, and XMRef is used in the presentation branch ‣ item Element XMDual ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMDual</a>  |  <a href="#schema.XMText" title="Text appearing within math. ‣ item Element XMText ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMText</a>  |  <a href="#schema.XMArray" title="Math Array/Alignment structure. ‣ item Element XMArray ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMArray</a>  |  <a href="../LaTeXML-meta/#schema.ERROR" title="error object for undefined control sequences, or whatever ‣ item Element ERROR ‣ C.6 Module LaTeXML-meta ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">ERROR</a>))</p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix3.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMApp_model" title="Content model for XMApp. ‣ item Pattern XMApp_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMApp_model</a>, <a href="#schema.XMArg_model" title="Content model for XMArg. ‣ item Pattern XMArg_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMArg_model</a>, <a href="#schema.XMCell_model" title="Content model for XMCell. ‣ item Pattern XMCell_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMCell_model</a>, <a href="#schema.XMDual_model" title="Content model for XMDual. ‣ item Pattern XMDual_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMDual_model</a>, <a href="#schema.XMWrap_model" title="Content model for XMWrap. ‣ item Pattern XMWrap_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMWrap_model</a>, <a href="#schema.XMath_model" title="Content model for XMath. ‣ item Pattern XMath_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath_model</a>, <a href="#schema.XMApp_model" title="Content model for XMApp. ‣ item Pattern XMApp_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMApp_model</a>, <a href="#schema.XMArg_model" title="Content model for XMArg. ‣ item Pattern XMArg_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMArg_model</a>, <a href="#schema.XMCell_model" title="Content model for XMCell. ‣ item Pattern XMCell_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMCell_model</a>, <a href="#schema.XMDual_model" title="Content model for XMDual. ‣ item Pattern XMDual_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMDual_model</a>, <a href="#schema.XMWrap_model" title="Content model for XMWrap. ‣ item Pattern XMWrap_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMWrap_model</a>, <a href="#schema.XMath_model" title="Content model for XMath. ‣ item Pattern XMath_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">Math</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix4.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.Math" id="schema.Math" class="ltx_anchor">Outer container for all math. This holds the internal
+<a href="#schema.XMath" title="Internal representation of mathematics. ‣ item Element XMath ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMath</a> representation, as well as image data and other representations.
+</a></p>
+<dl id="I1.ix4.I4" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix4.I4.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix4.I4.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Inline.class" title="All strictly inline elements. ‣ item Pattern Inline.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.class</a>, <a href="../LaTeXML-block/#schema.MathBranch_model" title="Content model for MathBranch. ‣ item Pattern MathBranch_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">MathBranch_model</a>, <a href="../LaTeXML-block/#schema.MathFork_model" title="Content model for MathFork. ‣ item Pattern MathFork_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">MathFork_model</a>, <a href="../LaTeXML-block/#schema.equation_model" title="Content model for equation. ‣ item Pattern equation_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equation_model</a>, <a href="../LaTeXML-common/#schema.Inline.class" title="All strictly inline elements. ‣ item Pattern Inline.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.class</a>, <a href="../LaTeXML-block/#schema.MathBranch_model" title="Content model for MathBranch. ‣ item Pattern MathBranch_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">MathBranch_model</a>, <a href="../LaTeXML-block/#schema.MathFork_model" title="Content model for MathFork. ‣ item Pattern MathFork_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">MathFork_model</a>, <a href="../LaTeXML-block/#schema.equation_model" title="Content model for equation. ‣ item Pattern equation_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equation_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix5" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">Math_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix5.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.Math_attributes" id="schema.Math_attributes" class="ltx_anchor">Attributes for <a href="#schema.Math" title="Outer container for all math. This holds the internal XMath representation, as well as image data and other representations. ‣ item Element Math ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">Math</a>.</a></p>
+<dl id="I1.ix5.I5" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix5.I5.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix5.I5.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.Imageable.attributes" title="Attributes for elements that may be converted to image form during postprocessing, such as math, graphics, pictures, etc. Note that these attributes are generally not filled in until postprocessing, but that they could be init ‣ item Pattern Imageable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Imageable.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix5.I5.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">mode</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix5.I5.ix2.p1" class="ltx_para">
+<p class="ltx_p">= (<span class="ltx_text ltx_font_typewriter">display</span>  |  <span class="ltx_text ltx_font_typewriter">inline</span>)</p>
+</div>
+<div id="I1.ix5.I5.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">display or inline mode.</p>
+</div>
+</dd>
+<dt id="I1.ix5.I5.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">tex</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix5.I5.ix3.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix5.I5.ix3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">reconstruction of the TeX that generated the math.</p>
+</div>
+</dd>
+<dt id="I1.ix5.I5.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">content-tex</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix5.I5.ix4.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix5.I5.ix4.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">more semantic version of <span class="ltx_text ltx_font_sansserif">tex</span>.</p>
+</div>
+</dd>
+<dt id="I1.ix5.I5.ix5" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">text</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix5.I5.ix5.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix5.I5.ix5.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">a textified representation of the math.</p>
+</div>
+</dd>
+<dt id="I1.ix5.I5.ix6" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">lexemes</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix5.I5.ix6.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix5.I5.ix6.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">preserved grammar-near lexemes for export to external apps</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix6" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">Math_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.Math_model" id="schema.Math_model" class="ltx_anchor">Content model for <a href="#schema.Math" title="Outer container for all math. This holds the internal XMath representation, as well as image data and other representations. ‣ item Element Math ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">Math</a>.</a></p>
+<dl id="I1.ix6.I6" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix6.I6.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.I6.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Math.class" title="This class defines the content of the Math element. Additionally, it could contain MathML or OpenMath, after postprocessing. ‣ item Pattern Math.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Math.class</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix6.I6.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.I6.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.Math.class" title="This class defines the content of the Math element. Additionally, it could contain MathML or OpenMath, after postprocessing. ‣ item Pattern Math.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Math.class</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix7" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMath.attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMath.attributes" id="schema.XMath.attributes" class="ltx_anchor">Common attributes for the various XMath elements.
+</a></p>
+<dl id="I1.ix7.I7" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix7.I7.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.I7.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Positionable.attributes" title="Attributes shared by low-level, generic inline and block elements that can be sized or shifted. ‣ item Pattern Positionable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Positionable.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix7.I7.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">role</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.I7.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix7.I7.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">The role that this item plays in the Grammar.</p>
+</div>
+</dd>
+<dt id="I1.ix7.I7.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">enclose</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.I7.ix3.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix7.I7.ix3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">an enclose style to enclose the object
+with legitimate values being those of MathML’s menclose notations;</p>
+</div>
+</dd>
+<dt id="I1.ix7.I7.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">lpadding</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.I7.ix4.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix7.I7.ix4.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">left, or leading, (presumably non-semantic) padding space.</p>
+</div>
+</dd>
+<dt id="I1.ix7.I7.ix5" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">rpadding</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.I7.ix5.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix7.I7.ix5.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">right, or trailing, (presumably non-semantic) padding space.</p>
+</div>
+</dd>
+<dt id="I1.ix7.I7.ix6" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">name</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.I7.ix6.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix7.I7.ix6.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">The name of the token, typically the control sequence that created it.</p>
+</div>
+</dd>
+<dt id="I1.ix7.I7.ix7" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">meaning</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.I7.ix7.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix7.I7.ix7.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">A more semantic name corresponding to the intended meaning,
+such as the OpenMath name.</p>
+</div>
+</dd>
+<dt id="I1.ix7.I7.ix8" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">omcd</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.I7.ix8.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix7.I7.ix8.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">The OpenMath CD for which <span class="ltx_text ltx_font_sansserif">meaning</span> is a symbol.</p>
+</div>
+</dd>
+<dt id="I1.ix7.I7.ix9" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">scriptpos</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.I7.ix9.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix7.I7.ix9.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">An encoding of the position of sub/superscripts
+Before parsing, it takes two forms. On a base token or element,
+it is one of (pre—mid—post), indicating where any script can be placed.
+On a script token, it is an integer level.
+After parsing, the concatenation is moved to the sub—super-script ”operator”.</p>
+</div>
+</dd>
+<dt id="I1.ix7.I7.ix10" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">possibleFunction</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.I7.ix10.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix7.I7.ix10.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">an annotation placed by the parser when it suspects this token may be used as a function.</p>
+</div>
+</dd>
+<dt id="I1.ix7.I7.ix11" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">decl_id</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.I7.ix11.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix7.I7.ix11.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">an id to where the declaration of this object is given,
+preferably the xml:id of an ltx:declare</p>
+</div>
+</dd>
+<dt id="I1.ix7.I7.ix12" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">href</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.I7.ix12.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix7.I7.ix12.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">reference to an arbitrary url.</p>
+</div>
+</dd>
+<dt id="I1.ix7.I7.ix13" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.I7.ix13.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMApp_attributes" title="Attributes for XMApp. ‣ item Pattern XMApp_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMApp_attributes</a>, <a href="#schema.XMArg_attributes" title="Attributes for XMArg. ‣ item Pattern XMArg_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMArg_attributes</a>, <a href="#schema.XMArray_attributes" title="Attributes for XMArray. ‣ item Pattern XMArray_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMArray_attributes</a>, <a href="#schema.XMDual_attributes" title="Attributes for XMDual. ‣ item Pattern XMDual_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMDual_attributes</a>, <a href="#schema.XMHint_attributes" title="Attributes for XMHint. ‣ item Pattern XMHint_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMHint_attributes</a>, <a href="#schema.XMRef_attributes" title="Attributes for XMRef. ‣ item Pattern XMRef_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMRef_attributes</a>, <a href="#schema.XMText_attributes" title="Attributes for XMText. ‣ item Pattern XMText_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMText_attributes</a>, <a href="#schema.XMTok_attributes" title="Attributes for XMTok. ‣ item Pattern XMTok_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMTok_attributes</a>, <a href="#schema.XMWrap_attributes" title="Attributes for XMWrap. ‣ item Pattern XMWrap_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMWrap_attributes</a>, <a href="#schema.XMApp_attributes" title="Attributes for XMApp. ‣ item Pattern XMApp_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMApp_attributes</a>, <a href="#schema.XMArg_attributes" title="Attributes for XMArg. ‣ item Pattern XMArg_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMArg_attributes</a>, <a href="#schema.XMArray_attributes" title="Attributes for XMArray. ‣ item Pattern XMArray_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMArray_attributes</a>, <a href="#schema.XMDual_attributes" title="Attributes for XMDual. ‣ item Pattern XMDual_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMDual_attributes</a>, <a href="#schema.XMHint_attributes" title="Attributes for XMHint. ‣ item Pattern XMHint_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMHint_attributes</a>, <a href="#schema.XMRef_attributes" title="Attributes for XMRef. ‣ item Pattern XMRef_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMRef_attributes</a>, <a href="#schema.XMText_attributes" title="Attributes for XMText. ‣ item Pattern XMText_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMText_attributes</a>, <a href="#schema.XMTok_attributes" title="Attributes for XMTok. ‣ item Pattern XMTok_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMTok_attributes</a>, <a href="#schema.XMWrap_attributes" title="Attributes for XMWrap. ‣ item Pattern XMWrap_attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMWrap_attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix8" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">XMath</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix8.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMath" id="schema.XMath" class="ltx_anchor">Internal representation of mathematics.
+</a></p>
+<dl id="I1.ix8.I8" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix8.I8.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix8.I8.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Math.class" title="This class defines the content of the Math element. Additionally, it could contain MathML or OpenMath, after postprocessing. ‣ item Pattern Math.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Math.class</a>, <a href="#schema.Math.class" title="This class defines the content of the Math element. Additionally, it could contain MathML or OpenMath, after postprocessing. ‣ item Pattern Math.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Math.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix9" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMath_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix9.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMath_attributes" id="schema.XMath_attributes" class="ltx_anchor">Attributes for <a href="#schema.XMath" title="Internal representation of mathematics. ‣ item Element XMath ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMath</a>.</a></p>
+<dl id="I1.ix9.I9" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix9.I9.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix9.I9.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix10" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMath_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix10.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMath_model" id="schema.XMath_model" class="ltx_anchor">Content model for <a href="#schema.XMath" title="Internal representation of mathematics. ‣ item Element XMath ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMath</a>.</a></p>
+<dl id="I1.ix10.I10" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix10.I10.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix10.I10.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix10.I10.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix10.I10.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix11" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">XMTok</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix11.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMTok" id="schema.XMTok" class="ltx_anchor">General mathematical token.
+</a></p>
+<dl id="I1.ix11.I11" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix11.I11.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix11.I11.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>, <a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix12" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMTok_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix12.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMTok_attributes" id="schema.XMTok_attributes" class="ltx_anchor">Attributes for <a href="#schema.XMTok" title="General mathematical token. ‣ item Element XMTok ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMTok</a>.</a></p>
+<dl id="I1.ix12.I12" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix12.I12.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix12.I12.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.XMath.attributes" title="Common attributes for the various XMath elements. ‣ item Pattern XMath.attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a>, <a href="../LaTeXML-common/#schema.Fontable.attributes" title="Attributes for elements that contain (indirectly) text whose font can be specified. ‣ item Pattern Fontable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Fontable.attributes</a>, <a href="../LaTeXML-common/#schema.Colorable.attributes" title="Attributes for elements that draw something, text or otherwise, that can be colored. ‣ item Pattern Colorable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Colorable.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix12.I12.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">thickness</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix12.I12.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix12.I12.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">A thickness used for drawing any lines which are part of presenting the token,
+such as the fraction line for the fraction operator.</p>
+</div>
+</dd>
+<dt id="I1.ix12.I12.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">stretchy</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix12.I12.ix3.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">boolean</span></p>
+</div>
+<div id="I1.ix12.I12.ix3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Whether or not the symbol should be stretchy.
+This shares MathML’s ambiguity about horizontal versus vertical stretchiness.
+When not set, defaults to whatever MathML’s operator dictionary says.</p>
+</div>
+</dd>
+<dt id="I1.ix12.I12.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">mathstyle</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix12.I12.ix4.p1" class="ltx_para">
+<p class="ltx_p">= (<span class="ltx_text ltx_font_typewriter">display</span>  |  <span class="ltx_text ltx_font_typewriter">text</span>  |  <span class="ltx_text ltx_font_typewriter">script</span>  |  <span class="ltx_text ltx_font_typewriter">scriptscript</span>)</p>
+</div>
+<div id="I1.ix12.I12.ix4.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">The math style used for displaying the application of this token
+when it represents some sort of fraction, variable-sized operator or stack of expressions
+(note that this applies to binomials or other stacks of expressions as well as fractions).
+Values of <span class="ltx_text ltx_font_typewriter">display</span> or <span class="ltx_text ltx_font_typewriter">text</span> correspond to TeX’s
+displaystyle or textstyle, while <span class="ltx_text ltx_font_typewriter">inline</span> indicates the
+stack should be arranged horizontally (the layout may depend on the operator).</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix13" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMTok_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix13.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMTok_model" id="schema.XMTok_model" class="ltx_anchor">Content model for <a href="#schema.XMTok" title="General mathematical token. ‣ item Element XMTok ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMTok</a>.</a></p>
+<dl id="I1.ix13.I13" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix13.I13.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix13.I13.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">text</span>*</p>
+</div>
+</dd>
+<dt id="I1.ix13.I13.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix13.I13.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<span class="ltx_text ltx_font_italic">text</span>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix14" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">XMApp</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix14.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMApp" id="schema.XMApp" class="ltx_anchor">Generalized application of a function, operator, whatever (the first child)
+to arguments (the remaining children).
+The attributes are a subset of those for <a href="#schema.XMTok" title="General mathematical token. ‣ item Element XMTok ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMTok</a>.
+</a></p>
+<dl id="I1.ix14.I14" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix14.I14.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix14.I14.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>, <a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix15" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMApp_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix15.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMApp_attributes" id="schema.XMApp_attributes" class="ltx_anchor">Attributes for <a href="#schema.XMApp" title="Generalized application of a function, operator, whatever (the first child) to arguments (the remaining children). The attributes are a subset of those for XMTok. ‣ item Element XMApp ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMApp</a>.</a></p>
+<dl id="I1.ix15.I15" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix15.I15.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix15.I15.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.XMath.attributes" title="Common attributes for the various XMath elements. ‣ item Pattern XMath.attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a>, <a href="../LaTeXML-common/#schema.Colorable.attributes" title="Attributes for elements that draw something, text or otherwise, that can be colored. ‣ item Pattern Colorable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Colorable.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix16" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMApp_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix16.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMApp_model" id="schema.XMApp_model" class="ltx_anchor">Content model for <a href="#schema.XMApp" title="Generalized application of a function, operator, whatever (the first child) to arguments (the remaining children). The attributes are a subset of those for XMTok. ‣ item Element XMApp ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMApp</a>.</a></p>
+<dl id="I1.ix16.I16" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix16.I16.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix16.I16.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix16.I16.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix16.I16.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix17" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">XMDual</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix17.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMDual" id="schema.XMDual" class="ltx_anchor">Parallel markup of content (first child) and presentation (second child)
+of a mathematical object.
+Typically, the arguments are shared between the two branches:
+they appear in the content branch, with <span class="ltx_text ltx_font_sansserif">id</span>’s,
+and <a href="#schema.XMRef" title="Structure sharing element typically used in the presentation branch of an XMDual to refer to the arguments present in the content branch. ‣ item Element XMRef ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMRef</a> is used in the presentation branch
+</a></p>
+<dl id="I1.ix17.I17" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix17.I17.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix17.I17.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>, <a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix18" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMDual_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix18.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMDual_attributes" id="schema.XMDual_attributes" class="ltx_anchor">Attributes for <a href="#schema.XMDual" title="Parallel markup of content (first child) and presentation (second child) of a mathematical object. Typically, the arguments are shared between the two branches: they appear in the content branch, with id’s, and XMRef is used in the presentation branch ‣ item Element XMDual ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMDual</a>.</a></p>
+<dl id="I1.ix18.I18" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix18.I18.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix18.I18.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.XMath.attributes" title="Common attributes for the various XMath elements. ‣ item Pattern XMath.attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix19" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMDual_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix19.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMDual_model" id="schema.XMDual_model" class="ltx_anchor">Content model for <a href="#schema.XMDual" title="Parallel markup of content (first child) and presentation (second child) of a mathematical object. Typically, the arguments are shared between the two branches: they appear in the content branch, with id’s, and XMRef is used in the presentation branch ‣ item Element XMDual ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMDual</a>.</a></p>
+<dl id="I1.ix19.I19" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix19.I19.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix19.I19.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>, <a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a></p>
+</div>
+</dd>
+<dt id="I1.ix19.I19.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix19.I19.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>, <a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix20" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">XMHint</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix20.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMHint" id="schema.XMHint" class="ltx_anchor">Various layout hints, usually spacing, generally ignored in parsing.
+The attributes are a subset of those for <a href="#schema.XMTok" title="General mathematical token. ‣ item Element XMTok ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMTok</a>.
+</a></p>
+<dl id="I1.ix20.I20" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix20.I20.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix20.I20.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>, <a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix21" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMHint_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix21.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMHint_attributes" id="schema.XMHint_attributes" class="ltx_anchor">Attributes for <a href="#schema.XMHint" title="Various layout hints, usually spacing, generally ignored in parsing. The attributes are a subset of those for XMTok. ‣ item Element XMHint ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMHint</a>.</a></p>
+<dl id="I1.ix21.I21" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix21.I21.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix21.I21.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.XMath.attributes" title="Common attributes for the various XMath elements. ‣ item Pattern XMath.attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix22" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMHint_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix22.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMHint_model" id="schema.XMHint_model" class="ltx_anchor">Content model for <a href="#schema.XMHint" title="Various layout hints, usually spacing, generally ignored in parsing. The attributes are a subset of those for XMTok. ‣ item Element XMHint ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMHint</a>.</a></p>
+<dl id="I1.ix22.I22" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix22.I22.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix22.I22.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+<dt id="I1.ix22.I22.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix22.I22.ix2.p1" class="ltx_para">
+<p class="ltx_p">()</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix23" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">XMText</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix23.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMText" id="schema.XMText" class="ltx_anchor">Text appearing within math.
+</a></p>
+<dl id="I1.ix23.I23" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix23.I23.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix23.I23.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>, <a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix24" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMText_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix24.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMText_attributes" id="schema.XMText_attributes" class="ltx_anchor">Attributes for <a href="#schema.XMText" title="Text appearing within math. ‣ item Element XMText ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMText</a>.</a></p>
+<dl id="I1.ix24.I24" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix24.I24.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix24.I24.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.XMath.attributes" title="Common attributes for the various XMath elements. ‣ item Pattern XMath.attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix25" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMText_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix25.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMText_model" id="schema.XMText_model" class="ltx_anchor">Content model for <a href="#schema.XMText" title="Text appearing within math. ‣ item Element XMText ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMText</a>.</a></p>
+<dl id="I1.ix25.I25" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix25.I25.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix25.I25.ix1.p1" class="ltx_para">
+<p class="ltx_p">(<span class="ltx_text ltx_font_italic">text</span>  |  <a href="../LaTeXML-common/#schema.Inline.class" title="All strictly inline elements. ‣ item Pattern Inline.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.class</a>  |  <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>)*</p>
+</div>
+</dd>
+<dt id="I1.ix25.I25.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix25.I25.ix2.p1" class="ltx_para">
+<p class="ltx_p">((<span class="ltx_text ltx_font_italic">text</span>  |  <a href="../LaTeXML-common/#schema.Inline.class" title="All strictly inline elements. ‣ item Pattern Inline.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.class</a>  |  <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>)*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix26" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">XMWrap</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix26.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMWrap" id="schema.XMWrap" class="ltx_anchor">Wrapper for a sequence of tokens used to assert the role of the
+contents in its parent. This element generally disappears after parsing.
+The attributes are a subset of those for <a href="#schema.XMTok" title="General mathematical token. ‣ item Element XMTok ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMTok</a>.
+</a></p>
+<dl id="I1.ix26.I26" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix26.I26.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix26.I26.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>, <a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix27" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMWrap_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix27.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMWrap_attributes" id="schema.XMWrap_attributes" class="ltx_anchor">Attributes for <a href="#schema.XMWrap" title="Wrapper for a sequence of tokens used to assert the role of the contents in its parent. This element generally disappears after parsing. The attributes are a subset of those for XMTok. ‣ item Element XMWrap ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMWrap</a>.</a></p>
+<dl id="I1.ix27.I27" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix27.I27.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix27.I27.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.XMath.attributes" title="Common attributes for the various XMath elements. ‣ item Pattern XMath.attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix27.I27.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">rule</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix27.I27.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix27.I27.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">The grammatical rule that should apply to the contained sequence</p>
+</div>
+</dd>
+<dt id="I1.ix27.I27.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">style</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix27.I27.ix3.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix28" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMWrap_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix28.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMWrap_model" id="schema.XMWrap_model" class="ltx_anchor">Content model for <a href="#schema.XMWrap" title="Wrapper for a sequence of tokens used to assert the role of the contents in its parent. This element generally disappears after parsing. The attributes are a subset of those for XMTok. ‣ item Element XMWrap ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMWrap</a>.</a></p>
+<dl id="I1.ix28.I28" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix28.I28.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix28.I28.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix28.I28.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix28.I28.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix29" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">XMArg</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix29.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMArg" id="schema.XMArg" class="ltx_anchor">Wrapper for an argument to a structured macro.
+It implies that its content can be parsed independently of its parent,
+and thus generally disappears after parsing.
+</a></p>
+<dl id="I1.ix29.I29" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix29.I29.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix29.I29.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>, <a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix30" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMArg_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix30.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMArg_attributes" id="schema.XMArg_attributes" class="ltx_anchor">Attributes for <a href="#schema.XMArg" title="Wrapper for an argument to a structured macro. It implies that its content can be parsed independently of its parent, and thus generally disappears after parsing. ‣ item Element XMArg ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMArg</a>.</a></p>
+<dl id="I1.ix30.I30" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix30.I30.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix30.I30.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.XMath.attributes" title="Common attributes for the various XMath elements. ‣ item Pattern XMath.attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix30.I30.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">rule</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix30.I30.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix30.I30.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">The grammatical rule that should apply to the contained sequence</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix31" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMArg_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix31.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMArg_model" id="schema.XMArg_model" class="ltx_anchor">Content model for <a href="#schema.XMArg" title="Wrapper for an argument to a structured macro. It implies that its content can be parsed independently of its parent, and thus generally disappears after parsing. ‣ item Element XMArg ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMArg</a>.</a></p>
+<dl id="I1.ix31.I31" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix31.I31.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix31.I31.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix31.I31.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix31.I31.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix32" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">XMRef</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix32.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMRef" id="schema.XMRef" class="ltx_anchor">Structure sharing element typically used in the presentation
+branch of an <a href="#schema.XMDual" title="Parallel markup of content (first child) and presentation (second child) of a mathematical object. Typically, the arguments are shared between the two branches: they appear in the content branch, with id’s, and XMRef is used in the presentation branch ‣ item Element XMDual ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMDual</a> to refer to the arguments present in the content branch.
+</a></p>
+<dl id="I1.ix32.I32" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix32.I32.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix32.I32.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>, <a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix33" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMRef_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix33.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMRef_attributes" id="schema.XMRef_attributes" class="ltx_anchor">Attributes for <a href="#schema.XMRef" title="Structure sharing element typically used in the presentation branch of an XMDual to refer to the arguments present in the content branch. ‣ item Element XMRef ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMRef</a>.</a></p>
+<dl id="I1.ix33.I33" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix33.I33.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix33.I33.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.XMath.attributes" title="Common attributes for the various XMath elements. ‣ item Pattern XMath.attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a>, <a href="../LaTeXML-common/#schema.IDREF.attributes" title="Attributes for elements that can cross-reference other elements. ‣ item Pattern IDREF.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">IDREF.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix34" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMRef_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix34.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMRef_model" id="schema.XMRef_model" class="ltx_anchor">Content model for <a href="#schema.XMRef" title="Structure sharing element typically used in the presentation branch of an XMDual to refer to the arguments present in the content branch. ‣ item Element XMRef ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMRef</a>.</a></p>
+<dl id="I1.ix34.I34" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix34.I34.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix34.I34.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+<dt id="I1.ix34.I34.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix34.I34.ix2.p1" class="ltx_para">
+<p class="ltx_p">()</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix35" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">XMArray</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix35.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMArray" id="schema.XMArray" class="ltx_anchor">Math Array/Alignment structure.
+</a></p>
+<dl id="I1.ix35.I35" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix35.I35.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix35.I35.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>, <a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix36" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMArray_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix36.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMArray_attributes" id="schema.XMArray_attributes" class="ltx_anchor">Attributes for <a href="#schema.XMArray" title="Math Array/Alignment structure. ‣ item Element XMArray ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMArray</a>.</a></p>
+<dl id="I1.ix36.I36" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix36.I36.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix36.I36.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.XMath.attributes" title="Common attributes for the various XMath elements. ‣ item Pattern XMath.attributes ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix36.I36.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">rowsep</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix36.I36.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <a href="../LaTeXML-common/#schema.Length.type" title="The type for attributes specifying a length. Should be a number followed by a length, typically px. NOTE: To be narrowed later. ‣ item Pattern Length.type ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Length.type</a></p>
+</div>
+<div id="I1.ix36.I36.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">the spacing between rows</p>
+</div>
+</dd>
+<dt id="I1.ix36.I36.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">colsep</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix36.I36.ix3.p1" class="ltx_para">
+<p class="ltx_p">= <a href="../LaTeXML-common/#schema.Length.type" title="The type for attributes specifying a length. Should be a number followed by a length, typically px. NOTE: To be narrowed later. ‣ item Pattern Length.type ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Length.type</a></p>
+</div>
+<div id="I1.ix36.I36.ix3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">the spacing between columns</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix37" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMArray_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix37.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMArray_model" id="schema.XMArray_model" class="ltx_anchor">Content model for <a href="#schema.XMArray" title="Math Array/Alignment structure. ‣ item Element XMArray ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMArray</a>.</a></p>
+<dl id="I1.ix37.I37" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix37.I37.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix37.I37.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMRow" title="A row in a math alignment. ‣ item Element XMRow ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMRow</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix37.I37.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix37.I37.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.XMRow" title="A row in a math alignment. ‣ item Element XMRow ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMRow</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix38" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">XMRow</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix38.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMRow" id="schema.XMRow" class="ltx_anchor">A row in a math alignment.
+</a></p>
+<dl id="I1.ix38.I38" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix38.I38.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix38.I38.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMArray_model" title="Content model for XMArray. ‣ item Pattern XMArray_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMArray_model</a>, <a href="#schema.XMArray_model" title="Content model for XMArray. ‣ item Pattern XMArray_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMArray_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix39" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMRow_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix39.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMRow_attributes" id="schema.XMRow_attributes" class="ltx_anchor">Attributes for <a href="#schema.XMRow" title="A row in a math alignment. ‣ item Element XMRow ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMRow</a>.</a></p>
+<dl id="I1.ix39.I39" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix39.I39.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix39.I39.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix40" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMRow_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix40.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMRow_model" id="schema.XMRow_model" class="ltx_anchor">Content model for <a href="#schema.XMRow" title="A row in a math alignment. ‣ item Element XMRow ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMRow</a>.</a></p>
+<dl id="I1.ix40.I40" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix40.I40.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix40.I40.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMCell" title="A cell in a row of a math alignment. ‣ item Element XMCell ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMCell</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix40.I40.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix40.I40.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.XMCell" title="A cell in a row of a math alignment. ‣ item Element XMCell ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMCell</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix41" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">XMCell</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix41.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMCell" id="schema.XMCell" class="ltx_anchor">A cell in a row of a math alignment.
+</a></p>
+<dl id="I1.ix41.I41" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix41.I41.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix41.I41.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMRow_model" title="Content model for XMRow. ‣ item Pattern XMRow_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMRow_model</a>, <a href="#schema.XMRow_model" title="Content model for XMRow. ‣ item Pattern XMRow_model ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMRow_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix42" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMCell_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix42.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMCell_attributes" id="schema.XMCell_attributes" class="ltx_anchor">Attributes for <a href="#schema.XMCell" title="A cell in a row of a math alignment. ‣ item Element XMCell ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMCell</a>.</a></p>
+<dl id="I1.ix42.I42" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix42.I42.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix42.I42.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix42.I42.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">colspan</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix42.I42.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">nonNegativeInteger</span></p>
+</div>
+<div id="I1.ix42.I42.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">indicates how many columns this cell spans or covers.</p>
+</div>
+</dd>
+<dt id="I1.ix42.I42.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">rowspan</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix42.I42.ix3.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">nonNegativeInteger</span></p>
+</div>
+<div id="I1.ix42.I42.ix3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">indicates how many rows this cell spans or covers.</p>
+</div>
+</dd>
+<dt id="I1.ix42.I42.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">align</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix42.I42.ix4.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix42.I42.ix4.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">specifies the alignment of the content.</p>
+</div>
+</dd>
+<dt id="I1.ix42.I42.ix5" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">width</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix42.I42.ix5.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix42.I42.ix5.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">specifies the desired width for the column.</p>
+</div>
+</dd>
+<dt id="I1.ix42.I42.ix6" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">border</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix42.I42.ix6.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix42.I42.ix6.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">records a sequence of t or tt, r or rr, b or bb and l or ll
+for borders or doubled borders on any side of the cell.</p>
+</div>
+</dd>
+<dt id="I1.ix42.I42.ix7" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">thead</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix42.I42.ix7.p1" class="ltx_para">
+<p class="ltx_p">= (<span class="ltx_text ltx_font_typewriter">column</span>  |  <span class="ltx_text ltx_font_typewriter">column row</span>  |  <span class="ltx_text ltx_font_typewriter">row</span>)</p>
+</div>
+<div id="I1.ix42.I42.ix7.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">whether this cell corresponds to a table row or column heading or both</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix43" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">XMCell_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix43.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.XMCell_model" id="schema.XMCell_model" class="ltx_anchor">Content model for <a href="#schema.XMCell" title="A cell in a row of a math alignment. ‣ item Element XMCell ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">XMCell</a>.</a></p>
+<dl id="I1.ix43.I43" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix43.I43.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix43.I43.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix43.I43.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix43.I43.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.XMath.class" title="These elements comprise the internal math representation, being the content of the XMath element. ‣ item Pattern XMath.class ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">XMath.class</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+</div>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="../LaTeXML-para/" title="C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.7 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-para</span></span></a><a href="../../idx.html" title="Index ‣ LaTeXML The Manual" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="../LaTeXML-tabular/" title="C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.9 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-tabular</span></span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Tue Dec 17 10:04:54 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

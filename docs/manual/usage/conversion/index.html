@@ -1,0 +1,258 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>2.1 Conversion‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual</title>
+<!--Generated on Tue Dec 17 10:04:54 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 17, 2024.-->
+
+<link rel="shortcut icon" href="../../../favicon.ico" type="image/png">
+<link rel="stylesheet" href="../../../LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="../../../ltx-book.css" type="text/css">
+<link rel="stylesheet" href="../../../ltx-listings.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../../../latexmldoc.css" type="text/css">
+<script src="../../../LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="up" href="../" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="up up" href="../../" title="LaTeXML The Manual">
+<link rel="start" href="../../" title="LaTeXML The Manual">
+<link rel="prev" href="../" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="next" href="../post/" title="§ 2.2 Basic Postprocessing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="section" href="../post/" title="§ 2.2 Basic Postprocessing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="section" href="../splitting/" title="§ 2.3 Splitting the Output ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="section" href="../site/" title="§ 2.4 Site processing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="section" href="../latexmlmath/" title="§ 2.5 Individual Formula ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../intro/" title="Chapter 1 Introduction ‣ LaTeXML The Manual">
+<link rel="chapter" href="../" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../customization/" title="Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../localization/" title="Chapter 6 Localization ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../alignments/" title="Chapter 7 Alignments ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../metadata/" title="Chapter 8 Metadata ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../todo/" title="Chapter 9 ToDo ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../acknowledgements/" title="Acknowledgements ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../commands/" title="Appendix A Command Documentation ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../schema/" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../cssclasses/" title="Appendix E CSS Classes ‣ LaTeXML The Manual">
+<link rel="index" href="../../idx.html" title="Index ‣ LaTeXML The Manual">
+<meta name="keywords" lang="en" content="basic usage, latexml">
+</head>
+<body>
+<nav class="ltx_page_navbar">
+<div class="ltx_para">
+<p class="ltx_p"><a href="../../" title="LaTeXML The Manual" class="ltx_ref"><img src="x1.png" class="ltx_graphics" width="215" height="50" alt=""></a>
+<br class="ltx_break"><img src="x2.png" class="ltx_graphics" width="130" height="168" alt="">
+<br class="ltx_break"></p>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../intro/" title="Chapter 1 Introduction ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Introduction</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="../" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Using <span class="ltx_ref ltx_font_typewriter">LaTeXML</span></span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section ltx_ref_self">
+<span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1 </span>Conversion</span></span>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_paragraph"><a href="#bibtex" title="BibTeX processing ‣ § 2.1 Basic XML Conversion ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">BibTeX processing</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_paragraph"><a href="#options" title="Useful Options ‣ § 2.1 Basic XML Conversion ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Useful Options</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_paragraph"><a href="#loading" title="Loading Bindings ‣ § 2.1 Basic XML Conversion ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Loading Bindings</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../post/" title="§ 2.2 Basic Postprocessing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2 </span>Postprocessing</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../splitting/" title="§ 2.3 Splitting the Output ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.3 </span>Splitting</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../site/" title="§ 2.4 Site processing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.4 </span>Sites</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../latexmlmath/" title="§ 2.5 Individual Formula ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.5 </span>Individual Formula</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Architecture</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../customization/" title="Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Customization</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Mathematics</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../localization/" title="Chapter 6 Localization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>Localization</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../alignments/" title="Chapter 7 Alignments ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Alignments</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../metadata/" title="Chapter 8 Metadata ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>Metadata</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../todo/" title="Chapter 9 ToDo ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>ToDo</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../acknowledgements/" title="Acknowledgements ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Acknowledgements</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../commands/" title="Appendix A Command Documentation ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>Commands</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B </span>Bindings</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../schema/" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C </span>Schema</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D </span>Error Codes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../cssclasses/" title="Appendix E CSS Classes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">E </span>CSS Classes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_index"><a href="../../idx.html" title="Index ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Index</span></a></li>
+</ul>
+</div></nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="../" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Using <span class="ltx_ref ltx_font_typewriter">LaTeXML</span></span></a><a href="../" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Using <span class="ltx_ref ltx_font_typewriter">LaTeXML</span></span></a><a href="../post/" title="§ 2.2 Basic Postprocessing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2 </span>Postprocessing</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_1line">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§ 2.1 </span>Basic <a href="http://www.w3.org/XML/" title="" class="ltx_ref ltx_font_typewriter">XML</a> Conversion</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">The command</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,bGF0ZXhtbCB7b3B0aW9uc30gLS1kZXN0aW5hdGlvbj0lZG9jJS54bWwgJWRvYyU=" download="">⬇</a></div>
+<div id="lstnumberx16" class="ltx_listingline">
+<span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">latexml</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">{</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">options</span><span class="ltx_text ltx_font_typewriter">}</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">destination</span><span class="ltx_text ltx_font_typewriter">=</span><span class="ltx_text ltx_font_typewriter ltx_font_italic">doc</span><span class="ltx_text ltx_font_typewriter">.</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">xml</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter ltx_font_italic">doc</span>
+</div>
+</div>
+<p class="ltx_p">converts the TeX document <span class="ltx_text ltx_font_typewriter">doc.tex</span>,
+or standard input if <span class="ltx_text ltx_font_typewriter">-</span> is used in place of the filename, to <a href="http://www.w3.org/XML/" title="" class="ltx_ref ltx_font_typewriter">XML</a>.
+It loads any required definition bindings (see below),
+reads, tokenizes, expands and digests the document creating an <a href="http://www.w3.org/XML/" title="" class="ltx_ref ltx_font_typewriter">XML</a> structure.
+It then performs some document rewriting, parses the mathematical content
+and writes the result, in this case, to <span class="ltx_text ltx_font_typewriter">doc.xml</span>;
+if no <span class="ltx_text ltx_lst_language_bash ltx_lstlisting ltx_font_typewriter">--<span class="ltx_text ltx_lst_identifier">destination</span></span> is suppplied, it writes the result to standard output.
+For details on the processing, see Chapter <a href="../../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>,
+and Chapter <a href="../../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5</span></a> for more information about math parsing.</p>
+</div>
+<section id="bibtex" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">BibTeX processing</h2>
+
+<div id="SS0.SSS0.Px1.p1" class="ltx_para">
+<p class="ltx_p">If the source file has an explicit extension of <span class="ltx_text ltx_font_typewriter">.bib</span>,
+or if the <span class="ltx_text ltx_font_typewriter">--bibtex</span> option is used, the source will be
+treated as a BibTeX database. See <a href="../post/#bibtex" title="Bibliography ‣ § 2.2 Basic Postprocessing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.2</span></a>
+for how BibTeX files are included in the final output.</p>
+</div>
+</section>
+<section class="ltx_paragraph ltx_advanced">
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Note that the timing is different than with BibTeX and LaTeX.
+Normally, BibTeX simply selects and formats a subset of the
+bibliographic entries according to the <span class="ltx_text ltx_font_typewriter">.aux</span> file;
+all TeX expansion and processing is carried out only when
+the result is included in the main LaTeX document.
+In contrast, <span class="ltx_text ltx_font_typewriter">latexml</span> processes and expands
+the entire bibliography, including any TeX markup within it,
+when it is converted to XML;
+the selection of entries is done during postprocessing.
+One implication is that latexml does not know about packages
+included in the main document; if the bibliography uses
+macros defined in such packages, the packages must be explicitly
+specified using the <span class="ltx_text ltx_font_typewriter">--preload</span> option.</p>
+</div>
+</section>
+<section id="options" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Useful Options</h2>
+
+<div id="SS0.SSS0.Px2.p1" class="ltx_para">
+<p class="ltx_p">The number and detail of progress and debugging messages printed
+during processing can be controlled using</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,LS12ZXJib3NlICVvciUgLS1xdWlldA==" download="">⬇</a></div>
+<div id="lstnumberx17" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">verbose</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter ltx_font_italic">or</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">quiet</span>
+</div>
+</div>
+<p class="ltx_p">They can be repeated to get even more or fewer details.</p>
+</div>
+<div id="SS0.SSS0.Px2.p2" class="ltx_para">
+<p class="ltx_p">Directories to search (in addition to the working directory)
+for various files can be specified using</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,LS1wYXRoPXtkaXJlY3Rvcnl9" download="">⬇</a></div>
+<div id="lstnumberx18" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">path</span><span class="ltx_text ltx_font_typewriter">={</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">directory</span><span class="ltx_text ltx_font_typewriter">}</span>
+</div>
+</div>
+<p class="ltx_p">This option can be repeated.</p>
+</div>
+<div id="SS0.SSS0.Px2.p3" class="ltx_para">
+<p class="ltx_p">Whenever multiple sources are being used (including multiple bibliographies),
+the option</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,LS1kb2N1bWVudGlkPSVpZCU=" download="">⬇</a></div>
+<div id="lstnumberx19" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">documentid</span><span class="ltx_text ltx_font_typewriter">=</span><span class="ltx_text ltx_font_typewriter ltx_font_italic">id</span>
+</div>
+</div>
+<p class="ltx_p">should be used to provide a unique ID for the document root element.
+This ID is used as the base for id’s of the child-elements within the document,
+so that they are unique, as well.</p>
+</div>
+<div id="SS0.SSS0.Px2.p4" class="ltx_para">
+<p class="ltx_p">See the documentation for the command <span class="ltx_ref ltx_missing_label ltx_ref_self">latexml</span> for
+less common options.</p>
+</div>
+</section>
+<section id="loading" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Loading Bindings</h2>
+
+<div id="SS0.SSS0.Px3.p1" class="ltx_para">
+<p class="ltx_p">Although <a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a> is reasonably adept at processing TeX macros,
+it generally benefits from having its own implementation of
+the macros, primitives, environments and other control sequences
+appearing in a document because these are what define the mapping into <a href="http://www.w3.org/XML/" title="" class="ltx_ref ltx_font_typewriter">XML</a>.
+The <a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a>-analogue of a style or class file we call a
+<a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a>-binding file, or <em class="ltx_emph ltx_font_italic">binding</em> for short;
+these files have an additional extension <span class="ltx_text ltx_font_typewriter">.ltxml</span>.</p>
+</div>
+<div id="SS0.SSS0.Px3.p2" class="ltx_para">
+<p class="ltx_p">In fact, since style files often bypass structurally or semantically
+meaningful macros by directly invoking macros internal to LaTeX,
+<a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a> actually avoids processing style files when a binding is unavailable.
+The option</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,LS1pbmNsdWRlc3R5bGVz" download="">⬇</a></div>
+<div id="lstnumberx20" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">includestyles</span>
+</div>
+</div>
+<p class="ltx_p">can be used to override this behaviour and allow <a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a> to
+(attempt to) process raw style files.
+[A more selective, per-file, option may be developed in the future,
+if there is sufficient demand — please provide use cases.]</p>
+</div>
+<div id="SS0.SSS0.Px3.p3" class="ltx_para">
+<p class="ltx_p"><a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a> always starts with the <span class="ltx_text ltx_font_typewriter">TeX.pool</span> binding loaded,
+and if LaTeX-specific commands are recognized, <span class="ltx_text ltx_font_typewriter">LaTeX.pool</span> as well.
+Any input directives within the source loads the appropriate binding.
+For example, <code class="ltx_verbatim ltx_font_typewriter">\documentclass{article}</code> or <code class="ltx_verbatim ltx_font_typewriter">\usepackage{graphicx}</code>
+will load the bindings <span class="ltx_text ltx_font_typewriter">article.cls.ltxml</span> or <span class="ltx_text ltx_font_typewriter">graphicx.sty.ltxml</span>,
+respectively; the obsolete directive <code class="ltx_verbatim ltx_font_typewriter">\documentstyle</code>
+is also recognized.
+An <code class="ltx_verbatim ltx_font_typewriter">\input</code> directive will search for
+files with both <span class="ltx_text ltx_font_typewriter">.tex</span> and <span class="ltx_text ltx_font_typewriter">.sty</span> extensions;
+it will prefer a binding file if one is found,
+but will load and digest a <span class="ltx_text ltx_font_typewriter">.tex</span> if no binding is found.
+An <code class="ltx_verbatim ltx_font_typewriter">\include</code> directive (and related ones) search only for
+a <span class="ltx_text ltx_font_typewriter">.tex</span> file, which is processed and digested as usual.</p>
+</div>
+<div id="SS0.SSS0.Px3.p4" class="ltx_para">
+<p class="ltx_p">There are two mechanisms for customization:
+a document-specific binding file <span class="ltx_text ltx_lst_language_bash ltx_lstlisting"><span class="ltx_text ltx_font_typewriter ltx_font_italic">doc</span><span class="ltx_text ltx_font_typewriter">.<span class="ltx_text ltx_lst_keyword ltx_font_bold">latexml</span></span></span> will
+be loaded, if present;
+the option</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,LS1wcmVsb2FkPSViaW5kaW5nJQ==" download="">⬇</a></div>
+<div id="lstnumberx21" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">preload</span><span class="ltx_text ltx_font_typewriter">=</span><span class="ltx_text ltx_font_typewriter ltx_font_italic">binding</span>
+</div>
+</div>
+<p class="ltx_p">will load the binding file <span class="ltx_text ltx_lst_language_bash ltx_lstlisting"><span class="ltx_text ltx_font_typewriter ltx_font_italic">binding</span><span class="ltx_text ltx_font_typewriter">.<span class="ltx_text ltx_lst_identifier">ltxml</span></span></span>.
+The <span class="ltx_text ltx_lst_language_bash ltx_lstlisting ltx_font_typewriter">--<span class="ltx_text ltx_lst_identifier">preload</span></span> option can be repeated;
+both kinds of preload are loaded before document processing,
+and are processed in order.</p>
+</div>
+<div id="SS0.SSS0.Px3.p5" class="ltx_para">
+<p class="ltx_p">See Chapter <a href="../../customization/" title="Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a> for details about what can go in these bindings;
+and Appendix <a href="../../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">B</span></a> for a list of bindings currently
+included in the distribution.</p>
+</div>
+</section>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="../" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Using <span class="ltx_ref ltx_font_typewriter">LaTeXML</span></span></a><a href="../../idx.html" title="Index ‣ LaTeXML The Manual" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="../post/" title="§ 2.2 Basic Postprocessing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2 </span>Postprocessing</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Tue Dec 17 10:04:54 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,1274 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>C.10 Module LaTeXML-picture‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual</title>
+<!--Generated on Tue Dec 17 10:04:54 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 17, 2024.-->
+
+<link rel="shortcut icon" href="../../../favicon.ico" type="image/png">
+<link rel="stylesheet" href="../../../LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="../../../ltx-book.css" type="text/css">
+<link rel="stylesheet" href="../../../ltx-listings.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../../../latexmldoc.css" type="text/css">
+<script src="../../../LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="up" href="../" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="up up" href="../../" title="LaTeXML The Manual">
+<link rel="start" href="../../" title="LaTeXML The Manual">
+<link rel="prev" href="../LaTeXML-tabular/" title="C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="next" href="../LaTeXML-structure/" title="C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML/" title="C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-common/" title="C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-inline/" title="C.3 Module LaTeXML-inline ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-block/" title="C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-misc/" title="C.5 Module LaTeXML-misc ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-meta/" title="C.6 Module LaTeXML-meta ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-para/" title="C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-math/" title="C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-tabular/" title="C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-structure/" title="C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-bib/" title="C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../intro/" title="Chapter 1 Introduction ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../usage/" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../customization/" title="Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../localization/" title="Chapter 6 Localization ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../alignments/" title="Chapter 7 Alignments ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../metadata/" title="Chapter 8 Metadata ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../todo/" title="Chapter 9 ToDo ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../acknowledgements/" title="Acknowledgements ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../commands/" title="Appendix A Command Documentation ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual">
+<link rel="appendix" href="../" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../cssclasses/" title="Appendix E CSS Classes ‣ LaTeXML The Manual">
+<link rel="index" href="../../idx.html" title="Index ‣ LaTeXML The Manual">
+<meta name="keywords" lang="en" content=", , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , attribute, element, schema pattern">
+</head>
+<body>
+<nav class="ltx_page_navbar">
+<div class="ltx_para">
+<p class="ltx_p"><a href="../../" title="LaTeXML The Manual" class="ltx_ref"><img src="x1.png" class="ltx_graphics" width="215" height="50" alt=""></a>
+<br class="ltx_break"><img src="x2.png" class="ltx_graphics" width="130" height="168" alt="">
+<br class="ltx_break"></p>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../intro/" title="Chapter 1 Introduction ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Introduction</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../usage/" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Using <span class="ltx_ref ltx_font_typewriter">LaTeXML</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Architecture</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../customization/" title="Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Customization</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Mathematics</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../localization/" title="Chapter 6 Localization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>Localization</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../alignments/" title="Chapter 7 Alignments ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Alignments</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../metadata/" title="Chapter 8 Metadata ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>Metadata</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../todo/" title="Chapter 9 ToDo ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>ToDo</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../acknowledgements/" title="Acknowledgements ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Acknowledgements</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../commands/" title="Appendix A Command Documentation ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>Commands</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B </span>Bindings</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix">
+<a href="../" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C </span>Schema</span></a>
+<ul class="ltx_toclist ltx_toclist_appendix">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML/" title="C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.1 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-common/" title="C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.2 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-common</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-inline/" title="C.3 Module LaTeXML-inline ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.3 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-inline</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-block/" title="C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.4 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-block</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-misc/" title="C.5 Module LaTeXML-misc ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.5 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-misc</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-meta/" title="C.6 Module LaTeXML-meta ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.6 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-meta</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-para/" title="C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.7 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-para</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-math/" title="C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.8 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-math</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-tabular/" title="C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.9 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-tabular</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section ltx_ref_self"><span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.10 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-picture</span></span></span></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-structure/" title="C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.11 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-structure</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-bib/" title="C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.12 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-bib</span></span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D </span>Error Codes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../cssclasses/" title="Appendix E CSS Classes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">E </span>CSS Classes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_index"><a href="../../idx.html" title="Index ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Index</span></a></li>
+</ul>
+</div></nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="../" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C </span>Schema</span></a><a href="../LaTeXML-tabular/" title="C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.9 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-tabular</span></span></a><a href="../LaTeXML-structure/" title="C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.11 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-structure</span></span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_1line">
+<h1 class="ltx_title ltx_align_left ltx_title_section">
+<span class="ltx_tag ltx_tag_section"> C.10 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-picture</span>
+</h1>
+
+<div id="p1" class="ltx_para ltx_align_left">
+<dl id="I1" class="ltx_description ltx_moduledescription">
+<dt id="I1.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Add to <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">Misc.class</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix1.p1" class="ltx_para">
+<p class="ltx_p">This module defines a picture environment, roughly a subset of SVG.
+NOTE: Eventually we will drop these subset elements and incorporate SVG itself.</p>
+<dl id="I1.ix1.I1" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix1.I1.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item">|=</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix1.I1.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">Picture.class</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix2.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.Picture.class" id="schema.Picture.class" class="ltx_anchor"></a></p>
+<dl id="I1.ix2.I2" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix2.I2.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix2.I2.ix1.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.g" title="A graphical grouping; the content is inherits by the transformations, positioning and other properties. ‣ item Element g ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">g</a>  |  <a href="#schema.rect" title="A rectangle within a picture. ‣ item Element rect ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">rect</a>  |  <a href="#schema.line" title="A line within a picture. ‣ item Element line ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">line</a>  |  <a href="#schema.circle" title="A circle within a picture. ‣ item Element circle ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">circle</a>  |  <a href="#schema.path" title="A path within a picture. ‣ item Element path ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">path</a>  |  <a href="#schema.arc" title="An arc within a picture. ‣ item Element arc ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">arc</a>  |  <a href="#schema.wedge" title="A wedge within a picture. ‣ item Element wedge ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">wedge</a>  |  <a href="#schema.ellipse" title="An ellipse within a picture. ‣ item Element ellipse ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">ellipse</a>  |  <a href="#schema.polygon" title="A polygon within a picture. ‣ item Element polygon ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">polygon</a>  |  <a href="#schema.bezier" title="A bezier curve within a picture. ‣ item Element bezier ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bezier</a>  |  <a href="#schema.parabola" title="A parabola curve within a picture. ‣ item Element parabola ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">parabola</a>  |  <a href="#schema.curve" title="A curve within a picture. ‣ item Element curve ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">curve</a>  |  <a href="#schema.dots" title="A sequence of dots (?) within a picture. ‣ item Element dots ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">dots</a>  |  <a href="#schema.grid" title="A grid within a picture. ‣ item Element grid ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">grid</a>  |  <a href="#schema.clip" title="Establishes a clipping region within a picture. ‣ item Element clip ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">clip</a>  |  <a href="../LaTeXML-misc/#schema.svg" title="item Pattern svg ‣ C.5 Module LaTeXML-misc ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">svg</a>)</p>
+</div>
+</dd>
+<dt id="I1.ix2.I2.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix2.I2.ix2.p1" class="ltx_para">
+<p class="ltx_p">((<a href="#schema.g" title="A graphical grouping; the content is inherits by the transformations, positioning and other properties. ‣ item Element g ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">g</a>  |  <a href="#schema.rect" title="A rectangle within a picture. ‣ item Element rect ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">rect</a>  |  <a href="#schema.line" title="A line within a picture. ‣ item Element line ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">line</a>  |  <a href="#schema.circle" title="A circle within a picture. ‣ item Element circle ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">circle</a>  |  <a href="#schema.path" title="A path within a picture. ‣ item Element path ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">path</a>  |  <a href="#schema.arc" title="An arc within a picture. ‣ item Element arc ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">arc</a>  |  <a href="#schema.wedge" title="A wedge within a picture. ‣ item Element wedge ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">wedge</a>  |  <a href="#schema.ellipse" title="An ellipse within a picture. ‣ item Element ellipse ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">ellipse</a>  |  <a href="#schema.polygon" title="A polygon within a picture. ‣ item Element polygon ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">polygon</a>  |  <a href="#schema.bezier" title="A bezier curve within a picture. ‣ item Element bezier ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bezier</a>  |  <a href="#schema.parabola" title="A parabola curve within a picture. ‣ item Element parabola ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">parabola</a>  |  <a href="#schema.curve" title="A curve within a picture. ‣ item Element curve ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">curve</a>  |  <a href="#schema.dots" title="A sequence of dots (?) within a picture. ‣ item Element dots ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">dots</a>  |  <a href="#schema.grid" title="A grid within a picture. ‣ item Element grid ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">grid</a>  |  <a href="#schema.clip" title="Establishes a clipping region within a picture. ‣ item Element clip ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">clip</a>  |  <a href="../LaTeXML-misc/#schema.svg" title="item Pattern svg ‣ C.5 Module LaTeXML-misc ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">svg</a>))</p>
+</div>
+</dd>
+<dt id="I1.ix2.I2.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix2.I2.ix3.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.clippath_model" title="Content model for clippath. ‣ item Pattern clippath_model ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">clippath_model</a>, <a href="#schema.g_model" title="Content model for g. ‣ item Pattern g_model ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">g_model</a>, <a href="#schema.picture_model" title="Content model for picture. ‣ item Pattern picture_model ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">picture_model</a>, <a href="#schema.clippath_model" title="Content model for clippath. ‣ item Pattern clippath_model ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">clippath_model</a>, <a href="#schema.g_model" title="Content model for g. ‣ item Pattern g_model ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">g_model</a>, <a href="#schema.picture_model" title="Content model for picture. ‣ item Pattern picture_model ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">picture_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">Picture.attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.Picture.attributes" id="schema.Picture.attributes" class="ltx_anchor">These attributes correspond roughly to SVG, but need documentation.
+</a></p>
+<dl id="I1.ix3.I3" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix3.I3.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">x</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix1.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">y</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">r</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix3.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">rx</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix4.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix5" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">ry</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix5.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix6" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">width</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix6.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix7" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">height</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix7.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix8" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">fill</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix8.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix9" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">stroke</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix9.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix10" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">stroke-width</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix10.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix11" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">stroke-dasharray</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix11.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix12" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">transform</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix12.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix13" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">terminators</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix13.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix14" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">arrowlength</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix14.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix15" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">points</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix15.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix16" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">showpoints</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix16.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix17" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">displayedpoints</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix17.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix18" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">arc</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix18.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix19" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">angle1</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix19.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix20" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">angle2</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix20.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix21" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">arcsepA</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix21.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix22" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">arcsepB</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix22.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix23" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">curvature</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix23.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix24" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix24.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.arc_attributes" title="Attributes for arc. ‣ item Pattern arc_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">arc_attributes</a>, <a href="#schema.bezier_attributes" title="Attributes for bezier. ‣ item Pattern bezier_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bezier_attributes</a>, <a href="#schema.circle_attributes" title="Attributes for circle. ‣ item Pattern circle_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">circle_attributes</a>, <a href="#schema.clip_attributes" title="Attributes for clip. ‣ item Pattern clip_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">clip_attributes</a>, <a href="#schema.clippath_attributes" title="Attributes for clippath. ‣ item Pattern clippath_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">clippath_attributes</a>, <a href="#schema.curve_attributes" title="Attributes for curve. ‣ item Pattern curve_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">curve_attributes</a>, <a href="#schema.dots_attributes" title="Attributes for dots. ‣ item Pattern dots_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">dots_attributes</a>, <a href="#schema.ellipse_attributes" title="Attributes for ellipse. ‣ item Pattern ellipse_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ellipse_attributes</a>, <a href="#schema.g_attributes" title="Attributes for g. ‣ item Pattern g_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">g_attributes</a>, <a href="#schema.grid_attributes" title="Attributes for grid. ‣ item Pattern grid_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">grid_attributes</a>, <a href="#schema.line_attributes" title="Attributes for line. ‣ item Pattern line_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">line_attributes</a>, <a href="#schema.parabola_attributes" title="Attributes for parabola. ‣ item Pattern parabola_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">parabola_attributes</a>, <a href="#schema.path_attributes" title="Attributes for path. ‣ item Pattern path_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">path_attributes</a>, <a href="#schema.picture_attributes" title="Attributes for picture. ‣ item Pattern picture_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">picture_attributes</a>, <a href="#schema.polygon_attributes" title="Attributes for polygon. ‣ item Pattern polygon_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">polygon_attributes</a>, <a href="#schema.rect_attributes" title="Attributes for rect. ‣ item Pattern rect_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">rect_attributes</a>, <a href="#schema.wedge_attributes" title="Attributes for wedge. ‣ item Pattern wedge_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">wedge_attributes</a>, <a href="#schema.arc_attributes" title="Attributes for arc. ‣ item Pattern arc_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">arc_attributes</a>, <a href="#schema.bezier_attributes" title="Attributes for bezier. ‣ item Pattern bezier_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bezier_attributes</a>, <a href="#schema.circle_attributes" title="Attributes for circle. ‣ item Pattern circle_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">circle_attributes</a>, <a href="#schema.clip_attributes" title="Attributes for clip. ‣ item Pattern clip_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">clip_attributes</a>, <a href="#schema.clippath_attributes" title="Attributes for clippath. ‣ item Pattern clippath_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">clippath_attributes</a>, <a href="#schema.curve_attributes" title="Attributes for curve. ‣ item Pattern curve_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">curve_attributes</a>, <a href="#schema.dots_attributes" title="Attributes for dots. ‣ item Pattern dots_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">dots_attributes</a>, <a href="#schema.ellipse_attributes" title="Attributes for ellipse. ‣ item Pattern ellipse_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ellipse_attributes</a>, <a href="#schema.g_attributes" title="Attributes for g. ‣ item Pattern g_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">g_attributes</a>, <a href="#schema.grid_attributes" title="Attributes for grid. ‣ item Pattern grid_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">grid_attributes</a>, <a href="#schema.line_attributes" title="Attributes for line. ‣ item Pattern line_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">line_attributes</a>, <a href="#schema.parabola_attributes" title="Attributes for parabola. ‣ item Pattern parabola_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">parabola_attributes</a>, <a href="#schema.path_attributes" title="Attributes for path. ‣ item Pattern path_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">path_attributes</a>, <a href="#schema.picture_attributes" title="Attributes for picture. ‣ item Pattern picture_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">picture_attributes</a>, <a href="#schema.polygon_attributes" title="Attributes for polygon. ‣ item Pattern polygon_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">polygon_attributes</a>, <a href="#schema.rect_attributes" title="Attributes for rect. ‣ item Pattern rect_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">rect_attributes</a>, <a href="#schema.wedge_attributes" title="Attributes for wedge. ‣ item Pattern wedge_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">wedge_attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">PictureGroup.attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix4.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.PictureGroup.attributes" id="schema.PictureGroup.attributes" class="ltx_anchor">These attributes correspond roughly to SVG, but need documentation.
+</a></p>
+<dl id="I1.ix4.I4" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix4.I4.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">pos</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix4.I4.ix1.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix4.I4.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">framed</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix4.I4.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">boolean</span></p>
+</div>
+</dd>
+<dt id="I1.ix4.I4.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">frametype</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix4.I4.ix3.p1" class="ltx_para">
+<p class="ltx_p">= (<span class="ltx_text ltx_font_typewriter">rect</span>  |  <span class="ltx_text ltx_font_typewriter">circle</span>  |  <span class="ltx_text ltx_font_typewriter">oval</span>)</p>
+</div>
+</dd>
+<dt id="I1.ix4.I4.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">fillframe</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix4.I4.ix4.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">boolean</span></p>
+</div>
+</dd>
+<dt id="I1.ix4.I4.ix5" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">boxsep</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix4.I4.ix5.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix4.I4.ix6" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">shadowbox</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix4.I4.ix6.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">boolean</span></p>
+</div>
+</dd>
+<dt id="I1.ix4.I4.ix7" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">doubleline</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix4.I4.ix7.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">boolean</span></p>
+</div>
+</dd>
+<dt id="I1.ix4.I4.ix8" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix4.I4.ix8.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.g_attributes" title="Attributes for g. ‣ item Pattern g_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">g_attributes</a>, <a href="#schema.g_attributes" title="Attributes for g. ‣ item Pattern g_attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">g_attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix5" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">picture</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix5.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.picture" id="schema.picture" class="ltx_anchor">A picture environment.
+</a></p>
+<dl id="I1.ix5.I5" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix5.I5.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix5.I5.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>, <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix6" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">picture_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.picture_attributes" id="schema.picture_attributes" class="ltx_anchor">Attributes for <a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a>.</a></p>
+<dl id="I1.ix6.I6" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix6.I6.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.I6.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a>, <a href="#schema.Picture.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern Picture.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.attributes</a>, <a href="../LaTeXML-common/#schema.Imageable.attributes" title="Attributes for elements that may be converted to image form during postprocessing, such as math, graphics, pictures, etc. Note that these attributes are generally not filled in until postprocessing, but that they could be init ‣ item Pattern Imageable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Imageable.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix6.I6.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">clip</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.I6.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">boolean</span></p>
+</div>
+</dd>
+<dt id="I1.ix6.I6.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">baseline</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.I6.ix3.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix6.I6.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">unitlength</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.I6.ix4.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix6.I6.ix5" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">xunitlength</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.I6.ix5.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix6.I6.ix6" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">yunitlength</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.I6.ix6.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix6.I6.ix7" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">origin-x</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.I6.ix7.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix6.I6.ix8" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">origin-y</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.I6.ix8.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix6.I6.ix9" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">tex</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.I6.ix9.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix6.I6.ix10" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">content-tex</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.I6.ix10.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix7" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">picture_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.picture_model" id="schema.picture_model" class="ltx_anchor">Content model for <a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a>.</a></p>
+<dl id="I1.ix7.I7" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix7.I7.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.I7.ix1.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>  |  <a href="../LaTeXML-common/#schema.Inline.class" title="All strictly inline elements. ‣ item Pattern Inline.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.class</a>  |  <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>  |  <a href="../LaTeXML-common/#schema.Meta.class" title="All metadata elements, typically representing hidden data. ‣ item Pattern Meta.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Meta.class</a>)*</p>
+</div>
+</dd>
+<dt id="I1.ix7.I7.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.I7.ix2.p1" class="ltx_para">
+<p class="ltx_p">((<a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>  |  <a href="../LaTeXML-common/#schema.Inline.class" title="All strictly inline elements. ‣ item Pattern Inline.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.class</a>  |  <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>  |  <a href="../LaTeXML-common/#schema.Meta.class" title="All metadata elements, typically representing hidden data. ‣ item Pattern Meta.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Meta.class</a>)*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix8" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">g</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix8.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.g" id="schema.g" class="ltx_anchor">A graphical grouping; the content is inherits by the transformations,
+positioning and other properties.
+</a></p>
+<dl id="I1.ix8.I8" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix8.I8.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix8.I8.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>, <a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix9" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">g_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix9.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.g_attributes" id="schema.g_attributes" class="ltx_anchor">Attributes for <a href="#schema.g" title="A graphical grouping; the content is inherits by the transformations, positioning and other properties. ‣ item Element g ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">g</a>.</a></p>
+<dl id="I1.ix9.I9" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix9.I9.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix9.I9.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.Transformable.attributes" title="Attributes shared by (hopefully few) elements that can be transformed. Such elements should also have Positionable.attributes. Transformation order of an individual element is assumed to be translate, scale, rotate; wrap elements to achieve different orders. Attributes innerwidth, innerheight and innerdepth describe the size of the contents of the element before transformation; The result size would be encoded in Positional.attributes. ‣ item Pattern Transformable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Transformable.attributes</a>, <a href="#schema.Picture.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern Picture.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.attributes</a>, <a href="#schema.PictureGroup.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern PictureGroup.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">PictureGroup.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix10" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">g_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix10.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.g_model" id="schema.g_model" class="ltx_anchor">Content model for <a href="#schema.g" title="A graphical grouping; the content is inherits by the transformations, positioning and other properties. ‣ item Element g ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">g</a>.</a></p>
+<dl id="I1.ix10.I10" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix10.I10.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix10.I10.ix1.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>  |  <a href="../LaTeXML-common/#schema.Inline.class" title="All strictly inline elements. ‣ item Pattern Inline.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.class</a>  |  <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>  |  <a href="../LaTeXML-common/#schema.Meta.class" title="All metadata elements, typically representing hidden data. ‣ item Pattern Meta.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Meta.class</a>)*</p>
+</div>
+</dd>
+<dt id="I1.ix10.I10.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix10.I10.ix2.p1" class="ltx_para">
+<p class="ltx_p">((<a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>  |  <a href="../LaTeXML-common/#schema.Inline.class" title="All strictly inline elements. ‣ item Pattern Inline.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.class</a>  |  <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>  |  <a href="../LaTeXML-common/#schema.Meta.class" title="All metadata elements, typically representing hidden data. ‣ item Pattern Meta.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Meta.class</a>)*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix11" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">rect</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix11.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.rect" id="schema.rect" class="ltx_anchor">A rectangle within a <a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a>.
+</a></p>
+<dl id="I1.ix11.I11" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix11.I11.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix11.I11.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>, <a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix12" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">rect_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix12.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.rect_attributes" id="schema.rect_attributes" class="ltx_anchor">Attributes for <a href="#schema.rect" title="A rectangle within a picture. ‣ item Element rect ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">rect</a>.</a></p>
+<dl id="I1.ix12.I12" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix12.I12.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix12.I12.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.Picture.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern Picture.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix13" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">rect_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix13.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.rect_model" id="schema.rect_model" class="ltx_anchor">Content model for <a href="#schema.rect" title="A rectangle within a picture. ‣ item Element rect ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">rect</a>.</a></p>
+<dl id="I1.ix13.I13" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix13.I13.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix13.I13.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+<dt id="I1.ix13.I13.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix13.I13.ix2.p1" class="ltx_para">
+<p class="ltx_p">()</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix14" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">line</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix14.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.line" id="schema.line" class="ltx_anchor">A line within a <a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a>.
+</a></p>
+<dl id="I1.ix14.I14" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix14.I14.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix14.I14.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>, <a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix15" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">line_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix15.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.line_attributes" id="schema.line_attributes" class="ltx_anchor">Attributes for <a href="#schema.line" title="A line within a picture. ‣ item Element line ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">line</a>.</a></p>
+<dl id="I1.ix15.I15" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix15.I15.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix15.I15.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.Picture.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern Picture.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix16" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">line_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix16.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.line_model" id="schema.line_model" class="ltx_anchor">Content model for <a href="#schema.line" title="A line within a picture. ‣ item Element line ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">line</a>.</a></p>
+<dl id="I1.ix16.I16" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix16.I16.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix16.I16.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+<dt id="I1.ix16.I16.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix16.I16.ix2.p1" class="ltx_para">
+<p class="ltx_p">()</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix17" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">polygon</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix17.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.polygon" id="schema.polygon" class="ltx_anchor">A polygon within a <a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a>.
+</a></p>
+<dl id="I1.ix17.I17" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix17.I17.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix17.I17.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>, <a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix18" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">polygon_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix18.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.polygon_attributes" id="schema.polygon_attributes" class="ltx_anchor">Attributes for <a href="#schema.polygon" title="A polygon within a picture. ‣ item Element polygon ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">polygon</a>.</a></p>
+<dl id="I1.ix18.I18" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix18.I18.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix18.I18.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.Picture.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern Picture.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix19" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">polygon_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix19.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.polygon_model" id="schema.polygon_model" class="ltx_anchor">Content model for <a href="#schema.polygon" title="A polygon within a picture. ‣ item Element polygon ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">polygon</a>.</a></p>
+<dl id="I1.ix19.I19" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix19.I19.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix19.I19.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+<dt id="I1.ix19.I19.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix19.I19.ix2.p1" class="ltx_para">
+<p class="ltx_p">()</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix20" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">wedge</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix20.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.wedge" id="schema.wedge" class="ltx_anchor">A wedge within a <a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a>.
+</a></p>
+<dl id="I1.ix20.I20" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix20.I20.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix20.I20.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>, <a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix21" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">wedge_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix21.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.wedge_attributes" id="schema.wedge_attributes" class="ltx_anchor">Attributes for <a href="#schema.wedge" title="A wedge within a picture. ‣ item Element wedge ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">wedge</a>.</a></p>
+<dl id="I1.ix21.I21" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix21.I21.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix21.I21.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.Picture.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern Picture.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix22" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">wedge_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix22.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.wedge_model" id="schema.wedge_model" class="ltx_anchor">Content model for <a href="#schema.wedge" title="A wedge within a picture. ‣ item Element wedge ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">wedge</a>.</a></p>
+<dl id="I1.ix22.I22" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix22.I22.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix22.I22.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+<dt id="I1.ix22.I22.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix22.I22.ix2.p1" class="ltx_para">
+<p class="ltx_p">()</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix23" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">arc</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix23.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.arc" id="schema.arc" class="ltx_anchor">An arc within a <a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a>.
+</a></p>
+<dl id="I1.ix23.I23" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix23.I23.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix23.I23.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>, <a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix24" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">arc_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix24.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.arc_attributes" id="schema.arc_attributes" class="ltx_anchor">Attributes for <a href="#schema.arc" title="An arc within a picture. ‣ item Element arc ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">arc</a>.</a></p>
+<dl id="I1.ix24.I24" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix24.I24.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix24.I24.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.Picture.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern Picture.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix25" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">arc_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix25.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.arc_model" id="schema.arc_model" class="ltx_anchor">Content model for <a href="#schema.arc" title="An arc within a picture. ‣ item Element arc ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">arc</a>.</a></p>
+<dl id="I1.ix25.I25" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix25.I25.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix25.I25.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+<dt id="I1.ix25.I25.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix25.I25.ix2.p1" class="ltx_para">
+<p class="ltx_p">()</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix26" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">circle</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix26.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.circle" id="schema.circle" class="ltx_anchor">A circle within a <a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a>.
+</a></p>
+<dl id="I1.ix26.I26" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix26.I26.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix26.I26.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>, <a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix27" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">circle_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix27.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.circle_attributes" id="schema.circle_attributes" class="ltx_anchor">Attributes for <a href="#schema.circle" title="A circle within a picture. ‣ item Element circle ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">circle</a>.</a></p>
+<dl id="I1.ix27.I27" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix27.I27.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix27.I27.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.Picture.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern Picture.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix28" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">circle_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix28.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.circle_model" id="schema.circle_model" class="ltx_anchor">Content model for <a href="#schema.circle" title="A circle within a picture. ‣ item Element circle ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">circle</a>.</a></p>
+<dl id="I1.ix28.I28" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix28.I28.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix28.I28.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+<dt id="I1.ix28.I28.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix28.I28.ix2.p1" class="ltx_para">
+<p class="ltx_p">()</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix29" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">ellipse</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix29.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.ellipse" id="schema.ellipse" class="ltx_anchor">An ellipse within a <a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a>.
+</a></p>
+<dl id="I1.ix29.I29" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix29.I29.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix29.I29.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>, <a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix30" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">ellipse_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix30.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.ellipse_attributes" id="schema.ellipse_attributes" class="ltx_anchor">Attributes for <a href="#schema.ellipse" title="An ellipse within a picture. ‣ item Element ellipse ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">ellipse</a>.</a></p>
+<dl id="I1.ix30.I30" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix30.I30.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix30.I30.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.Picture.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern Picture.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix31" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">ellipse_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix31.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.ellipse_model" id="schema.ellipse_model" class="ltx_anchor">Content model for <a href="#schema.ellipse" title="An ellipse within a picture. ‣ item Element ellipse ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">ellipse</a>.</a></p>
+<dl id="I1.ix31.I31" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix31.I31.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix31.I31.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+<dt id="I1.ix31.I31.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix31.I31.ix2.p1" class="ltx_para">
+<p class="ltx_p">()</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix32" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">path</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix32.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.path" id="schema.path" class="ltx_anchor">A path within a <a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a>.
+</a></p>
+<dl id="I1.ix32.I32" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix32.I32.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix32.I32.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>, <a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix33" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">path_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix33.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.path_attributes" id="schema.path_attributes" class="ltx_anchor">Attributes for <a href="#schema.path" title="A path within a picture. ‣ item Element path ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">path</a>.</a></p>
+<dl id="I1.ix33.I33" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix33.I33.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix33.I33.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.Picture.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern Picture.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix34" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">path_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix34.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.path_model" id="schema.path_model" class="ltx_anchor">Content model for <a href="#schema.path" title="A path within a picture. ‣ item Element path ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">path</a>.</a></p>
+<dl id="I1.ix34.I34" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix34.I34.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix34.I34.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+<dt id="I1.ix34.I34.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix34.I34.ix2.p1" class="ltx_para">
+<p class="ltx_p">()</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix35" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">bezier</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix35.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bezier" id="schema.bezier" class="ltx_anchor">A bezier curve within a <a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a>.
+</a></p>
+<dl id="I1.ix35.I35" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix35.I35.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix35.I35.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>, <a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix36" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bezier_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix36.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bezier_attributes" id="schema.bezier_attributes" class="ltx_anchor">Attributes for <a href="#schema.bezier" title="A bezier curve within a picture. ‣ item Element bezier ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bezier</a>.</a></p>
+<dl id="I1.ix36.I36" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix36.I36.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix36.I36.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.Picture.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern Picture.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix37" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">bezier_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix37.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.bezier_model" id="schema.bezier_model" class="ltx_anchor">Content model for <a href="#schema.bezier" title="A bezier curve within a picture. ‣ item Element bezier ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">bezier</a>.</a></p>
+<dl id="I1.ix37.I37" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix37.I37.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix37.I37.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+<dt id="I1.ix37.I37.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix37.I37.ix2.p1" class="ltx_para">
+<p class="ltx_p">()</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix38" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">curve</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix38.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.curve" id="schema.curve" class="ltx_anchor">A curve within a <a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a>.
+</a></p>
+<dl id="I1.ix38.I38" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix38.I38.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix38.I38.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>, <a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix39" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">curve_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix39.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.curve_attributes" id="schema.curve_attributes" class="ltx_anchor">Attributes for <a href="#schema.curve" title="A curve within a picture. ‣ item Element curve ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">curve</a>.</a></p>
+<dl id="I1.ix39.I39" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix39.I39.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix39.I39.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.Picture.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern Picture.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix40" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">curve_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix40.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.curve_model" id="schema.curve_model" class="ltx_anchor">Content model for <a href="#schema.curve" title="A curve within a picture. ‣ item Element curve ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">curve</a>.</a></p>
+<dl id="I1.ix40.I40" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix40.I40.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix40.I40.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+<dt id="I1.ix40.I40.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix40.I40.ix2.p1" class="ltx_para">
+<p class="ltx_p">()</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix41" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">parabola</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix41.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.parabola" id="schema.parabola" class="ltx_anchor">A parabola curve within a <a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a>.
+</a></p>
+<dl id="I1.ix41.I41" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix41.I41.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix41.I41.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>, <a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix42" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">parabola_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix42.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.parabola_attributes" id="schema.parabola_attributes" class="ltx_anchor">Attributes for <a href="#schema.parabola" title="A parabola curve within a picture. ‣ item Element parabola ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">parabola</a>.</a></p>
+<dl id="I1.ix42.I42" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix42.I42.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix42.I42.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.Picture.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern Picture.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix43" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">parabola_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix43.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.parabola_model" id="schema.parabola_model" class="ltx_anchor">Content model for <a href="#schema.parabola" title="A parabola curve within a picture. ‣ item Element parabola ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">parabola</a>.</a></p>
+<dl id="I1.ix43.I43" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix43.I43.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix43.I43.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+<dt id="I1.ix43.I43.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix43.I43.ix2.p1" class="ltx_para">
+<p class="ltx_p">()</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix44" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">dots</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix44.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.dots" id="schema.dots" class="ltx_anchor">A sequence of dots (?) within a <a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a>.
+</a></p>
+<dl id="I1.ix44.I44" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix44.I44.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix44.I44.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>, <a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix45" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">dots_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix45.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.dots_attributes" id="schema.dots_attributes" class="ltx_anchor">Attributes for <a href="#schema.dots" title="A sequence of dots (?) within a picture. ‣ item Element dots ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">dots</a>.</a></p>
+<dl id="I1.ix45.I45" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix45.I45.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix45.I45.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.Picture.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern Picture.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix45.I45.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">dotstyle</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix45.I45.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix45.I45.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">dotsize</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix45.I45.ix3.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+<dt id="I1.ix45.I45.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">dotscale</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix45.I45.ix4.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix46" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">dots_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix46.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.dots_model" id="schema.dots_model" class="ltx_anchor">Content model for <a href="#schema.dots" title="A sequence of dots (?) within a picture. ‣ item Element dots ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">dots</a>.</a></p>
+<dl id="I1.ix46.I46" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix46.I46.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix46.I46.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+<dt id="I1.ix46.I46.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix46.I46.ix2.p1" class="ltx_para">
+<p class="ltx_p">()</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix47" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">grid</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix47.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.grid" id="schema.grid" class="ltx_anchor">A grid within a <a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a>.
+</a></p>
+<dl id="I1.ix47.I47" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix47.I47.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix47.I47.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>, <a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix48" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">grid_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix48.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.grid_attributes" id="schema.grid_attributes" class="ltx_anchor">Attributes for <a href="#schema.grid" title="A grid within a picture. ‣ item Element grid ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">grid</a>.</a></p>
+<dl id="I1.ix48.I48" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix48.I48.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix48.I48.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.Picture.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern Picture.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix49" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">grid_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix49.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.grid_model" id="schema.grid_model" class="ltx_anchor">Content model for <a href="#schema.grid" title="A grid within a picture. ‣ item Element grid ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">grid</a>.</a></p>
+<dl id="I1.ix49.I49" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix49.I49.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix49.I49.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+<dt id="I1.ix49.I49.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix49.I49.ix2.p1" class="ltx_para">
+<p class="ltx_p">()</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix50" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">clip</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix50.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.clip" id="schema.clip" class="ltx_anchor">Establishes a clipping region within a <a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a>.
+</a></p>
+<dl id="I1.ix50.I50" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix50.I50.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix50.I50.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>, <a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix51" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">clip_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix51.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.clip_attributes" id="schema.clip_attributes" class="ltx_anchor">Attributes for <a href="#schema.clip" title="Establishes a clipping region within a picture. ‣ item Element clip ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">clip</a>.</a></p>
+<dl id="I1.ix51.I51" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix51.I51.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix51.I51.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.Picture.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern Picture.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix52" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">clip_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix52.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.clip_model" id="schema.clip_model" class="ltx_anchor">Content model for <a href="#schema.clip" title="Establishes a clipping region within a picture. ‣ item Element clip ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">clip</a>.</a></p>
+<dl id="I1.ix52.I52" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix52.I52.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix52.I52.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.clippath" title="Establishes a clipping region within a picture. ‣ item Element clippath ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">clippath</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix52.I52.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix52.I52.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.clippath" title="Establishes a clipping region within a picture. ‣ item Element clippath ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">clippath</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix53" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">clippath</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix53.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.clippath" id="schema.clippath" class="ltx_anchor">Establishes a clipping region within a <a href="#schema.picture" title="A picture environment. ‣ item Element picture ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">picture</a>.
+</a></p>
+<dl id="I1.ix53.I53" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix53.I53.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix53.I53.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.clip_model" title="Content model for clip. ‣ item Pattern clip_model ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">clip_model</a>, <a href="#schema.clip_model" title="Content model for clip. ‣ item Pattern clip_model ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">clip_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix54" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">clippath_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix54.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.clippath_attributes" id="schema.clippath_attributes" class="ltx_anchor">Attributes for <a href="#schema.clippath" title="Establishes a clipping region within a picture. ‣ item Element clippath ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">clippath</a>.</a></p>
+<dl id="I1.ix54.I54" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix54.I54.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix54.I54.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="#schema.Picture.attributes" title="These attributes correspond roughly to SVG, but need documentation. ‣ item Pattern Picture.attributes ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix55" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">clippath_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix55.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.clippath_model" id="schema.clippath_model" class="ltx_anchor">Content model for <a href="#schema.clippath" title="Establishes a clipping region within a picture. ‣ item Element clippath ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">clippath</a>.</a></p>
+<dl id="I1.ix55.I55" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix55.I55.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix55.I55.ix1.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>  |  <a href="../LaTeXML-common/#schema.Inline.class" title="All strictly inline elements. ‣ item Pattern Inline.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.class</a>  |  <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>  |  <a href="../LaTeXML-common/#schema.Meta.class" title="All metadata elements, typically representing hidden data. ‣ item Pattern Meta.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Meta.class</a>)*</p>
+</div>
+</dd>
+<dt id="I1.ix55.I55.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix55.I55.ix2.p1" class="ltx_para">
+<p class="ltx_p">((<a href="#schema.Picture.class" title="item Pattern Picture.class ‣ C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Picture.class</a>  |  <a href="../LaTeXML-common/#schema.Inline.class" title="All strictly inline elements. ‣ item Pattern Inline.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.class</a>  |  <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>  |  <a href="../LaTeXML-common/#schema.Meta.class" title="All metadata elements, typically representing hidden data. ‣ item Pattern Meta.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Meta.class</a>)*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+</div>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="../LaTeXML-tabular/" title="C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.9 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-tabular</span></span></a><a href="../../idx.html" title="Index ‣ LaTeXML The Manual" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="../LaTeXML-structure/" title="C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.11 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-structure</span></span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Tue Dec 17 10:04:54 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

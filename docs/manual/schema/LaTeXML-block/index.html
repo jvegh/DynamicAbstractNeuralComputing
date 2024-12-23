@@ -1,0 +1,1279 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>C.4 Module LaTeXML-block‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual</title>
+<!--Generated on Tue Dec 17 10:04:54 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 17, 2024.-->
+
+<link rel="shortcut icon" href="../../../favicon.ico" type="image/png">
+<link rel="stylesheet" href="../../../LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="../../../ltx-book.css" type="text/css">
+<link rel="stylesheet" href="../../../ltx-listings.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../../../latexmldoc.css" type="text/css">
+<script src="../../../LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="up" href="../" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="up up" href="../../" title="LaTeXML The Manual">
+<link rel="start" href="../../" title="LaTeXML The Manual">
+<link rel="prev" href="../LaTeXML-inline/" title="C.3 Module LaTeXML-inline ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="next" href="../LaTeXML-misc/" title="C.5 Module LaTeXML-misc ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML/" title="C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-common/" title="C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-inline/" title="C.3 Module LaTeXML-inline ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-misc/" title="C.5 Module LaTeXML-misc ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-meta/" title="C.6 Module LaTeXML-meta ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-para/" title="C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-math/" title="C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-tabular/" title="C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-picture/" title="C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-structure/" title="C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="section" href="../LaTeXML-bib/" title="C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../intro/" title="Chapter 1 Introduction ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../usage/" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../customization/" title="Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../localization/" title="Chapter 6 Localization ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../alignments/" title="Chapter 7 Alignments ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../metadata/" title="Chapter 8 Metadata ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../todo/" title="Chapter 9 ToDo ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../acknowledgements/" title="Acknowledgements ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../commands/" title="Appendix A Command Documentation ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual">
+<link rel="appendix" href="../" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../cssclasses/" title="Appendix E CSS Classes ‣ LaTeXML The Manual">
+<link rel="index" href="../../idx.html" title="Index ‣ LaTeXML The Manual">
+<meta name="keywords" lang="en" content=", , , , , , , , , , , , , , , , , , , , , , , , , , , , , attribute, element, schema pattern">
+</head>
+<body>
+<nav class="ltx_page_navbar">
+<div class="ltx_para">
+<p class="ltx_p"><a href="../../" title="LaTeXML The Manual" class="ltx_ref"><img src="x1.png" class="ltx_graphics" width="215" height="50" alt=""></a>
+<br class="ltx_break"><img src="x2.png" class="ltx_graphics" width="130" height="168" alt="">
+<br class="ltx_break"></p>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../intro/" title="Chapter 1 Introduction ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Introduction</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../usage/" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Using <span class="ltx_ref ltx_font_typewriter">LaTeXML</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Architecture</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../customization/" title="Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Customization</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Mathematics</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../localization/" title="Chapter 6 Localization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>Localization</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../alignments/" title="Chapter 7 Alignments ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Alignments</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../metadata/" title="Chapter 8 Metadata ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>Metadata</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../todo/" title="Chapter 9 ToDo ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>ToDo</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../acknowledgements/" title="Acknowledgements ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Acknowledgements</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../commands/" title="Appendix A Command Documentation ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>Commands</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B </span>Bindings</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix">
+<a href="../" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C </span>Schema</span></a>
+<ul class="ltx_toclist ltx_toclist_appendix">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML/" title="C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.1 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-common/" title="C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.2 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-common</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-inline/" title="C.3 Module LaTeXML-inline ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.3 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-inline</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section ltx_ref_self"><span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.4 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-block</span></span></span></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-misc/" title="C.5 Module LaTeXML-misc ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.5 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-misc</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-meta/" title="C.6 Module LaTeXML-meta ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.6 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-meta</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-para/" title="C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.7 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-para</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-math/" title="C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.8 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-math</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-tabular/" title="C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.9 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-tabular</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-picture/" title="C.10 Module LaTeXML-picture ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.10 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-picture</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-structure/" title="C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.11 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-structure</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../LaTeXML-bib/" title="C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.12 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-bib</span></span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D </span>Error Codes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../cssclasses/" title="Appendix E CSS Classes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">E </span>CSS Classes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_index"><a href="../../idx.html" title="Index ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Index</span></a></li>
+</ul>
+</div></nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="../" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C </span>Schema</span></a><a href="../LaTeXML-inline/" title="C.3 Module LaTeXML-inline ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.3 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-inline</span></span></a><a href="../LaTeXML-misc/" title="C.5 Module LaTeXML-misc ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.5 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-misc</span></span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_1line">
+<h1 class="ltx_title ltx_align_left ltx_title_section">
+<span class="ltx_tag ltx_tag_section"> C.4 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-block</span>
+</h1>
+
+<div id="p1" class="ltx_para ltx_align_left">
+<dl id="I1" class="ltx_description ltx_moduledescription">
+<dt id="I1.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Add to <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">Block.class</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix1.p1" class="ltx_para">
+<p class="ltx_p">The block module defines the following ‘physical’ block elements.</p>
+<dl id="I1.ix1.I1" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix1.I1.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item">|=</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix1.I1.ix1.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.p" title="A physical paragraph. ‣ item Element p ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">p</a>  |  <a href="#schema.equation" title="An Equation. The model is just Inline which includes Math, the main expected ingredient. However, other things can end up in display math, too, so we use Inline. Note that tabular is here only because it’s a common, if misguided, idiom; the processor will lift such elements out of math, when possible ‣ item Element equation ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">equation</a>  |  <a href="#schema.equationgroup" title="A group of equations, perhaps aligned (Though this is nowhere recorded). ‣ item Element equationgroup ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">equationgroup</a>  |  <a href="#schema.quote" title="A quotation. ‣ item Element quote ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">quote</a>  |  <a href="#schema.block" title="A generic block (fallback). ‣ item Element block ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">block</a>  |  <a href="#schema.listing" title="An Listing, (without caption: see float) ‣ item Element listing ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">listing</a>  |  <a href="#schema.itemize" title="An itemized list. ‣ item Element itemize ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">itemize</a>  |  <a href="#schema.enumerate" title="An enumerated list. ‣ item Element enumerate ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">enumerate</a>  |  <a href="#schema.description" title="A description list. The items within are expected to have a tag which represents the term being described in each item. ‣ item Element description ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">description</a>  |  <a href="#schema.pagination" title="A page break or related pagination information. ‣ item Element pagination ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">pagination</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Add to <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">Misc.class</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix2.p1" class="ltx_para">
+<p class="ltx_p">These are inline forms of logical lists
+(they are included in Misc since that has been the general strategy)</p>
+<dl id="I1.ix2.I2" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix2.I2.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item">|=</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix2.I2.ix1.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.inline-itemize" title="An inline form of itemized list. ‣ item Element inline-itemize ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-itemize</a>  |  <a href="#schema.inline-enumerate" title="An inline form of enumerated list. ‣ item Element inline-enumerate ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-enumerate</a>  |  <a href="#schema.inline-description" title="An inline form of description list. The inline-items within are expected to have a tags which represents the term being described in each inline-item. ‣ item Element inline-description ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-description</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">EquationMeta.class</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.EquationMeta.class" id="schema.EquationMeta.class" class="ltx_anchor">Additional Metadata that can be present in equations.
+</a></p>
+<dl id="I1.ix3.I3" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix3.I3.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.constraint" title="A constraint upon an equation. ‣ item Element constraint ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">constraint</a></p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.constraint" title="A constraint upon an equation. ‣ item Element constraint ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">constraint</a>)</p>
+</div>
+</dd>
+<dt id="I1.ix3.I3.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.I3.ix3.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.equation_model" title="Content model for equation. ‣ item Pattern equation_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equation_model</a>, <a href="#schema.equationgroup_model" title="Content model for equationgroup. ‣ item Pattern equationgroup_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equationgroup_model</a>, <a href="#schema.equation_model" title="Content model for equation. ‣ item Pattern equation_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equation_model</a>, <a href="#schema.equationgroup_model" title="Content model for equationgroup. ‣ item Pattern equationgroup_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equationgroup_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">p</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix4.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.p" id="schema.p" class="ltx_anchor">A physical paragraph.
+</a></p>
+<dl id="I1.ix4.I4" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix4.I4.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix4.I4.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a>, <a href="#schema.equationgroup_model" title="Content model for equationgroup. ‣ item Pattern equationgroup_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equationgroup_model</a>, <a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a>, <a href="#schema.equationgroup_model" title="Content model for equationgroup. ‣ item Pattern equationgroup_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equationgroup_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix5" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">p_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix5.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.p_attributes" id="schema.p_attributes" class="ltx_anchor">Attributes for <a href="#schema.p" title="A physical paragraph. ‣ item Element p ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">p</a>.</a></p>
+<dl id="I1.ix5.I5" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix5.I5.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix5.I5.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a>, <a href="../LaTeXML-common/#schema.Positionable.attributes" title="Attributes shared by low-level, generic inline and block elements that can be sized or shifted. ‣ item Pattern Positionable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Positionable.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix6" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">p_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.p_model" id="schema.p_model" class="ltx_anchor">Content model for <a href="#schema.p" title="A physical paragraph. ‣ item Element p ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">p</a>.</a></p>
+<dl id="I1.ix6.I6" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix6.I6.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.I6.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix6.I6.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix6.I6.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix7" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">constraint</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.constraint" id="schema.constraint" class="ltx_anchor">A constraint upon an equation.
+</a></p>
+<dl id="I1.ix7.I7" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix7.I7.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix7.I7.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.EquationMeta.class" title="Additional Metadata that can be present in equations. ‣ item Pattern EquationMeta.class ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">EquationMeta.class</a>, <a href="#schema.EquationMeta.class" title="Additional Metadata that can be present in equations. ‣ item Pattern EquationMeta.class ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">EquationMeta.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix8" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">constraint_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix8.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.constraint_attributes" id="schema.constraint_attributes" class="ltx_anchor">Attributes for <a href="#schema.constraint" title="A constraint upon an equation. ‣ item Element constraint ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">constraint</a>.</a></p>
+<dl id="I1.ix8.I8" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix8.I8.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix8.I8.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix8.I8.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">hidden</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix8.I8.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">boolean</span></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix9" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">constraint_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix9.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.constraint_model" id="schema.constraint_model" class="ltx_anchor">Content model for <a href="#schema.constraint" title="A constraint upon an equation. ‣ item Element constraint ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">constraint</a>.</a></p>
+<dl id="I1.ix9.I9" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix9.I9.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix9.I9.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix9.I9.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix9.I9.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix10" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">equation</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix10.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.equation" id="schema.equation" class="ltx_anchor">An Equation. The model is just Inline which includes <a href="../LaTeXML-math/#schema.Math" title="Outer container for all math. This holds the internal XMath representation, as well as image data and other representations. ‣ item Element Math ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">Math</a>,
+the main expected ingredient.
+However, other things can end up in display math, too, so we use Inline.
+Note that tabular is here only because it’s a common, if misguided, idiom;
+the processor will lift such elements out of math, when possible
+</a></p>
+<dl id="I1.ix10.I10" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix10.I10.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix10.I10.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a>, <a href="#schema.equationgroup_model" title="Content model for equationgroup. ‣ item Pattern equationgroup_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equationgroup_model</a>, <a href="#schema.listingline_model" title="Content model for listingline; Inline.model plus equations ‣ item Pattern listingline_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">listingline_model</a>, <a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a>, <a href="#schema.equationgroup_model" title="Content model for equationgroup. ‣ item Pattern equationgroup_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equationgroup_model</a>, <a href="#schema.listingline_model" title="Content model for listingline; Inline.model plus equations ‣ item Pattern listingline_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">listingline_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix11" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">equation_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix11.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.equation_attributes" id="schema.equation_attributes" class="ltx_anchor">Attributes for <a href="#schema.equation" title="An Equation. The model is just Inline which includes Math, the main expected ingredient. However, other things can end up in display math, too, so we use Inline. Note that tabular is here only because it’s a common, if misguided, idiom; the processor will lift such elements out of math, when possible ‣ item Element equation ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">equation</a>.</a></p>
+<dl id="I1.ix11.I11" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix11.I11.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix11.I11.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.Labelled.attributes" title="Attributes for elements that can be labelled from within LaTeX. These attributes deal with assigning a label and generating cross references. The label migrates to an xml:id and href and the element can serve as a hypertext target. ‣ item Pattern Labelled.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Labelled.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix12" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">equation_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix12.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.equation_model" id="schema.equation_model" class="ltx_anchor">Content model for <a href="#schema.equation" title="An Equation. The model is just Inline which includes Math, the main expected ingredient. However, other things can end up in display math, too, so we use Inline. Note that tabular is here only because it’s a common, if misguided, idiom; the processor will lift such elements out of math, when possible ‣ item Element equation ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">equation</a>.</a></p>
+<dl id="I1.ix12.I12" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix12.I12.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix12.I12.ix1.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.tags" title="A container for one or more tags. At most one will have no role, which would be the default display. Other tag will have the role attribute for use in special forms of referencing. ‣ item Element tags ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tags</a>  |  <a href="../LaTeXML-math/#schema.Math" title="Outer container for all math. This holds the internal XMath representation, as well as image data and other representations. ‣ item Element Math ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">Math</a>  |  <a href="#schema.MathFork" title="A wrapper for Math that provides alternative, but typically less semantically meaningful, formatted representations. The first child is the meaningful form, the extra children provide formatted forms, for example being table rows or cells arising from an eqnarray. ‣ item Element MathFork ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">MathFork</a>  |  <a href="../LaTeXML-inline/#schema.text" title="General container for styled text. Attributes cover a variety of styling and position shifting properties. ‣ item Element text ‣ C.3 Module LaTeXML-inline ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">text</a>  |  <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>  |  <a href="../LaTeXML-common/#schema.Meta.class" title="All metadata elements, typically representing hidden data. ‣ item Pattern Meta.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Meta.class</a>  |  <a href="#schema.EquationMeta.class" title="Additional Metadata that can be present in equations. ‣ item Pattern EquationMeta.class ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">EquationMeta.class</a>)*</p>
+</div>
+</dd>
+<dt id="I1.ix12.I12.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix12.I12.ix2.p1" class="ltx_para">
+<p class="ltx_p">((<a href="#schema.tags" title="A container for one or more tags. At most one will have no role, which would be the default display. Other tag will have the role attribute for use in special forms of referencing. ‣ item Element tags ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tags</a>  |  <a href="../LaTeXML-math/#schema.Math" title="Outer container for all math. This holds the internal XMath representation, as well as image data and other representations. ‣ item Element Math ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">Math</a>  |  <a href="#schema.MathFork" title="A wrapper for Math that provides alternative, but typically less semantically meaningful, formatted representations. The first child is the meaningful form, the extra children provide formatted forms, for example being table rows or cells arising from an eqnarray. ‣ item Element MathFork ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">MathFork</a>  |  <a href="../LaTeXML-inline/#schema.text" title="General container for styled text. Attributes cover a variety of styling and position shifting properties. ‣ item Element text ‣ C.3 Module LaTeXML-inline ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">text</a>  |  <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>  |  <a href="../LaTeXML-common/#schema.Meta.class" title="All metadata elements, typically representing hidden data. ‣ item Pattern Meta.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Meta.class</a>  |  <a href="#schema.EquationMeta.class" title="Additional Metadata that can be present in equations. ‣ item Pattern EquationMeta.class ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">EquationMeta.class</a>)*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix13" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">equationgroup</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix13.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.equationgroup" id="schema.equationgroup" class="ltx_anchor">A group of equations, perhaps aligned (Though this is nowhere recorded).
+</a></p>
+<dl id="I1.ix13.I13" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix13.I13.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix13.I13.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a>, <a href="#schema.equationgroup_model" title="Content model for equationgroup. ‣ item Pattern equationgroup_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equationgroup_model</a>, <a href="#schema.listingline_model" title="Content model for listingline; Inline.model plus equations ‣ item Pattern listingline_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">listingline_model</a>, <a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a>, <a href="#schema.equationgroup_model" title="Content model for equationgroup. ‣ item Pattern equationgroup_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equationgroup_model</a>, <a href="#schema.listingline_model" title="Content model for listingline; Inline.model plus equations ‣ item Pattern listingline_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">listingline_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix14" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">equationgroup_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix14.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.equationgroup_attributes" id="schema.equationgroup_attributes" class="ltx_anchor">Attributes for <a href="#schema.equationgroup" title="A group of equations, perhaps aligned (Though this is nowhere recorded). ‣ item Element equationgroup ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">equationgroup</a>.</a></p>
+<dl id="I1.ix14.I14" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix14.I14.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix14.I14.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.Labelled.attributes" title="Attributes for elements that can be labelled from within LaTeX. These attributes deal with assigning a label and generating cross references. The label migrates to an xml:id and href and the element can serve as a hypertext target. ‣ item Pattern Labelled.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Labelled.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix14.I14.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">rowsep</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix14.I14.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <a href="../LaTeXML-common/#schema.Length.type" title="The type for attributes specifying a length. Should be a number followed by a length, typically px. NOTE: To be narrowed later. ‣ item Pattern Length.type ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Length.type</a></p>
+</div>
+<div id="I1.ix14.I14.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">the spacing between rows (equations, intertext,…)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix15" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">equationgroup_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix15.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.equationgroup_model" id="schema.equationgroup_model" class="ltx_anchor">Content model for <a href="#schema.equationgroup" title="A group of equations, perhaps aligned (Though this is nowhere recorded). ‣ item Element equationgroup ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">equationgroup</a>.</a></p>
+<dl id="I1.ix15.I15" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix15.I15.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix15.I15.ix1.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.tags" title="A container for one or more tags. At most one will have no role, which would be the default display. Other tag will have the role attribute for use in special forms of referencing. ‣ item Element tags ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tags</a>  |  <a href="#schema.equationgroup" title="A group of equations, perhaps aligned (Though this is nowhere recorded). ‣ item Element equationgroup ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">equationgroup</a>  |  <a href="#schema.equation" title="An Equation. The model is just Inline which includes Math, the main expected ingredient. However, other things can end up in display math, too, so we use Inline. Note that tabular is here only because it’s a common, if misguided, idiom; the processor will lift such elements out of math, when possible ‣ item Element equation ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">equation</a>  |  <a href="#schema.p" title="A physical paragraph. ‣ item Element p ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">p</a>  |  <a href="../LaTeXML-common/#schema.Meta.class" title="All metadata elements, typically representing hidden data. ‣ item Pattern Meta.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Meta.class</a>  |  <a href="#schema.EquationMeta.class" title="Additional Metadata that can be present in equations. ‣ item Pattern EquationMeta.class ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">EquationMeta.class</a>)*</p>
+</div>
+</dd>
+<dt id="I1.ix15.I15.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix15.I15.ix2.p1" class="ltx_para">
+<p class="ltx_p">((<a href="#schema.tags" title="A container for one or more tags. At most one will have no role, which would be the default display. Other tag will have the role attribute for use in special forms of referencing. ‣ item Element tags ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tags</a>  |  <a href="#schema.equationgroup" title="A group of equations, perhaps aligned (Though this is nowhere recorded). ‣ item Element equationgroup ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">equationgroup</a>  |  <a href="#schema.equation" title="An Equation. The model is just Inline which includes Math, the main expected ingredient. However, other things can end up in display math, too, so we use Inline. Note that tabular is here only because it’s a common, if misguided, idiom; the processor will lift such elements out of math, when possible ‣ item Element equation ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">equation</a>  |  <a href="#schema.p" title="A physical paragraph. ‣ item Element p ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">p</a>  |  <a href="../LaTeXML-common/#schema.Meta.class" title="All metadata elements, typically representing hidden data. ‣ item Pattern Meta.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Meta.class</a>  |  <a href="#schema.EquationMeta.class" title="Additional Metadata that can be present in equations. ‣ item Pattern EquationMeta.class ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">EquationMeta.class</a>)*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix16" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">MathFork</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix16.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.MathFork" id="schema.MathFork" class="ltx_anchor">A wrapper for Math that provides alternative,
+but typically less semantically meaningful,
+formatted representations.
+The first child is the meaningful form,
+the extra children provide formatted forms,
+for example being table rows or cells arising from an eqnarray.
+</a></p>
+<dl id="I1.ix16.I16" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix16.I16.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix16.I16.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.equation_model" title="Content model for equation. ‣ item Pattern equation_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equation_model</a>, <a href="#schema.equation_model" title="Content model for equation. ‣ item Pattern equation_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equation_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix17" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">MathFork_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix17.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.MathFork_attributes" id="schema.MathFork_attributes" class="ltx_anchor">Attributes for <a href="#schema.MathFork" title="A wrapper for Math that provides alternative, but typically less semantically meaningful, formatted representations. The first child is the meaningful form, the extra children provide formatted forms, for example being table rows or cells arising from an eqnarray. ‣ item Element MathFork ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">MathFork</a>.</a></p>
+<dl id="I1.ix17.I17" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix17.I17.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix17.I17.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix18" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">MathFork_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix18.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.MathFork_model" id="schema.MathFork_model" class="ltx_anchor">Content model for <a href="#schema.MathFork" title="A wrapper for Math that provides alternative, but typically less semantically meaningful, formatted representations. The first child is the meaningful form, the extra children provide formatted forms, for example being table rows or cells arising from an eqnarray. ‣ item Element MathFork ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">MathFork</a>.</a></p>
+<dl id="I1.ix18.I18" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix18.I18.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix18.I18.ix1.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML-math/#schema.Math" title="Outer container for all math. This holds the internal XMath representation, as well as image data and other representations. ‣ item Element Math ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">Math</a>  |  <a href="../LaTeXML-inline/#schema.text" title="General container for styled text. Attributes cover a variety of styling and position shifting properties. ‣ item Element text ‣ C.3 Module LaTeXML-inline ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">text</a>), <a href="#schema.MathBranch" title="A container for an alternatively formatted math representation. ‣ item Element MathBranch ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">MathBranch</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix18.I18.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix18.I18.ix2.p1" class="ltx_para">
+<p class="ltx_p">((<a href="../LaTeXML-math/#schema.Math" title="Outer container for all math. This holds the internal XMath representation, as well as image data and other representations. ‣ item Element Math ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">Math</a>  |  <a href="../LaTeXML-inline/#schema.text" title="General container for styled text. Attributes cover a variety of styling and position shifting properties. ‣ item Element text ‣ C.3 Module LaTeXML-inline ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">text</a>), <a href="#schema.MathBranch" title="A container for an alternatively formatted math representation. ‣ item Element MathBranch ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">MathBranch</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix19" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">MathBranch</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix19.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.MathBranch" id="schema.MathBranch" class="ltx_anchor">A container for an alternatively formatted math representation.
+</a></p>
+<dl id="I1.ix19.I19" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix19.I19.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix19.I19.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.MathFork_model" title="Content model for MathFork. ‣ item Pattern MathFork_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">MathFork_model</a>, <a href="#schema.MathFork_model" title="Content model for MathFork. ‣ item Pattern MathFork_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">MathFork_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix20" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">MathBranch_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix20.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.MathBranch_attributes" id="schema.MathBranch_attributes" class="ltx_anchor">Attributes for <a href="#schema.MathBranch" title="A container for an alternatively formatted math representation. ‣ item Element MathBranch ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">MathBranch</a>.</a></p>
+<dl id="I1.ix20.I20" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix20.I20.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix20.I20.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix20.I20.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">format</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix20.I20.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix21" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">MathBranch_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix21.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.MathBranch_model" id="schema.MathBranch_model" class="ltx_anchor">Content model for <a href="#schema.MathBranch" title="A container for an alternatively formatted math representation. ‣ item Element MathBranch ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">MathBranch</a>.</a></p>
+<dl id="I1.ix21.I21" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix21.I21.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix21.I21.ix1.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML-math/#schema.Math" title="Outer container for all math. This holds the internal XMath representation, as well as image data and other representations. ‣ item Element Math ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">Math</a>  |  <a href="../LaTeXML-tabular/#schema.tr" title="A row of a tabular. ‣ item Element tr ‣ C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tr</a>  |  <a href="../LaTeXML-tabular/#schema.td" title="A cell in a row of a tabular. ‣ item Element td ‣ C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">td</a>)*</p>
+</div>
+</dd>
+<dt id="I1.ix21.I21.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix21.I21.ix2.p1" class="ltx_para">
+<p class="ltx_p">((<a href="../LaTeXML-math/#schema.Math" title="Outer container for all math. This holds the internal XMath representation, as well as image data and other representations. ‣ item Element Math ‣ C.8 Module LaTeXML-math ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">Math</a>  |  <a href="../LaTeXML-tabular/#schema.tr" title="A row of a tabular. ‣ item Element tr ‣ C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tr</a>  |  <a href="../LaTeXML-tabular/#schema.td" title="A cell in a row of a tabular. ‣ item Element td ‣ C.9 Module LaTeXML-tabular ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">td</a>)*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix22" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">quote</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix22.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.quote" id="schema.quote" class="ltx_anchor">A quotation.
+</a></p>
+<dl id="I1.ix22.I22" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix22.I22.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix22.I22.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a>, <a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix23" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">quote_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix23.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.quote_attributes" id="schema.quote_attributes" class="ltx_anchor">Attributes for <a href="#schema.quote" title="A quotation. ‣ item Element quote ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">quote</a>.</a></p>
+<dl id="I1.ix23.I23" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix23.I23.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix23.I23.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix23.I23.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">role</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix23.I23.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix23.I23.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">The kind of quotation; could be something like verse, or translation</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix24" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">quote_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix24.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.quote_model" id="schema.quote_model" class="ltx_anchor">Content model for <a href="#schema.quote" title="A quotation. ‣ item Element quote ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">quote</a>.</a></p>
+<dl id="I1.ix24.I24" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix24.I24.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix24.I24.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Block.model" title="Combined model for physical block-level content. ‣ item Pattern Block.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix24.I24.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix24.I24.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Block.model" title="Combined model for physical block-level content. ‣ item Pattern Block.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix25" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">block</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix25.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.block" id="schema.block" class="ltx_anchor">A generic block (fallback).
+</a></p>
+<dl id="I1.ix25.I25" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix25.I25.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix25.I25.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a>, <a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix26" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">block_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix26.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.block_attributes" id="schema.block_attributes" class="ltx_anchor">Attributes for <a href="#schema.block" title="A generic block (fallback). ‣ item Element block ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">block</a>.</a></p>
+<dl id="I1.ix26.I26" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix26.I26.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix26.I26.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a>, <a href="../LaTeXML-common/#schema.Positionable.attributes" title="Attributes shared by low-level, generic inline and block elements that can be sized or shifted. ‣ item Pattern Positionable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Positionable.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix27" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">block_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix27.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.block_model" id="schema.block_model" class="ltx_anchor">Content model for <a href="#schema.block" title="A generic block (fallback). ‣ item Element block ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">block</a>.</a></p>
+<dl id="I1.ix27.I27" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix27.I27.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix27.I27.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Block.model" title="Combined model for physical block-level content. ‣ item Pattern Block.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix27.I27.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix27.I27.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Block.model" title="Combined model for physical block-level content. ‣ item Pattern Block.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix28" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">listing</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix28.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.listing" id="schema.listing" class="ltx_anchor">An Listing, (without caption: see <a href="../LaTeXML-para/#schema.float" title="A generic float, possibly captioned, something other than a table or figure ‣ item Element float ‣ C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">float</a>)
+</a></p>
+<dl id="I1.ix28.I28" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix28.I28.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix28.I28.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a>, <a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix29" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">listing_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix29.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.listing_attributes" id="schema.listing_attributes" class="ltx_anchor">Attributes for <a href="#schema.listing" title="An Listing, (without caption: see float) ‣ item Element listing ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">listing</a>.</a></p>
+<dl id="I1.ix29.I29" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix29.I29.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix29.I29.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.Labelled.attributes" title="Attributes for elements that can be labelled from within LaTeX. These attributes deal with assigning a label and generating cross references. The label migrates to an xml:id and href and the element can serve as a hypertext target. ‣ item Pattern Labelled.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Labelled.attributes</a>, <a href="../LaTeXML-common/#schema.Positionable.attributes" title="Attributes shared by low-level, generic inline and block elements that can be sized or shifted. ‣ item Pattern Positionable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Positionable.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a>, <a href="../LaTeXML-common/#schema.Data.attributes" title="Attributes for raw data storage ‣ item Pattern Data.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Data.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix30" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">listing_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix30.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.listing_model" id="schema.listing_model" class="ltx_anchor">Content model for <a href="#schema.listing" title="An Listing, (without caption: see float) ‣ item Element listing ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">listing</a>.</a></p>
+<dl id="I1.ix30.I30" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix30.I30.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix30.I30.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.listingline" title="a line in a listing ‣ item Element listingline ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">listingline</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix30.I30.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix30.I30.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.listingline" title="a line in a listing ‣ item Element listingline ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">listingline</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix31" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">listingline</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix31.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.listingline" id="schema.listingline" class="ltx_anchor">a line in a listing
+</a></p>
+<dl id="I1.ix31.I31" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix31.I31.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix31.I31.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.listing_model" title="Content model for listing. ‣ item Pattern listing_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">listing_model</a>, <a href="#schema.listing_model" title="Content model for listing. ‣ item Pattern listing_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">listing_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix32" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">listingline_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix32.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.listingline_attributes" id="schema.listingline_attributes" class="ltx_anchor">Attributes for <a href="#schema.listingline" title="a line in a listing ‣ item Element listingline ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">listingline</a></a></p>
+<dl id="I1.ix32.I32" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix32.I32.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix32.I32.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.Labelled.attributes" title="Attributes for elements that can be labelled from within LaTeX. These attributes deal with assigning a label and generating cross references. The label migrates to an xml:id and href and the element can serve as a hypertext target. ‣ item Pattern Labelled.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Labelled.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix33" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">listingline_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix33.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.listingline_model" id="schema.listingline_model" class="ltx_anchor">Content model for <a href="#schema.listingline" title="a line in a listing ‣ item Element listingline ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">listingline</a>; Inline.model plus equations</a></p>
+<dl id="I1.ix33.I33" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix33.I33.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix33.I33.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.tags" title="A container for one or more tags. At most one will have no role, which would be the default display. Other tag will have the role attribute for use in special forms of referencing. ‣ item Element tags ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tags</a>?, (<span class="ltx_text ltx_font_italic">text</span>  |  <a href="../LaTeXML-common/#schema.Inline.class" title="All strictly inline elements. ‣ item Pattern Inline.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.class</a>  |  <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>  |  <a href="../LaTeXML-common/#schema.Meta.class" title="All metadata elements, typically representing hidden data. ‣ item Pattern Meta.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Meta.class</a>  |  <a href="#schema.equation" title="An Equation. The model is just Inline which includes Math, the main expected ingredient. However, other things can end up in display math, too, so we use Inline. Note that tabular is here only because it’s a common, if misguided, idiom; the processor will lift such elements out of math, when possible ‣ item Element equation ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">equation</a>  |  <a href="#schema.equationgroup" title="A group of equations, perhaps aligned (Though this is nowhere recorded). ‣ item Element equationgroup ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">equationgroup</a>)*</p>
+</div>
+</dd>
+<dt id="I1.ix33.I33.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix33.I33.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.tags" title="A container for one or more tags. At most one will have no role, which would be the default display. Other tag will have the role attribute for use in special forms of referencing. ‣ item Element tags ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tags</a>?, (<span class="ltx_text ltx_font_italic">text</span>  |  <a href="../LaTeXML-common/#schema.Inline.class" title="All strictly inline elements. ‣ item Pattern Inline.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.class</a>  |  <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>  |  <a href="../LaTeXML-common/#schema.Meta.class" title="All metadata elements, typically representing hidden data. ‣ item Pattern Meta.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Meta.class</a>  |  <a href="#schema.equation" title="An Equation. The model is just Inline which includes Math, the main expected ingredient. However, other things can end up in display math, too, so we use Inline. Note that tabular is here only because it’s a common, if misguided, idiom; the processor will lift such elements out of math, when possible ‣ item Element equation ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">equation</a>  |  <a href="#schema.equationgroup" title="A group of equations, perhaps aligned (Though this is nowhere recorded). ‣ item Element equationgroup ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">equationgroup</a>)*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix34" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">itemize</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix34.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.itemize" id="schema.itemize" class="ltx_anchor">An itemized list.
+</a></p>
+<dl id="I1.ix34.I34" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix34.I34.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix34.I34.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a>, <a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix35" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">itemize_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix35.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.itemize_attributes" id="schema.itemize_attributes" class="ltx_anchor">Attributes for <a href="#schema.itemize" title="An itemized list. ‣ item Element itemize ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">itemize</a>.</a></p>
+<dl id="I1.ix35.I35" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix35.I35.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix35.I35.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix36" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">itemize_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix36.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.itemize_model" id="schema.itemize_model" class="ltx_anchor">Content model for <a href="#schema.itemize" title="An itemized list. ‣ item Element itemize ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">itemize</a>.</a></p>
+<dl id="I1.ix36.I36" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix36.I36.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix36.I36.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.item" title="An item within a list (itemize,enumerate or description). ‣ item Element item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">item</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix36.I36.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix36.I36.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.item" title="An item within a list (itemize,enumerate or description). ‣ item Element item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">item</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix37" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">enumerate</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix37.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.enumerate" id="schema.enumerate" class="ltx_anchor">An enumerated list.
+</a></p>
+<dl id="I1.ix37.I37" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix37.I37.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix37.I37.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a>, <a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix38" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">enumerate_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix38.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.enumerate_attributes" id="schema.enumerate_attributes" class="ltx_anchor">Attributes for <a href="#schema.enumerate" title="An enumerated list. ‣ item Element enumerate ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">enumerate</a>.</a></p>
+<dl id="I1.ix38.I38" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix38.I38.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix38.I38.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix39" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">enumerate_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix39.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.enumerate_model" id="schema.enumerate_model" class="ltx_anchor">Content model for <a href="#schema.enumerate" title="An enumerated list. ‣ item Element enumerate ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">enumerate</a>.</a></p>
+<dl id="I1.ix39.I39" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix39.I39.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix39.I39.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.item" title="An item within a list (itemize,enumerate or description). ‣ item Element item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">item</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix39.I39.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix39.I39.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.item" title="An item within a list (itemize,enumerate or description). ‣ item Element item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">item</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix40" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">description</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix40.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.description" id="schema.description" class="ltx_anchor">A description list. The <a href="#schema.item" title="An item within a list (itemize,enumerate or description). ‣ item Element item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">item</a>s within are expected to have a <a href="#schema.tag" title="A tag within an item indicating the term or bullet for a given item. ‣ item Element tag ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tag</a>
+which represents the term being described in each <a href="#schema.item" title="An item within a list (itemize,enumerate or description). ‣ item Element item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">item</a>.
+</a></p>
+<dl id="I1.ix40.I40" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix40.I40.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix40.I40.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a>, <a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix41" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">description_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix41.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.description_attributes" id="schema.description_attributes" class="ltx_anchor">Attributes for <a href="#schema.description" title="A description list. The items within are expected to have a tag which represents the term being described in each item. ‣ item Element description ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">description</a>.</a></p>
+<dl id="I1.ix41.I41" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix41.I41.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix41.I41.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix42" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">description_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix42.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.description_model" id="schema.description_model" class="ltx_anchor">Content model for <a href="#schema.description" title="A description list. The items within are expected to have a tag which represents the term being described in each item. ‣ item Element description ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">description</a>.</a></p>
+<dl id="I1.ix42.I42" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix42.I42.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix42.I42.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.item" title="An item within a list (itemize,enumerate or description). ‣ item Element item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">item</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix42.I42.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix42.I42.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.item" title="An item within a list (itemize,enumerate or description). ‣ item Element item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">item</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix43" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">item</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix43.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.item" id="schema.item" class="ltx_anchor">An item within a list (<a href="#schema.itemize" title="An itemized list. ‣ item Element itemize ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">itemize</a>,<a href="#schema.enumerate" title="An enumerated list. ‣ item Element enumerate ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">enumerate</a> or <a href="#schema.description" title="A description list. The items within are expected to have a tag which represents the term being described in each item. ‣ item Element description ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">description</a>).
+</a></p>
+<dl id="I1.ix43.I43" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix43.I43.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix43.I43.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.description_model" title="Content model for description. ‣ item Pattern description_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">description_model</a>, <a href="#schema.enumerate_model" title="Content model for enumerate. ‣ item Pattern enumerate_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">enumerate_model</a>, <a href="#schema.itemize_model" title="Content model for itemize. ‣ item Pattern itemize_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">itemize_model</a>, <a href="#schema.description_model" title="Content model for description. ‣ item Pattern description_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">description_model</a>, <a href="#schema.enumerate_model" title="Content model for enumerate. ‣ item Pattern enumerate_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">enumerate_model</a>, <a href="#schema.itemize_model" title="Content model for itemize. ‣ item Pattern itemize_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">itemize_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix44" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">item_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix44.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.item_attributes" id="schema.item_attributes" class="ltx_anchor">Attributes for <a href="#schema.item" title="An item within a list (itemize,enumerate or description). ‣ item Element item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">item</a>.</a></p>
+<dl id="I1.ix44.I44" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix44.I44.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix44.I44.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.Labelled.attributes" title="Attributes for elements that can be labelled from within LaTeX. These attributes deal with assigning a label and generating cross references. The label migrates to an xml:id and href and the element can serve as a hypertext target. ‣ item Pattern Labelled.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Labelled.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix44.I44.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">itemsep</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix44.I44.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <a href="../LaTeXML-common/#schema.Length.type" title="The type for attributes specifying a length. Should be a number followed by a length, typically px. NOTE: To be narrowed later. ‣ item Pattern Length.type ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Length.type</a></p>
+</div>
+<div id="I1.ix44.I44.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">the vertical spacing between items</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix45" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">item_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix45.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.item_model" id="schema.item_model" class="ltx_anchor">Content model for <a href="#schema.item" title="An item within a list (itemize,enumerate or description). ‣ item Element item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">item</a>.</a></p>
+<dl id="I1.ix45.I45" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix45.I45.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix45.I45.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.tags" title="A container for one or more tags. At most one will have no role, which would be the default display. Other tag will have the role attribute for use in special forms of referencing. ‣ item Element tags ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tags</a>?, <a href="../LaTeXML/#schema.Para.model" title="Combined model for logical block-level context. ‣ item Pattern Para.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Para.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix45.I45.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix45.I45.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.tags" title="A container for one or more tags. At most one will have no role, which would be the default display. Other tag will have the role attribute for use in special forms of referencing. ‣ item Element tags ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tags</a>?, <a href="../LaTeXML/#schema.Para.model" title="Combined model for logical block-level context. ‣ item Pattern Para.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Para.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix46" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">inline-itemize</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix46.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.inline-itemize" id="schema.inline-itemize" class="ltx_anchor">An inline form of itemized list.
+</a></p>
+<dl id="I1.ix46.I46" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix46.I46.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix46.I46.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>, <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix47" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">inline-itemize_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix47.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.inline-itemize_attributes" id="schema.inline-itemize_attributes" class="ltx_anchor">Attributes for <a href="#schema.inline-itemize" title="An inline form of itemized list. ‣ item Element inline-itemize ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-itemize</a>.</a></p>
+<dl id="I1.ix47.I47" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix47.I47.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix47.I47.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix48" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">inline-itemize_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix48.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.inline-itemize_model" id="schema.inline-itemize_model" class="ltx_anchor">Content model for <a href="#schema.inline-itemize" title="An inline form of itemized list. ‣ item Element inline-itemize ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-itemize</a>.</a></p>
+<dl id="I1.ix48.I48" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix48.I48.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix48.I48.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.inline-item" title="An item within an inline list (inline-itemize,inline-enumerate or inline-description). ‣ item Element inline-item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-item</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix48.I48.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix48.I48.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.inline-item" title="An item within an inline list (inline-itemize,inline-enumerate or inline-description). ‣ item Element inline-item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-item</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix49" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">inline-enumerate</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix49.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.inline-enumerate" id="schema.inline-enumerate" class="ltx_anchor">An inline form of enumerated list.
+</a></p>
+<dl id="I1.ix49.I49" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix49.I49.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix49.I49.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>, <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix50" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">inline-enumerate_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix50.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.inline-enumerate_attributes" id="schema.inline-enumerate_attributes" class="ltx_anchor">Attributes for <a href="#schema.inline-enumerate" title="An inline form of enumerated list. ‣ item Element inline-enumerate ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-enumerate</a>.</a></p>
+<dl id="I1.ix50.I50" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix50.I50.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix50.I50.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix51" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">inline-enumerate_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix51.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.inline-enumerate_model" id="schema.inline-enumerate_model" class="ltx_anchor">Content model for <a href="#schema.inline-enumerate" title="An inline form of enumerated list. ‣ item Element inline-enumerate ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-enumerate</a>.</a></p>
+<dl id="I1.ix51.I51" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix51.I51.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix51.I51.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.inline-item" title="An item within an inline list (inline-itemize,inline-enumerate or inline-description). ‣ item Element inline-item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-item</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix51.I51.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix51.I51.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.inline-item" title="An item within an inline list (inline-itemize,inline-enumerate or inline-description). ‣ item Element inline-item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-item</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix52" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">inline-description</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix52.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.inline-description" id="schema.inline-description" class="ltx_anchor">An inline form of description list.
+The <a href="#schema.inline-item" title="An item within an inline list (inline-itemize,inline-enumerate or inline-description). ‣ item Element inline-item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-item</a>s within are expected to have a <a href="#schema.tags" title="A container for one or more tags. At most one will have no role, which would be the default display. Other tag will have the role attribute for use in special forms of referencing. ‣ item Element tags ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tags</a>
+which represents the term being described in each <a href="#schema.inline-item" title="An item within an inline list (inline-itemize,inline-enumerate or inline-description). ‣ item Element inline-item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-item</a>.
+</a></p>
+<dl id="I1.ix52.I52" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix52.I52.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix52.I52.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>, <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix53" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">inline-description_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix53.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.inline-description_attributes" id="schema.inline-description_attributes" class="ltx_anchor">Attributes for <a href="#schema.inline-description" title="An inline form of description list. The inline-items within are expected to have a tags which represents the term being described in each inline-item. ‣ item Element inline-description ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-description</a>.</a></p>
+<dl id="I1.ix53.I53" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix53.I53.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix53.I53.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.ID.attributes" title="Attributes for elements that can be cross-referenced from inside or outside the document. ‣ item Pattern ID.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">ID.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix54" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">inline-description_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix54.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.inline-description_model" id="schema.inline-description_model" class="ltx_anchor">Content model for <a href="#schema.inline-description" title="An inline form of description list. The inline-items within are expected to have a tags which represents the term being described in each inline-item. ‣ item Element inline-description ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-description</a>.</a></p>
+<dl id="I1.ix54.I54" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix54.I54.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix54.I54.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.inline-item" title="An item within an inline list (inline-itemize,inline-enumerate or inline-description). ‣ item Element inline-item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-item</a>*</p>
+</div>
+</dd>
+<dt id="I1.ix54.I54.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix54.I54.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.inline-item" title="An item within an inline list (inline-itemize,inline-enumerate or inline-description). ‣ item Element inline-item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-item</a>*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix55" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">inline-item</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix55.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.inline-item" id="schema.inline-item" class="ltx_anchor">An item within an inline list (<a href="#schema.inline-itemize" title="An inline form of itemized list. ‣ item Element inline-itemize ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-itemize</a>,<a href="#schema.inline-enumerate" title="An inline form of enumerated list. ‣ item Element inline-enumerate ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-enumerate</a>
+or <a href="#schema.inline-description" title="An inline form of description list. The inline-items within are expected to have a tags which represents the term being described in each inline-item. ‣ item Element inline-description ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-description</a>).
+</a></p>
+<dl id="I1.ix55.I55" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix55.I55.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix55.I55.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.inline-description_model" title="Content model for inline-description. ‣ item Pattern inline-description_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">inline-description_model</a>, <a href="#schema.inline-enumerate_model" title="Content model for inline-enumerate. ‣ item Pattern inline-enumerate_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">inline-enumerate_model</a>, <a href="#schema.inline-itemize_model" title="Content model for inline-itemize. ‣ item Pattern inline-itemize_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">inline-itemize_model</a>, <a href="#schema.inline-description_model" title="Content model for inline-description. ‣ item Pattern inline-description_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">inline-description_model</a>, <a href="#schema.inline-enumerate_model" title="Content model for inline-enumerate. ‣ item Pattern inline-enumerate_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">inline-enumerate_model</a>, <a href="#schema.inline-itemize_model" title="Content model for inline-itemize. ‣ item Pattern inline-itemize_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">inline-itemize_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix56" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">inline-item_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix56.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.inline-item_attributes" id="schema.inline-item_attributes" class="ltx_anchor">Attributes for <a href="#schema.item" title="An item within a list (itemize,enumerate or description). ‣ item Element item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">item</a>.</a></p>
+<dl id="I1.ix56.I56" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix56.I56.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix56.I56.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.Labelled.attributes" title="Attributes for elements that can be labelled from within LaTeX. These attributes deal with assigning a label and generating cross references. The label migrates to an xml:id and href and the element can serve as a hypertext target. ‣ item Pattern Labelled.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Labelled.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix57" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">inline-item_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix57.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.inline-item_model" id="schema.inline-item_model" class="ltx_anchor">Content model for <a href="#schema.inline-item" title="An item within an inline list (inline-itemize,inline-enumerate or inline-description). ‣ item Element inline-item ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">inline-item</a>.</a></p>
+<dl id="I1.ix57.I57" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix57.I57.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix57.I57.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.tags" title="A container for one or more tags. At most one will have no role, which would be the default display. Other tag will have the role attribute for use in special forms of referencing. ‣ item Element tags ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tags</a>?, (<a href="../LaTeXML-common/#schema.Inline.class" title="All strictly inline elements. ‣ item Pattern Inline.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.class</a>  |  <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>  |  <a href="../LaTeXML-common/#schema.Meta.class" title="All metadata elements, typically representing hidden data. ‣ item Pattern Meta.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Meta.class</a>)*</p>
+</div>
+</dd>
+<dt id="I1.ix57.I57.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix57.I57.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.tags" title="A container for one or more tags. At most one will have no role, which would be the default display. Other tag will have the role attribute for use in special forms of referencing. ‣ item Element tags ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tags</a>?, (<a href="../LaTeXML-common/#schema.Inline.class" title="All strictly inline elements. ‣ item Pattern Inline.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.class</a>  |  <a href="../LaTeXML-common/#schema.Misc.class" title="Additional miscellaneous elements that can appear in both inline and block contexts. ‣ item Pattern Misc.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Misc.class</a>  |  <a href="../LaTeXML-common/#schema.Meta.class" title="All metadata elements, typically representing hidden data. ‣ item Pattern Meta.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Meta.class</a>)*)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix58" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">tags</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix58.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.tags" id="schema.tags" class="ltx_anchor">A container for one or more <a href="#schema.tag" title="A tag within an item indicating the term or bullet for a given item. ‣ item Element tag ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tag</a>s.
+At most one will have no <span class="ltx_text ltx_font_sansserif">role</span>, which would be the default display.
+Other <a href="#schema.tag" title="A tag within an item indicating the term or bullet for a given item. ‣ item Element tag ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tag</a> will have the role attribute for use in
+special forms of referencing.
+</a></p>
+<dl id="I1.ix58.I58" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix58.I58.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix58.I58.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-structure/#schema.SectionalFrontMatter.class" title="The content allowed for the front matter of each sectional unit, and the document. ‣ item Pattern SectionalFrontMatter.class ‣ C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">SectionalFrontMatter.class</a>, <a href="../LaTeXML-bib/#schema.bibitem_model" title="Content model for bibitem. ‣ item Pattern bibitem_model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bibitem_model</a>, <a href="../LaTeXML-meta/#schema.declare_model" title="Content model for declare ‣ item Pattern declare_model ‣ C.6 Module LaTeXML-meta ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">declare_model</a>, <a href="#schema.equation_model" title="Content model for equation. ‣ item Pattern equation_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equation_model</a>, <a href="#schema.equationgroup_model" title="Content model for equationgroup. ‣ item Pattern equationgroup_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equationgroup_model</a>, <a href="../LaTeXML-para/#schema.figure_model" title="Content model for figure; allow nested figures, etc for ”sub” floats. ‣ item Pattern figure_model ‣ C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">figure_model</a>, <a href="../LaTeXML-para/#schema.float_model" title="Content model for float. ‣ item Pattern float_model ‣ C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">float_model</a>, <a href="#schema.inline-item_model" title="Content model for inline-item. ‣ item Pattern inline-item_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">inline-item_model</a>, <a href="#schema.item_model" title="Content model for item. ‣ item Pattern item_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">item_model</a>, <a href="#schema.listingline_model" title="Content model for listingline; Inline.model plus equations ‣ item Pattern listingline_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">listingline_model</a>, <a href="../LaTeXML-meta/#schema.note_model" title="Content model for note. ‣ item Pattern note_model ‣ C.6 Module LaTeXML-meta ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">note_model</a>, <a href="../LaTeXML-para/#schema.proof_model" title="Content model for proof. ‣ item Pattern proof_model ‣ C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">proof_model</a>, <a href="../LaTeXML-para/#schema.table_model" title="Content model for table. ‣ item Pattern table_model ‣ C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">table_model</a>, <a href="../LaTeXML-para/#schema.theorem_model" title="Content model for theorem. ‣ item Pattern theorem_model ‣ C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">theorem_model</a>, <a href="../LaTeXML-structure/#schema.SectionalFrontMatter.class" title="The content allowed for the front matter of each sectional unit, and the document. ‣ item Pattern SectionalFrontMatter.class ‣ C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">SectionalFrontMatter.class</a>, <a href="../LaTeXML-bib/#schema.bibitem_model" title="Content model for bibitem. ‣ item Pattern bibitem_model ‣ C.12 Module LaTeXML-bib ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">bibitem_model</a>, <a href="../LaTeXML-meta/#schema.declare_model" title="Content model for declare ‣ item Pattern declare_model ‣ C.6 Module LaTeXML-meta ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">declare_model</a>, <a href="#schema.equation_model" title="Content model for equation. ‣ item Pattern equation_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equation_model</a>, <a href="#schema.equationgroup_model" title="Content model for equationgroup. ‣ item Pattern equationgroup_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">equationgroup_model</a>, <a href="../LaTeXML-para/#schema.figure_model" title="Content model for figure; allow nested figures, etc for ”sub” floats. ‣ item Pattern figure_model ‣ C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">figure_model</a>, <a href="../LaTeXML-para/#schema.float_model" title="Content model for float. ‣ item Pattern float_model ‣ C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">float_model</a>, <a href="#schema.inline-item_model" title="Content model for inline-item. ‣ item Pattern inline-item_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">inline-item_model</a>, <a href="#schema.item_model" title="Content model for item. ‣ item Pattern item_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">item_model</a>, <a href="#schema.listingline_model" title="Content model for listingline; Inline.model plus equations ‣ item Pattern listingline_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">listingline_model</a>, <a href="../LaTeXML-meta/#schema.note_model" title="Content model for note. ‣ item Pattern note_model ‣ C.6 Module LaTeXML-meta ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">note_model</a>, <a href="../LaTeXML-para/#schema.proof_model" title="Content model for proof. ‣ item Pattern proof_model ‣ C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">proof_model</a>, <a href="../LaTeXML-para/#schema.table_model" title="Content model for table. ‣ item Pattern table_model ‣ C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">table_model</a>, <a href="../LaTeXML-para/#schema.theorem_model" title="Content model for theorem. ‣ item Pattern theorem_model ‣ C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">theorem_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix59" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">tags_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix59.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.tags_model" id="schema.tags_model" class="ltx_anchor"></a></p>
+<dl id="I1.ix59.I59" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix59.I59.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix59.I59.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="#schema.tag" title="A tag within an item indicating the term or bullet for a given item. ‣ item Element tag ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tag</a>+</p>
+</div>
+</dd>
+<dt id="I1.ix59.I59.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix59.I59.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="#schema.tag" title="A tag within an item indicating the term or bullet for a given item. ‣ item Element tag ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tag</a>+)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix60" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">tag</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix60.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.tag" id="schema.tag" class="ltx_anchor">A tag within an item indicating the term or bullet for a given item.
+</a></p>
+<dl id="I1.ix60.I60" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix60.I60.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix60.I60.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-para/#schema.caption_model" title="Content model for caption, basically Inline.model with tag included (normally, but not necessarily, tag would come first). ‣ item Pattern caption_model ‣ C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">caption_model</a>, <a href="#schema.tags_model" title="item Pattern tags_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">tags_model</a>, <a href="../LaTeXML-structure/#schema.title_model" title="Content model for title, basically Inline.model with tag included (normally, but not necessarily, tag would come first). ‣ item Pattern title_model ‣ C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">title_model</a>, <a href="../LaTeXML-para/#schema.toccaption_model" title="Content model for toccaption. ‣ item Pattern toccaption_model ‣ C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">toccaption_model</a>, <a href="../LaTeXML-structure/#schema.toctitle_model" title="Content model for toctitle. ‣ item Pattern toctitle_model ‣ C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">toctitle_model</a>, <a href="../LaTeXML-para/#schema.caption_model" title="Content model for caption, basically Inline.model with tag included (normally, but not necessarily, tag would come first). ‣ item Pattern caption_model ‣ C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">caption_model</a>, <a href="#schema.tags_model" title="item Pattern tags_model ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">tags_model</a>, <a href="../LaTeXML-structure/#schema.title_model" title="Content model for title, basically Inline.model with tag included (normally, but not necessarily, tag would come first). ‣ item Pattern title_model ‣ C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">title_model</a>, <a href="../LaTeXML-para/#schema.toccaption_model" title="Content model for toccaption. ‣ item Pattern toccaption_model ‣ C.7 Module LaTeXML-para ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">toccaption_model</a>, <a href="../LaTeXML-structure/#schema.toctitle_model" title="Content model for toctitle. ‣ item Pattern toctitle_model ‣ C.11 Module LaTeXML-structure ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">toctitle_model</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix61" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">tag_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix61.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.tag_attributes" id="schema.tag_attributes" class="ltx_anchor">Attributes for <a href="#schema.tag" title="A tag within an item indicating the term or bullet for a given item. ‣ item Element tag ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tag</a>.</a></p>
+<dl id="I1.ix61.I61" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix61.I61.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix61.I61.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a>, <a href="../LaTeXML-common/#schema.Backgroundable.attributes" title="Attributes for elements that take up space and make sense to have a background color. This is independent of the colors of any things that it may draw. ‣ item Pattern Backgroundable.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Backgroundable.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix61.I61.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">role</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix61.I61.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix61.I61.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">specifies the purpose this tag is used for: no value is default display</p>
+</div>
+</dd>
+<dt id="I1.ix61.I61.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">open</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix61.I61.ix3.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix61.I61.ix3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">specifies an open delimiters used to display the tag.</p>
+</div>
+</dd>
+<dt id="I1.ix61.I61.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">close</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix61.I61.ix4.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix61.I61.ix4.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">specifies an close delimiters used to display the tag.</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix62" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">tag_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix62.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.tag_model" id="schema.tag_model" class="ltx_anchor">Content model for <a href="#schema.tag" title="A tag within an item indicating the term or bullet for a given item. ‣ item Element tag ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">tag</a>.</a></p>
+<dl id="I1.ix62.I62" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix62.I62.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix62.I62.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a></p>
+</div>
+</dd>
+<dt id="I1.ix62.I62.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix62.I62.ix2.p1" class="ltx_para">
+<p class="ltx_p">(<a href="../LaTeXML/#schema.Inline.model" title="Combined model for inline content. ‣ item Pattern Inline.model ‣ C.1 Module LaTeXML ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Inline.model</a>)</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix63" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Element </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">pagination</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix63.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.pagination" id="schema.pagination" class="ltx_anchor">A page break or related pagination information.
+</a></p>
+<dl id="I1.ix63.I63" class="ltx_description ltx_elementdescription">
+<dt id="I1.ix63.I63.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Used by</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix63.I63.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a>, <a href="../LaTeXML-common/#schema.Para.class" title="All logical block level elements. A logical block typically contains one or more physical block elements. For example, a common situation might be p,equation,p, where the entire sequence comprises a single sentence. ‣ item Pattern Para.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Para.class</a>, <a href="../LaTeXML-common/#schema.Block.class" title="All ‘physical’ block elements. A physical block is typically displayed as a block, but may not constitute a complete logical unit. ‣ item Pattern Block.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Block.class</a>, <a href="../LaTeXML-common/#schema.Para.class" title="All logical block level elements. A logical block typically contains one or more physical block elements. For example, a common situation might be p,equation,p, where the entire sequence comprises a single sentence. ‣ item Pattern Para.class ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Para.class</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix64" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">pagination_attributes</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix64.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.pagination_attributes" id="schema.pagination_attributes" class="ltx_anchor">Attributes for <a href="#schema.pagination" title="A page break or related pagination information. ‣ item Element pagination ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">pagination</a>.</a></p>
+<dl id="I1.ix64.I64" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix64.I64.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attributes</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix64.I64.ix1.p1" class="ltx_para">
+<p class="ltx_p"><a href="../LaTeXML-common/#schema.Common.attributes" title="Attributes shared by ALL elements. ‣ item Pattern Common.attributes ‣ C.2 Module LaTeXML-common ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif ltx_font_slanted">Common.attributes</a></p>
+</div>
+</dd>
+<dt id="I1.ix64.I64.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Attribute </span><span class="ltx_text ltx_font_sansserif ltx_font_bold">role</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix64.I64.ix2.p1" class="ltx_para">
+<p class="ltx_p">= <span class="ltx_text ltx_font_italic">text</span></p>
+</div>
+<div id="I1.ix64.I64.ix2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">what kind of pagination</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt id="I1.ix65" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Pattern <span class="ltx_text ltx_font_sansserif ltx_font_bold ltx_font_slanted">pagination_model</span></span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix65.p1" class="ltx_para">
+<p class="ltx_p"><a name="schema.pagination_model" id="schema.pagination_model" class="ltx_anchor">Content model for <a href="#schema.pagination" title="A page break or related pagination information. ‣ item Element pagination ‣ C.4 Module LaTeXML-block ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref ltx_font_sansserif">pagination</a>.</a></p>
+<dl id="I1.ix65.I65" class="ltx_description ltx_patterndescription">
+<dt id="I1.ix65.I65.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Content</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix65.I65.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">empty</span></p>
+</div>
+</dd>
+<dt id="I1.ix65.I65.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_italic">Expansion</span>:</span></dt>
+<dd class="ltx_item">
+<div id="I1.ix65.I65.ix2.p1" class="ltx_para">
+<p class="ltx_p">()</p>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+</div>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="../LaTeXML-inline/" title="C.3 Module LaTeXML-inline ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.3 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-inline</span></span></a><a href="../../idx.html" title="Index ‣ LaTeXML The Manual" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="../LaTeXML-misc/" title="C.5 Module LaTeXML-misc ‣ Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.5 </span>Module <span class="ltx_text ltx_font_typewriter">LaTeXML-misc</span></span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Tue Dec 17 10:04:54 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>2.2 Postprocessing‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual</title>
+<!--Generated on Tue Dec 17 10:04:54 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 17, 2024.-->
+
+<link rel="shortcut icon" href="../../../favicon.ico" type="image/png">
+<link rel="stylesheet" href="../../../LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="../../../ltx-book.css" type="text/css">
+<link rel="stylesheet" href="../../../ltx-listings.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../../../latexmldoc.css" type="text/css">
+<script src="../../../LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="up" href="../" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="up up" href="../../" title="LaTeXML The Manual">
+<link rel="start" href="../../" title="LaTeXML The Manual">
+<link rel="prev" href="../conversion/" title="§ 2.1 Basic XML Conversion ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="next" href="../splitting/" title="§ 2.3 Splitting the Output ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="section" href="../conversion/" title="§ 2.1 Basic XML Conversion ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="section" href="../splitting/" title="§ 2.3 Splitting the Output ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="section" href="../site/" title="§ 2.4 Site processing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="section" href="../latexmlmath/" title="§ 2.5 Individual Formula ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../intro/" title="Chapter 1 Introduction ‣ LaTeXML The Manual">
+<link rel="chapter" href="../" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../customization/" title="Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../localization/" title="Chapter 6 Localization ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../alignments/" title="Chapter 7 Alignments ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../metadata/" title="Chapter 8 Metadata ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../todo/" title="Chapter 9 ToDo ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../acknowledgements/" title="Acknowledgements ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../commands/" title="Appendix A Command Documentation ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../schema/" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../cssclasses/" title="Appendix E CSS Classes ‣ LaTeXML The Manual">
+<link rel="index" href="../../idx.html" title="Index ‣ LaTeXML The Manual">
+<meta name="keywords" lang="en" content="basic usage, latexmlpost">
+</head>
+<body>
+<nav class="ltx_page_navbar">
+<div class="ltx_para">
+<p class="ltx_p"><a href="../../" title="LaTeXML The Manual" class="ltx_ref"><img src="x1.png" class="ltx_graphics" width="215" height="50" alt=""></a>
+<br class="ltx_break"><img src="x2.png" class="ltx_graphics" width="130" height="168" alt="">
+<br class="ltx_break"></p>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../intro/" title="Chapter 1 Introduction ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Introduction</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="../" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Using <span class="ltx_ref ltx_font_typewriter">LaTeXML</span></span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../conversion/" title="§ 2.1 Basic XML Conversion ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1 </span>Conversion</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section ltx_ref_self">
+<span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2 </span>Postprocessing</span></span>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_paragraph"><a href="#scanning" title="Scanning ‣ § 2.2 Basic Postprocessing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Scanning</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_paragraph"><a href="#indexing" title="Indexing ‣ § 2.2 Basic Postprocessing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Indexing</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_paragraph"><a href="#bibtex" title="Bibliography ‣ § 2.2 Basic Postprocessing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Bibliography</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_paragraph"><a href="#crossref" title="Cross-Referencing ‣ § 2.2 Basic Postprocessing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Cross-Referencing</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_paragraph"><a href="#math" title="Math Conversion ‣ § 2.2 Basic Postprocessing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Math Conversion</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_paragraph"><a href="#graphics" title="Graphics processing ‣ § 2.2 Basic Postprocessing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Graphics</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_paragraph"><a href="#xslt" title="Stylesheets and Javascript ‣ § 2.2 Basic Postprocessing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Stylesheets and Javascript</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../splitting/" title="§ 2.3 Splitting the Output ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.3 </span>Splitting</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../site/" title="§ 2.4 Site processing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.4 </span>Sites</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../latexmlmath/" title="§ 2.5 Individual Formula ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.5 </span>Individual Formula</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Architecture</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../customization/" title="Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Customization</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Mathematics</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../localization/" title="Chapter 6 Localization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>Localization</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../alignments/" title="Chapter 7 Alignments ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Alignments</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../metadata/" title="Chapter 8 Metadata ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>Metadata</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../todo/" title="Chapter 9 ToDo ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>ToDo</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../acknowledgements/" title="Acknowledgements ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Acknowledgements</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../commands/" title="Appendix A Command Documentation ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>Commands</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B </span>Bindings</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../schema/" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C </span>Schema</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D </span>Error Codes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../cssclasses/" title="Appendix E CSS Classes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">E </span>CSS Classes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_index"><a href="../../idx.html" title="Index ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Index</span></a></li>
+</ul>
+</div></nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="../" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Using <span class="ltx_ref ltx_font_typewriter">LaTeXML</span></span></a><a href="../conversion/" title="§ 2.1 Basic XML Conversion ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1 </span>Conversion</span></a><a href="../splitting/" title="§ 2.3 Splitting the Output ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.3 </span>Splitting</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_1line">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§ 2.2 </span>Basic Postprocessing</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">In the simplest situation, you have a single TeX source document
+from which you want to generate a single output document.
+The command</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,bGF0ZXhtbHBvc3QgJW9wdGlvbnMlIC0tZGVzdGluYXRpb249JWRvYyUuaHRtbCAlZG9jJQ==" download="">⬇</a></div>
+<div id="lstnumberx22" class="ltx_listingline">
+<span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">latexmlpost</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter ltx_font_italic">options</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">destination</span><span class="ltx_text ltx_font_typewriter">=</span><span class="ltx_text ltx_font_typewriter ltx_font_italic">doc</span><span class="ltx_text ltx_font_typewriter">.</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">html</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter ltx_font_italic">doc</span>
+</div>
+</div>
+<p class="ltx_p">or similarly with
+<span class="ltx_text ltx_lst_language_bash ltx_lstlisting ltx_font_typewriter">--<span class="ltx_text ltx_lst_identifier">destination</span>=<span class="ltx_text ltx_font_italic">doc</span>.<span class="ltx_text ltx_lst_identifier">html4</span></span>,
+<span class="ltx_text ltx_lst_language_bash ltx_lstlisting ltx_font_typewriter">--<span class="ltx_text ltx_lst_identifier">destination</span>=<span class="ltx_text ltx_font_italic">doc</span>.<span class="ltx_text ltx_lst_identifier">xhtml</span></span>,
+will carry out a set of appropriate transformations in sequence:</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p">scanning of labels and ids;
+</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p">filling in the index and bibliography (if needed);</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i3.p1" class="ltx_para">
+<p class="ltx_p">cross-referencing;</p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i4.p1" class="ltx_para">
+<p class="ltx_p">conversion of math;</p>
+</div>
+</li>
+<li id="I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i5.p1" class="ltx_para">
+<p class="ltx_p">conversion of graphics and picture environments to web format (png);</p>
+</div>
+</li>
+<li id="I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="I1.i6.p1" class="ltx_para">
+<p class="ltx_p">applying an <a href="http://www.w3.org/Style/XSL/" title="" class="ltx_ref ltx_font_typewriter">XSLT</a> stylesheet.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">The output format affects the defaults for each step, and particularly,
+the <a href="http://www.w3.org/Style/XSL/" title="" class="ltx_ref ltx_font_typewriter">XSLT</a> stylesheet that is used, and is determined
+by the file extension of <span class="ltx_text ltx_lst_language_bash ltx_lstlisting ltx_font_typewriter">--<span class="ltx_text ltx_lst_identifier">destination</span></span>, or by the option</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,LS1mb3JtYXQ9KGh0bWx8aHRtbDV8aHRtbDR8eGh0bWx8eG1sKQ==" download="">⬇</a></div>
+<div id="lstnumberx23" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">format</span><span class="ltx_text ltx_font_typewriter">=(</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">html</span><span class="ltx_text ltx_font_typewriter">|</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">html5</span><span class="ltx_text ltx_font_typewriter">|</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">html4</span><span class="ltx_text ltx_font_typewriter">|</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">xhtml</span><span class="ltx_text ltx_font_typewriter">|</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">xml</span><span class="ltx_text ltx_font_typewriter">)</span>
+</div>
+</div>
+<p class="ltx_p">which overrides the extension used in the destination. The recognized formats are:</p>
+<dl id="I2" class="ltx_description">
+<dt id="I2.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">html or html5</span></span></dt>
+<dd class="ltx_item">
+<div id="I2.ix1.p1" class="ltx_para">
+<p class="ltx_p">math is converted to Presentation <a href="http://www.w3.org/Math/" title="" class="ltx_ref ltx_font_typewriter">MathML</a>,
+some ‘vector’ style graphics are converted to SVG,
+other graphics are converted to images;
+<span class="ltx_text ltx_font_typewriter">LaTeXML-html5.xslt</span> is used.
+The file extension html generates html5</p>
+</div>
+</dd>
+<dt id="I2.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">html4</span></span></dt>
+<dd class="ltx_item">
+<div id="I2.ix2.p1" class="ltx_para">
+<p class="ltx_p">both math and graphics are converted to images;
+<span class="ltx_text ltx_font_typewriter">LaTeXML-html4.xslt</span> is used.</p>
+</div>
+</dd>
+<dt id="I2.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">xhtml</span></span></dt>
+<dd class="ltx_item">
+<div id="I2.ix3.p1" class="ltx_para">
+<p class="ltx_p">math is converted to Presentation <a href="http://www.w3.org/Math/" title="" class="ltx_ref ltx_font_typewriter">MathML</a>, other graphics are converted to images;
+<span class="ltx_text ltx_font_typewriter">LaTeXML-xhtml.xslt</span> is used.</p>
+</div>
+</dd>
+<dt id="I2.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">xml</span></span></dt>
+<dd class="ltx_item">
+<div id="I2.ix4.p1" class="ltx_para">
+<p class="ltx_p">no math, graphics or <a href="http://www.w3.org/Style/XSL/" title="" class="ltx_ref ltx_font_typewriter">XSLT</a> conversion is carried out.</p>
+</div>
+</dd>
+</dl>
+<p class="ltx_p">Of course, all of these conversions can be controlled or overridden
+by explicit options described below.
+For more details about less common options, see the command
+documentation <span class="ltx_ref ltx_missing_label ltx_ref_self">latexmlpost</span>, as well as Appendix <span class="ltx_ref ltx_missing_label ltx_ref_self">LABEL:modules.post</span>.</p>
+</div>
+<section id="scanning" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Scanning</h2>
+
+<div id="SS0.SSS0.Px1.p1" class="ltx_para">
+<p class="ltx_p">The scanning step collects information about all labels, ids,
+indexing commands, cross-references and so on, to be used
+in the following postprocessing stages.</p>
+</div>
+</section>
+<section id="indexing" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Indexing</h2>
+
+<div id="SS0.SSS0.Px2.p1" class="ltx_para">
+<p class="ltx_p">An index is built from <code class="ltx_verbatim ltx_font_typewriter">\index</code> markup, if
+<span class="ltx_text ltx_lst_identifier ltx_lst_language_bash ltx_lstlisting ltx_font_typewriter">makeidx</span>’s <code class="ltx_verbatim ltx_font_typewriter">\printindex</code> command has been used,
+but this can be disabled by</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,LS1ub2luZGV4" download="">⬇</a></div>
+<div id="lstnumberx24" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">noindex</span>
+</div>
+</div>
+<p class="ltx_p">The index entries can be permuted with the option</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,LS1wZXJtdXRlZGluZGV4" download="">⬇</a></div>
+<div id="lstnumberx25" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">permutedindex</span>
+</div>
+</div>
+<p class="ltx_p">Thus <code class="ltx_verbatim ltx_font_typewriter">\index{term a!term b}</code> also shows up as <code class="ltx_verbatim ltx_font_typewriter">\index{term b!term a}</code>.
+This leads to a more complete, but possibly rather silly, index,
+depending on how the terms have been written.</p>
+</div>
+</section>
+<section id="bibtex" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Bibliography</h2>
+
+<div id="SS0.SSS0.Px3.p1" class="ltx_para">
+<p class="ltx_p">When a document contains a request for bibliographies,
+typically due to the <code class="ltx_verbatim ltx_font_typewriter">\bibliography{..}</code> command,
+the postprocessor will look for the named bibliographies.
+It first looks for preconverted bibliographies with the
+extention <code class="ltx_verbatim ltx_font_typewriter">.bib.xml</code>, otherwise it will look
+for <code class="ltx_verbatim ltx_font_typewriter">.bib</code> and convert it internally (the latter
+is a somewhat experimental feature).</p>
+</div>
+<div id="SS0.SSS0.Px3.p2" class="ltx_para">
+<p class="ltx_p">If you want to override that search, for example using a bibliography
+with a different name, you can supply that filename using the option</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,LS1iaWJsaW9ncmFwaHk9JWJpYmZpbGUlLmJpYi54bWw=" download="">⬇</a></div>
+<div id="lstnumberx26" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">bibliography</span><span class="ltx_text ltx_font_typewriter">=</span><span class="ltx_text ltx_font_typewriter ltx_font_italic">bibfile</span><span class="ltx_text ltx_font_typewriter">.</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">bib</span><span class="ltx_text ltx_font_typewriter">.</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">xml</span>
+</div>
+</div>
+<p class="ltx_p">Note that the internal bibliography list will then be ignored.
+The bibliography would have typically been produced by running</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,bGF0ZXhtbCAtLWRlc3Q9YmliZmlsZS5iaWIueG1sIGJpYmZpbGUuYmli" download="">⬇</a></div>
+<div id="lstnumberx27" class="ltx_listingline">
+<span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">latexml</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">dest</span><span class="ltx_text ltx_font_typewriter">=</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">bibfile</span><span class="ltx_text ltx_font_typewriter">.</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">bib</span><span class="ltx_text ltx_font_typewriter">.</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">xml</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">bibfile</span><span class="ltx_text ltx_font_typewriter">.</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">bib</span>
+</div>
+</div>
+<p class="ltx_p">Note that the <a href="http://www.w3.org/XML/" title="" class="ltx_ref ltx_font_typewriter">XML</a> file, bibfile, is not used to directly produce
+an <a href="http://www.w3.org/html/" title="" class="ltx_ref ltx_font_typewriter">HTML</a>-formatted bibliography, rather it is used to fill in
+the <code class="ltx_verbatim ltx_font_typewriter">\bibliography{..}</code> within a TeX document.</p>
+</div>
+</section>
+<section id="crossref" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Cross-Referencing</h2>
+
+<div id="SS0.SSS0.Px4.p1" class="ltx_para">
+<p class="ltx_p">In this stage, the scanned information is used to fill in the
+text and links of cross-references within the document.
+The option</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,LS11cmxzdHlsZT0oc2VydmVyfG5lZ290aWF0ZWR8ZmlsZSk=" download="">⬇</a></div>
+<div id="lstnumberx28" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">urlstyle</span><span class="ltx_text ltx_font_typewriter">=(</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">server</span><span class="ltx_text ltx_font_typewriter">|</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">negotiated</span><span class="ltx_text ltx_font_typewriter">|</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">file</span><span class="ltx_text ltx_font_typewriter">)</span>
+</div>
+</div>
+<p class="ltx_p">can control the format of urls with the document.</p>
+<dl id="I3" class="ltx_description">
+<dt id="I3.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">server</span></span></dt>
+<dd class="ltx_item">
+<div id="I3.ix1.p1" class="ltx_para">
+<p class="ltx_p">formats urls appropriate for use from a web server.
+In particular, trailing <span class="ltx_text ltx_font_typewriter">index.html</span> are omitted. (default)</p>
+</div>
+</dd>
+<dt id="I3.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">negotiated</span></span></dt>
+<dd class="ltx_item">
+<div id="I3.ix2.p1" class="ltx_para">
+<p class="ltx_p">formats urls appropriate for use by a server
+that implements content negotiation. File extensions for <span class="ltx_text ltx_font_typewriter">html</span>
+and <span class="ltx_text ltx_font_typewriter">xhtml</span> are omitted. This enables you to set up a server
+that serves the appropriate format depending on the browser being used.</p>
+</div>
+</dd>
+<dt id="I3.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">file</span></span></dt>
+<dd class="ltx_item">
+<div id="I3.ix3.p1" class="ltx_para">
+<p class="ltx_p">formats urls explicitly, with full filename and extension.
+This allows the files to be browsed from the local filesystem.</p>
+</div>
+</dd>
+</dl>
+</div>
+</section>
+<section id="math" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Math Conversion</h2>
+
+<div id="SS0.SSS0.Px5.p1" class="ltx_para">
+<p class="ltx_p">Specific conversions of the mathematics can be requested
+using the options</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,LS1tYXRoaW1hZ2VzICAgICAgICAgICAgICAgICAgICMgY29udmVydHMgbWF0aCB0byBwbmcgaW1hZ2VzLAotLXByZXNlbnRhdGlvbm1hdGhtbCAlb3IlIC0tcG1tbCAjIGNyZWF0ZXMgUHJlc2VudGF0aW9uIEBcTWF0aE1MQAotLWNvbnRlbnRtYXRobWwgJW9yJSAtLWNtbWwgICAgICAjIGNyZWF0ZXMgQ29udGVudCBAXE1hdGhNTEAKLS1vcGVubWF0aCAlb3IlIC0tb20gICAgICAgICAgICAgIyBjcmVhdGVzIEBcT3Blbk1hdGhACi0ta2VlcFhNYXRoICAgICAgICAgICAgICAgICAgICAjIHByZXNlcnZlcyBAXExhVGVYTUxAJ3MgWE1hdGg=" download="">⬇</a></div>
+<div id="lstnumberx29" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">mathimages</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">                   </span><span class="ltx_text ltx_lst_comment">#<span class="ltx_text ltx_lst_space"> </span>converts<span class="ltx_text ltx_lst_space"> </span>math<span class="ltx_text ltx_lst_space"> </span>to<span class="ltx_text ltx_lst_space"> </span>png<span class="ltx_text ltx_lst_space"> </span>images,</span>
+</div>
+<div id="lstnumberx30" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">presentationmathml</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter ltx_font_italic">or</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">pmml</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_lst_comment">#<span class="ltx_text ltx_lst_space"> </span>creates<span class="ltx_text ltx_lst_space"> </span>Presentation<span class="ltx_text ltx_lst_space"> </span><a href="http://www.w3.org/Math/" title="" class="ltx_ref ltx_font_typewriter">MathML</a></span>
+</div>
+<div id="lstnumberx31" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">contentmathml</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter ltx_font_italic">or</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">cmml</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">      </span><span class="ltx_text ltx_lst_comment">#<span class="ltx_text ltx_lst_space"> </span>creates<span class="ltx_text ltx_lst_space"> </span>Content<span class="ltx_text ltx_lst_space"> </span><a href="http://www.w3.org/Math/" title="" class="ltx_ref ltx_font_typewriter">MathML</a></span>
+</div>
+<div id="lstnumberx32" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">openmath</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter ltx_font_italic">or</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">om</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">             </span><span class="ltx_text ltx_lst_comment">#<span class="ltx_text ltx_lst_space"> </span>creates<span class="ltx_text ltx_lst_space"> </span><a href="http://www.openmath.org/" title="" class="ltx_ref ltx_font_typewriter">OpenMath</a></span>
+</div>
+<div id="lstnumberx33" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">keepXMath</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">                    </span><span class="ltx_text ltx_lst_comment">#<span class="ltx_text ltx_lst_space"> </span>preserves<span class="ltx_text ltx_lst_space"> </span><a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a>’s<span class="ltx_text ltx_lst_space"> </span>XMath</span>
+</div>
+</div>
+<p class="ltx_p">(Each of these options can also be negated if needed, eg. <span class="ltx_text ltx_lst_language_bash ltx_lstlisting ltx_font_typewriter">--<span class="ltx_text ltx_lst_identifier">nomathimages</span></span>)
+It must be pointed out that the Content <a href="http://www.w3.org/Math/" title="" class="ltx_ref ltx_font_typewriter">MathML</a> and <a href="http://www.openmath.org/" title="" class="ltx_ref ltx_font_typewriter">OpenMath</a> conversions are currently rather experimental.</p>
+</div>
+<div id="SS0.SSS0.Px5.p2" class="ltx_para">
+<p class="ltx_p">If more than one of these conversions are requested,
+parallel math markup will be generated with the first format
+being the primary one, and the additional ones added as secondary formats.
+The secondary format is incorporated using whatever means
+the primary format uses; eg. <a href="http://www.w3.org/Math/" title="" class="ltx_ref ltx_font_typewriter">MathML</a> combines formats using
+<span class="ltx_text ltx_font_typewriter">m:semantics</span> and <span class="ltx_text ltx_font_typewriter">m:annotation-xml</span>.</p>
+</div>
+<div id="SS0.SSS0.Px5.p3" class="ltx_para">
+<p class="ltx_p">Given the state of current browsers, you may wish
+to use a polyfill such as <a href="https://mathjax.org/" title="" class="ltx_ref">MathJax</a>
+to support MathML on more platforms.
+See the example in <a href="#xslt" title="Stylesheets and Javascript ‣ § 2.2 Basic Postprocessing ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.2</span></a> for one way to do it.</p>
+</div>
+</section>
+<section id="graphics" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Graphics processing</h2>
+
+<div id="SS0.SSS0.Px6.p1" class="ltx_para">
+<p class="ltx_p">Conversion of graphics (eg. from the <span class="ltx_text ltx_font_typewriter">graphic(s|x)</span> packages’
+<code class="ltx_verbatim ltx_font_typewriter">\includegraphics</code>) can be enabled or disabled
+using</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,LS1ncmFwaGljc2ltYWdlcyAlb3IlIC0tbm9ncmFwaGljc2ltYWdlcw==" download="">⬇</a></div>
+<div id="lstnumberx34" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">graphicsimages</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter ltx_font_italic">or</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">nographicsimages</span>
+</div>
+</div>
+<p class="ltx_p">Similarly, the conversion of <span class="ltx_text ltx_font_typewriter">picture</span> environments can be controlled with</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,LS1waWN0dXJlaW1hZ2VzICVvciUgLS1ub3BpY3R1cmVpbWFnZXM=" download="">⬇</a></div>
+<div id="lstnumberx35" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">pictureimages</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter ltx_font_italic">or</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">nopictureimages</span>
+</div>
+</div>
+<p class="ltx_p">An experimental capability for converting the latter to <span class="ltx_text ltx_font_smallcaps">SVG</span> can be
+controlled by</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,LS1zdmcgJW9yJSAtLW5vc3Zn" download="">⬇</a></div>
+<div id="lstnumberx36" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">svg</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter ltx_font_italic">or</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">nosvg</span>
+</div>
+</div>
+</div>
+</section>
+<section id="xslt" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Stylesheets and Javascript</h2>
+
+<div id="SS0.SSS0.Px7.p1" class="ltx_para">
+<p class="ltx_p">If you wish to restyle the generated <a href="http://www.w3.org/html/" title="" class="ltx_ref ltx_font_typewriter">HTML</a> either by adding <a href="http://www.w3.org/Style/CSS/" title="" class="ltx_ref ltx_font_typewriter">CSS</a> or by customizing
+the <a href="http://www.w3.org/Style/XSL/" title="" class="ltx_ref ltx_font_typewriter">XSLT</a>, change its functionality by adding javascript,
+or even generate an alternative output format with <a href="http://www.w3.org/Style/XSL/" title="" class="ltx_ref ltx_font_typewriter">XSLT</a>,
+some combination of the following options will be useful.</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,LS1ub2RlZmF1bHRyZXNvdXJjZXMgICAgICAgICMgT21pdHMgdGhlIGRlZmF1bHQgcmVzb3VyY2VzIChjc3MuLikKLS1jc3M9JXN0eWxlc2hlZXQlLmNzcyAgICAgICAgIyBBZGRzIGEgbmV3IENTUyBzdHlsZXNoZWV0Ci0tamF2YXNjcmlwdD0lcHJvZ3JhbSUuanMgICAgICMgQWRkcyBhIEphdmFzY3JpcHQKLS1zdHlsZXNoZWV0PSVzdHlsZXNoZWV0JS54c2wgIyBVc2VzIGFuIGFsdGVybmF0aXZlIFhTTFQgc3R5bGVzaGVldAotLXhzbHRwYXJhbWV0ZXI9JW5hbWUlOiV2YWx1ZSUgICMgU2V0cyBhbiBYU0xUIHBhcmFtZXRlcg==" download="">⬇</a></div>
+<div id="lstnumberx37" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">nodefaultresources</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">        </span><span class="ltx_text ltx_lst_comment">#<span class="ltx_text ltx_lst_space"> </span>Omits<span class="ltx_text ltx_lst_space"> </span>the<span class="ltx_text ltx_lst_space"> </span>default<span class="ltx_text ltx_lst_space"> </span>resources<span class="ltx_text ltx_lst_space"> </span>(css..)</span>
+</div>
+<div id="lstnumberx38" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">css</span><span class="ltx_text ltx_font_typewriter">=</span><span class="ltx_text ltx_font_typewriter ltx_font_italic">stylesheet</span><span class="ltx_text ltx_font_typewriter">.</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">css</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">        </span><span class="ltx_text ltx_lst_comment">#<span class="ltx_text ltx_lst_space"> </span>Adds<span class="ltx_text ltx_lst_space"> </span>a<span class="ltx_text ltx_lst_space"> </span>new<span class="ltx_text ltx_lst_space"> </span>CSS<span class="ltx_text ltx_lst_space"> </span>stylesheet</span>
+</div>
+<div id="lstnumberx39" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">javascript</span><span class="ltx_text ltx_font_typewriter">=</span><span class="ltx_text ltx_font_typewriter ltx_font_italic">program</span><span class="ltx_text ltx_font_typewriter">.</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">js</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">     </span><span class="ltx_text ltx_lst_comment">#<span class="ltx_text ltx_lst_space"> </span>Adds<span class="ltx_text ltx_lst_space"> </span>a<span class="ltx_text ltx_lst_space"> </span>Javascript</span>
+</div>
+<div id="lstnumberx40" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">stylesheet</span><span class="ltx_text ltx_font_typewriter">=</span><span class="ltx_text ltx_font_typewriter ltx_font_italic">stylesheet</span><span class="ltx_text ltx_font_typewriter">.</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">xsl</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_lst_comment">#<span class="ltx_text ltx_lst_space"> </span>Uses<span class="ltx_text ltx_lst_space"> </span>an<span class="ltx_text ltx_lst_space"> </span>alternative<span class="ltx_text ltx_lst_space"> </span>XSLT<span class="ltx_text ltx_lst_space"> </span>stylesheet</span>
+</div>
+<div id="lstnumberx41" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">xsltparameter</span><span class="ltx_text ltx_font_typewriter">=</span><span class="ltx_text ltx_font_typewriter ltx_font_italic">name</span><span class="ltx_text ltx_font_typewriter">:</span><span class="ltx_text ltx_font_typewriter ltx_font_italic">value</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">  </span><span class="ltx_text ltx_lst_comment">#<span class="ltx_text ltx_lst_space"> </span>Sets<span class="ltx_text ltx_lst_space"> </span>an<span class="ltx_text ltx_lst_space"> </span>XSLT<span class="ltx_text ltx_lst_space"> </span>parameter</span>
+</div>
+</div>
+<p class="ltx_p">All but <span class="ltx_text ltx_lst_language_bash ltx_lstlisting ltx_font_typewriter">--<span class="ltx_text ltx_lst_identifier">stylesheet</span></span> can be repeated to include multiple files
+or set multiple parameters. When a local <a href="http://www.w3.org/Style/CSS/" title="" class="ltx_ref ltx_font_typewriter">CSS</a> or javascript file is included,
+it will be copied to the destination directory, but otherwise urls are accepted.
+</p>
+</div>
+<div id="SS0.SSS0.Px7.p2" class="ltx_para">
+<p class="ltx_p">The core <a href="http://www.w3.org/Style/CSS/" title="" class="ltx_ref ltx_font_typewriter">CSS</a> stylesheet, <span class="ltx_text ltx_font_typewriter">LaTeXML.css</span>, along with
+certain styles or classes (<span class="ltx_text ltx_font_typewriter">article</span>, <span class="ltx_text ltx_font_typewriter">report</span>, <span class="ltx_text ltx_font_typewriter">book</span>,
+<span class="ltx_text ltx_font_typewriter">amsart</span>) which add stylesheets automatically,
+helps match the styling of LaTeX to <a href="http://www.w3.org/html/" title="" class="ltx_ref ltx_font_typewriter">HTML</a>.
+You can also request the inclusion of your own stylesheets from the commandline using
+<span class="ltx_text ltx_lst_language_bash ltx_lstlisting ltx_font_typewriter">--<span class="ltx_text ltx_lst_identifier">css</span></span> option. Some sample <a href="http://www.w3.org/Style/CSS/" title="" class="ltx_ref ltx_font_typewriter">CSS</a> enhancements are included with the distribution:</p>
+<dl id="I4" class="ltx_description">
+<dt id="I4.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_typewriter ltx_font_bold">LaTeXML-navbar-left.css</span></span></dt>
+<dd class="ltx_item">
+<div id="I4.ix1.p1" class="ltx_para">
+<p class="ltx_p">Places a navigation bar on the left.</p>
+</div>
+</dd>
+<dt id="I4.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_typewriter ltx_font_bold">LaTeXML-navbar-right.css</span></span></dt>
+<dd class="ltx_item">
+<div id="I4.ix2.p1" class="ltx_para">
+<p class="ltx_p">Places a navigation bar on the left.</p>
+</div>
+</dd>
+<dt id="I4.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_typewriter ltx_font_bold">LaTeXML-blue.css</span></span></dt>
+<dd class="ltx_item">
+<div id="I4.ix3.p1" class="ltx_para">
+<p class="ltx_p">Colors various features in a soft blue.</p>
+</div>
+</dd>
+</dl>
+<p class="ltx_p">In cases where you wish to completely manage the <a href="http://www.w3.org/Style/CSS/" title="" class="ltx_ref ltx_font_typewriter">CSS</a> 
+the option <span class="ltx_text ltx_lst_language_bash ltx_lstlisting ltx_font_typewriter">--<span class="ltx_text ltx_lst_identifier">nodefaultcss</span></span> causes only explicitly requested (command-line)
+css files to be included.</p>
+</div>
+<div id="SS0.SSS0.Px7.p3" class="ltx_para">
+<p class="ltx_p">Javascript files are included in the generated <a href="http://www.w3.org/html/" title="" class="ltx_ref ltx_font_typewriter">HTML</a> by using the <span class="ltx_text ltx_lst_language_bash ltx_lstlisting ltx_font_typewriter">--<span class="ltx_text ltx_lst_identifier">javascript</span></span> option.
+The distribution includes a sample <span class="ltx_text ltx_font_typewriter">LaTeXML-maybeMathjax.js</span> which is useful
+for supporting MathML: it invokes MathJax<span id="Ch2.footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>
+                <span class="ltx_tag ltx_tag_note">1</span>
+                
+                
+                
+              https://mathjax.org</span></span></span>
+to render the mathematics in browsers without native support for MathML.</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,LS1qYXZhc2NyaXB0PUxhVGVYTUwtbWF5YmVNYXRoamF4Lmpz" download="">⬇</a></div>
+<div id="lstnumberx42" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">javascript</span><span class="ltx_text ltx_font_typewriter">=</span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">LaTeXML</span><span class="ltx_text ltx_font_typewriter">-</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">maybeMathjax</span><span class="ltx_text ltx_font_typewriter">.</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">js</span>
+</div>
+</div>
+<p class="ltx_p">The option can also reference a remote script; for example to invoke MathJax unconditionally
+from the ‘cloud’:
+</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,bGF0ZXhtbHBvc3QgLS1mb3JtYXQ9aHRtbDUgXAogICAtLWphdmFzY3JpcHQ9J2h0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL21hdGhqYXgvMi43LjIvTWF0aEpheC5qcz9jb25maWc9TU1MX0NIVE1MJyBcCiAgIC0tZGVzdGluYXRpb249JXNvbWV3aGVyZS9kb2MlLmh0bWwgJWRvYyU=" download="">⬇</a></div>
+<div id="lstnumberx43" class="ltx_listingline">
+<span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">latexmlpost</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">format</span><span class="ltx_text ltx_font_typewriter">=</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">html5</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">\</span>
+</div>
+<div id="lstnumberx44" class="ltx_listingline">
+<span class="ltx_text ltx_lst_space ltx_font_typewriter">   </span><span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">javascript</span><span class="ltx_text ltx_font_typewriter">=</span><span class="ltx_text ltx_lst_string ltx_font_typewriter">’https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=MML_CHTML’</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">\</span>
+</div>
+<div id="lstnumberx45" class="ltx_listingline">
+<span class="ltx_text ltx_lst_space ltx_font_typewriter">   </span><span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">destination</span><span class="ltx_text ltx_font_typewriter">=</span><span class="ltx_text ltx_font_typewriter ltx_font_italic">somewhere/doc</span><span class="ltx_text ltx_font_typewriter">.</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">html</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter ltx_font_italic">doc</span>
+</div>
+</div>
+</div>
+<div id="SS0.SSS0.Px7.p4" class="ltx_para">
+<p class="ltx_p">See <a href="../../customization/latexmlpost/css.html" title="§ 4.2.2 CSS ‣ § 4.2 latexmlpost Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2.2</span></a> for more information on developing your own stylesheets.
+To develop <a href="http://www.w3.org/Style/CSS/" title="" class="ltx_ref ltx_font_typewriter">CSS</a> and <a href="http://www.w3.org/Style/XSL/" title="" class="ltx_ref ltx_font_typewriter">XSLT</a> stylesheets,
+a knowledge of the <a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a> document type is also necessary; see Appendix <a href="../../schema/" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">C</span></a>.</p>
+</div>
+<div id="SS0.SSS0.Px7.p5" class="ltx_para">
+<p class="ltx_p">Individual <a href="http://www.w3.org/Style/XSL/" title="" class="ltx_ref ltx_font_typewriter">XSLT</a> stylesheets may have parameters that can customize the
+conversion from <a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a>’s <a href="http://www.w3.org/XML/" title="" class="ltx_ref ltx_font_typewriter">XML</a> to the target format. An obscure example is</p>
+<div class="ltx_listing ltx_lst_language_bash ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,LS14c2x0cGFyYW1ldGVyPVNJTVBMSUZZX0hUTUw6dHJ1ZQ==" download="">⬇</a></div>
+<div id="lstnumberx46" class="ltx_listingline">
+<span class="ltx_text ltx_font_typewriter">--</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">xsltparameter</span><span class="ltx_text ltx_font_typewriter">=</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">SIMPLIFY_HTML</span><span class="ltx_text ltx_font_typewriter">:</span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">true</span>
+</div>
+</div>
+<p class="ltx_p">which causes a ‘simpler’ <a href="http://www.w3.org/html/" title="" class="ltx_ref ltx_font_typewriter">HTML</a> to be generated.
+Generally, <a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a>’s <a href="http://www.w3.org/html/" title="" class="ltx_ref ltx_font_typewriter">HTML</a> relies on <a href="http://www.w3.org/Style/CSS/" title="" class="ltx_ref ltx_font_typewriter">CSS</a> to recreate the appearance
+of many features of LaTeX, but this sometimes results in somewhat convoluted
+<a href="http://www.w3.org/html/" title="" class="ltx_ref ltx_font_typewriter">HTML</a> that may not be ideal in situations where <a href="http://www.w3.org/Style/CSS/" title="" class="ltx_ref ltx_font_typewriter">CSS</a> is not available.
+This parameter ‘dumbs down’ itemizations and enumerations by
+ignoring any custom item labels or numbers.
+</p>
+</div>
+</section>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="../conversion/" title="§ 2.1 Basic XML Conversion ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1 </span>Conversion</span></a><a href="../../idx.html" title="Index ‣ LaTeXML The Manual" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="../splitting/" title="§ 2.3 Splitting the Output ‣ Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.3 </span>Splitting</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Tue Dec 17 10:04:54 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

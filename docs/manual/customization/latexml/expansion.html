@@ -1,0 +1,293 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>4.1.1 Expansion‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual</title>
+<!--Generated on Tue Dec 17 10:04:54 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 17, 2024.-->
+
+<link rel="shortcut icon" href="../../../favicon.ico" type="image/png">
+<link rel="stylesheet" href="../../../LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="../../../ltx-book.css" type="text/css">
+<link rel="stylesheet" href="../../../ltx-listings.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../../../latexmldoc.css" type="text/css">
+<script src="../../../LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="up" href="./" title="§ 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="up up" href="../" title="Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="up up up" href="../../" title="LaTeXML The Manual">
+<link rel="start" href="../../" title="LaTeXML The Manual">
+<link rel="prev" href="./" title="§ 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="next" href="digestion.html" title="§ 4.1.2 Digestion &amp; Primitives ‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="subsection" href="digestion.html" title="§ 4.1.2 Digestion &amp; Primitives ‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="subsection" href="construction.html" title="§ 4.1.3 Construction &amp; Constructors ‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="subsection" href="schema.html" title="§ 4.1.4 Document Model ‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="subsection" href="rewriting.html" title="§ 4.1.5 Rewriting ‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="subsection" href="packages.html" title="§ 4.1.6 Packages and Options ‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="subsection" href="misc.html" title="§ 4.1.7 Miscellaneous ‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="section" href="./" title="§ 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="section" href="../latexmlpost/" title="§ 4.2 latexmlpost Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../intro/" title="Chapter 1 Introduction ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../usage/" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual">
+<link rel="chapter" href="../" title="Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../localization/" title="Chapter 6 Localization ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../alignments/" title="Chapter 7 Alignments ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../metadata/" title="Chapter 8 Metadata ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../todo/" title="Chapter 9 ToDo ‣ LaTeXML The Manual">
+<link rel="chapter" href="../../acknowledgements/" title="Acknowledgements ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../commands/" title="Appendix A Command Documentation ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../schema/" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual">
+<link rel="appendix" href="../../cssclasses/" title="Appendix E CSS Classes ‣ LaTeXML The Manual">
+<link rel="index" href="../../idx.html" title="Index ‣ LaTeXML The Manual">
+</head>
+<body>
+<nav class="ltx_page_navbar">
+<div class="ltx_para">
+<p class="ltx_p"><a href="../../" title="LaTeXML The Manual" class="ltx_ref"><img src="x1.png" class="ltx_graphics" width="215" height="50" alt=""></a>
+<br class="ltx_break"><img src="x2.png" class="ltx_graphics" width="130" height="168" alt="">
+<br class="ltx_break"></p>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../intro/" title="Chapter 1 Introduction ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Introduction</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../usage/" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Using <span class="ltx_ref ltx_font_typewriter">LaTeXML</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Architecture</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="../" title="Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Customization</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section">
+<a href="./" title="§ 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1 </span>LaTeXML Customization</span></a>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection ltx_ref_self">
+<span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1.1 </span>Expansion</span></span>
+<ul class="ltx_toclist ltx_toclist_subsection">
+<li class="ltx_tocentry ltx_tocentry_paragraph"><a href="#SSS0.Px1" title="DefMacro($prototype,$replacement,%options) ‣ § 4.1.1 Expansion &amp; Macros ‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">DefMacro</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_paragraph"><a href="#SSS0.Px2" title="Tokens, Catcodes and friends ‣ § 4.1.1 Expansion &amp; Macros ‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Tokens, Catcodes,…</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="digestion.html" title="§ 4.1.2 Digestion &amp; Primitives ‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1.2 </span>Digestion</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="construction.html" title="§ 4.1.3 Construction &amp; Constructors ‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1.3 </span>Construction</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="schema.html" title="§ 4.1.4 Document Model ‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1.4 </span>Document Model</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="rewriting.html" title="§ 4.1.5 Rewriting ‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1.5 </span>Rewriting</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="packages.html" title="§ 4.1.6 Packages and Options ‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1.6 </span>Packages and Options</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="misc.html" title="§ 4.1.7 Miscellaneous ‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1.7 </span>Miscellaneous</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../latexmlpost/" title="§ 4.2 latexmlpost Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.2 </span>latexmlpost Customization</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Mathematics</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../localization/" title="Chapter 6 Localization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>Localization</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../alignments/" title="Chapter 7 Alignments ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Alignments</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../metadata/" title="Chapter 8 Metadata ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>Metadata</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../todo/" title="Chapter 9 ToDo ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>ToDo</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../acknowledgements/" title="Acknowledgements ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Acknowledgements</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../commands/" title="Appendix A Command Documentation ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>Commands</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B </span>Bindings</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../schema/" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C </span>Schema</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D </span>Error Codes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../../cssclasses/" title="Appendix E CSS Classes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">E </span>CSS Classes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_index"><a href="../../idx.html" title="Index ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Index</span></a></li>
+</ul>
+</div></nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="./" title="§ 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1 </span>LaTeXML Customization</span></a><a href="./" title="§ 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1 </span>LaTeXML Customization</span></a><a href="digestion.html" title="§ 4.1.2 Digestion &amp; Primitives ‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1.2 </span>Digestion</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_subsection ltx_authors_1line">
+<h1 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§ 4.1.1 </span>Expansion &amp; Macros</h1>
+
+<section id="SSS0.Px1" class="ltx_paragraph">
+<h2 class="ltx_title ltx_font_typewriter ltx_title_paragraph">DefMacro(<span class="ltx_text ltx_font_italic">$prototype</span>,<span class="ltx_text ltx_font_italic">$replacement</span>,<span class="ltx_text ltx_font_italic">%options</span>)</h2>
+
+<div id="SSS0.Px1.p1" class="ltx_para">
+<p class="ltx_p">Macros are defined using <span class="ltx_text ltx_font_typewriter">DefMacro</span>, such as the pointless:
+</p>
+<div class="ltx_listing ltx_lst_language_Perl ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,ICBEZWZNYWNybygnXG15Ym9sZHt9JywnXHRleHRiZnsjMX0nKTs=" download="">⬇</a></div>
+<div id="lstnumberx80" class="ltx_listingline">
+<span class="ltx_text ltx_lst_space ltx_font_typewriter">  </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">DefMacro</span><span class="ltx_text ltx_font_typewriter">(</span><span class="ltx_text ltx_lst_string ltx_font_typewriter">’\mybold{}’</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_string ltx_font_typewriter">’\textbf{#1}’</span><span class="ltx_text ltx_font_typewriter">);</span>
+</div>
+</div>
+<p class="ltx_p">The two arguments to <span class="ltx_text ltx_font_typewriter">DefMacro</span> we call
+the <em class="ltx_emph ltx_font_italic">prototype</em> and the <em class="ltx_emph ltx_font_italic">replacement</em>.
+In the prototype, the <code class="ltx_verbatim ltx_font_typewriter">{}</code> specifies a single normal TeX parameter.
+The replacement is here a string which will
+be tokenized and the <code class="ltx_verbatim ltx_font_typewriter">#1</code> will be replaced by the
+tokens of the argument. Presumably the entire result will
+eventually be further expanded and or processed.</p>
+</div>
+<div id="SSS0.Px1.p2" class="ltx_para">
+<p class="ltx_p">Whereas, TeX normally uses <code class="ltx_verbatim ltx_font_typewriter">#1</code>, and LaTeX has developed
+a complex scheme where it is often necessary to peek ahead token
+by token to recognize optional arguments, we have attempted
+to develop a suggestive, and easier to use, notation for parameters.
+Thus a prototype <code class="ltx_verbatim ltx_font_typewriter">\foo{}</code> specifies a single normal argument,
+wheere <code class="ltx_verbatim ltx_font_typewriter">\foo[]{}</code> would take an optional argument followed
+by a required one. More complex argument prototypes can be
+found in <span class="ltx_ref ltx_missing_label ltx_ref_self">Package</span>.
+As in TeX, the macro’s arguments are neither expanded
+nor digested until the expansion itself is further
+expanded or digested.</p>
+</div>
+<div id="SSS0.Px1.p3" class="ltx_para">
+<p class="ltx_p">The macro’s replacement can also be Perl code, typically an
+anonymous <span class="ltx_text ltx_font_typewriter">sub</span>, which gets the current <span class="ltx_ref ltx_missing_label ltx_ref_self">Gullet</span>
+followed by the macro’s arguments as its arguments. It must
+return a list of <span class="ltx_ref ltx_missing_label ltx_ref_self">Token</span>’s which will be used as the
+expansion of the macro. The following two examples show
+alternative ways of writing the above macro:</p>
+<div class="ltx_listing ltx_lst_language_Perl ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,ICBEZWZNYWNybygnXG15Ym9sZHt9Jywgc3ViIHsKICAgIG15KCRndWxsZXQsJGFyZyk9QF87CiAgICAoVF9DUygnXHRleHRiZicpLFRfQkVHSU4sJGFyZyxUX0VORCk7IH0pOw==" download="">⬇</a></div>
+<div id="lstnumberx81" class="ltx_listingline">
+<span class="ltx_text ltx_lst_space ltx_font_typewriter">  </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">DefMacro</span><span class="ltx_text ltx_font_typewriter">(</span><span class="ltx_text ltx_lst_string ltx_font_typewriter">’\mybold{}’</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">sub</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">{</span>
+</div>
+<div id="lstnumberx82" class="ltx_listingline">
+<span class="ltx_text ltx_lst_space ltx_font_typewriter">    </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">my</span><span class="ltx_text ltx_font_typewriter">(</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">$gullet</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">$arg</span><span class="ltx_text ltx_font_typewriter">)=</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">@_</span><span class="ltx_text ltx_font_typewriter">;</span>
+</div>
+<div id="lstnumberx83" class="ltx_listingline">
+<span class="ltx_text ltx_lst_space ltx_font_typewriter">    </span><span class="ltx_text ltx_font_typewriter">(</span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">T_CS</span><span class="ltx_text ltx_font_typewriter">(</span><span class="ltx_text ltx_lst_string ltx_font_typewriter">’\textbf’</span><span class="ltx_text ltx_font_typewriter">),</span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">T_BEGIN</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">$arg</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">T_END</span><span class="ltx_text ltx_font_typewriter">);</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">});</span>
+</div>
+</div>
+<p class="ltx_p">or alternatively</p>
+<div class="ltx_listing ltx_lst_language_Perl ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,ICBEZWZNYWNybygnXG15Ym9sZHt9Jywgc3ViIHsKICAgIEludm9jYXRpb24oVF9DUygnXHRleHRiZicpLCRfWzFdKTsgfSk7" download="">⬇</a></div>
+<div id="lstnumberx84" class="ltx_listingline">
+<span class="ltx_text ltx_lst_space ltx_font_typewriter">  </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">DefMacro</span><span class="ltx_text ltx_font_typewriter">(</span><span class="ltx_text ltx_lst_string ltx_font_typewriter">’\mybold{}’</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">sub</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">{</span>
+</div>
+<div id="lstnumberx85" class="ltx_listingline">
+<span class="ltx_text ltx_lst_space ltx_font_typewriter">    </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">Invocation</span><span class="ltx_text ltx_font_typewriter">(</span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">T_CS</span><span class="ltx_text ltx_font_typewriter">(</span><span class="ltx_text ltx_lst_string ltx_font_typewriter">’\textbf’</span><span class="ltx_text ltx_font_typewriter">),</span><span class="ltx_text ltx_lst_identifier ltx_font_typewriter">$_</span><span class="ltx_text ltx_font_typewriter">[1]);</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_font_typewriter">});</span>
+</div>
+</div>
+<p class="ltx_p">Generally, the body of the macro should <em class="ltx_emph ltx_font_italic">not</em> involve side-effects, assignments
+or other changes to state other than reading <span class="ltx_ref ltx_missing_label ltx_ref_self">Token</span>’s from the <span class="ltx_ref ltx_missing_label ltx_ref_self">Gullet</span>;
+of course, the macro may expand into control sequences which do have side-effects.</p>
+</div>
+</section>
+<section id="SSS0.Px2" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">
+<span class="ltx_text ltx_font_typewriter">Tokens</span>, Catcodes and friends</h2>
+
+<div id="SSS0.Px2.p1" class="ltx_para">
+<p class="ltx_p">Functions that are useful for dealing with <span class="ltx_ref ltx_missing_label ltx_ref_self">Token</span>s and writing macros
+include the following:</p>
+<ul id="Ch4.S1.I1" class="ltx_itemize">
+<li id="Ch4.S1.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="Ch4.S1.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Constants for the corresponding TeX catcodes:</p>
+<div class="ltx_listing ltx_lst_language_Perl ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,ICAgQ0NfRVNDQVBFLCBDQ19CRUdJTiwgIENDX0VORCwgICAgIENDX01BVEgsCiAgIENDX0FMSUdOLCAgQ0NfRU9MLCAgICBDQ19QQVJBTSwgICBDQ19TVVBFUiwKICAgQ0NfU1VCLCAgICBDQ19JR05PUkUsIENDX1NQQUNFLCAgIENDX0xFVFRFUiwKICAgQ0NfT1RIRVIsICBDQ19BQ1RJVkUsIENDX0NPTU1FTlQsIENDX0lOVkFMSUQ=" download="">⬇</a></div>
+<div id="lstnumberx86" class="ltx_listingline">
+<span class="ltx_text ltx_lst_space ltx_font_typewriter">   </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">CC_ESCAPE</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">CC_BEGIN</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">  </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">CC_END</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">     </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">CC_MATH</span><span class="ltx_text ltx_font_typewriter">,</span>
+</div>
+<div id="lstnumberx87" class="ltx_listingline">
+<span class="ltx_text ltx_lst_space ltx_font_typewriter">   </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">CC_ALIGN</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">  </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">CC_EOL</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">    </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">CC_PARAM</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">   </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">CC_SUPER</span><span class="ltx_text ltx_font_typewriter">,</span>
+</div>
+<div id="lstnumberx88" class="ltx_listingline">
+<span class="ltx_text ltx_lst_space ltx_font_typewriter">   </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">CC_SUB</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">    </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">CC_IGNORE</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">CC_SPACE</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">   </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">CC_LETTER</span><span class="ltx_text ltx_font_typewriter">,</span>
+</div>
+<div id="lstnumberx89" class="ltx_listingline">
+<span class="ltx_text ltx_lst_space ltx_font_typewriter">   </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">CC_OTHER</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">  </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">CC_ACTIVE</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">CC_COMMENT</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">CC_INVALID</span>
+</div>
+</div>
+</div>
+</li>
+<li id="Ch4.S1.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="Ch4.S1.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Constants for tokens with the appropriate content and catcode:</p>
+<div class="ltx_listing ltx_lst_language_Perl ltx_lstlisting ltx_listing">
+<div class="ltx_listing_data"><a href="data:text/plain;base64,ICBUX0JFR0lOLCBUX0VORCwgICBUX01BVEgsICBUX0FMSUdOLCBUX1BBUkFNLAogIFRfU1VCLCAgIFRfU1VQRVIsIFRfU1BBQ0UsIFRfQ1I=" download="">⬇</a></div>
+<div id="lstnumberx90" class="ltx_listingline">
+<span class="ltx_text ltx_lst_space ltx_font_typewriter">  </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">T_BEGIN</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">T_END</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">   </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">T_MATH</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">  </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">T_ALIGN</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">T_PARAM</span><span class="ltx_text ltx_font_typewriter">,</span>
+</div>
+<div id="lstnumberx91" class="ltx_listingline">
+<span class="ltx_text ltx_lst_space ltx_font_typewriter">  </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">T_SUB</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter">   </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">T_SUPER</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">T_SPACE</span><span class="ltx_text ltx_font_typewriter">,</span><span class="ltx_text ltx_lst_space ltx_font_typewriter"> </span><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">T_CR</span>
+</div>
+</div>
+</div>
+</li>
+<li id="Ch4.S1.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="Ch4.S1.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_lst_language_Perl ltx_lstlisting"><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">T_LETTER</span><span class="ltx_text ltx_font_typewriter">(<span class="ltx_text ltx_lst_identifier">$char</span>)</span></span>, <span class="ltx_text ltx_lst_language_Perl ltx_lstlisting"><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">T_OTHER</span><span class="ltx_text ltx_font_typewriter">(<span class="ltx_text ltx_lst_identifier">$char</span>)</span></span>, <span class="ltx_text ltx_lst_language_Perl ltx_lstlisting"><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">T_ACTIVE</span><span class="ltx_text ltx_font_typewriter">(<span class="ltx_text ltx_lst_identifier">$char</span>)</span></span>,
+create tokens of the appropriate catcode with the given text content.
+</p>
+</div>
+</li>
+<li id="Ch4.S1.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="Ch4.S1.I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_lst_language_Perl ltx_lstlisting"><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">T_CS</span><span class="ltx_text ltx_font_typewriter">(<span class="ltx_text ltx_lst_identifier">$cs</span>)</span></span> creates a control sequence token;
+the string <span class="ltx_text ltx_lst_identifier ltx_lst_language_Perl ltx_lstlisting ltx_font_typewriter">$cs</span> should typically begin with the slash.</p>
+</div>
+</li>
+<li id="Ch4.S1.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="Ch4.S1.I1.i5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_lst_language_Perl ltx_lstlisting"><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">Token</span><span class="ltx_text ltx_font_typewriter">(<span class="ltx_text ltx_lst_identifier">$string</span>,<span class="ltx_text ltx_lst_identifier">$catcode</span>)</span></span> creates a token with the given content and catcode.</p>
+</div>
+</li>
+<li id="Ch4.S1.I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="Ch4.S1.I1.i6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_lst_language_Perl ltx_lstlisting"><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">Tokens</span><span class="ltx_text ltx_font_typewriter">(<span class="ltx_text ltx_lst_identifier">$token</span>,...)</span></span> creates a <span class="ltx_ref ltx_missing_label ltx_ref_self">(LaTeXML::Core::)Tokens</span> object
+containing the list of <span class="ltx_ref ltx_missing_label ltx_ref_self">Token</span>s.</p>
+</div>
+</li>
+<li id="Ch4.S1.I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="Ch4.S1.I1.i7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_lst_language_Perl ltx_lstlisting"><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">Tokenize</span><span class="ltx_text ltx_font_typewriter">(<span class="ltx_text ltx_lst_identifier">$string</span>)</span></span> converts the string to a <span class="ltx_ref ltx_missing_label ltx_ref_self">Tokens</span>,
+using TeX’s standard catcode assignments.</p>
+</div>
+</li>
+<li id="Ch4.S1.I1.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="Ch4.S1.I1.i8.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_lst_language_Perl ltx_lstlisting"><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">TokenizeInternal</span><span class="ltx_text ltx_font_typewriter">(<span class="ltx_text ltx_lst_identifier">$string</span>)</span></span> like <span class="ltx_text ltx_font_typewriter">Tokenize</span>, but
+treating <span class="ltx_text ltx_lst_language_Perl ltx_lstlisting"></span> as a letter.</p>
+</div>
+</li>
+<li id="Ch4.S1.I1.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="Ch4.S1.I1.i9.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_lst_language_Perl ltx_lstlisting"><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">Explode</span><span class="ltx_text ltx_font_typewriter">(<span class="ltx_text ltx_lst_identifier">$string</span>)</span></span> converts the string to a <span class="ltx_ref ltx_missing_label ltx_ref_self">Tokens</span> where
+letter character are given catcode <span class="ltx_text ltx_lst_keyword ltx_lst_language_Perl ltx_lstlisting ltx_font_typewriter ltx_font_bold">CC_OTHER</span>.</p>
+</div>
+</li>
+<li id="Ch4.S1.I1.i10" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="Ch4.S1.I1.i10.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_lst_language_Perl ltx_lstlisting"><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">Expand</span><span class="ltx_text ltx_font_typewriter">(<span class="ltx_text ltx_lst_identifier">$tokens</span></span></span> expands <span class="ltx_text ltx_lst_identifier ltx_lst_language_Perl ltx_lstlisting ltx_font_typewriter">$tokens</span> (a <span class="ltx_ref ltx_missing_label ltx_ref_self">Tokens</span>), returning
+a <span class="ltx_ref ltx_missing_label ltx_ref_self">Tokens</span>; there should be no expandable tokens in the result.</p>
+</div>
+</li>
+<li id="Ch4.S1.I1.i11" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="Ch4.S1.I1.i11.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_lst_language_Perl ltx_lstlisting"><span class="ltx_text ltx_lst_keyword ltx_font_typewriter ltx_font_bold">Invocation</span><span class="ltx_text ltx_font_typewriter">(<span class="ltx_text ltx_lst_identifier">$cstoken</span>,<span class="ltx_text ltx_lst_identifier">$arg</span>,...)</span></span> Returns a <span class="ltx_ref ltx_missing_label ltx_ref_self">Tokens</span> representing
+the sequence needed to invoke <span class="ltx_text ltx_lst_identifier ltx_lst_language_Perl ltx_lstlisting ltx_font_typewriter">$cstoken</span> on the given arguments (each are <span class="ltx_ref ltx_missing_label ltx_ref_self">Tokens</span>, or undef for an unsupplied optional argument).</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="./" title="§ 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1 </span>LaTeXML Customization</span></a><a href="../../idx.html" title="Index ‣ LaTeXML The Manual" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="digestion.html" title="§ 4.1.2 Digestion &amp; Primitives ‣ § 4.1 LaTeXML Customization ‣ Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1.2 </span>Digestion</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Tue Dec 17 10:04:54 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

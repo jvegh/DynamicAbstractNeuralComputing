@@ -1,0 +1,218 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>1 Introduction‣ LaTeXML The Manual</title>
+<!--Generated on Tue Dec 17 10:04:54 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 17, 2024.-->
+
+<link rel="shortcut icon" href="../../favicon.ico" type="image/png">
+<link rel="stylesheet" href="../../LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="../../ltx-book.css" type="text/css">
+<link rel="stylesheet" href="../../ltx-listings.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../../latexmldoc.css" type="text/css">
+<script src="../../LaTeXML-maybeMathjax.js" type="text/javascript"></script>
+<link rel="up" href="../" title="LaTeXML The Manual">
+<link rel="start" href="../" title="LaTeXML The Manual">
+<link rel="prev" href="../" title="LaTeXML The Manual">
+<link rel="next" href="../usage/" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="chapter" href="../usage/" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual">
+<link rel="chapter" href="../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual">
+<link rel="chapter" href="../customization/" title="Chapter 4 Customization ‣ LaTeXML The Manual">
+<link rel="chapter" href="../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual">
+<link rel="chapter" href="../localization/" title="Chapter 6 Localization ‣ LaTeXML The Manual">
+<link rel="chapter" href="../alignments/" title="Chapter 7 Alignments ‣ LaTeXML The Manual">
+<link rel="chapter" href="../metadata/" title="Chapter 8 Metadata ‣ LaTeXML The Manual">
+<link rel="chapter" href="../todo/" title="Chapter 9 ToDo ‣ LaTeXML The Manual">
+<link rel="chapter" href="../acknowledgements/" title="Acknowledgements ‣ LaTeXML The Manual">
+<link rel="appendix" href="../commands/" title="Appendix A Command Documentation ‣ LaTeXML The Manual">
+<link rel="appendix" href="../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual">
+<link rel="appendix" href="../schema/" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual">
+<link rel="appendix" href="../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual">
+<link rel="appendix" href="../cssclasses/" title="Appendix E CSS Classes ‣ LaTeXML The Manual">
+<link rel="index" href="../idx.html" title="Index ‣ LaTeXML The Manual">
+</head>
+<body>
+<nav class="ltx_page_navbar">
+<div class="ltx_para">
+<p class="ltx_p"><a href="../" title="LaTeXML The Manual" class="ltx_ref"><img src="x1.png" class="ltx_graphics" width="215" height="50" alt=""></a>
+<br class="ltx_break"><img src="x2.png" class="ltx_graphics" width="130" height="168" alt="">
+<br class="ltx_break"></p>
+</div>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_chapter ltx_ref_self">
+<span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Introduction</span></span>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_paragraph"><a href="#goals" title="Design Goals ‣ Chapter 1 Introduction ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Design Goals</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_paragraph"><a href="#overview" title="Overview of this Manual ‣ Chapter 1 Introduction ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Overview</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../usage/" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Using <span class="ltx_ref ltx_font_typewriter">LaTeXML</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Architecture</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../customization/" title="Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Customization</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Mathematics</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../localization/" title="Chapter 6 Localization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>Localization</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../alignments/" title="Chapter 7 Alignments ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Alignments</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../metadata/" title="Chapter 8 Metadata ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>Metadata</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../todo/" title="Chapter 9 ToDo ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>ToDo</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../acknowledgements/" title="Acknowledgements ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Acknowledgements</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../commands/" title="Appendix A Command Documentation ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>Commands</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B </span>Bindings</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../schema/" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C </span>Schema</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D </span>Error Codes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="../cssclasses/" title="Appendix E CSS Classes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">E </span>CSS Classes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_index"><a href="../idx.html" title="Index ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_title">Index</span></a></li>
+</ul>
+</div></nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="../" title="LaTeXML The Manual" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_ref ltx_font_typewriter">LaTeXML</span> <em class="ltx_emph ltx_font_italic">The Manual</em></span></a><a href="../" title="LaTeXML The Manual" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_ref ltx_font_typewriter">LaTeXML</span> <em class="ltx_emph ltx_font_italic">The Manual</em></span></a><a href="../usage/" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Using <span class="ltx_ref ltx_font_typewriter">LaTeXML</span></span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_chapter ltx_authors_1line">
+<h1 class="ltx_title ltx_title_chapter">
+<span class="ltx_tag ltx_tag_chapter">Chapter 1 </span>Introduction</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">For many, LaTeX is the preferred format for document authoring, particularly those
+involving significant mathematical content and where quality typesetting is desired.
+On the other hand, content-oriented <a href="http://www.w3.org/XML/" title="" class="ltx_ref ltx_font_typewriter">XML</a> is an extremely useful representation for documents,
+allowing them to be used, and reused, for a variety of purposes, not least,
+presentation on the Web. Yet, the style and intent of LaTeX markup, as compared to <a href="http://www.w3.org/XML/" title="" class="ltx_ref ltx_font_typewriter">XML</a> markup, not to mention its programmability, presents difficulties in converting
+documents from the former format to the latter.
+Perhaps ironically, these difficulties can be particularly large for mathematical material,
+where there is a tendency for the markup to focus on appearance rather than meaning.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">The choice of LaTeX for authoring, and <a href="http://www.w3.org/XML/" title="" class="ltx_ref ltx_font_typewriter">XML</a> for delivery were natural and uncontroversial
+choices for the <a href="https://dlmf.nist.gov" title="" class="ltx_ref">Digital Library of Mathematical Functions</a>.
+Faced with the need to perform this conversion and the lack of suitable tools to perform it,
+the DLMF project proceeded to develop their own tool, <a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a>, for this purpose.
+</p>
+</div>
+<section id="goals" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Design Goals</h2>
+
+<div id="S0.SS0.SSS0.Px1.p1" class="ltx_para">
+<p class="ltx_p">The idealistic goals are:</p>
+<ul id="S0.I1" class="ltx_itemize">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Faithful emulation of TeX’s behaviour;</p>
+</div>
+</li>
+<li id="S0.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Easily extensible;</p>
+</div>
+</li>
+<li id="S0.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">Lossless, preserving both semantic and presentation cues;</p>
+</div>
+</li>
+<li id="S0.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i4.p1" class="ltx_para">
+<p class="ltx_p">Use an abstract LaTeX-like, extensible, document type;</p>
+</div>
+</li>
+<li id="S0.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i5.p1" class="ltx_para">
+<p class="ltx_p">Infer the semantics of mathematical content
+<br class="ltx_break">(<em class="ltx_emph ltx_font_italic">Good</em> Presentation <a href="http://www.w3.org/Math/" title="" class="ltx_ref ltx_font_typewriter">MathML</a>, eventually Content <a href="http://www.w3.org/Math/" title="" class="ltx_ref ltx_font_typewriter">MathML</a> and <a href="http://www.openmath.org/" title="" class="ltx_ref ltx_font_typewriter">OpenMath</a>).</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="S0.SS0.SSS0.Px1.p2" class="ltx_para">
+<p class="ltx_p">As these goals are not entirely practical, even somewhat contradictory,
+they are implicitly modified by <em class="ltx_emph ltx_font_italic">as much as possible</em>.
+Completely mimicing TeX’s, and LaTeX’s, behaviour would seem to require the
+sneakiest modifications to TeX, itself; redefining LaTeX’s internals does
+not really guarantee compatibility. “Ease of use” is, of course, in the eye of the beholder;
+this manual is an attempt to make it easier!
+More significantly, few documents are likely to have completely unambiguous
+mathematics markup; human understanding of both the topic and the surrounding
+text is needed to properly interpret any particular fragment.
+Thus, while we’ll try to provide a “turn-key” solution that does the ‘Right Thing’
+automatically, we expect that applications requiring high semantic content will require
+document-specific declarations and tuning to achieve the desired result.
+Towards this end, we provide a variety
+of means to customize the processing and declare the author’s intent.
+At the same time, especially for new documents, we encourage a more logical,
+content-oriented markup style, over a purely presentation-oriented style.</p>
+</div>
+</section>
+<section id="overview" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Overview of this Manual</h2>
+
+<div id="S0.SS0.SSS0.Px2.p1" class="ltx_para">
+<p class="ltx_p">Chapter <a href="../usage/" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a> describes the usage of <a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a>, along with
+common use cases and techniques. Chapter <a href="../architecture/" title="Chapter 3 Architecture ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a> describes
+the system architecture in some detail. Strategies for customization
+and implementation of new packages is described in Chapter <a href="../customization/" title="Chapter 4 Customization ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a>.
+The special considerations for mathematics, including details of representation
+and how to improve the conversion, are covered in Chapter <a href="../math/" title="Chapter 5 Mathematics ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5</span></a>.
+Several specialized topics are covered in the remaining chapters.
+An overview of outstanding issues and planned future improvements
+are given in Chapter <a href="../todo/" title="Chapter 9 ToDo ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9</span></a>.</p>
+</div>
+<div id="S0.SS0.SSS0.Px2.p2" class="ltx_para">
+<p class="ltx_p">Finally, the Appendices give detailed documentation the system components:
+Appendix <a href="../commands/" title="Appendix A Command Documentation ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">A</span></a> describes the command-line programs provided by the system;
+Appendix <a href="../included.bindings/" title="Appendix B Implemented Bindings ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">B</span></a> lists the LaTeX style packages for which
+we’ve provided <a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a>-specific bindings.
+Appendix <span class="ltx_ref ltx_missing_label ltx_ref_self">LABEL:modules</span>
+describes the various Perl modules, in groups, that comprise the system.
+Appendix <a href="../schema/" title="Appendix C LaTeXML Schema ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">C</span></a> describes the <a href="http://www.w3.org/XML/" title="" class="ltx_ref ltx_font_typewriter">XML</a> schema used by <a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a>.
+Appendix <a href="../errorcodes/" title="Appendix D Error Codes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">D</span></a> gives an overview of the warning and
+error messages that <a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a> may generate.
+Appendix <a href="../cssclasses/" title="Appendix E CSS Classes ‣ LaTeXML The Manual" class="ltx_ref"><span class="ltx_text ltx_ref_tag">E</span></a> describes the strategy and naming conventions
+used for CSS styling of the resulting <a href="http://www.w3.org/html/" title="" class="ltx_ref ltx_font_typewriter">HTML</a>.</p>
+</div>
+<div id="S0.SS0.SSS0.Px2.p3" class="ltx_para">
+<p class="ltx_p">Using <a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a>, and programming for it, can be somewhat confusing as one is dealing with several
+languages not normally combined, often within the same file,
+— Perl, TeX and <a href="http://www.w3.org/XML/" title="" class="ltx_ref ltx_font_typewriter">XML</a> (along with <a href="http://www.w3.org/Style/XSL/" title="" class="ltx_ref ltx_font_typewriter">XSLT</a>, <a href="http://www.w3.org/html/" title="" class="ltx_ref ltx_font_typewriter">HTML</a>, <a href="http://www.w3.org/Style/CSS/" title="" class="ltx_ref ltx_font_typewriter">CSS</a>),
+plus the occasional shell programmming.
+To help visually distinguish different contexts in this manual
+we will put ‘programming’ oriented material (Perl, TeX) in a typewriter font,
+<span class="ltx_text ltx_font_typewriter">like this</span>; <a href="http://www.w3.org/XML/" title="" class="ltx_ref ltx_font_typewriter">XML</a> material will be put in a sans-serif face
+<span class="ltx_text ltx_font_sansserif">like this</span>.</p>
+</div>
+<div id="S0.SS0.SSS0.Px2.p4" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">If you encounter difficulties, join the mailing list at
+<a href="https://lists.informatik.uni-erlangen.de/mailman/listinfo/latexml" title="" class="ltx_ref ltx_font_typewriter">latexml-project</a>.
+Bugs and enhancement requests can be reported at
+<a href="https://github.com/brucemiller/LaTeXML" title="" class="ltx_ref">Github</a>.
+If all else fails, please consult the source code, or the author.</p>
+</div>
+</section>
+<section class="ltx_paragraph ltx_advanced">
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Danger! When you see this sign, be warned that the material presented is
+somewhat advanced and may not make much sense until you have dabbled quite
+a bit in <a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a>’s internals.
+Such advanced or ‘dangerous’ material will be presented like this paragraph
+to make it easier to skip over.</p>
+</div>
+</section>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="../" title="LaTeXML The Manual" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_ref ltx_font_typewriter">LaTeXML</span> <em class="ltx_emph ltx_font_italic">The Manual</em></span></a><a href="../idx.html" title="Index ‣ LaTeXML The Manual" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="../usage/" title="Chapter 2 Using LaTeXML ‣ LaTeXML The Manual" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Using <span class="ltx_ref ltx_font_typewriter">LaTeXML</span></span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Tue Dec 17 10:04:54 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
