@@ -2,8 +2,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>1.2.4 Electric operation‣ § 1.2 Abstract modeling ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)</title>
-<!--Generated on Mon Dec 23 19:01:03 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
-<!--Document created on December 23, 2024.-->
+<!--Generated on Thu Dec 26 20:46:15 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 26, 2024.-->
 
 <link rel="shortcut icon" href="../../../../favicon.ico" type="image/png">
 <link rel="stylesheet" href="../../../../LaTeXML.css" type="text/css">
@@ -43,7 +43,7 @@
 <p class="ltx_p">Dynamic Abstract Neural Computing
 <br class="ltx_break">with Electronic Simulation
 <br class="ltx_break">DANCES Version <em class="ltx_emph ltx_font_italic">0.0.9</em>
-<br class="ltx_break">@December 23, 2024</p>
+<br class="ltx_break">@December 26, 2024</p>
 </div>
 <div class="ltx_TOC">
 <ul class="ltx_toclist">
@@ -78,7 +78,6 @@
 </div>
 <div class="ltx_para">
 <p class="ltx_p"><a href="../manual.pdf" title="" class="ltx_ref ltx_href">Manual in .PDF form</a>
-<a href="../docs/index.html" title="" class="ltx_ref ltx_href">Simulator</a>
 <img src="../graphics/NeuronAndBrain.jpg" class="ltx_graphics" width="227" height="227" alt="">
 </p>
 </div></nav>
@@ -102,7 +101,7 @@ HH
 seem to be one of the rare exceptions,
 also in the context that they admit that the ’<span class="ltx_text ltx_font_italic">interpretation given is unlikely to provide a correct picture of the
 membrane</span>’, furthermore that ’<span class="ltx_text ltx_font_italic">physical theory of this kind does not lead to
-satisfactory functions … without further <span class="ltx_text ltx_font_bold">ad hoc assumptions</span></span>’ <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib7" title="" class="ltx_ref">7</a>]</cite>.
+satisfactory functions … without further <span class="ltx_text ltx_font_bold">ad hoc assumptions</span></span>’ <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib9" title="" class="ltx_ref">9</a>]</cite>.
 Their followers introduced further ad-hoc assumptions
 needed to provide satisfactory agreement with the
 experimental evidence into their admittedly wrong physical picture. Those models assume that the circuits comprise point-like
@@ -115,7 +114,7 @@ Ohm, Kirchoff, Coulomb, Maxwell, and others. However, those abstractions have se
 </div>
 <div id="p2" class="ltx_para">
 <p class="ltx_p">We have the physical picture in mind about neurons that a neuron is implemented
-as a serial (i.e., differentiator-type) <a href="../../../ch_Physics/sec_PHYSICS_MEASURINGOSCILLATOR/index.html#PhysicsOscillator" title="simplest oscillators ‣ § 2.14 Oscillator ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref">electric oscillator</a>, which has gated current
+as a serial (i.e., differentiator-type) <a href="../../../ch_Physics/sec_PHYSICS_MEASURINGOSCILLATOR/index.html#PhysicsOscillator" title="simplest oscillators ‣ § 2.9 Oscillator ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref">electric oscillator</a>, which has gated current
 inputs and provides a timed output. We explicitly add that the charge carrier the neuron
 works with are <span class="ltx_text ltx_font_italic">ions</span> (instead of electrons) and that the signal propagation
 mechanism is <span class="ltx_text ltx_font_italic">electrodiffusion</span> (instead of electromagnetic field propagation).
@@ -123,9 +122,9 @@ These distinctions involve numerous special features as follows.</p>
 </div>
 <div id="p3" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">We explicitly introduce the notion of ’slow current’,
-in the sense discussed in section <a href="../../../ch_Physics/sec_Physics-Speeds/PHYSICS_SPEEDS_MIXING/index.html" title="§ 2.9.4 Mixed speeds ‣ § 2.9 Speeds ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.9.4</span></a>.
+in the sense discussed in section <a href="../../../ch_Physics/sec_Physics-Speeds/PHYSICS_SPEEDS_MIXING/index.html" title="§ 2.4.4 Mixed speeds ‣ § 2.4 Speeds ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.4.4</span></a>.
 We omit non-significant interactions, and restrict our discussion
-to interaction speed pairs, where we use the idea of classical physics <a href="../../../ch_Physics/sec_Physics-Abstraction/index.html#Abstractions" title="abstractions ‣ § 2.8 Abstractions&amp; approximations ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref">approximation</a>
+to interaction speed pairs, where we use the idea of classical physics <a href="../../../ch_Physics/sec_Physics-Abstraction/index.html#Abstractions" title="abstractions ‣ § 2.3 Abstractions&amp; approximations ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref">approximation</a>
 that the higher interaction speed is ’instant’
 and we work out the mathematics for accouting the lower interaction’s speed.
 In our approximation we work with speed pairs such as diffusion vs voltage-assisted speeds, or voltage-assisted vs voltage-accelerated speeds.
@@ -139,8 +138,8 @@ or they move in the electrolyte layer proximal to isolating membrane
 assisted by the electrostatic repulsion of ions in the same layer
 (’slow’ speed of a macroscopic current) or they move in
 an electrically homogeous medium without external driving force, respectively.
-Cardiac <span class="ltx_text ltx_font_italic">slow currents</span> (current pulses of duration in several msecs range) <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib30" title="" class="ltx_ref">30</a>]</cite> have been discovered,
-and their speed <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib31" title="" class="ltx_ref">31</a>]</cite> was found in the range <math id="p3.m1" class="ltx_Math" alttext="0.02-5\ m/sec" display="inline"><mrow><mn>0.02</mn><mo>-</mo><mrow><mrow><mrow><mpadded width="+5pt"><mn>5</mn></mpadded><mo>⁢</mo><mi>m</mi></mrow><mo>/</mo><mi>s</mi></mrow><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>c</mi></mrow></mrow></math>.
+Cardiac <span class="ltx_text ltx_font_italic">slow currents</span> (current pulses of duration in several msecs range) <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib32" title="" class="ltx_ref">32</a>]</cite> have been discovered,
+and their speed <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib33" title="" class="ltx_ref">33</a>]</cite> was found in the range <math id="p3.m1" class="ltx_Math" alttext="0.02-5\ m/sec" display="inline"><mrow><mn>0.02</mn><mo>-</mo><mrow><mrow><mrow><mpadded width="+5pt"><mn>5</mn></mpadded><mo>⁢</mo><mi>m</mi></mrow><mo>/</mo><mi>s</mi></mrow><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>c</mi></mrow></mrow></math>.
 In neurophysiology, ion current speeds
 ranging from a few <math id="p3.m2" class="ltx_Math" alttext="mm/s" display="inline"><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>m</mi></mrow><mo>/</mo><mi>s</mi></mrow></math> to dozens of <math id="p3.m3" class="ltx_Math" alttext="m/s" display="inline"><mrow><mi>m</mi><mo>/</mo><mi>s</mi></mrow></math> has been observed.
 The size relations in neuronal systems are discussed in section <a href="../../../ch_Physiology/sec_Physiology-Physical/sec_Physiology-Sizes/index.html" title="§ 3.1.1 Size of neuronal components ‣ § 3.1 The physical model ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.1</span></a>.</p>
@@ -151,7 +150,7 @@ The size relations in neuronal systems are discussed in section <a href="../../
 <div>
 <a href="../sec_SINGLE_DisciplinaryApproach/index.html" title="§ 1.2.3 Disciplinary approach ‣ § 1.2 Abstract modeling ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2.3 </span>Disciplinary approach</span></a><a href="../../../bib.html" title="Bibliography ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="../../../idx.html" title="Index ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="../sec_Single-ClassicVsModern/index.html" title="§ 1.2.5 Classic vs modern approach ‣ § 1.2 Abstract modeling ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2.5 </span>Classic vs modern approach</span></a>
 </div>
-<div class="ltx_page_logo">Generated  on Mon Dec 23 19:01:03 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+<div class="ltx_page_logo">Generated  on Thu Dec 26 20:46:15 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
 </div></footer>
 </div>
 </body>

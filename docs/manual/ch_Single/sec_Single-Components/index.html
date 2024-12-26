@@ -2,8 +2,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>1.3 Components‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)</title>
-<!--Generated on Mon Dec 23 19:01:03 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
-<!--Document created on December 23, 2024.-->
+<!--Generated on Thu Dec 26 20:46:15 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 26, 2024.-->
 
 <link rel="shortcut icon" href="../../../favicon.ico" type="image/png">
 <link rel="stylesheet" href="../../../LaTeXML.css" type="text/css">
@@ -43,7 +43,7 @@
 <p class="ltx_p">Dynamic Abstract Neural Computing
 <br class="ltx_break">with Electronic Simulation
 <br class="ltx_break">DANCES Version <em class="ltx_emph ltx_font_italic">0.0.9</em>
-<br class="ltx_break">@December 23, 2024</p>
+<br class="ltx_break">@December 26, 2024</p>
 </div>
 <div class="ltx_TOC">
 <ul class="ltx_toclist">
@@ -79,7 +79,6 @@
 </div>
 <div class="ltx_para">
 <p class="ltx_p"><a href="../manual.pdf" title="" class="ltx_ref ltx_href">Manual in .PDF form</a>
-<a href="../docs/index.html" title="" class="ltx_ref ltx_href">Simulator</a>
 <img src="../graphics/NeuronAndBrain.jpg" class="ltx_graphics" width="227" height="227" alt="">
 </p>
 </div></nav>
@@ -94,13 +93,7 @@
 <span class="ltx_tag ltx_tag_section">§ 1.3 </span>Components</h1>
 
 <div id="p1" class="ltx_para">
-<p class="ltx_p">As <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib3" title="" class="ltx_ref">3</a>]</cite>
-summarizes: ”Electrical signals travel from the cell body of a neuron to its axon terminal
-in the form of action potentials. Action potentials trigger the secretion of neurotransmitters
-from synaptic terminals. Neurotransmitters bind to postsynaptic receptors
-and cause electric signals (synaptic potential) in the postsynaptic neuron.
-<span class="ltx_text ltx_font_italic">Synaptic potentials trigger action potentials, which propagate to the axon terminal</span>
-and trigger secretion of neurotransmitters to the next neuron.” We must admit that
+<p class="ltx_p">We must admit that
 <span class="ltx_text ltx_font_italic">those signals are transmitted by electrodiffusion processes instead of
 net electric phenomena</span>. We move a towards a more abstract and more detailed view of considering neuronal opearation:
 ”neurons are sites where <span class="ltx_text ltx_font_italic">information is handled in analog rather than digital form</span>.
@@ -115,14 +108,14 @@ wanes with the ceaseless variations of excitatory and inhibitory input, and with
 it varies the stream of impulses issued in its axon. <span class="ltx_text ltx_font_italic">The digital pulse code of
 presynaptic fibers is thus converted into an analog process at the junction, only
 to be reconverted into a digital pulse code again in the axon of the postsynaptic
-cell. The logical operations are all performed in the analog mode at the synapses.</span>” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib32" title="" class="ltx_ref">32</a>]</cite> Note that those ”ceaseless variations” can be correctly handled by our dynamic methods.</p>
+cell. The logical operations are all performed in the analog mode at the synapses.</span>” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib34" title="" class="ltx_ref">34</a>]</cite> Note that those ”ceaseless variations” can be correctly handled by our dynamic methods.</p>
 </div>
 <div id="p2" class="ltx_para">
 <p class="ltx_p">Also we must add the invention from about three decades later: ”Neurons ensure the directional propagation of signals throughout the nervous system.
 The functional asymmetry of neurons is supported by cellular compartmentation: the cell body and dendrites (somatodendritic compartment) receive synaptic inputs,
 and the axon propagates the action potentials that trigger synaptic release toward target cells.
 <span class="ltx_text ltx_font_italic">Between the cell body and the axon sits a unique compartment called the axon initial segment</span> (AIS).
-The AIS was first described 50 years ago [i.e., nearly two decades after HH published their study], and its molecular composition and organization have been progressively elucidated during the following decades. …. Recent years have also brought crucial insights into the functions of the AIS: how ion channels at its surface generate and shape the action potential.” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib33" title="" class="ltx_ref">33</a>]</cite> We provide the physics and mathematics of how AIS shapes
+The AIS was first described 50 years ago [i.e., nearly two decades after HH published their study], and its molecular composition and organization have been progressively elucidated during the following decades. …. Recent years have also brought crucial insights into the functions of the AIS: how ion channels at its surface generate and shape the action potential.” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib35" title="" class="ltx_ref">35</a>]</cite> We provide the physics and mathematics of how AIS shapes
 the action potential (or more precisely, we show what an important role it plays in
 forming AP).</p>
 </div>
@@ -145,7 +138,7 @@ only at the necessary depth. However, we do cover the details in chapter <a hre
 <p class="ltx_p">We agree that ’The basic structural units of the nervous system are individual neurons’ <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib3" title="" class="ltx_ref">3</a>]</cite>. However,
 we also know that neurons ”are linked together
 by dynamically changing constellations of synaptic weights” and
-”cell assemblies are best understood in light of their output product” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib16" title="" class="ltx_ref">16</a>]</cite>. We agree that ’<span class="ltx_text ltx_font_italic">the fundamental task of the nervous system is to <span class="ltx_text ltx_font_bold">communicate and process information</span></span>’.
+”cell assemblies are best understood in light of their output product” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib18" title="" class="ltx_ref">18</a>]</cite>. We agree that ’<span class="ltx_text ltx_font_italic">the fundamental task of the nervous system is to <span class="ltx_text ltx_font_bold">communicate and process information</span></span>’.
 Furthermore, the ’<span class="ltx_text ltx_font_bold ltx_font_italic">neurons convey
 neural information<span class="ltx_text ltx_font_medium"> by virtue of electrical and chemical signals</span></span>’
 <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib3" title="" class="ltx_ref">3</a>]</cite>.
@@ -153,9 +146,9 @@ The goal was set decades ago:
 ’<span class="ltx_text ltx_font_italic">The ultimate aim of computational neuroscience is
 to explain <span class="ltx_text ltx_font_bold">how</span> electrical and chemical signals are used in the brain
 <span class="ltx_text ltx_font_bold">to represent and process information</span></span>’
-<cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib12" title="" class="ltx_ref">12</a>]</cite>.
-We generalized the notions of computing <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib22" title="" class="ltx_ref">22</a>]</cite>
-and information<cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib15" title="" class="ltx_ref">15</a>]</cite> for biology and use the notions introduced there throughout the paper.
+<cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib14" title="" class="ltx_ref">14</a>]</cite>.
+We generalized the notions of computing <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib24" title="" class="ltx_ref">24</a>]</cite>
+and information<cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib17" title="" class="ltx_ref">17</a>]</cite> for biology and use the notions introduced there throughout the paper.
 To understand, among others, the role of synaptic weights,
 the formation of
 APs, and neuronal information processing, we must understand, on that abstract level,
@@ -197,7 +190,7 @@ which general rules govern the neuronal electrical (more precisely: electrodiffu
 <div>
 <a href="../sec_SINGLE_ABSTRACT_NEURON/sec_Single-ClassicVsModern/index.html" title="§ 1.2.5 Classic vs modern approach ‣ § 1.2 Abstract modeling ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2.5 </span>Classic vs modern approach</span></a><a href="../../bib.html" title="Bibliography ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="../../idx.html" title="Index ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="sec_Ion-channels/index.html" title="§ 1.3.1 Ion channels ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.1 </span>Ion channels</span></a>
 </div>
-<div class="ltx_page_logo">Generated  on Mon Dec 23 19:01:03 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+<div class="ltx_page_logo">Generated  on Thu Dec 26 20:46:15 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
 </div></footer>
 </div>
 </body>
