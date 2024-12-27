@@ -2,8 +2,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>1.3.2 Ion layers‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)</title>
-<!--Generated on Thu Dec 26 20:46:15 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
-<!--Document created on December 26, 2024.-->
+<!--Generated on Fri Dec 27 20:06:45 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 27, 2024.-->
 
 <link rel="shortcut icon" href="../../../../favicon.ico" type="image/png">
 <link rel="stylesheet" href="../../../../LaTeXML.css" type="text/css">
@@ -21,7 +21,6 @@
 <link rel="subsection" href="../subsec_Axonal-charge-delivery/index.html" title="§ 1.3.3 Axons ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="subsection" href="../sec_Single-NeuronalMembrane/index.html" title="§ 1.3.4 Neuronal membrane ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="subsection" href="../subsec_Axonal-Initial-Segment/index.html" title="§ 1.3.5 Axon Initial Segment ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
-<link rel="subsection" href="../subsec_Single-NeuronalOscillator/index.html" title="§ 1.3.6 Neuronal oscillator ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="section" href="../../sec_Single-Introduction/index.html" title="§ 1.1 Introduction ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="section" href="../../sec_SINGLE_ABSTRACT_NEURON/index.html" title="§ 1.2 Abstract modeling ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="section" href="../index.html" title="§ 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
@@ -44,7 +43,7 @@
 <p class="ltx_p">Dynamic Abstract Neural Computing
 <br class="ltx_break">with Electronic Simulation
 <br class="ltx_break">DANCES Version <em class="ltx_emph ltx_font_italic">0.0.9</em>
-<br class="ltx_break">@December 26, 2024</p>
+<br class="ltx_break">@December 27, 2024</p>
 </div>
 <div class="ltx_TOC">
 <ul class="ltx_toclist">
@@ -62,7 +61,6 @@
 <li class="ltx_tocentry ltx_tocentry_subsection"><a href="../subsec_Axonal-charge-delivery/index.html" title="§ 1.3.3 Axons ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.3 </span>Axons</span></a></li>
 <li class="ltx_tocentry ltx_tocentry_subsection"><a href="../sec_Single-NeuronalMembrane/index.html" title="§ 1.3.4 Neuronal membrane ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.4 </span>Neuronal membrane</span></a></li>
 <li class="ltx_tocentry ltx_tocentry_subsection"><a href="../subsec_Axonal-Initial-Segment/index.html" title="§ 1.3.5 Axon Initial Segment ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.5 </span>Axon Initial Segment</span></a></li>
-<li class="ltx_tocentry ltx_tocentry_subsection"><a href="../subsec_Single-NeuronalOscillator/index.html" title="§ 1.3.6 Neuronal oscillator ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.6 </span>Neuronal oscillator</span></a></li>
 </ul>
 </li>
 <li class="ltx_tocentry ltx_tocentry_section"><a href="../../sec_Single-Operations/index.html" title="§ 1.4 Operations ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4 </span>Operations</span></a></li>
@@ -139,12 +137,12 @@ This transient state is the key to understanding the dynamic operation of neuron
 As <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib36" title="" class="ltx_ref">36</a>]</cite> discusses, ’an electrical potential difference about 50–100 mV … exists across a plasma membrane only about <math id="p5.m1" class="ltx_Math" alttext="5\ nm" display="inline"><mrow><mpadded width="+5pt"><mn>5</mn></mpadded><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>m</mi></mrow></math> thick, so the resulting voltage gradient is about <math id="p5.m2" class="ltx_Math" alttext="100,000\ V/cm" display="inline"><mrow><mn>100</mn><mo>,</mo><mrow><mrow><mrow><mpadded width="+5pt"><mn>000</mn></mpadded><mo>⁢</mo><mi>V</mi></mrow><mo>/</mo><mi>c</mi></mrow><mo>⁢</mo><mi>m</mi></mrow></mrow></math>’.
 In their ’off’ state, the voltage-controlled ion channels are mechanically closed, so the ions cannot follow that gradient.
 However, when (due to the collected synaptic charge or the significant slope of the arriving spike <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib42" title="" class="ltx_ref">42</a>]</cite> or clamping) a voltage offset appears at the ion channel, so it opens. Due to the enormous gradient, ions rush in
-from the extracellular segment into the intracellular one. This means a high speed, that is, a ’fast’ current, see Eq. (<a href="../../../ch_Physics/sec_Physics-Electricity/sec_Physics-Current/sec_Calculating-ion's-speed.html#eq:StokesCurrent" title="(2.28) ‣ Current’s speed ‣ § 2.8.1 Current ‣ § 2.8 Electricity in biology ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.28</span></a>).</p>
+from the extracellular segment into the intracellular one. This means a high speed, that is, a ’fast’ current, see Eq. (<a href="../../../ch_Physics/sec_Physics-Electricity/sec_Physics-Current/sec_Calculating-ion's-speed.html#eq:StokesCurrent" title="(2.29) ‣ Current’s speed ‣ § 2.9.1 Current ‣ § 2.9 Electricity in biology ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.29</span></a>).</p>
 </div>
 <div id="p6" class="ltx_para">
 <p class="ltx_p">However, upon arriving at the other side of the membrane, they experience the
 electric field disappearing, so the stream of ions stalls. The stalled ions
-increase the local potential (see section <a href="../../../ch_Physics/sec_PHYSICS_MEASURINGOSCILLATOR/Physics-OscillatorDifferentiator/index.html" title="§ 2.9.2 Differentiator-type oscillator ‣ § 2.9 Oscillator ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.9.2</span></a>) around the channel’s exit,
+increase the local potential (see section <a href="../../../ch_Physics/sec_PHYSICS_MEASURINGOSCILLATOR/Physics-OscillatorDifferentiator/index.html" title="§ 2.10.2 Differentiator-type oscillator ‣ § 2.10 Oscillator ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.10.2</span></a>) around the channel’s exit,
 and the ions will move along the parallel potential gradient toward neighboring
 channel exits.
 ’The description just given of an action potential concerns only a small patch of plasma membrane.
@@ -165,7 +163,7 @@ in the opposite layer.</p>
 <div id="p7" class="ltx_para">
 <p class="ltx_p">The first force acts in distributing the potential uniformly over the surface, and <span class="ltx_text ltx_font_italic">in this way (per definitionem), an ion
 current flows in parallel with the surface</span>. This ion current is slow: the ions are moving
-in a viscous solution under the effect of a potential gradient (see Eq. (<a href="../../../ch_Physics/sec_Physics-Electricity/sec_Physics-Current/sec_Calculating-ion's-speed.html#eq:StokesCurrent" title="(2.28) ‣ Current’s speed ‣ § 2.8.1 Current ‣ § 2.8 Electricity in biology ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.28</span></a>)), if any. In the lack of external potential, it is of type relaxation. The presence of a current drain (such as
+in a viscous solution under the effect of a potential gradient (see Eq. (<a href="../../../ch_Physics/sec_Physics-Electricity/sec_Physics-Current/sec_Calculating-ion's-speed.html#eq:StokesCurrent" title="(2.29) ‣ Current’s speed ‣ § 2.9.1 Current ‣ § 2.9 Electricity in biology ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.29</span></a>)), if any. In the lack of external potential, it is of type relaxation. The presence of a current drain (such as
 AIS on the membrane or the axonal arbor on the axon) also means a potential difference, and an exponential discharge function of type <math id="p7.m1" class="ltx_Math" alttext="exp(-\beta*t)" display="inline"><mrow><mi>e</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mrow><mi>β</mi><mo>*</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math>
 describes that current, <math id="p7.m2" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math> is a time constant.</p>
 </div>
@@ -204,7 +202,7 @@ ions through the
 AIS; why axonal arbors can provide a precise
 “Begin Computing” signal.
 Measuring the conductance of ion channels, requires special care.
-As discussed in section <a href="../../../ch_Physics/sec_Physics-Electricity/sec_PHYSICS_MEASURINGCONDUCTANCE/index.html" title="§ 2.8.4 Conductance&amp;impedance ‣ § 2.8 Electricity in biology ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.8.4</span></a>, it is easy to
+As discussed in section <a href="../../../ch_Physics/sec_Physics-Electricity/sec_PHYSICS_MEASURINGCONDUCTANCE/index.html" title="§ 2.9.4 Conductance&amp;impedance ‣ § 2.9 Electricity in biology ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.9.4</span></a>, it is easy to
 make a systematic error, given that the measurement method can affect the result.</p>
 </div>
 <div id="p11" class="ltx_para">
@@ -236,7 +234,7 @@ those parameters of components of the non-living matter, plus the time course of
 <div>
 <a href="../sec_Ion-channels/index.html" title="§ 1.3.1 Ion channels ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.1 </span>Ion channels</span></a><a href="../../../bib.html" title="Bibliography ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="../../../idx.html" title="Index ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="../subsec_Axonal-charge-delivery/index.html" title="§ 1.3.3 Axons ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.3 </span>Axons</span></a>
 </div>
-<div class="ltx_page_logo">Generated  on Thu Dec 26 20:46:15 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+<div class="ltx_page_logo">Generated  on Fri Dec 27 20:06:45 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
 </div></footer>
 </div>
 </body>

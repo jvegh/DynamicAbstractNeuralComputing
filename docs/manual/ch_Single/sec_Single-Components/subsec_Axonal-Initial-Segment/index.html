@@ -2,8 +2,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>1.3.5 Axon Initial Segment‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)</title>
-<!--Generated on Thu Dec 26 20:46:15 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
-<!--Document created on December 26, 2024.-->
+<!--Generated on Fri Dec 27 20:06:45 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 27, 2024.-->
 
 <link rel="shortcut icon" href="../../../../favicon.ico" type="image/png">
 <link rel="stylesheet" href="../../../../LaTeXML.css" type="text/css">
@@ -16,12 +16,11 @@
 <link rel="up up up" href="../../../index.html" title="Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="start" href="../../../index.html" title="Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="prev" href="../sec_Single-NeuronalMembrane/sec_TrueMembranCurrent.html" title="The ’true’ membrane current ‣ § 1.3.4 Neuronal membrane ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
-<link rel="next" href="../subsec_Single-NeuronalOscillator/index.html" title="§ 1.3.6 Neuronal oscillator ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="next" href="../../sec_Single-Operations/index.html" title="§ 1.4 Operations ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="subsection" href="../sec_Ion-channels/index.html" title="§ 1.3.1 Ion channels ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="subsection" href="../IonLayers/index.html" title="§ 1.3.2 Ion layers ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="subsection" href="../subsec_Axonal-charge-delivery/index.html" title="§ 1.3.3 Axons ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="subsection" href="../sec_Single-NeuronalMembrane/index.html" title="§ 1.3.4 Neuronal membrane ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
-<link rel="subsection" href="../subsec_Single-NeuronalOscillator/index.html" title="§ 1.3.6 Neuronal oscillator ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="section" href="../../sec_Single-Introduction/index.html" title="§ 1.1 Introduction ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="section" href="../../sec_SINGLE_ABSTRACT_NEURON/index.html" title="§ 1.2 Abstract modeling ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="section" href="../index.html" title="§ 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
@@ -44,7 +43,7 @@
 <p class="ltx_p">Dynamic Abstract Neural Computing
 <br class="ltx_break">with Electronic Simulation
 <br class="ltx_break">DANCES Version <em class="ltx_emph ltx_font_italic">0.0.9</em>
-<br class="ltx_break">@December 26, 2024</p>
+<br class="ltx_break">@December 27, 2024</p>
 </div>
 <div class="ltx_TOC">
 <ul class="ltx_toclist">
@@ -62,7 +61,6 @@
 <li class="ltx_tocentry ltx_tocentry_subsection"><a href="../subsec_Axonal-charge-delivery/index.html" title="§ 1.3.3 Axons ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.3 </span>Axons</span></a></li>
 <li class="ltx_tocentry ltx_tocentry_subsection"><a href="../sec_Single-NeuronalMembrane/index.html" title="§ 1.3.4 Neuronal membrane ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.4 </span>Neuronal membrane</span></a></li>
 <li class="ltx_tocentry ltx_tocentry_subsection ltx_ref_self"><span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.5 </span>Axon Initial Segment</span></span></li>
-<li class="ltx_tocentry ltx_tocentry_subsection"><a href="../subsec_Single-NeuronalOscillator/index.html" title="§ 1.3.6 Neuronal oscillator ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.6 </span>Neuronal oscillator</span></a></li>
 </ul>
 </li>
 <li class="ltx_tocentry ltx_tocentry_section"><a href="../../sec_Single-Operations/index.html" title="§ 1.4 Operations ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4 </span>Operations</span></a></li>
@@ -86,15 +84,15 @@
 <div class="ltx_page_main">
 <header class="ltx_page_header">
 <div>
-<a href="../index.html" title="§ 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3 </span>Components</span></a><a href="../sec_Single-NeuronalMembrane/sec_TrueMembranCurrent.html" title="The ’true’ membrane current ‣ § 1.3.4 Neuronal membrane ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title">The ’true’ membrane current</span></a><a href="../subsec_Single-NeuronalOscillator/index.html" title="§ 1.3.6 Neuronal oscillator ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.6 </span>Neuronal oscillator</span></a>
+<a href="../index.html" title="§ 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3 </span>Components</span></a><a href="../sec_Single-NeuronalMembrane/sec_TrueMembranCurrent.html" title="The ’true’ membrane current ‣ § 1.3.4 Neuronal membrane ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title">The ’true’ membrane current</span></a><a href="../../sec_Single-Operations/index.html" title="§ 1.4 Operations ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4 </span>Operations</span></a>
 </div></header>
 <div class="ltx_page_content">
 <section class="ltx_subsection ltx_authors_1line">
 <h1 class="ltx_title ltx_title_subsection">
 <span class="ltx_tag ltx_tag_subsection">§ 1.3.5 </span>Axon Initial Segment</h1>
 
-<figure id="StructureOfAIS" class="ltx_figure"><img src="fig/AIS.jpg" id="Ch1.F3.g1" class="ltx_graphics" width="541" height="532" alt="The structure of the Axon Initial Segment. ">
-<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 1.3: </span>The structure of the Axon Initial Segment. <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib1" title="" class="ltx_ref">1</a>]</cite>
+<figure id="StructureOfAIS" class="ltx_figure"><img src="fig/AIS.jpg" id="Ch1.F1.g1" class="ltx_graphics" width="541" height="532" alt="The structure of the Axon Initial Segment. ">
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 1.1: </span>The structure of the Axon Initial Segment. <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib1" title="" class="ltx_ref">1</a>]</cite>
 Ann. N.Y. Acad. Sci. 1420 (2018) 46–61, Figure 1 ©2018 New York Academy of Sciences. </figcaption>
 </figure>
 <div id="p1" class="ltx_para">
@@ -116,7 +114,7 @@ reflects the high density of ion channels found at the AIS.
 synaptic inputs gives rise to action potentials at the
 axon initial segment (AIS), a 20–60 <math id="p2.m1" class="ltx_Math" alttext="\mu m" display="inline"><mrow><mi>μ</mi><mo>⁢</mo><mi>m</mi></mrow></math> long domain
 located at the proximal axon/soma interface that has
-a high density of voltage-gated ion channels.” As discussed in <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib49" title="" class="ltx_ref">49</a>]</cite>, see also their Figure 1, reproduced here as Figure <a href="#StructureOfAIS" title="Figure 1.3 ‣ § 1.3.5 Axon Initial Segment ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.3</span></a>,
+a high density of voltage-gated ion channels.” As discussed in <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib49" title="" class="ltx_ref">49</a>]</cite>, see also their Figure 1, reproduced here as Figure <a href="#StructureOfAIS" title="Figure 1.1 ‣ § 1.3.5 Axon Initial Segment ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.1</span></a>,
 the structure of the Axon Initial Segment
 is known to the smallest details.
 As the illuminating investigations in 2008
@@ -132,7 +130,7 @@ Notice the important point:
 ”Neurons are also anatomically polarized, as they can be
 subdivided into a somatodendritic input domain and an axonal output domain” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib2" title="" class="ltx_ref">2</a>]</cite>;
 providing a direct evidence that (unlike in
-HH’s model) the input and output currents (and voltage time derivatives) are independent, see also Fig. <a href="#NeuronPolarity" title="Figure 1.4 ‣ § 1.3.5 Axon Initial Segment ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.4</span></a>.
+HH’s model) the input and output currents (and voltage time derivatives) are independent, see also Fig. <a href="#NeuronPolarity" title="Figure 1.2 ‣ § 1.3.5 Axon Initial Segment ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.2</span></a>.
 More precisely, they form the input and output of a neuronal oscillator, as our model suggests. Notice how the
 AP changes its shape during its propagation in the adjacent segments, as our model explains: the broadening by axonal arbor, the voltage-gradient generated shape on the
 AIS, the appearance of
@@ -140,9 +138,9 @@ iAPTD at the distant junction. Notice the lack of hyperpolarization at the begin
 Inventing
 AIS changed the viewpoint of neuroscience <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib35" title="" class="ltx_ref">35</a>]</cite>.</p>
 </div>
-<figure id="NeuronPolarity" class="ltx_figure"><img src="fig/NeuronPolarity.png" id="Ch1.F4.g1" class="ltx_graphics" width="541" height="220" alt="Neurons are highly polarized cells
+<figure id="NeuronPolarity" class="ltx_figure"><img src="fig/NeuronPolarity.png" id="Ch1.F2.g1" class="ltx_graphics" width="541" height="220" alt="Neurons are highly polarized cells
  ">
-<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 1.4: </span>Neurons are highly polarized cells
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 1.2: </span>Neurons are highly polarized cells
  <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib2" title="" class="ltx_ref">2</a>]</cite>, Figure 1 ©2010 Macmillan Publishers Limited.</figcaption>
 </figure>
 <div id="p3" class="ltx_para">
@@ -183,7 +181,7 @@ with far-reaching consequences.</p>
 <p class="ltx_p">For electrical modeling, we can use the approximation that a <span class="ltx_text ltx_font_italic">distributed</span> condenser
 (the neuronal membrane) and a <span class="ltx_text ltx_font_italic">discrete</span> resistor (the
 AIS form an <math id="p5.m1" class="ltx_Math" alttext="RC" display="inline"><mrow><mi>R</mi><mo>⁢</mo><mi>C</mi></mrow></math> circuit,
-see also the discussion in section <a href="../../../ch_Physics/sec_PHYSICS_MEASURINGOSCILLATOR/index.html" title="§ 2.9 Oscillator ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.9</span></a>.
+see also the discussion in section <a href="../../../ch_Physics/sec_PHYSICS_MEASURINGOSCILLATOR/index.html" title="§ 2.10 Oscillator ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.10</span></a>.
 It is clear that all currents (including the synaptic currents, the membrane’s rush-in current,
 and the artificial currents either patching them directly to the membrane or clamping them to its axons)
 flow into the condenser (and cause potential increases calculated using the membrane’s capacitance).
@@ -200,9 +198,9 @@ where ”the input is connected to a resistance while the output voltage is take
 </div>
 <footer class="ltx_page_footer">
 <div>
-<a href="../sec_Single-NeuronalMembrane/sec_TrueMembranCurrent.html" title="The ’true’ membrane current ‣ § 1.3.4 Neuronal membrane ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title">The ’true’ membrane current</span></a><a href="../../../bib.html" title="Bibliography ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="../../../idx.html" title="Index ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="../subsec_Single-NeuronalOscillator/index.html" title="§ 1.3.6 Neuronal oscillator ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.6 </span>Neuronal oscillator</span></a>
+<a href="../sec_Single-NeuronalMembrane/sec_TrueMembranCurrent.html" title="The ’true’ membrane current ‣ § 1.3.4 Neuronal membrane ‣ § 1.3 Components ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title">The ’true’ membrane current</span></a><a href="../../../bib.html" title="Bibliography ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="../../../idx.html" title="Index ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="../../sec_Single-Operations/index.html" title="§ 1.4 Operations ‣ Chapter 1 Abstract single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4 </span>Operations</span></a>
 </div>
-<div class="ltx_page_logo">Generated  on Thu Dec 26 20:46:15 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+<div class="ltx_page_logo">Generated  on Fri Dec 27 20:06:45 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
 </div></footer>
 </div>
 </body>
