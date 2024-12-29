@@ -2,8 +2,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>2.7.5 Time derivatives‣ § 2.7 Electrodiffusion ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)</title>
-<!--Generated on Fri Dec 27 20:06:45 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
-<!--Document created on December 27, 2024.-->
+<!--Generated on Sun Dec 29 23:02:16 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 29, 2024.-->
 
 <link rel="shortcut icon" href="../../../../favicon.ico" type="image/png">
 <link rel="stylesheet" href="../../../../LaTeXML.css" type="text/css">
@@ -50,8 +50,8 @@
 <img src="../graphics/BrainElectronics.png" class="ltx_graphics" width="227" height="128" alt="">
 <p class="ltx_p">Dynamic Abstract Neural Computing
 <br class="ltx_break">with Electronic Simulation
-<br class="ltx_break">DANCES Version <em class="ltx_emph ltx_font_italic">0.0.9</em>
-<br class="ltx_break">@December 27, 2024</p>
+<br class="ltx_break">DANCES Version <em class="ltx_emph ltx_font_italic">0.0.10</em>
+<br class="ltx_break">@December 29, 2024</p>
 </div>
 <div class="ltx_TOC">
 <ul class="ltx_toclist">
@@ -133,7 +133,7 @@ computation and information transfer, furthermore, the life itself. </em></p>
 </div>
 <div id="p2" class="ltx_para">
 <p class="ltx_p">When describing processes (i.e., dynamical systems), we must have
-one or more equations of motions (aka changing speeds). In classic
+one or more equations of motions (aka changing speeds). In classical
 science, the (Newtonian) laws of motion do not include a time-gradient.
 In the Einsteinian world, velocity explicitly appears when describing
 the interrelation of basic entities mass, position, and time. In classic
@@ -147,7 +147,7 @@ extend the idea to enormously different speeds and derive time derivatives
 if we consider the faster interaction to be instant.</p>
 </div>
 <div id="p3" class="ltx_para">
-<p class="ltx_p">In the timeless classic physics, there is no explicit dependence on
+<p class="ltx_p">In the timeless classical physics, there is no explicit dependence on
 the time: everything happens simultaneously. In a resting state, the
 Maxwell equations essentially follow from the conservation of energy.
 One form of energy transforms into another form, and the system arrives
@@ -162,8 +162,8 @@ everything happens at the same time; in other words, at the same space-time
 (in the classic interpretation, the time is the same at any point).</p>
 </div>
 <div id="p4" class="ltx_para">
-<p class="ltx_p">In an electrodiffusion process, we essentialy start with the same
-point of view. We assume that the thermodynamic and electric driving
+<p class="ltx_p">In an electrodiffusional process, we essentialy start with the same
+point of view. We assume that the thermodynamical and electrical driving
 forces are equal in an equilibrium state. That assumption results
 in the Nernst-Planck equation. On one side, we use a macroscopic parameter,
 the macroscopic potential. On the other side, we use another macroscopic
@@ -204,8 +204,7 @@ ion is moving), in the second one it is dynamically balanced (the
 gradients change to keep the ion in rest). <em class="ltx_emph ltx_font_italic">The gradients the
 moving ion experiences are the ones that the standing ion experiences
 at another time (depending on its speed). In this way, we can provide
-the needed time course of the process.</em>
-</p>
+the needed time course of the process.</em></p>
 </div>
 <div id="p6" class="ltx_para">
 <p class="ltx_p">Compared with the electromagnetic case, we see three crucial differences.
@@ -224,7 +223,8 @@ potential gradient.</p>
 <math id="p7.m1" class="ltx_Math" alttext="t." display="inline"><mrow><mi>t</mi><mo>.</mo></mrow></math>
 
 At time <math id="p7.m2" class="ltx_Math" alttext="t+dt" display="inline"><mrow><mi>t</mi><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></math>, in another steady state, the two interactions
-manifest at different times: we have</p>
+manifest at different times: we have
+</p>
 <table id="eq:Nernst-1V" class="ltx_equation ltx_eqn_table">
 
 <tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
@@ -235,8 +235,7 @@ manifest at different times: we have</p>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.5)</span></td>
 </tr>
 </table>
-<p class="ltx_p">or, equivalently, it can be expressed as
-</p>
+<p class="ltx_p">or, equivalently, it can be expressed as</p>
 <table id="eq:Nernst-1C" class="ltx_equation ltx_eqn_table">
 
 <tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
@@ -315,45 +314,31 @@ dx}C_{k}(x)" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><msub><mi>V</mi><
 </table>
 </div>
 <div id="p10" class="ltx_para">
-<p class="ltx_p">Given that</p>
-<table id="Fick'sSecond" class="ltx_equation ltx_eqn_table">
-
-<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
-<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E13.m1" class="ltx_Math" alttext="\frac{dV}{dt}=D*\frac{d^{2}C}{dx^{2}}" display="block"><mrow><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>V</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mi>D</mi><mo>*</mo><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>⁢</mo><mi>C</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow></math></td>
-<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
-<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.13)</span></td>
-</tr>
-</table>
-<p class="ltx_p">expresses Fick’s Second Law of Diffusion, we can derive
-the ratio between the electric and thermodynamic temporal gradients.</p>
-</div>
-<div id="p11" class="ltx_para">
 <p class="ltx_p">As section <a href="../../sec_PHYSICS_MEASURINGOSCILLATOR/index.html" title="§ 2.10 Oscillator ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.10</span></a> discusses, in general, the electric operation
 of an electrolyte can be described by this law of motion. For practical calculations, the voltage time derivative can be calculated directly from the input current, see equations <a href="../../sec_Physics-Electricity/sec_Physics-CurrentHandling/sec_Physics-CurrentSource.html#eq:I_Out" title="(2.39) ‣ Current source ‣ § 2.9.5 Currents in layers ‣ § 2.9 Electricity in biology ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.39</span></a> and <a href="../../../ch_Physiology/sec_Physiology-DerivingActionPotential/sec_Physiology-NeuralCurrents/PSP.html#eq:PSPderivative" title="(3.6) ‣ Synaptic and rushed-in current ‣ § 3.3.5 Neural currents ‣ § 3.3 Action potential ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6</span></a>, which directly consider the current production mechanism.</p>
 </div>
-<div id="p12" class="ltx_para ltx_noindent">
-<p class="ltx_p">Similarly, at time <math id="p12.m1" class="ltx_Math" alttext="t-dt" display="inline"><mrow><mi>t</mi><mo>-</mo><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></math>, in another steady state, we
+<div id="p11" class="ltx_para ltx_noindent">
+<p class="ltx_p">Similarly, at time <math id="p11.m1" class="ltx_Math" alttext="t-dt" display="inline"><mrow><mi>t</mi><mo>-</mo><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></math>, in another steady state, we
 have
 </p>
 <table id="eq:Nernst-2C" class="ltx_equation ltx_eqn_table">
 
 <tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E14.m1" class="ltx_Math" alttext="dC_{k}(x-v(x)*dt)=dx*\frac{d}{dx}C_{k}(x)=-dx\frac{q*F}{RT}V_{m}(x)\frac{d}{dx%
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E13.m1" class="ltx_Math" alttext="dC_{k}(x-v(x)*dt)=dx*\frac{d}{dx}C_{k}(x)=-dx\frac{q*F}{RT}V_{m}(x)\frac{d}{dx%
 }V_{m}(x)" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><msub><mi>C</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mrow><mrow><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>*</mo><mi>d</mi></mrow><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>*</mo><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mrow><mo>⁢</mo><msub><mi>C</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mfrac><mrow><mi>q</mi><mo>*</mo><mi>F</mi></mrow><mrow><mi>R</mi><mo>⁢</mo><mi>T</mi></mrow></mfrac><mo>⁢</mo><msub><mi>V</mi><mi>m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>⁢</mo><msub><mi>V</mi><mi>m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
-<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.14)</span></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.13)</span></td>
 </tr>
 </table>
 <table id="eq:Nernst-dCdt" class="ltx_equation ltx_eqn_table">
 
 <tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E15.m1" class="ltx_Math" alttext="\frac{d}{dt}C_{k}(x)=v(x)*\frac{d}{dx}C_{k}(x)=-v(x)\frac{q*F}{RT}V_{m}(x)%
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch2.E14.m1" class="ltx_Math" alttext="\frac{d}{dt}C_{k}(x)=v(x)*\frac{d}{dx}C_{k}(x)=-v(x)\frac{q*F}{RT}V_{m}(x)%
 \frac{d}{dx}V_{m}(x)" display="block"><mrow><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac><mo>⁢</mo><msub><mi>C</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>*</mo><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mrow><mo>⁢</mo><msub><mi>C</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mrow><mi>q</mi><mo>*</mo><mi>F</mi></mrow><mrow><mi>R</mi><mo>⁢</mo><mi>T</mi></mrow></mfrac><mo>⁢</mo><msub><mi>V</mi><mi>m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>⁢</mo><msub><mi>V</mi><mi>m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
-<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.15)</span></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.14)</span></td>
 </tr>
 </table>
 </div>
@@ -363,7 +348,7 @@ have
 <div>
 <a href="../sec_Physics-SteadyState/index.html" title="§ 2.7.4 Steady state ‣ § 2.7 Electrodiffusion ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.7.4 </span>Steady state</span></a><a href="../../../bib.html" title="Bibliography ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="../../../idx.html" title="Index ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="../sec_Fick-Electrodiffusion/index.html" title="§ 2.7.6 Fick’s Law ‣ § 2.7 Electrodiffusion ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.7.6 </span>Fick’s Law</span></a>
 </div>
-<div class="ltx_page_logo">Generated  on Fri Dec 27 20:06:45 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+<div class="ltx_page_logo">Generated  on Sun Dec 29 23:02:16 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
 </div></footer>
 </div>
 </body>

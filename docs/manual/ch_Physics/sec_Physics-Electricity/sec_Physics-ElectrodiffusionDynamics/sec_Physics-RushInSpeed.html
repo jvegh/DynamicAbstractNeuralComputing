@@ -2,8 +2,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Rush-in speed‣ § 2.9.7 Ions’ dynamics ‣ § 2.9 Electricity in biology ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)</title>
-<!--Generated on Fri Dec 27 20:06:45 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
-<!--Document created on December 27, 2024.-->
+<!--Generated on Sun Dec 29 23:02:16 2024 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 29, 2024.-->
 
 <link rel="shortcut icon" href="../../../../favicon.ico" type="image/png">
 <link rel="stylesheet" href="../../../../LaTeXML.css" type="text/css">
@@ -55,8 +55,8 @@
 <img src="../graphics/BrainElectronics.png" class="ltx_graphics" width="227" height="128" alt="">
 <p class="ltx_p">Dynamic Abstract Neural Computing
 <br class="ltx_break">with Electronic Simulation
-<br class="ltx_break">DANCES Version <em class="ltx_emph ltx_font_italic">0.0.9</em>
-<br class="ltx_break">@December 27, 2024</p>
+<br class="ltx_break">DANCES Version <em class="ltx_emph ltx_font_italic">0.0.10</em>
+<br class="ltx_break">@December 29, 2024</p>
 </div>
 <div class="ltx_TOC">
 <ul class="ltx_toclist">
@@ -176,22 +176,42 @@ provided that <math id="p1.m10" class="ltx_Math" alttext="10^{3}" display="inlin
 </table>
 <p class="ltx_p">(The thermal speed is about an order of magnitude higher.
 It is in the range of several <math id="p1.m11" class="ltx_Math" alttext="\mu A" display="inline"><mrow><mi>μ</mi><mo>⁢</mo><mi>A</mi></mrow></math>s, for a short period. It is distributed in the
-spatiotemporal surface of a neuron, and contributes to a current of dozen of <math id="p1.m12" class="ltx_Math" alttext="pA" display="inline"><mrow><mi>p</mi><mo>⁢</mo><mi>A</mi></mrow></math>s.)
-</p>
+spatiotemporal surface of a neuron, and contributes to a current of dozen of <math id="p1.m12" class="ltx_Math" alttext="pA" display="inline"><mrow><mi>p</mi><mo>⁢</mo><mi>A</mi></mrow></math>s.)</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Notice an important difference. The acceleration of an ion is unbelievably large. It is sufficiently large to keep the potential at the same value,
+provided that the ions must follow a small change, such as due to the
+”leaking” current through the
+AIS.
+Similarly, the ions can ’instantly’ follow quick changes such as
+a square wave gradient.
+However, if many similar ions are ahead, their repulsion decreases
+the acceleration, and the ion travels only at a few <math id="p2.m1" class="ltx_Math" alttext="m/s" display="inline"><mrow><mi>m</mi><mo>/</mo><mi>s</mi></mrow></math> speed.
+The huge forces and accelerations means that a potential change
+acts immediately. However, the force decays quickly. The ions start to move
+’instantly’, but the charge carriers can move only with a limited speed,
+much below the interaction speed of
+EM
+interactions. The effect can propagate only with that lower speed.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">See the case of axon: there exist a mechanical constraint that
+the ions cannot spread through the wall (they must keep the direction), and
+the ion package propagates as Equs.<a href="../../sec_Physics-Electrodiffusion/sec_Nernst-time-derivatives/index.html#eq:Nernst-dVdt" title="(2.8) ‣ § 2.7.5 Time derivatives ‣ § 2.7 Electrodiffusion ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.8</span></a> and <a href="../../sec_Physics-Electrodiffusion/sec_Nernst-time-derivatives/index.html#eq:Nernst-dCdt" title="(2.14) ‣ § 2.7.5 Time derivatives ‣ § 2.7 Electrodiffusion ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.14</span></a> describe it.</p>
 </div>
 <section class="ltx_paragraph ltx_advanced">
-<div id="p2" class="ltx_para">
-<p class="ltx_p">As shown above, the ions’ passage time, is much below <math id="p2.m1" class="ltx_Math" alttext="1\ ns" display="inline"><mrow><mpadded width="+5pt"><mn>1</mn></mpadded><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>s</mi></mrow></math>.
+<div id="p4" class="ltx_para">
+<p class="ltx_p">As shown above, the ions’ passage time, is much below <math id="p4.m1" class="ltx_Math" alttext="1\ ns" display="inline"><mrow><mpadded width="+5pt"><mn>1</mn></mpadded><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>s</mi></mrow></math>.
 To switch that very intense and very short current pulse, one needs
 an at least as fast switch.
 The mechanical handling, using mechanical caps,
 (see the value of acceleration) is not possible.
 It needs an electronic control, see the layers of the two sides of the membrane.</p>
 </div>
-<div id="p3" class="ltx_para">
+<div id="p5" class="ltx_para">
 <p class="ltx_p">Furthermore, the time is only slightly higher than the magnitude of
 the molecular transitions. It is highly unprobable, that it can happen
-<math id="p3.m1" class="ltx_Math" alttext="10^{3}" display="inline"><msup><mn>10</mn><mn>3</mn></msup></math> times
+<math id="p5.m1" class="ltx_Math" alttext="10^{3}" display="inline"><msup><mn>10</mn><mn>3</mn></msup></math> times
 reconfiguration of long molecule chains can happen in such short periods.</p>
 </div>
 </section>
@@ -201,7 +221,7 @@ reconfiguration of long molecule chains can happen in such short periods.</p>
 <div>
 <a href="index.html" title="§ 2.9.7 Ions’ dynamics ‣ § 2.9 Electricity in biology ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.9.7 </span>Ions’ dynamics</span></a><a href="../../../bib.html" title="Bibliography ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="../../../idx.html" title="Index ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="sec_Physics-IonSelectivity.html" title="Ion selectivity ‣ § 2.9.7 Ions’ dynamics ‣ § 2.9 Electricity in biology ‣ Chapter 2 Physics for biology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title">Ion selectivity</span></a>
 </div>
-<div class="ltx_page_logo">Generated  on Fri Dec 27 20:06:45 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+<div class="ltx_page_logo">Generated  on Sun Dec 29 23:02:16 2024 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
 </div></footer>
 </div>
 </body>
