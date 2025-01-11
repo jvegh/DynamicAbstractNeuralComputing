@@ -2,8 +2,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>The ’true’ membrane current ‣ § 1.3.4 Neuronal membrane ‣ § 1.3 Components ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)</title>
-<!--Generated on Mon Jan  6 22:25:47 2025 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
-<!--Document created on January 6, 2025.-->
+<!--Generated on Sat Jan 11 18:32:43 2025 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on January 11, 2025.-->
 
 <link rel="shortcut icon" href="../../../../favicon.ico" type="image/png">
 <link rel="stylesheet" href="../../../../LaTeXML.css" type="text/css">
@@ -29,6 +29,7 @@
 <link rel="section" href="../index.html" title="§ 1.3 Components ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="section" href="../../sec_Single-Operations/index.html" title="§ 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="chapter" href="../../../ch_Foreword/index.html" title="Foreword ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
+<link rel="chapter" href="../../../ch_QuickStart/index.html" title="Quick Start ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="chapter" href="../../index.html" title="Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="chapter" href="../../../ch_Physics/index.html" title="Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
 <link rel="chapter" href="../../../ch_Physiology/index.html" title="Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)">
@@ -46,12 +47,13 @@
 <img src="../graphics/BrainElectronics.png" class="ltx_graphics" width="227" height="128" alt="">
 <p class="ltx_p">Dynamic Abstract Neural Computing
 <br class="ltx_break">with Electronic Simulation
-<br class="ltx_break">DANCES Version <em class="ltx_emph ltx_font_italic">0.0.12</em>
-<br class="ltx_break">@January 6, 2025</p>
+<br class="ltx_break">DANCES Version <em class="ltx_emph ltx_font_italic">0.0.14</em>
+<br class="ltx_break">@January 11, 2025</p>
 </div>
 <div class="ltx_TOC">
 <ul class="ltx_toclist">
 <li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../../ch_Foreword/index.html" title="Foreword ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title">Foreword</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../../ch_QuickStart/index.html" title="Quick Start ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title">Quick Start</span></a></li>
 <li class="ltx_tocentry ltx_tocentry_chapter">
 <a href="../../index.html" title="Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Single neurons</span></a>
 <ul class="ltx_toclist ltx_toclist_chapter">
@@ -104,7 +106,7 @@
 <div id="p1" class="ltx_para">
 <p class="ltx_p">This axonal charge-up current, a phenomenon we are exploring from
 an abstract perspective, flows into the membrane.
-It causes transient changes <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib45" title="" class="ltx_ref">45</a>, <a href="../../../bib.html#bib46" title="" class="ltx_ref">46</a>]</cite> in its voltage, providing <span class="ltx_text ltx_font_italic">direct evidence that the membrane is not always equipotential. The ions on the membrane’s surface can propagate at a finite speed</span>.
+It causes transient changes <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib44" title="" class="ltx_ref">44</a>, <a href="../../../bib.html#bib45" title="" class="ltx_ref">45</a>]</cite> in its voltage, providing <span class="ltx_text ltx_font_italic">direct evidence that the membrane is not always equipotential. The ions on the membrane’s surface can propagate at a finite speed</span>.
 The membrane attempts
 to remain isopotential, the ions move freely on its surface.</p>
 </div>
@@ -122,7 +124,7 @@ all axons. This behavior naturally explains the absolute refractory
 period. After the membrane’s voltage drops below the threshold value,
 the ions can enter the membrane again (see Figures <a href="../../../ch_Physiology/sec_Physiology-Experimental/sec_Axonal-charge-delivery/index.html#fig:MasonFig4" title="Figure 3.18 ‣ § 3.6.2 Axon ‣ § 3.6 Experimental evidence ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.18</span></a> and <a href="../../../ch_Physiology/sec_Physiology-DerivingActionPotential/sec_Physiology-SynapticControl/index.html#fig:ArtificialCurrent_AP" title="Figure 3.13 ‣ § 3.4.7 Synaptic control ‣ § 3.4 Action potential ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.13</span></a>), but they need time to reach the
 AIS
-later (see Figure <a href="../../sec_Single-Operations/sec_Single-ActionPotential/index.html#fig:AP_Conceptual" title="Figure 1.4 ‣ § 1.4.3 Action Potential (AP) ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.4</span></a>) when in the meantime the membrane’ voltage proceeded toward its hyperpolarized state; so they seem to appear dozens of microseconds later at the
+later (see Figure <a href="../../sec_Single-Operations/sec_Single-ActionPotential/index.html#fig:AP_Conceptual" title="Figure 1.5 ‣ § 1.4.3 Action Potential (AP) ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.5</span></a>) when in the meantime the membrane’ voltage proceeded toward its hyperpolarized state; so they seem to appear dozens of microseconds later at the
 AIS, explaining the relative refractory period.</p>
 </div>
 <div id="p4" class="ltx_para">
@@ -183,7 +185,7 @@ we naturally conclude that Ohm’s Law is correct and valid also for
 biology: the conductance/resistance is constant.</p>
 </div>
 <div id="p7" class="ltx_para">
-<p class="ltx_p"><em class="ltx_emph ltx_font_italic">There is no voltage-dependent conductance</em> <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib47" title="" class="ltx_ref">47</a>]</cite>.
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">There is no voltage-dependent conductance</em> <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib46" title="" class="ltx_ref">46</a>]</cite>.
 Instead, the finite speed of ions and the wrong assumption that conductance
 is a primary entity misleads physiological research.<em class="ltx_emph ltx_font_italic"> With wording
 that ”conductance changes”, one states that charge carriers
@@ -230,7 +232,7 @@ axonal current. These findings have significant implications for our
 understanding of the operation of neurons, including their signal processing and memory.</p>
 </div>
 <div id="p12" class="ltx_para">
-<p class="ltx_p">From a computational point of view <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib48" title="" class="ltx_ref">48</a>]</cite>,
+<p class="ltx_p">From a computational point of view <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../../bib.html#bib47" title="" class="ltx_ref">47</a>]</cite>,
 a persisting significant deviation from the resting potential (the
 arrival of the first spike from one of the upstream neurons) provides
 the signal ’Begin Computing’, opening the ion channels in the membrane
@@ -252,7 +254,7 @@ neuronal environment.</p>
 <div>
 <a href="sec_DelayedMembraneCurrent.html" title="The ’delayed’ membrane current ‣ § 1.3.4 Neuronal membrane ‣ § 1.3 Components ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title">The ’delayed’ membrane current</span></a><a href="../../../bib.html" title="Bibliography ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="../../../idx.html" title="Index ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="../subsec_Axonal-Initial-Segment/index.html" title="§ 1.3.5 Axon Initial Segment ‣ § 1.3 Components ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES)" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3.5 </span>Axon Initial Segment</span></a>
 </div>
-<div class="ltx_page_logo">Generated  on Mon Jan  6 22:25:47 2025 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+<div class="ltx_page_logo">Generated  on Sat Jan 11 18:32:43 2025 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
 </div></footer>
 </div>
 </body>
