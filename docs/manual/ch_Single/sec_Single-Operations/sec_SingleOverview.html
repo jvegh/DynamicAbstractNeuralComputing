@@ -2,8 +2,8 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>§ 1.4.1 Overview ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15</title>
-<!--Generated on Sun Jan 19 15:12:49 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
-<!--Document created on January 19, 2025.-->
+<!--Generated on Mon Jan 27 10:27:33 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on January 27, 2025.-->
 
 <link rel="shortcut icon" href="../../../favicon.ico" type="image/png">
 <link rel="stylesheet" href="../../../LaTeXML.css" type="text/css">
@@ -18,14 +18,16 @@
 <link rel="prev" href="index.html" title="§ 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
 <link rel="next" href="sec_Single-ConceptualOperation.html" title="§ 1.4.2 Conceptual operation ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
 <link rel="subsection" href="sec_Single-ConceptualOperation.html" title="§ 1.4.2 Conceptual operation ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
-<link rel="subsection" href="sec_Single-ActionPotential.html" title="§ 1.4.3 Action Potential (AP) ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
-<link rel="subsection" href="sec_Single_AP_Synaptic.html" title="§ 1.4.4 Synaptic control ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
-<link rel="subsection" href="subsec_Single-PSP.html" title="§ 1.4.5 Post-synaptic potentials (PSP) ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
-<link rel="subsection" href="sec_Single-ImplicationsComputing.html" title="§ 1.4.6 Implications for computing ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
+<link rel="subsection" href="sec_Modeling-neuron's-electric.html" title="§ 1.4.3 Electric operation ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
+<link rel="subsection" href="sec_Single-ActionPotential.html" title="§ 1.4.4 Action Potential (AP) ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
+<link rel="subsection" href="sec_Single_AP_Synaptic.html" title="§ 1.4.5 Synaptic control ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
+<link rel="subsection" href="subsec_Single-PSP.html" title="§ 1.4.6 Post-synaptic potentials (PSP) ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
+<link rel="subsection" href="sec_Single-ImplicationsComputing.html" title="§ 1.4.7 Implications for computing ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
 <link rel="section" href="../sec_Single-Introduction/index.html" title="§ 1.1 Introduction ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
 <link rel="section" href="../sec_SINGLE_ABSTRACT_NEURON/index.html" title="§ 1.2 Abstract modeling ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
-<link rel="section" href="../sec_Single-Components/index.html" title="§ 1.3 Components ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
+<link rel="section" href="../sec_Single-ClassicVsModern/index.html" title="§ 1.3 Classic vs modern approach ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
 <link rel="section" href="index.html" title="§ 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
+<link rel="section" href="../sec_Single-Components/index.html" title="§ 1.5 Components ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
 <link rel="chapter" href="../../ch_Foreword/index.html" title="Foreword ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
 <link rel="chapter" href="../../ch_QuickStart/index.html" title="Quick Start ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
 <link rel="chapter" href="../index.html" title="Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15">
@@ -47,7 +49,7 @@
 <p class="ltx_p">Dynamic Abstract Neural Computing
 <br class="ltx_break">with Electronic Simulation
 <br class="ltx_break">(DANCES) Version <em class="ltx_emph ltx_font_italic">0.0.15</em>
-<br class="ltx_break">@January 19, 2025</p>
+<br class="ltx_break">@January 27, 2025</p>
 </div>
 <nav class="ltx_TOC">
 <ol class="ltx_toclist">
@@ -58,18 +60,20 @@
 <ol class="ltx_toclist ltx_toclist_chapter">
 <li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_Single-Introduction/index.html" title="In Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.1 </span>Introduction</span></a></li>
 <li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_SINGLE_ABSTRACT_NEURON/index.html" title="In Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2 </span>Abstract modeling</span></a></li>
-<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_Single-Components/index.html" title="In Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3 </span>Components</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_Single-ClassicVsModern/index.html" title="In Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3 </span>Classic vs modern approach</span></a></li>
 <li class="ltx_tocentry ltx_tocentry_section">
 <a href="index.html" title="In Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4 </span>Operations</span></a>
 <ol class="ltx_toclist ltx_toclist_section">
 <li class="ltx_tocentry ltx_tocentry_subsection ltx_ref_self"><span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4.1 </span>Overview</span></span></li>
 <li class="ltx_tocentry ltx_tocentry_subsection"><a href="sec_Single-ConceptualOperation.html" title="In § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4.2 </span>Conceptual operation</span></a></li>
-<li class="ltx_tocentry ltx_tocentry_subsection"><a href="sec_Single-ActionPotential.html" title="In § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4.3 </span>Action Potential (AP)</span></a></li>
-<li class="ltx_tocentry ltx_tocentry_subsection"><a href="sec_Single_AP_Synaptic.html" title="In § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4.4 </span>Synaptic control</span></a></li>
-<li class="ltx_tocentry ltx_tocentry_subsection"><a href="subsec_Single-PSP.html" title="In § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4.5 </span>Post-synaptic potentials (PSP)</span></a></li>
-<li class="ltx_tocentry ltx_tocentry_subsection"><a href="sec_Single-ImplicationsComputing.html" title="In § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4.6 </span>Implications for computing</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="sec_Modeling-neuron's-electric.html" title="In § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4.3 </span>Electric operation</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="sec_Single-ActionPotential.html" title="In § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4.4 </span>Action Potential (AP)</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="sec_Single_AP_Synaptic.html" title="In § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4.5 </span>Synaptic control</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="subsec_Single-PSP.html" title="In § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4.6 </span>Post-synaptic potentials (PSP)</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="sec_Single-ImplicationsComputing.html" title="In § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4.7 </span>Implications for computing</span></a></li>
 </ol>
 </li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_Single-Components/index.html" title="In Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.5 </span>Components</span></a></li>
 </ol>
 </li>
 <li class="ltx_tocentry ltx_tocentry_chapter"><a href="../../ch_Physics/index.html" title="In Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Physics</span></a></li>
@@ -112,7 +116,7 @@ ordinary or extraordinary laws) and which <span class="ltx_text ltx_font_italic"
 (which we can use for staging those very complex ”signs of life”).</p>
 </div>
 <div id="p2" class="ltx_para">
-<p class="ltx_p">Fig. <a href="#fig:NeuronStateMachine" title="Figure 1.4 ‣ § 1.4.1 Overview ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.4</span></a> illustrates our abstract view of a neuron.
+<p class="ltx_p">Fig. <a href="#fig:NeuronStateMachine" title="Figure 1.1 ‣ § 1.4.1 Overview ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.1</span></a> illustrates our abstract view of a neuron.
 We consider it as a simple automated voltage controller with a predefined structure (a biological oscillator with a constant capacity (membrane) and resistance (AIS)),
 unidirectional input (synapses) and output (axon) connections with the environment,
 some <span class="ltx_text ltx_font_italic">dynamic components</span> (ionic currents in the temporarily formed
@@ -137,8 +141,8 @@ parallel with its mentioned activity.</p>
 as a low-power mode in electronical or state maintenance mode of biological computing; a ”no payload activity” stage.) The stage transition from ”Sleeping” also <span class="ltx_text ltx_font_italic">resets the internal stage variable</span> (to the resting potential).
 In biology, a ”leaking” background activity takes place: it changes (among others) the stage variable towards the system’s ”no activity” value.</p>
 </div>
-<figure id="fig:NeuronStateMachine" class="ltx_figure"><object type="image/svg+xml" data="fig/NeuronStateMachineSimple.svg" id="Ch1.F4.g1" class="ltx_graphics ltx_img_square" width="598" height="586"></object>
-<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 1.4: </span>The model of neuron as an abstract state machine</figcaption>
+<figure id="fig:NeuronStateMachine" class="ltx_figure"><object type="image/svg+xml" data="fig/NeuronStateMachineSimple.svg" id="Ch1.F1.g1" class="ltx_graphics ltx_img_square" width="598" height="586"></object>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 1.1: </span>The model of neuron as an abstract state machine</figcaption>
 </figure>
 <div id="p4" class="ltx_para">
 <p class="ltx_p">An event (a pulse of slow ions) arriving from the environment acts as a ”look at me” signal
@@ -171,7 +175,7 @@ to fellow neurons; they happen at the same time, but at different places:
 the ”Delivering” process transmits the change carriers from the surface layer
 of the membrane to the
 AIS and the ion channels ’instantly’ deliver the ions to the beginning
-of the axon where they pass along as the laws of motion of electrodiffusion dictate; see also section <a href="sec_Single-ActionPotential.html" title="§ 1.4.3 Action Potential (AP) ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.4.3</span></a>.</p>
+of the axon where they pass along as the laws of motion of electrodiffusion dictate; see also section <a href="sec_Single-ActionPotential.html" title="§ 1.4.4 Action Potential (AP) ‣ § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.4.4</span></a>.</p>
 </div>
 <div id="p7" class="ltx_para">
 <p class="ltx_p">Anyhow: a neuron operates in cooperation with in its environment (fellow neurons).
@@ -183,7 +187,7 @@ It receives multiple inputs and produces multiple outputs, both distributed in t
 <div class="ltx_align_center">
 <a href="index.html" title="In Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4 </span>Operations</span></a><a href="../../bib.html" title="In Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="../../idx.html" title="In Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="sec_Single-ConceptualOperation.html" title="In § 1.4 Operations ‣ Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.15" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4.2 </span>Conceptual operation</span></a>
 </div>
-<div class="ltx_page_logo">Generated  on Sun Jan 19 15:12:49 2025 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+<div class="ltx_page_logo">Generated  on Mon Jan 27 10:27:33 2025 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
 </div></footer>
 </div>
 </body>
