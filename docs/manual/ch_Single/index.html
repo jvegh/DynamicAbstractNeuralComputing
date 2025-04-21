@@ -2,8 +2,8 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25</title>
-<!--Generated on Sun Apr 13 22:26:12 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
-<!--Document created on April 13, 2025.-->
+<!--Generated on Mon Apr 21 16:27:20 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on April 21, 2025.-->
 
 <link rel="shortcut icon" href="../../favicon.ico" type="image/png">
 <link rel="stylesheet" href="../../LaTeXML.css" type="text/css">
@@ -40,7 +40,7 @@
 <p class="ltx_p">Dynamic Abstract Neural Computing
 <br class="ltx_break">with Electronic Simulation
 <br class="ltx_break">(DANCES) Version <em class="ltx_emph ltx_font_italic">0.0.25</em>
-<br class="ltx_break">@April 13, 2025</p>
+<br class="ltx_break">@April 21, 2025</p>
 </div>
 <nav class="ltx_TOC">
 <ol class="ltx_toclist">
@@ -88,7 +88,7 @@
 <section class="ltx_paragraph ltx_advanced">
 <div id="p1" class="ltx_para">
 <p class="ltx_p">- ”From all we have learnt about the structure of living matter, we must be prepared to find it working in a manner that cannot be reduced to the ordinary laws of physics …<span class="ltx_text ltx_font_italic">because the construction is different from anything we have yet tested in the physical laboratory</span>.”–
-<a href="https://www.cambridge.org/core/books/abs/what-is-life/is-life-based-on-the-laws-of-physics/5BA8DE837F72FC4EEF70FE8470ADFE7B" title="" class="ltx_ref ltx_href">E. Scrödinger: What is life?</a><cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib16" title="" class="ltx_ref">16</a>]</cite> @1992</p>
+<a href="https://www.cambridge.org/core/books/abs/what-is-life/is-life-based-on-the-laws-of-physics/5BA8DE837F72FC4EEF70FE8470ADFE7B" title="" class="ltx_ref ltx_href">E. Scrödinger: What is life?</a><cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib18" title="" class="ltx_ref">18</a>]</cite> @1992</p>
 </div>
 <div id="p2" class="ltx_para">
 <p class="ltx_p">”Despite the extraordinary diversity and complexity of neuronal morphology and synaptic connectivity,
@@ -100,7 +100,7 @@ basic principles</span>” <cite class="ltx_cite ltx_citemacro_cite">[<a href=".
 <p class="ltx_p">We agree that ’The basic structural units of the nervous system are individual neurons’ <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib1" title="" class="ltx_ref">1</a>]</cite>. However,
 we also know that <a href="../ch_Multiple/index.html#Multiple_neurons" title=". A neuron operates in cooperation with in its environment (the multiple fellow neurons, with outputs distributed in space and time). It receives multiple inputs at different times (at different offset times from the different upstream neurons) and in different stages. Neurassemblies ‣ Chapter 6 Multiple neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref">multiple neurons</a> ”are linked together
 by <span class="ltx_text ltx_font_bold ltx_font_italic">dynamically</span> changing constellations of synaptic weights” and
-”cell assemblies are best understood in light of their output product” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib25" title="" class="ltx_ref">25</a>]</cite>. However, the classic understanding replaces the dynamic description with
+”cell assemblies are best understood in light of their output product” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib27" title="" class="ltx_ref">27</a>]</cite>. However, the classic understanding replaces the dynamic description with
 a perturbation-level correction to a mostly wrong <span class="ltx_text ltx_font_bold ltx_font_italic">static</span> description; furthermore, it lacks the laws of motion and understanding of the operation of the <span class="ltx_text ltx_font_bold ltx_font_italic">dynamic</span> components.
 The final reason is
 the wrong understanding of living matter’s non-disciplinary scientific operation, so we must go back to the first principles
@@ -116,17 +116,17 @@ The goal was set decades ago:
 ’<span class="ltx_text ltx_font_italic">The ultimate aim of computational neuroscience is
 to <span class="ltx_text ltx_font_bold">explain how</span> electrical and chemical signals are used in the brain
 <span class="ltx_text ltx_font_bold">to represent and process information</span></span>’
-<cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib23" title="" class="ltx_ref">23</a>]</cite>.
+<cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib25" title="" class="ltx_ref">25</a>]</cite>.
 It was also confirmed two decades later: ”Information is carried within neurons and from
 neurons to their target cells by electrical and chemical
 signals. <span class="ltx_text ltx_font_italic">Transient electrical signals</span> are particularly
 important for carrying <span class="ltx_text ltx_font_italic">time-sensitive information</span> rap-
-idly and over long distances” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib32" title="" class="ltx_ref">32</a>]</cite>, page 126.</p>
+idly and over long distances” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib2" title="" class="ltx_ref">2</a>]</cite>, page 126.</p>
 </div>
 <div id="p5" class="ltx_para">
 <p class="ltx_p">However, over the decades, computational neuroscience implemented ad-hoc mathematical formulas only slightly related to neuronal operation because theoretical neuroscience did not provide the correct scientific background.
 They forgot the warning that ”the success of the
-equations is no evidence in favour of the mechanism” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib10" title="" class="ltx_ref">10</a>]</cite>.
+equations is no evidence in favour of the mechanism” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib11" title="" class="ltx_ref">11</a>]</cite>.
 It is not possible to understand correct experimental observations and design thoughtful experiments; furthermore, among others, to understand the role of synaptic weights,
 the formation of
 APs, and neuronal information processing,
@@ -134,8 +134,8 @@ without
 fixing the scientific background, including introducing non-disciplinary physical laws,
 misunderstood electric operation, misinterpreted physiological observations, and abused notions of computing and information.
 In this chapter, we prepare that discussion in an abstract level.
-We generalized the notions of computing <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib27" title="" class="ltx_ref">27</a>]</cite>
-and information <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib26" title="" class="ltx_ref">26</a>]</cite> for biology and use the notions introduced there throughout the document.</p>
+We generalized the notions of computing <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib29" title="" class="ltx_ref">29</a>]</cite>
+and information <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib28" title="" class="ltx_ref">28</a>]</cite> for biology and use the notions introduced there throughout the document.</p>
 </div>
 <div id="p6" class="ltx_para">
 <p class="ltx_p">Nature is overly complex: science fields must use
@@ -148,7 +148,7 @@ sufficiently accurate and detailed in describing phenomena while keeping the mat
 (and computational need) of description still manageable.
 Without recognizing that, really, ”no single researcher or discovery
 [and we add: even no ’vibrant ecosystem for rigorous and ethical research with human research participants as partners’ or ’a community effort’]
-will solve the brain’s mysteries” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib12" title="" class="ltx_ref">12</a>]</cite> without understanding that living matter needs different approaches and testing methods from science.
+will solve the brain’s mysteries” <cite class="ltx_cite ltx_citemacro_cite">[<a href="../bib.html#bib13" title="" class="ltx_ref">13</a>]</cite> without understanding that living matter needs different approaches and testing methods from science.
 We must express the same fundamental principles in the form of different laws. To do so, we must revisit whether we did the appropriate simplifications and approximations, furthermore, if we mapped those correct phenomena to the appropriate mathematical descriptions. We must defy some important misconceptions, provide the right conceptions,
 and explain why the wong concept misguides research.</p>
 </div>
@@ -167,7 +167,7 @@ homogenous isotropic medium) interactions.
 We provide a holistic picture,
 from a physical point of view, by explaining which physical/physiological components cooperate.
 We derive <a href="../ch_Physics/sec_Physics-Thermodynamics/sec_Physics-LawsOfMotion.html#PhysicsLawsOfMotion" title="From a physical point of view, ionic solutions ‣ § 2.4.2 Laws of motion ‣ § 2.4 Ions’ thermodynamics ‣ Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref">the laws of motion</a> for thermodynamical/physiological processes of biology in section <a href="../ch_Physics/sec_Physics-Thermodynamics/sec_Physics-LawsOfMotion.html" title="§ 2.4.2 Laws of motion ‣ § 2.4 Ions’ thermodynamics ‣ Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.4.2</span></a> (in this context, ’non-ordinary laws of physics’),
-and introduce a <a href="../ch_Physics/sec_Physics-segmented/sec_Physics-TwoSegments.html#atomic_layer" title=". Recall that we are still speaking about the resting state and only about the extra gradient evoked by the finite-width membrane. We are at the boundaries of the macroscopic and microscopic worlds. We derived our integrand from the picture of discrete charges but integrated it into the picture of continuous charge distribution, so we have an empirical factor between them. We assume an atomic layer ‣ Dielectric segments ‣ § 2.5.4 Two segments ‣ § 2.5 Segmented electrolytes ‣ Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref">component which implements them</a>.
+and introduce a <a href="../ch_Physics/sec_Physics-segmented/sec_Physics-TwoSegments.html#atomic_layer" title=". Recall that we are still speaking about the resting state and only about the extra gradient evoked by the finite-width membrane. We are at the boundaries of the macroscopic and microscopic worlds. We derived our integrand from the picture of discrete charges but integrated it into the picture of continuous charge distribution. We assume an atomic layer ‣ Electric field in a two-segment electrolyte ‣ § 2.5.4 Two segments ‣ § 2.5 Electrolytes ‣ Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref">component which implements them</a>.
 In chapter <a href="../ch_Physiology/index.html" title="Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a> we go to a <a href="../ch_Physiology/index.html#AbstractPhysiology" title="Biological objects ‣ Chapter 3 Abstract neurophysiology ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref">less abstract level</a> (”abstract physiology”).
 We summarize
 how the components are put together to form, conceptually,
@@ -208,7 +208,7 @@ those elementary operations confine the functionality of vast populations of neu
 <div class="ltx_align_center">
 <a href="../ch_QuickStart/index.html" title="In Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title">Quick Start</span></a><a href="../bib.html" title="In Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="../idx.html" title="In Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="sec_Single-Introduction/index.html" title="In Chapter 1 Single neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.1 </span>Introduction</span></a>
 </div>
-<div class="ltx_page_logo">Generated  on Sun Apr 13 22:26:12 2025 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+<div class="ltx_page_logo">Generated  on Mon Apr 21 16:27:20 2025 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
 </div></footer>
 </div>
 </body>

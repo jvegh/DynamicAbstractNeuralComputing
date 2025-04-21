@@ -2,8 +2,8 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>§ 2.7.2 Ion layers ‣ § 2.7 Neuronal components ‣ Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25</title>
-<!--Generated on Sun Apr 13 22:26:12 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
-<!--Document created on April 13, 2025.-->
+<!--Generated on Mon Apr 21 16:27:20 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on April 21, 2025.-->
 
 <link rel="shortcut icon" href="../../../favicon.ico" type="image/png">
 <link rel="stylesheet" href="../../../LaTeXML.css" type="text/css">
@@ -27,7 +27,7 @@
 <link rel="section" href="../sec_Physics-Abstraction/index.html" title="§ 2.2 Abstractions&amp; approximations ‣ Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25">
 <link rel="section" href="../sec_Physics-Electricity/index.html" title="§ 2.3 Ions’ electricity ‣ Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25">
 <link rel="section" href="../sec_Physics-Thermodynamics/index.html" title="§ 2.4 Ions’ thermodynamics ‣ Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25">
-<link rel="section" href="../sec_Physics-segmented/index.html" title="§ 2.5 Segmented electrolytes ‣ Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25">
+<link rel="section" href="../sec_Physics-segmented/index.html" title="§ 2.5 Electrolytes ‣ Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25">
 <link rel="section" href="../sec_Physics-MembranesChannels/index.html" title="§ 2.6 Membranes and channels ‣ Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25">
 <link rel="section" href="index.html" title="§ 2.7 Neuronal components ‣ Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25">
 <link rel="section" href="../sec_Physics-Resources/index.html" title="§ 2.8 Finite resources ‣ Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25">
@@ -53,7 +53,7 @@
 <p class="ltx_p">Dynamic Abstract Neural Computing
 <br class="ltx_break">with Electronic Simulation
 <br class="ltx_break">(DANCES) Version <em class="ltx_emph ltx_font_italic">0.0.25</em>
-<br class="ltx_break">@April 13, 2025</p>
+<br class="ltx_break">@April 21, 2025</p>
 </div>
 <nav class="ltx_TOC">
 <ol class="ltx_toclist">
@@ -67,7 +67,7 @@
 <li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_Physics-Abstraction/index.html" title="In Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2 </span>Abstractions&amp; approximations</span></a></li>
 <li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_Physics-Electricity/index.html" title="In Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.3 </span>Ions’ electricity</span></a></li>
 <li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_Physics-Thermodynamics/index.html" title="In Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.4 </span>Ions’ thermodynamics</span></a></li>
-<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_Physics-segmented/index.html" title="In Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.5 </span>Segmented electrolytes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_Physics-segmented/index.html" title="In Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.5 </span>Electrolytes</span></a></li>
 <li class="ltx_tocentry ltx_tocentry_section"><a href="../sec_Physics-MembranesChannels/index.html" title="In Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.6 </span>Membranes&amp;channels</span></a></li>
 <li class="ltx_tocentry ltx_tocentry_section">
 <a href="index.html" title="In Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.7 </span>Neuronal components</span></a>
@@ -158,10 +158,10 @@ This transient state is the key to understanding the dynamic operation of neuron
 </div>
 <div id="p5" class="ltx_para">
 <p class="ltx_p">There is a strong electric field on the boundary of the segments.
-As <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib2" title="" class="ltx_ref">2</a>]</cite> discusses, ’an electrical potential difference about 50–100 mV … exists across a plasma membrane only about <math id="p5.m1" class="ltx_Math" alttext="5\ nm" display="inline"><mrow><mn>5</mn><mo lspace="0.500em">⁢</mo><mi>n</mi><mo>⁢</mo><mi>m</mi></mrow></math> thick, so the resulting voltage gradient is about <math id="p5.m2" class="ltx_Math" alttext="100,000\ V/cm" display="inline"><mrow><mn>100</mn><mo>,</mo><mrow><mrow><mrow><mn>000</mn><mo lspace="0.500em">⁢</mo><mi>V</mi></mrow><mo>/</mo><mi>c</mi></mrow><mo>⁢</mo><mi>m</mi></mrow></mrow></math>’.
+As <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib3" title="" class="ltx_ref">3</a>]</cite> discusses, ’an electrical potential difference about 50–100 mV … exists across a plasma membrane only about <math id="p5.m1" class="ltx_Math" alttext="5\ nm" display="inline"><mrow><mn>5</mn><mo lspace="0.500em">⁢</mo><mi>n</mi><mo>⁢</mo><mi>m</mi></mrow></math> thick, so the resulting voltage gradient is about <math id="p5.m2" class="ltx_Math" alttext="100,000\ V/cm" display="inline"><mrow><mn>100</mn><mo>,</mo><mrow><mrow><mrow><mn>000</mn><mo lspace="0.500em">⁢</mo><mi>V</mi></mrow><mo>/</mo><mi>c</mi></mrow><mo>⁢</mo><mi>m</mi></mrow></mrow></math>’.
 
 In their ’off’ state, the voltage-controlled ion channels are mechanically closed, so the ions cannot follow that gradient.
-However, when (due to the collected synaptic charge or the significant slope of the arriving spike <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib40" title="" class="ltx_ref">40</a>]</cite> or clamping) a voltage offset appears at the ion channel, so it opens. Due to the enormous gradient, ions rush in
+However, when (due to the collected synaptic charge or the significant slope of the arriving spike <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib41" title="" class="ltx_ref">41</a>]</cite> or clamping) a voltage offset appears at the ion channel, so it opens. Due to the enormous gradient, ions rush in
 from the extracellular segment into the intracellular one. This means a high speed, that is, a ’fast’ current, see Eq. (<a href="../sec_Physics-Electricity/sec_Physics-Current.html#eq:StokesCurrent" title="In Current’s speed ‣ § 2.3.1 Current ‣ § 2.3 Ions’ electricity ‣ Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.7</span></a>).</p>
 </div>
 <div id="p6" class="ltx_para">
@@ -175,8 +175,8 @@ However, the self-amplifying depolarization of the patch,
 is sufficient to depolarize neighboring regions of the membrane,
 which then go through the same cycle. In this way,
 the action potential spreads as a traveling wave from the initial site of depolarization
-to involve the entire plasma membrane’ <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib2" title="" class="ltx_ref">2</a>]</cite>.
-The depolarization happens in an avalanche-like way <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib47" title="" class="ltx_ref">47</a>]</cite> over the entire membrane surface.
+to involve the entire plasma membrane’ <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib3" title="" class="ltx_ref">3</a>]</cite>.
+The depolarization happens in an avalanche-like way <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib48" title="" class="ltx_ref">48</a>]</cite> over the entire membrane surface.
 This process creates ion-rich layers in the proximity of the membrane
 on both sides. At the end of the process, the potential in the layer on the intracellular side temporarily reaches
 the potential inside the bulk of the extracellular side.
@@ -223,9 +223,9 @@ of ion channels must cooperate with them, given that the ions move ’downhill�
 </div>
 <div id="p10" class="ltx_para">
 <p class="ltx_p">This behavior explains why ion currents across the membrane
-start up with a sharp exponential rise <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib86" title="" class="ltx_ref">86</a>]</cite>
-(one of the big mistakes was fitting polynomial lines <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib10" title="" class="ltx_ref">10</a>]</cite>
-to those critical regions, comprising both exponential and no-current regions: it hides the sudden change of membrane’s current <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib86" title="" class="ltx_ref">86</a>]</cite>
+start up with a sharp exponential rise <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib87" title="" class="ltx_ref">87</a>]</cite>
+(one of the big mistakes was fitting polynomial lines <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib11" title="" class="ltx_ref">11</a>]</cite>
+to those critical regions, comprising both exponential and no-current regions: it hides the sudden change of membrane’s current <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib87" title="" class="ltx_ref">87</a>]</cite>
 caused by the state change of the ion channels); why initiating an
 AP has precise timings (both the charge-up signal and pressing
 ions through the
@@ -241,8 +241,8 @@ those parameters of components of the non-living matter, plus the time course of
 </div>
 <div id="p12" class="ltx_para">
 <p class="ltx_p">This behavior explains why ion currents
-start up with a sharp exponential rise <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib86" title="" class="ltx_ref">86</a>]</cite>
-(fitting polynomial lines <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib10" title="" class="ltx_ref">10</a>]</cite>
+start up with a sharp exponential rise <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib87" title="" class="ltx_ref">87</a>]</cite>
+(fitting polynomial lines <cite class="ltx_cite ltx_citemacro_cite">[<a href="../../bib.html#bib11" title="" class="ltx_ref">11</a>]</cite>
 to those critical regions was a big mistake: it hides the sudden change
 caused by the state change (opening) of the ion channels, and that
 the ’rising edge’ is actually described by an exponential increase); why initiating an AP
@@ -271,7 +271,7 @@ can escape to the other side of the membrane.</p>
 <div class="ltx_align_center">
 <a href="sec_Physics-IonChannels.html" title="In § 2.7 Neuronal components ‣ Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.7.1 </span>Ion channels</span></a><a href="../../bib.html" title="In Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="../../idx.html" title="In Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref" rel="index"><span class="ltx_text ltx_ref_title">Index</span></a><a href="sec_Physics-AxonalDelivery.html" title="In § 2.7 Neuronal components ‣ Chapter 2 Physics for neurons ‣ Dynamic Abstract Neural Computing with Electronic Simulation (DANCES) Version 0.0.25" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.7.3 </span>Axon</span></a>
 </div>
-<div class="ltx_page_logo">Generated  on Sun Apr 13 22:26:12 2025 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+<div class="ltx_page_logo">Generated  on Mon Apr 21 16:27:20 2025 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
 </div></footer>
 </div>
 </body>
